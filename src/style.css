@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
 @theme {
-  --breakpoint-sm: 768px;
   --color-banner-blue: #d7f7f7;
   --color-banner-pink: #ffe6f0;
   --color-banner-yellow: #fefedd;
