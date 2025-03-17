@@ -7,6 +7,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: "index.html", // 기본 index.html
+        plz: "src/components/footer/footer.html"
       },
     },
   },
