@@ -1,15 +1,41 @@
 @import 'tailwindcss';
 
 @theme {
+  --color-jr-naver-yellow-100: #ffd037;
+  --color-jr-naver-yellow-200: #ffc82c;
+  --color-jr-naver-orange: #efab41;
+  --color-jr-naver-green-100: #93c452;
+  --color-jr-naver-green-200: #03c75a;
+  --color-jr-naver-green-300: #00c759;
+  --color-jr-naver-green-400: #00ff67;
+  --color-jr-naver-blue-100: #5fb3e1;
+  --color-jr-naver-blue-200: #7090f3;
+  --color-jr-naver-blue-300: #0087ff;
+  --color-jr-naver-purple-100: #bb9adf;
+  --color-jr-naver-purple-200: #ad74db;
+  --color-jr-naver-pink: #fe88aa;
+  --color-jr-naver-red-100: #ff615f;
+  --color-jr-naver-red-200: #ff5555;
+  --color-jr-naver-red-100: #d95042;
+  --color-jr-naver-gray-100: #f3f4f7;
+  --color-jr-naver-gray-200: #d9d9d9;
+  --color-jr-naver-gray-300: #9caebe;
+  --color-jr-naver-text-gray: #8f8f8f;
+  --color-jr-naver-text-black-200: #333333;
+  --color-jr-naver-text-black-300: #222222;
+  --color-jr-naver-footer-text-gray: #8a909e;
+  --color-jr-naver-footer-bg-gray: #edeff3;
+  --color-jr-naver-footer-darkgray: #504f58;
+
   --color-banner-blue: #d7f7f7;
   --color-banner-pink: #ffe6f0;
   --color-banner-yellow: #fefedd;
   --color-banner-green: #eef9df;
   --breakpoint-el: 68.75rem; /* 1100px */
-  --header-search-icon: url(/images/header/search-icon.png);
-  --header-search-icon-pc: url(/images/header/search-icon-pc.png);
   --header-search-bar-font-size: 0.8125rem; /* 13px */
   --header-search-bar-hover-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  --header-search-icon: url(/images/header/search-icon.png);
+  --header-search-icon-pc: url(/images/header/search-icon-pc.png);
   --header-naver-icon: url(/images/header/header-naver-icon.png);
 }
 
