@@ -2,6 +2,7 @@
 @import './../public/fonts/nanumsquareround.css';
 @import './components/banner/home/home-banner.css';
 @import './components/banner/character/character-banner.css';
+@import './components/banner/category/category-banner.css';
 
 @theme {
   --font-*: initial;
