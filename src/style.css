@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import './../public/fonts/nanumsquareround.css';
+@import './components/category-button/category-button.css';
 
 @theme {
   --font-*: initial;
