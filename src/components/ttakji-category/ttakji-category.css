@@ -14,11 +14,3 @@
     @apply h-[58px] flex items-center justify-center font-extrabold text-white;
   }
 }
-
-h1 {
-  @apply text-4xl font-extrabold;
-}
-
-h2 {
-  @apply text-2xl;
-}
