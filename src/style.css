@@ -1,1 +1,5 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@import './components/ttakji/ttakji.css';
+@import './components/ttakji-filter/ttakji-filter.css';
+@import './components/ttakji-category/ttakji-category.css';
