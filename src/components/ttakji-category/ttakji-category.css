@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@layer components {
+  .ttakji-category {
+    @apply block w-[166px] h-[153px] rounded-[13.5px] bg-green-400;
+    @apply flex flex-col;
+  }
+
+  .ttakji-category-image {
+    @apply rounded-t-[inherit] w-[166px] h-[95px];
+  }
+
+  .ttakji-category-title {
+    @apply h-[58px] flex items-center justify-center font-extrabold text-white;
+  }
+}
