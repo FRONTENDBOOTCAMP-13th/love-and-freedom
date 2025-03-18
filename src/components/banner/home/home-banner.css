@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-banner-blue: #d7f7f7;
+  --color-banner-pink: #ffe6f0;
+  --color-banner-yellow: #fefedd;
+  --color-banner-green: #eef9df;
+}
+
+@layer components {
+  .home-banner {
+    @apply relative md:rounded-xl h-[102px] w-full;
+  }
+
+  .home-banner-img {
+    @apply h-[112px] object-contain absolute bottom-0 left-1/2 -translate-x-1/2;
+  }
+}

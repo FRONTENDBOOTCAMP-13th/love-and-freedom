@@ -1,7 +1,59 @@
 @import 'tailwindcss';
 
+
+@import './components/ttakji/ttakji.css';
+@import './components/ttakji-filter/ttakji-filter.css';
+@import './components/ttakji-category/ttakji-category.css';
+@import './../public/fonts/nanumsquareround.css';
+@import './components/category-button/category-button.css';
+@import './components/banner/home/home-banner.css';
+@import './components/banner/character/character-banner.css';
+
 @theme {
-  /* 서비스 바로가기 색상 */
+  --font-*: initial;
+  --font-sans-b: 'NanumSquareRoundB', 'sans-serif';
+  --font-sans-eb: 'NanumSquareRoundEB', 'sans-serif';
+  --font-sans-l: 'NanumSquareRoundL', 'sans-serif';
+  --font-sans-r: 'NanumSquareRoundR', 'sans-serif';
+  --color-jr-naver-yellow-100: #ffd037;
+  --color-jr-naver-yellow-200: #ffc82c;
+  --color-jr-naver-orange: #efab41;
+  --color-jr-naver-green-100: #93c452;
+  --color-jr-naver-green-200: #03c75a;
+  --color-jr-naver-green-300: #00c759;
+  --color-jr-naver-green-400: #00ff67;
+  --color-jr-naver-blue-100: #5fb3e1;
+  --color-jr-naver-blue-200: #7090f3;
+  --color-jr-naver-blue-300: #0087ff;
+  --color-jr-naver-purple-100: #bb9adf;
+  --color-jr-naver-purple-200: #ad74db;
+  --color-jr-naver-pink: #fe88aa;
+  --color-jr-naver-red-100: #ff615f;
+  --color-jr-naver-red-200: #ff5555;
+  --color-jr-naver-red-100: #d95042;
+  --color-jr-naver-gray-100: #f3f4f7;
+  --color-jr-naver-gray-200: #d9d9d9;
+  --color-jr-naver-gray-300: #9caebe;
+  --color-jr-naver-text-gray: #8f8f8f;
+  --color-jr-naver-text-black-200: #333333;
+  --color-jr-naver-text-black-300: #222222;
+  --color-jr-naver-footer-text-gray: #8a909e;
+  --color-jr-naver-footer-bg-gray: #edeff3;
+  --color-jr-naver-footer-darkgray: #504f58;
+
+  --text-jr-naver-link-title: 1.0625rem;
+  --text-jr-naver-clip-title: 1rem;
+  --text-jr-naver-video-card-title: 0.875rem;
+  --text-jr-naver-blind-title: 0.9375rem;
+
+  --breakpoint-el: 68.75rem; /* 1100px */
+  --header-search-bar-font-size: 0.8125rem; /* 13px */
+  --header-search-bar-hover-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  --header-search-icon: url(/images/header/search-icon.png);
+  --header-search-icon-pc: url(/images/header/search-icon-pc.png);
+  --header-naver-icon: url(/images/header/header-naver-icon.png);
+  
+    /* 서비스 바로가기 색상 */
   --service-linkcard-main-color: #3d75de;
   --service-linkcard-sub-color2: #e7faff;
   --service-linkcard-sub-color3: #4584fc;
@@ -10,4 +62,94 @@
   --breakpoint-ts: 41.6875rem;
 
   --service-linkcard-dino-img: url(/images/dino-image2.png);
+}
+
+@layer components {
+  header {
+    @apply flex justify-between pt-3 px-7;
+    @apply md:w-[656px] md:px-0 md:mx-auto el:w-[1062px];
+  }
+
+  .search-bar-wrap {
+    @apply flex flex-col;
+    @apply md:transition-[scale,_translate] md:duration-500;
+    @apply md:hover:scale-110 md:hover:translate-y-1 md:hover:transition-[scale,_translate] md:hover:duration-500;
+    @apply md:focus-within:scale-110 md:focus-within:translate-y-1 md:focus:absolute md:focus:top-0 md:focus:left-0 md:items-start;
+
+    .search-top {
+      @apply flex items-center justify-end p-1 rounded-xl;
+      .header-search-input {
+        @apply outline-0 bg-[#f1f4f7] pl-6 pr-10 w-[380px] h-10 text-(length:--header-search-bar-font-size) text-[#222] appearance-none hidden;
+        @apply placeholder:text-[#cdcdcd] placeholder:text-(length:--header-search-bar-font-size);
+        @apply md:block md:appearance-auto md:rounded-l-full md:transition-[box-shadow,_width] md:duration-500;
+        @apply md:hover:shadow-(--header-search-bar-hover-shadow) md:hover:transition-[box-shadow] md:hover:duration-500;
+        @apply md:focus:shadow-(--header-search-bar-hover-shadow) md:focus:w-[508px] md:focus:transition-[width] md:focus:origin-left;
+      }
+
+      .search-bar-button {
+        @apply w-5 h-5 bg-(image:--header-search-icon) bg-no-repeat bg-center;
+        @apply md:rounded-r-full md:bg-(image:--header-search-icon-pc) md:w-11 md:h-10 md:bg-contain md:transition-[box-shadow] md:duration-500;
+        @apply md:hover:shadow-(--header-search-bar-hover-shadow) md:hover:transition-[box-shadow] md:hover:duration-500;
+        @apply md:focus:shadow-(--header-search-bar-hover-shadow);
+      }
+
+      .input-x-button {
+        @apply w-[calc(44px_*_1.1)] h-[calc(44px_*_1.1)] ml-2 bg-white shadow-(--header-search-bar-hover-shadow) rounded-full justify-center items-center;
+      }
+    }
+
+    .search-box {
+      @apply bg-white h-[500px] /*w-full*/;
+    }
+  }
+
+  .header-button-wrap {
+    @apply hidden el:flex el:p-1;
+
+    .header-login-button {
+      @apply text-[14px] px-4 rounded-full bg-[#ffc82a] text-white h-10 block leading-10;
+    }
+
+    .header-naver-button {
+      @apply ml-[10px] border-[2px] p-3 text-center rounded-full block border-[#f1f4f7] leading-10 w-10 h-10 transition-[width] duration-200;
+      @apply before:bg-(image:--header-naver-icon) before:bg-cover before:h-3 before:block;
+      @apply hover:w-23 hover:transition-[width] hover:duration-200;
+    }
+  }
+
+  button {
+    @apply hidden;
+  }
+
+  .search-box {
+    @apply hidden;
+  }
+
+  header:focus-within {
+    h1 {
+      @apply opacity-0 transition-[opacity];
+    }
+
+    .header-button-wrap {
+      @apply hidden;
+    }
+
+    .search-bar-wrap:focus-within {
+      @apply pt-4;
+
+      .header-search-input,
+      .input-x-button,
+      .search-bar-button {
+        @apply z-1;
+      }
+
+      .input-x-button {
+        @apply flex;
+      }
+
+      .search-box {
+        @apply block;
+      }
+    }
+  }
 }
