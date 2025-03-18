@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@theme {
+  --category-button-notice-icon: url(/images/category-button/megaphone.svg);
+  --category-button-event-icon: url(/images/category-button/star.svg);
+  --color-jr-naver-yellow-200: #ffc82c;
+  --text-button-title-size: 1.0625rem;
+}
+
+@layer components {
+  .category-button-wrap {
+    .category-event-button {
+      @apply leading-12 col-span-full bg-jr-naver-yellow-200 text-white text-button-title-size;
+    }
+    .category-button {
+      @apply font-sans-eb text-center rounded-xl;
+    }
+    .empty-background-border {
+      @apply rounded-xl border-[#f3f4f7] border-[3px] bg-transparent;
+    }
+  }
+}
