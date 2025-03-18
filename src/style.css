@@ -1,1 +1,17 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --color-chaban-blue: #60a7e6;
+  --color-chaban-orange: #fab768;
+  --color-chaban-brown: #bd8f70;
+  --color-chaban-pink: #fd8ab1;
+}
+
+@layer components {
+  .cha-banner {
+    @apply aspect-[2/1] rounded-xl w-[308px] h-[142px] flex items-center justify-center lg:w-[286px] lg:h-[130px] xl:w-[388px] xl:h-[188px];
+  }
+  .cha-banner-img {
+    @apply aspect-video h-[174px] lg:h-[160px] xl:h-[218px];
+  }
+}
