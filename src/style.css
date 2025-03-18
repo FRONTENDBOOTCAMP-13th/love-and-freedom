@@ -9,5 +9,5 @@
   /* 커스텀 breakpoint */
   --breakpoint-ts: 41.6875rem;
 
-  --service-linkcard-dino-img: url(/images/dino-image2.png);
+  --service-linkcard-dino-img-big: url(/images/dino-image-big.png);
 }
