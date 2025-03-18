@@ -11,6 +11,7 @@ export default defineConfig({
         homeBanner: '/src/components/banner/home/home-banner.html',
         header: 'src/components/header/component-header.html',
         categoryButton: 'src/components/category-button/category-button.html',
+        plz: 'src/components/footer/footer.html',
       },
     },
   },
