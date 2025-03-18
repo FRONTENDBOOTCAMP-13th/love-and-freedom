@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import './../public/fonts/nanumsquareround.css';
+@import './components/category-button/category-button.css';
 @import './components/banner/home/home-banner.css';
 @import './components/banner/character/character-banner.css';
 
