@@ -1,5 +1,10 @@
 @import 'tailwindcss';
+
+@import './components/ttakji/ttakji.css';
+@import './components/ttakji-filter/ttakji-filter.css';
+@import './components/ttakji-category/ttakji-category.css';
 @import './../public/fonts/nanumsquareround.css';
+@import './components/category-button/category-button.css';
 @import './components/banner/home/home-banner.css';
 @import './components/banner/character/character-banner.css';
 @import './components/banner/category/category-banner.css';
@@ -51,7 +56,7 @@
 
 @layer components {
   header {
-    @apply px-7 pt-3 flex justify-between;
+    @apply flex justify-between pt-3 px-7;
     @apply md:w-[656px] md:px-0 md:mx-auto el:w-[1062px];
   }
 
@@ -62,7 +67,7 @@
     @apply md:focus-within:scale-110 md:focus-within:translate-y-1 md:focus:absolute md:focus:top-0 md:focus:left-0 md:items-start;
 
     .search-top {
-      @apply flex p-1 rounded-xl justify-end items-center;
+      @apply flex items-center justify-end p-1 rounded-xl;
       .header-search-input {
         @apply outline-0 bg-[#f1f4f7] pl-6 pr-10 w-[380px] h-10 text-(length:--header-search-bar-font-size) text-[#222] appearance-none hidden;
         @apply placeholder:text-[#cdcdcd] placeholder:text-(length:--header-search-bar-font-size);

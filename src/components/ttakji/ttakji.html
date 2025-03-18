@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>딱지</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="flex flex-col gap-5 p-5">
+    <h1>딱지 컴포넌트</h1>
+
+    <h2>캐릭터 딱지</h2>
+
+    <div class="w-fit h-fit p-1 border-[1px]">
+      <div class="ttakji-character">
+        <div class="image-jjim-wrapper">
+          <!-- 딱지 이미지 -->
+          <a href="#">
+            <img
+              src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+              alt=""
+              width="105px"
+              height="105px"
+              class="character-image"
+            />
+          </a>
+          <!-- 찜하기 버튼 -->
+          <button type="button" class="jjim-button"></button>
+        </div>
+        <!-- 딱지 이름 -->
+        <a href="#">
+          <p class="ttakji-title">
+            캐릭터 딱지 이름 [창의력 말놀이 리듬 동요] 노래로 배우는 가나다
+            가을엔 '가'
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <h2>오디오 동요 동화 딱지</h2>
+
+    <div class="p-1 w-fit h-fit border-[1px]">
+      <div class="ttakji-audio">
+        <div class="image-jjim-wrapper">
+          <!-- 딱지 이미지 -->
+          <a href="#">
+            <img
+              src="/public/images/ttakji/ttakji-audio/ttakji-audio.jpg"
+              alt=""
+              width="120px"
+              height="120px"
+              class="audio-image"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              class="cd-hole-svg"
+            >
+              <circle
+                cx="17"
+                cy="17"
+                r="13.5"
+                fill="white"
+                stroke="#D7D7D7"
+                stroke-width="7"
+              />
+            </svg>
+          </a>
+          <!-- 찜하기 버튼 -->
+          <button type="button" class="jjim-button"></button>
+        </div>
+        <!-- 딱지 이름 -->
+        <a href="/index.html">
+          <p class="audio-title">
+            오디오 딱지 이름 [창의력 말놀이 리듬 동요] 노래로 배우는 가나다
+            가을엔 '가'
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <h1 class="text-4xl"></h1>
+  </body>
+</html>
