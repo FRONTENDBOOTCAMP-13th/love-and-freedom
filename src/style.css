@@ -27,6 +27,11 @@
   --color-jr-naver-footer-bg-gray: #edeff3;
   --color-jr-naver-footer-darkgray: #504f58;
 
+  --text-jr-naver-link-title: 1.0625rem;
+  --text-jr-naver-clip-title: 1rem;
+  --text-jr-naver-video-card-title: 0.875rem;
+  --text-jr-naver-blind-title: 0.9375rem;
+
   --color-banner-blue: #d7f7f7;
   --color-banner-pink: #ffe6f0;
   --color-banner-yellow: #fefedd;
