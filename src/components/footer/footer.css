@@ -1,1 +1,92 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --jr-naver-text-gray: #8f8f8f;
+  --jr-naver-text-black-200: #333333;
+  --jr-naver-text-black-300: #222222;
+
+  --jr-naver-footer-text-gray: #8a909e;
+  --jr-naver-footer-bg-gray: #edeff3;
+  --jr-naver-footer-darkgray: #504f58;
+
+  /* 자간 */
+  --basics-letter-spacing: -0.1875rem;
+  /* 행간(아 이건 전부 달라서 잘 모르겠음..) */
+  --basics-line-height: 1.5;
+  /* footer 텍스트으으 */
+
+  /* footer 최소 width */
+  --footer-width: 17.5rem;
+
+  /* footer-padding */
+  /* 15px 였지만 16으로 간다 */
+  --footer-padding-top: 1rem;
+  --footer-padding-x: 1.875rem;
+  --footer-padding-bottom: 4.125rem;
+
+  /* footer web breakpoint 1100px */
+  --breakpoint-desktop: 68.75rem;
+}
+
+@layer components {
+  @media (hover: hover) and (pointer: fine) {
+    /* hover 가능한 경우 */
+    .footer-mobile {
+      display: none;
+    }
+  }
+  @media (hover: none) and (pointer: coarse) {
+    /* hover 불가능한 경우 */
+    .footer-mobile {
+      display: block;
+      /* background: rgba(125,135,156,0.2); */
+    }
+  }
+  .footer-icon-content {
+    @apply justify-center;
+  }
+  .footer {
+    @apply min-w-(--footer-width) bg-(--jr-naver-footer-bg-gray);
+  }
+
+  .footer-content-aria {
+    @apply text-center  pt-(--footer-padding-top) px-(--footer-padding-x) pb-(--footer-padding-bottom) text-(--jr-naver-footer-text-gray) md:pb-[60px] md:pt-[38px] desktop:grid desktop:grid-cols-2 desktop:grid-rows-[1fr_1fr_1fr] desktop:w-(--breakpoint-desktop) desktop:m-auto;
+  }
+
+  .footer-nav {
+    @apply mb-6 align-middle text-[13px] desktop:col-span-2 desktop:text-left;
+  }
+
+  .footer-nav span {
+    @apply inline-block mx-2 w-[1px] h-[10px] bg-(--jr-naver-footer-text-gray) opacity-30;
+  }
+
+  .footer-copy {
+    @apply desktop:flex desktop:justify-start  mb-[5px] text-[10px] font-bold md:text-[13px] desktop:row-[2_/_span_2] text-center;
+  }
+
+  .footer-copy-sub {
+    @apply text-center  mb-5 text-[10px] md:font-bold md:text-[13px] desktop:col-span-2;
+  }
+
+  .footer-icon-content {
+    @apply justify-center my-0 flex desktop:row-[2_/_span_1];
+  }
+
+  .qr-app-icon {
+    @apply relative text-(--jr-naver-text-black-300);
+  }
+
+  .qr-image {
+    @apply absolute bottom-0 right-0 hidden group-hover:block bg-white w-40 h-42 rounded-2xl py-5 px-3.5 shadow-[0_8px_16px_0_rgba(0,_0,_0,_0.06)];
+  }
+
+  .sns-icon{
+    @apply flex items-center;
+  }
+
+  .footer-mobile-content{
+    @apply  h-[104px] w-full bg-[url(/public/images/footer/footer-dark-bg.png)] bg-no-repeat bg-cover flex justify-center items-center pt-3.5;
+  }
+
+}
