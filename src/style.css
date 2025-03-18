@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 
 @theme {
+  --color-banner-blue: #d7f7f7;
+  --color-banner-pink: #ffe6f0;
+  --color-banner-yellow: #fefedd;
+  --color-banner-green: #eef9df;
   --breakpoint-el: 68.75rem; /* 1100px */
   --header-search-icon: url(/images/header/search-icon.png);
   --header-search-icon-pc: url(/images/header/search-icon-pc.png);
@@ -10,10 +14,19 @@
 }
 
 @layer components {
+  .home-banner {
+    @apply relative md:rounded-xl h-[102px] w-full;
+  }
+
+  .home-banner-img {
+    @apply h-[112px] object-contain absolute bottom-0 left-1/2 -translate-x-1/2;
+  }
+
   header {
     @apply px-7 pt-3 flex justify-between;
     @apply md:w-[656px] md:px-0 md:mx-auto el:w-[1062px];
   }
+
   .search-bar-wrap {
     @apply flex flex-col;
     @apply md:transition-[scale,_translate] md:duration-500;
@@ -29,56 +42,68 @@
         @apply md:hover:shadow-(--header-search-bar-hover-shadow) md:hover:transition-[box-shadow] md:hover:duration-500;
         @apply md:focus:shadow-(--header-search-bar-hover-shadow) md:focus:w-[508px] md:focus:transition-[width] md:focus:origin-left;
       }
+
       .search-bar-button {
         @apply w-5 h-5 bg-(image:--header-search-icon) bg-no-repeat bg-center;
         @apply md:rounded-r-full md:bg-(image:--header-search-icon-pc) md:w-11 md:h-10 md:bg-contain md:transition-[box-shadow] md:duration-500;
         @apply md:hover:shadow-(--header-search-bar-hover-shadow) md:hover:transition-[box-shadow] md:hover:duration-500;
         @apply md:focus:shadow-(--header-search-bar-hover-shadow);
       }
+
       .input-x-button {
         @apply w-[calc(44px_*_1.1)] h-[calc(44px_*_1.1)] ml-2 bg-white shadow-(--header-search-bar-hover-shadow) rounded-full justify-center items-center;
       }
     }
+
     .search-box {
       @apply bg-white h-[500px] /*w-full*/;
     }
   }
+
   .header-button-wrap {
     @apply hidden el:flex el:p-1;
+
     .header-login-button {
       @apply text-[14px] px-4 rounded-full bg-[#ffc82a] text-white h-10 block leading-10;
     }
+
     .header-naver-button {
       @apply ml-[10px] border-[2px] p-3 text-center rounded-full block border-[#f1f4f7] leading-10 w-10 h-10 transition-[width] duration-200;
       @apply before:bg-(image:--header-naver-icon) before:bg-cover before:h-3 before:block;
       @apply hover:w-23 hover:transition-[width] hover:duration-200;
     }
   }
+
   button {
     @apply hidden;
   }
+
   .search-box {
     @apply hidden;
   }
+
   header:focus-within {
-    /* @apply block; */
     h1 {
       @apply opacity-0 transition-[opacity];
     }
+
     .header-button-wrap {
       @apply hidden;
     }
+
     .search-bar-wrap:focus-within {
       @apply pt-4;
-      /* @apply w-full; */
+
       .header-search-input,
       .input-x-button,
       .search-bar-button {
         @apply z-1;
       }
+
       .input-x-button {
         @apply flex;
       }
+
       .search-box {
         @apply block;
       }
