@@ -1,6 +1,12 @@
 @import 'tailwindcss';
+@import './../public/fonts/nanumsquareround.css';
 
 @theme {
+  --font-*: initial;
+  --font-sans-b: 'NanumSquareRoundB', 'sans-serif';
+  --font-sans-eb: 'NanumSquareRoundEB', 'sans-serif';
+  --font-sans-l: 'NanumSquareRoundL', 'sans-serif';
+  --font-sans-r: 'NanumSquareRoundR', 'sans-serif';
   --color-jr-naver-yellow-100: #ffd037;
   --color-jr-naver-yellow-200: #ffc82c;
   --color-jr-naver-orange: #efab41;
