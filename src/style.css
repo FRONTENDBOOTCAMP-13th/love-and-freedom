@@ -42,6 +42,12 @@
   --color-banner-pink: #ffe6f0;
   --color-banner-yellow: #fefedd;
   --color-banner-green: #eef9df;
+
+  --color-chaban-blue: #60a7e6;
+  --color-chaban-orange: #fab768;
+  --color-chaban-brown: #bd8f70;
+  --color-chaban-pink: #fd8ab1;
+
   --breakpoint-el: 68.75rem; /* 1100px */
   --header-search-bar-font-size: 0.8125rem; /* 13px */
   --header-search-bar-hover-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
@@ -59,90 +65,98 @@
     @apply h-[112px] object-contain absolute bottom-0 left-1/2 -translate-x-1/2;
   }
 
-  header {
-    @apply px-7 pt-3 flex justify-between;
-    @apply md:w-[656px] md:px-0 md:mx-auto el:w-[1062px];
+  .cha-banner {
+    @apply aspect-[2/1] rounded-xl w-[308px] h-[142px] flex items-center justify-center lg:w-[286px] lg:h-[130px] xl:w-[388px] xl:h-[188px];
   }
 
-  .search-bar-wrap {
-    @apply flex flex-col;
-    @apply md:transition-[scale,_translate] md:duration-500;
-    @apply md:hover:scale-110 md:hover:translate-y-1 md:hover:transition-[scale,_translate] md:hover:duration-500;
-    @apply md:focus-within:scale-110 md:focus-within:translate-y-1 md:focus:absolute md:focus:top-0 md:focus:left-0 md:items-start;
+  .cha-banner-img {
+    @apply aspect-video h-[174px] lg:h-[160px] xl:h-[218px];
 
-    .search-top {
-      @apply flex p-1 rounded-xl justify-end items-center;
-      .header-search-input {
-        @apply outline-0 bg-[#f1f4f7] pl-6 pr-10 w-[380px] h-10 text-(length:--header-search-bar-font-size) text-[#222] appearance-none hidden;
-        @apply placeholder:text-[#cdcdcd] placeholder:text-(length:--header-search-bar-font-size);
-        @apply md:block md:appearance-auto md:rounded-l-full md:transition-[box-shadow,_width] md:duration-500;
-        @apply md:hover:shadow-(--header-search-bar-hover-shadow) md:hover:transition-[box-shadow] md:hover:duration-500;
-        @apply md:focus:shadow-(--header-search-bar-hover-shadow) md:focus:w-[508px] md:focus:transition-[width] md:focus:origin-left;
-      }
-
-      .search-bar-button {
-        @apply w-5 h-5 bg-(image:--header-search-icon) bg-no-repeat bg-center;
-        @apply md:rounded-r-full md:bg-(image:--header-search-icon-pc) md:w-11 md:h-10 md:bg-contain md:transition-[box-shadow] md:duration-500;
-        @apply md:hover:shadow-(--header-search-bar-hover-shadow) md:hover:transition-[box-shadow] md:hover:duration-500;
-        @apply md:focus:shadow-(--header-search-bar-hover-shadow);
-      }
-
-      .input-x-button {
-        @apply w-[calc(44px_*_1.1)] h-[calc(44px_*_1.1)] ml-2 bg-white shadow-(--header-search-bar-hover-shadow) rounded-full justify-center items-center;
-      }
+    header {
+      @apply px-7 pt-3 flex justify-between;
+      @apply md:w-[656px] md:px-0 md:mx-auto el:w-[1062px];
     }
 
-    .search-box {
-      @apply bg-white h-[500px] /*w-full*/;
-    }
-  }
+    .search-bar-wrap {
+      @apply flex flex-col;
+      @apply md:transition-[scale,_translate] md:duration-500;
+      @apply md:hover:scale-110 md:hover:translate-y-1 md:hover:transition-[scale,_translate] md:hover:duration-500;
+      @apply md:focus-within:scale-110 md:focus-within:translate-y-1 md:focus:absolute md:focus:top-0 md:focus:left-0 md:items-start;
 
-  .header-button-wrap {
-    @apply hidden el:flex el:p-1;
+      .search-top {
+        @apply flex p-1 rounded-xl justify-end items-center;
+        .header-search-input {
+          @apply outline-0 bg-[#f1f4f7] pl-6 pr-10 w-[380px] h-10 text-(length:--header-search-bar-font-size) text-[#222] appearance-none hidden;
+          @apply placeholder:text-[#cdcdcd] placeholder:text-(length:--header-search-bar-font-size);
+          @apply md:block md:appearance-auto md:rounded-l-full md:transition-[box-shadow,_width] md:duration-500;
+          @apply md:hover:shadow-(--header-search-bar-hover-shadow) md:hover:transition-[box-shadow] md:hover:duration-500;
+          @apply md:focus:shadow-(--header-search-bar-hover-shadow) md:focus:w-[508px] md:focus:transition-[width] md:focus:origin-left;
+        }
 
-    .header-login-button {
-      @apply text-[14px] px-4 rounded-full bg-[#ffc82a] text-white h-10 block leading-10;
-    }
+        .search-bar-button {
+          @apply w-5 h-5 bg-(image:--header-search-icon) bg-no-repeat bg-center;
+          @apply md:rounded-r-full md:bg-(image:--header-search-icon-pc) md:w-11 md:h-10 md:bg-contain md:transition-[box-shadow] md:duration-500;
+          @apply md:hover:shadow-(--header-search-bar-hover-shadow) md:hover:transition-[box-shadow] md:hover:duration-500;
+          @apply md:focus:shadow-(--header-search-bar-hover-shadow);
+        }
 
-    .header-naver-button {
-      @apply ml-[10px] border-[2px] p-3 text-center rounded-full block border-[#f1f4f7] leading-10 w-10 h-10 transition-[width] duration-200;
-      @apply before:bg-(image:--header-naver-icon) before:bg-cover before:h-3 before:block;
-      @apply hover:w-23 hover:transition-[width] hover:duration-200;
-    }
-  }
-
-  button {
-    @apply hidden;
-  }
-
-  .search-box {
-    @apply hidden;
-  }
-
-  header:focus-within {
-    h1 {
-      @apply opacity-0 transition-[opacity];
-    }
-
-    .header-button-wrap {
-      @apply hidden;
-    }
-
-    .search-bar-wrap:focus-within {
-      @apply pt-4;
-
-      .header-search-input,
-      .input-x-button,
-      .search-bar-button {
-        @apply z-1;
-      }
-
-      .input-x-button {
-        @apply flex;
+        .input-x-button {
+          @apply w-[calc(44px_*_1.1)] h-[calc(44px_*_1.1)] ml-2 bg-white shadow-(--header-search-bar-hover-shadow) rounded-full justify-center items-center;
+        }
       }
 
       .search-box {
-        @apply block;
+        @apply bg-white h-[500px] /*w-full*/;
+      }
+    }
+
+    .header-button-wrap {
+      @apply hidden el:flex el:p-1;
+
+      .header-login-button {
+        @apply text-[14px] px-4 rounded-full bg-[#ffc82a] text-white h-10 block leading-10;
+      }
+
+      .header-naver-button {
+        @apply ml-[10px] border-[2px] p-3 text-center rounded-full block border-[#f1f4f7] leading-10 w-10 h-10 transition-[width] duration-200;
+        @apply before:bg-(image:--header-naver-icon) before:bg-cover before:h-3 before:block;
+        @apply hover:w-23 hover:transition-[width] hover:duration-200;
+      }
+    }
+
+    button {
+      @apply hidden;
+    }
+
+    .search-box {
+      @apply hidden;
+    }
+
+    header:focus-within {
+      h1 {
+        @apply opacity-0 transition-[opacity];
+      }
+
+      .header-button-wrap {
+        @apply hidden;
+      }
+
+      .search-bar-wrap:focus-within {
+        @apply pt-4;
+
+        .header-search-input,
+        .input-x-button,
+        .search-bar-button {
+          @apply z-1;
+        }
+
+        .input-x-button {
+          @apply flex;
+        }
+
+        .search-box {
+          @apply block;
+        }
       }
     }
   }

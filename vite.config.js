@@ -7,6 +7,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: 'index.html', // 기본 index.html
+        chaBanner: '/src/components/banner/character-banner.html',
         homeBanner: '/src/components/banner/home-banner.html',
         header: 'src/components/header/component-header.html',
       },
