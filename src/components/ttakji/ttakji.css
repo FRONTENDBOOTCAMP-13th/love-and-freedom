@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@layer components {
+  .ttakji-character {
+    @apply w-[105px] h-[131px] flex flex-col items-center gap-[8px];
+  }
+
+  .image-jjim-wrapper {
+    @apply relative;
+
+    .character-image {
+      @apply bg-yellow-400 rounded-full;
+    }
+
+    .audio-image {
+      @apply rounded-full;
+    }
+
+    .jjim-button {
+      @apply absolute bottom-0 right-0 cursor-pointer;
+    }
+  }
+
+  .ttakji-title {
+    @apply text-sm text-center line-clamp-1;
+  }
+
+  .ttakji-audio {
+    @apply w-[120px] h-[163px] flex flex-col align-middle gap-[8px];
+  }
+
+  .cd-hole-svg {
+    @apply absolute top-[44px] left-[44px];
+  }
+
+  .audio-title {
+    @apply text-sm text-center line-clamp-2 leading-[18px];
+  }
+}
+
+h1 {
+  @apply text-4xl font-extrabold;
+}
+
+h2 {
+  @apply text-2xl font-bold;
+}
