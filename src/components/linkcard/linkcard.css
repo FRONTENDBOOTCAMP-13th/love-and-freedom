@@ -6,4 +6,6 @@
   /* 서비스 바로가기 박스 여백 */
   --linkcard-box-spacing339: 339px;
   --linkcard-box-spacing240: 240px;
+  /* 서비스 바로가기 이미지 */
+  --service-linkcard-dino-img-big: url(/images/linkcard/dino-image-big.png);
 }
