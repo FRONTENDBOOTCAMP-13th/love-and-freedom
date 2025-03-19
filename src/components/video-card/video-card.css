@@ -7,10 +7,29 @@
 }
 
 @layer components {
+  .thumb {
+    @apply aspect-video rounded-xl;
+  }
+  .title-wrap {
+    @apply pt-[10px] pr-[49px];
+  }
+  .title {
+    @apply truncate block text-jr-naver-text-black-300 text-[16px] font-sans-r font-bold;
+  }
+  .channel-title {
+    @apply block overflow-hidden whitespace-nowrap text-channel text-[14px] font-sans-l font-medium;
+  }
+
   .label {
     @apply w-[60px] h-[30px] bg-jr-naver-green-200 py-[6px] px-[15px] rounded-tl-xl rounded-br-xl flex justify-center items-center;
   }
   .label-text {
     @apply text-[14px] font-sans-r text-white font-extrabold;
+  }
+  .run-time {
+    @apply bg-[rgba(0,0,0,0.4)] py-[3px] px-[6px] w-[44px] flex justify-center items-center rounded-sm;
+  }
+  .run-time-text {
+    @apply text-[12px] font-sans-r text-white font-bold;
   }
 }
