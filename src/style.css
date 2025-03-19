@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
+
 @import './components/ttakji/ttakji.css';
 @import './components/ttakji-filter/ttakji-filter.css';
 @import './components/ttakji-category/ttakji-category.css';
@@ -52,6 +53,16 @@
   --header-search-icon: url(/images/header/search-icon.png);
   --header-search-icon-pc: url(/images/header/search-icon-pc.png);
   --header-naver-icon: url(/images/header/header-naver-icon.png);
+  
+    /* 서비스 바로가기 색상 */
+  --service-linkcard-main-color: #3d75de;
+  --service-linkcard-sub-color2: #e7faff;
+  --service-linkcard-sub-color3: #4584fc;
+
+  /* 커스텀 breakpoint */
+  --breakpoint-ts: 41.6875rem;
+
+  --service-linkcard-dino-img-big: url(/images/dino-image-big.png);
 }
 
 @layer components {

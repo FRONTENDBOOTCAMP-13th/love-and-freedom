@@ -7,6 +7,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: 'index.html', // 기본 index.html
+        
         chaBanner: '/src/components/banner/character/character-banner.html',
         homeBanner: '/src/components/banner/home/home-banner.html',
         categoryBanner: '/src/components/banner/category/category-banner.html',
@@ -17,6 +18,9 @@ export default defineConfig({
         ttakjiFilter: 'src/components/ttakji-filter/ttakji-filter.html',
 
         plz: 'src/components/footer/footer.html',
+        feature/component-linkcard
+        
+        
       },
     },
   },
