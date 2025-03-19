@@ -19,6 +19,8 @@ export default defineConfig({
         home: 'src/pages/home/home.html',
         footer: 'src/components/footer/footer.html',
         baseLayout: 'src/components/base-layout/base-layout.html',
+        videoCard: 'src/components/video-card/video-card.html',
+
       },
     },
   },

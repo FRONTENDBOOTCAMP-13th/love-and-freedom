@@ -11,7 +11,9 @@
 @import './components/banner/home/home-banner.css';
 @import './components/banner/character/character-banner.css';
 @import './components/banner/category/category-banner.css';
+@import './components/video-card/video-card.css';
 @import './components/base-layout/base-layout.css';
+
 
 @theme {
   --font-*: initial;
