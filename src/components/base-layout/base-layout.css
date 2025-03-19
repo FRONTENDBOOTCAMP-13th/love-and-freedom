@@ -5,8 +5,10 @@
 /* .header-wrap > header */
 /* .nav-wrap > nav */
 /* main > .card-component-wrap > ul > li > 카드 */
-/* main > .imsy > 배너레이아웃 */
-/* main > .imsy > 딱지레이아웃 */
+/* main > .imsy.banner > 배너 레이아웃 */
+/* main > .imsy.ttakji > 딱지 레이아웃 */
+/* main > .imsy.ttakji-filter > 딱지 필터 레이아웃 */
+/* main > .imsy.many-ttakji > 엄청 많은 딱지 레이아웃 */
 
 .wrap {
   @apply grid grid-cols-[[full-start]_20px_[content-start]_1fr_[content-end]_20px_[full-end]];
@@ -69,7 +71,6 @@ main {
 /* 아래 코드 외에는 크기를 준 코드가 없습니다. */
 .wrap {
   .header-wrap {
-    @apply bg-red-300 h-20;
   }
   .nav-wrap {
     @apply bg-yellow-300 h-20;
@@ -78,7 +79,6 @@ main {
     @apply bg-green-300;
   }
   .footer-wrap {
-    @apply bg-blue-300 h-20;
   }
 }
 
