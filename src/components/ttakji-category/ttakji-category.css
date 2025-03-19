@@ -11,6 +11,6 @@
   }
 
   .ttakji-category-title {
-    @apply h-[58px] flex items-center justify-center font-extrabold text-white;
+    @apply font-sans-eb h-[58px] flex items-center justify-center text-white;
   }
 }
