@@ -1,5 +1,13 @@
 @import 'tailwindcss';
 
+/* grid로 구현해서 부모자식체계를 망가뜨리면 subgrid가 동작하지 않을 수 있습니다. */
+/* 아래 마크업 구조를 설명했습니다. */
+/* .header-wrap > header */
+/* .nav-wrap > nav */
+/* main > .card-component-wrap > ul > li > 카드 */
+/* main > .imsy > 배너레이아웃 */
+/* main > .imsy > 딱지레이아웃 */
+
 .wrap {
   @apply grid grid-cols-[[full-start]_20px_[content-start]_1fr_[content-end]_20px_[full-end]];
   @apply ts:grid-cols-[[full-start]_20px_[content-start]_1fr_1fr_[content-end]_20px_[full-end]];
@@ -43,12 +51,22 @@ main {
       }
     }
   }
+
+  /* 핫카드가 들어있는 카드 레이아웃은 핫카드 만들어질때쯤 추가할 예정입니다. */
+  .card-component-wrap.withhotcard {
+  }
+  /* 애니메이션이 들어갈 div입니다. absolute fixed 등을 추가할 예정입니다 */
+  .background-animation-wrap {
+  }
 }
 
+/* 딱지, 배너 들어갈 section입니다. 아직 이름을 안정해줬어요 */
 .imsy {
   @apply col-span-full;
 }
 
+/* 시각적으로 보기 위한 색/크기 입니다 */
+/* 아래 코드 외에는 크기를 준 코드가 없습니다. */
 .wrap {
   .header-wrap {
     @apply bg-red-300 h-20;
