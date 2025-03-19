@@ -18,6 +18,7 @@ export default defineConfig({
         ttakjiFilter: 'src/components/ttakji-filter/ttakji-filter.html',
         home: 'src/pages/home/home.html',
         plz: 'src/components/footer/footer.html',
+        baseLayout: 'src/components/base-layout/base-layout.html',
       },
     },
   },
