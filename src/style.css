@@ -8,6 +8,8 @@
 @import './components/banner/home/home-banner.css';
 @import './components/banner/character/character-banner.css';
 @import './components/banner/category/category-banner.css';
+@import './components/base-layout/base-layout.css';
+/* home.css는 지울 예정 */
 @import './pages/home/home.css';
 
 @theme {
