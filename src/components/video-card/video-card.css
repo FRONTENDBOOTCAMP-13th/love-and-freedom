@@ -14,10 +14,10 @@
     @apply pt-[10px] pr-[49px];
 
     .title {
-      @apply truncate block text-jr-naver-text-black-300 text-[16px] font-sans-r font-bold;
+      @apply truncate block text-jr-naver-text-black-300 text-[16px] font-sans-r font-medium;
     }
     .channel-title {
-      @apply block overflow-hidden whitespace-nowrap text-channel text-[14px] font-sans-l font-medium;
+      @apply block overflow-hidden whitespace-nowrap text-channel text-[14px] font-sans-r font-light;
     }
   }
 
