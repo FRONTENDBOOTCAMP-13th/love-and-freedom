@@ -1,10 +1,12 @@
 @import 'tailwindcss';
 
+
+@import './../public/fonts/nanumsquareround.css';
 @import './components/header/header.css';
+@import './components/footer/footer.css';
 @import './components/ttakji/ttakji.css';
 @import './components/ttakji-filter/ttakji-filter.css';
 @import './components/ttakji-category/ttakji-category.css';
-@import './../public/fonts/nanumsquareround.css';
 @import './components/category-button/category-button.css';
 @import './components/banner/home/home-banner.css';
 @import './components/banner/character/character-banner.css';

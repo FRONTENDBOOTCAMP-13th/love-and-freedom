@@ -71,7 +71,6 @@ main {
 /* 아래 코드 외에는 크기를 준 코드가 없습니다. */
 .wrap {
   .header-wrap {
-    @apply bg-red-300 h-20;
   }
   .nav-wrap {
     @apply bg-yellow-300 h-20;
@@ -80,7 +79,6 @@ main {
     @apply bg-green-300;
   }
   .footer-wrap {
-    @apply bg-blue-300 h-20;
   }
 }
 
