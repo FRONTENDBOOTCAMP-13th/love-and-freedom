@@ -16,11 +16,8 @@ export default defineConfig({
         ttakji: 'src/components/ttakji/ttakji.html',
         ttakjiCategory: 'src/components/ttakji-category.html',
         ttakjiFilter: 'src/components/ttakji-filter/ttakji-filter.html',
-
         plz: 'src/components/footer/footer.html',
-        feature/component-linkcard
-        
-        
+        linkcard 'src/components/linkcard/linkard.html',
       },
     },
   },
