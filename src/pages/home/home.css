@@ -1,16 +1,50 @@
 @import 'tailwindcss';
 
 .wrap {
+  @apply grid grid-cols-[[full-start]_20px_[content-start]_1fr_[content-end]_20px_[full-end]];
+  @apply ts:grid-cols-[[full-start]_20px_[content-start]_1fr_1fr_[content-end]_20px_[full-end]];
+  @apply md:grid-cols-[[full-start]_1fr_[content-start]_repeat(2,_calc(742px_/_2))_[content-end]_1fr_[full-end]];
+  @apply lg:grid-cols-[[full-start]_1fr_[content-start]_repeat(3,_calc(894px_/_3))_[content-end]_1fr_[full-end]];
+  @apply xl:grid-cols-[[full-start]_1fr_[content-start]_repeat(4,_calc(1200px_/_4))_[content-end]_1fr_[full-end]];
+
   .header-wrap {
-    @apply bg-red-300 h-20;
+    @apply col-[full];
   }
   .nav-wrap {
-    @apply bg-yellow-300 h-20;
+    @apply col-[full];
   }
   main {
-    @apply bg-green-300 h-80;
+    @apply grid grid-cols-subgrid col-[content] gap-y-8 lg:gap-y-[50px];
   }
   .footer-wrap {
-    @apply bg-blue-300 h-20;
+    @apply col-[full];
   }
+}
+main {
+  @apply px-5 box-border pb-10 lg:pb-[296px];
+  .card-component-wrap {
+    @apply grid grid-cols-subgrid col-span-full ts:gap-x-[14px] gap-y-[20px] lg:gap-x-[20px] lg:gap-y-[16px];
+    > ul {
+      @apply contents;
+      > li {
+        @apply col-span-1;
+      }
+      > li:nth-child(7),
+      > li:nth-child(8) {
+        @apply hidden xl:block;
+      }
+    }
+  }
+  .card-component-wrap:last-child {
+    > ul {
+      > li:nth-child(7),
+      > li:nth-child(8) {
+        @apply block;
+      }
+    }
+  }
+}
+
+.imsy {
+  @apply col-span-full;
 }
