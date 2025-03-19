@@ -8,6 +8,7 @@
 @import './components/banner/home/home-banner.css';
 @import './components/banner/character/character-banner.css';
 @import './components/banner/category/category-banner.css';
+@import './pages/home/home.css';
 
 @theme {
   --font-*: initial;
