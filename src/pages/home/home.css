@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+.wrap {
+  .header-wrap {
+    @apply bg-red-300 h-20;
+  }
+  .nav-wrap {
+    @apply bg-yellow-300 h-20;
+  }
+  main {
+    @apply bg-green-300 h-80;
+  }
+  .footer-wrap {
+    @apply bg-blue-300 h-20;
+  }
+}
