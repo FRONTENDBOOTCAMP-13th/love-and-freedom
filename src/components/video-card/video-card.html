@@ -6,7 +6,100 @@
     <script type="module" src="/src/main.js"></script>
     <title>video-card</title>
   </head>
-  <body>
-    <h1 class="font-bold m-4">video-card</h1>
+  <body class="m-4">
+    <h1 class="font-bold mb-2">video-card</h1>
+    <!-- w 임시값 -->
+    <div class="w-xl hover:cursor">
+      <a
+        href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+        target="_blank"
+      >
+        <img
+          src="/public/images/video-card/1670390202887.jpg"
+          alt="비디오 카드 썸네일-영상 바로가기 링크"
+          class="aspect-video rounded-xl"
+        />
+      </a>
+      <div class="pt-[10px] pr-[49px]">
+        <!-- 동영상 제목 -->
+        <a
+          href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+          target="_blank"
+          class="truncate block text-jr-naver-text-black-300 text-[16px] font-sans-r font-bold"
+          >어린이 트로트 ♬ 하트하트 앙! 어린이 트로트 ♬ 하트하트 앙! 어린이
+          트로트 ♬ 하트하트 앙!</a
+        >
+        <!-- 채널 제목 -->
+        <a
+          href="https://jr.naver.com/song/boingtv_song"
+          target="_blank"
+          class="block overflow-hidden whitespace-nowrap text-channel text-[14px] font-sans-l font-medium"
+          >똘똘이TV 동요
+        </a>
+      </div>
+    </div>
+
+    <!-- 옵션 -->
+    <div class="flex my-4 gap-2">
+      <div class="label">
+        <p class="label-text">추천</p>
+      </div>
+      <div class="label">
+        <p class="label-text">NEW</p>
+      </div>
+    </div>
+
+    <!-- 러닝 타임 -->
+    <div
+      class="run-time bg-[rgba(0,0,0,0.4)] py-[3px] px-[6px] w-[44px] flex justify-center items-center rounded-sm"
+    >
+      <p class="text-[12px] font-sans-r text-white">11:11</p>
+    </div>
+
+    <!-- 비디오 카드 컴포넌트 -->
+    <h1 class="bg-amber-200 mt-20 mb-5">비디오 카드 컴포넌트</h1>
+    <div class="w-sm hover:cursor">
+      <a
+        href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+        target="_blank"
+        class="relative"
+      >
+        <div class="label absolute">
+          <p class="label-text">추천</p>
+        </div>
+        <img
+          src="/public/images/video-card/1670390202887.jpg"
+          alt="비디오 카드 썸네일-영상 바로가기 링크"
+          class="aspect-video rounded-xl"
+        />
+        <div
+          class="run-time absolute right-[2.5%] bottom-[5%] bg-[rgba(0,0,0,0.4)] py-[3px] px-[6px] w-[44px] flex justify-center items-center rounded-sm"
+        >
+          <p class="text-[12px] font-sans-r text-white">11:11</p>
+        </div>
+      </a>
+
+      <div class="relative pt-[10px] pr-[49px]">
+        <!-- 동영상 제목 -->
+        <a
+          href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+          target="_blank"
+          class="truncate block text-jr-naver-text-black-300 text-[16px] font-sans-r font-bold"
+          >어린이 트로트 ♬ 하트하트 앙! 어린이 트로트 ♬ 하트하트 앙! 어린이
+          트로트 ♬ 하트하트 앙!</a
+        >
+        <!-- 채널 제목 -->
+        <a
+          href="https://jr.naver.com/song/boingtv_song"
+          target="_blank"
+          class="block overflow-hidden whitespace-nowrap text-channel text-[14px] font-sans-l font-medium"
+          >똘똘이TV 동요
+        </a>
+        <!-- 임시 찜 자리 -->
+        <div
+          class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+        ></div>
+      </div>
+    </div>
   </body>
 </html>
