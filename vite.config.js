@@ -20,7 +20,7 @@ export default defineConfig({
         footer: 'src/components/footer/footer.html',
         baseLayout: 'src/components/base-layout/base-layout.html',
         videoCard: 'src/components/video-card/video-card.html',
-
+        topLink: 'src/components/top-link/toplink-html',
       },
     },
   },
