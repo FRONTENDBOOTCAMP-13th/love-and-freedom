@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/icons/jrnaver.webp" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundEB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundR.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundL.woff2"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.js"></script>
+    <title>쥬니어 네이버 - 딱지 레이아웃</title>
+  </head>
+  <body class="flex flex-col gap-5">
+    <h1 class="font-sans-eb text-4xl">딱지 레이아웃</h1>
+
+    <hr />
+
+    <h2 class="font-sans-b text-2xl">인기 캐릭터 레이아웃</h2>
+
+    <div class="flex flex-col items-center bg-gray-500">
+      <div class="layout-ttakji bg-pink-300">
+        <h3 class="layout-ttakji-title">인기 캐릭터</h3>
+
+        <ul class="bg-green-400">
+          <li class="list-item bg-red-400"></li>
+
+          <li class="list-item bg-blue-400"></li>
+
+          <li class="list-item bg-red-400"></li>
+
+          <li class="list-item bg-blue-400"></li>
+
+          <li class="list-item bg-red-400"></li>
+
+          <li class="list-item bg-blue-400"></li>
+
+          <li class="list-item bg-red-400 max-lg:last:hidden"></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+  </body>
+</html>

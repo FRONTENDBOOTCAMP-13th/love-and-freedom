@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@layer components {
+  .li-item {
+    @apply border-2 hover:bg-amber-500 w-[105px] h-[131px];
+  }
+
+  .layout-ttakji-title {
+    @apply text-[17px] font-sans-eb mb-3;
+    @apply lg:text-[26px] lg:text-center;
+  }
+
+  .layout-ttakji {
+    @apply px-[15px] w-full;
+    @apply ts:px-5 ts:max-w-[768px] ts:min-w-[666px];
+    @apply lg:max-w-[914px] lg:items-center;
+
+    ul {
+      @apply flex flex-wrap gap-x-[5px] max-w-[666px];
+      @apply ts:max-w-[768px] ts:gap-x-[10px] ts:flex-nowrap;
+      @apply lg:gap-x-0 lg:justify-around lg:max-w-none lg:gap-x-[26px];
+    }
+
+    .list-item {
+      @apply min-w-[calc(33.33%-5px)] aspect-[105/131];
+      @apply grow shrink;
+      @apply border-1;
+      @apply ts:min-w-0;
+    }
+  }
+}
