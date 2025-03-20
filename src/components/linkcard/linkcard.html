@@ -8,9 +8,89 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <!-- 전체 부모 -->
+    <!-- 퀴즈왕 전체 부모 -->
     <div
-      class="aspect-[16/9] min-h-[255px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg bg-(--service-linkcard-main-color) flex justify-center items-center relative z-0"
+      class="relative aspect-[3/2] min-h-[220px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg z-0 bg-(--service-linkcard-sub-color7)"
+    >
+      <!-- 퀴즈왕 링크 -->
+      <a
+        class="absolute inset-0 z-10"
+        href="/"
+        target="_blank"
+        aria-label="퀴즈왕 이동"
+      >
+
+      <!-- 컨텐츠 영역 부모 -->
+      <div class="relative w-full h-full">
+        <!-- 풀잎배경 이미지 -->
+        <img
+          class="w-full right-0 bottom-0 block object-contain ts:object-cover m-auto absolute z-0"
+          src="/public/images/linkcard/quiz-king-bg.png"
+          alt="풀잎 배경"
+        />
+
+        <!-- 퀴즈왕 동물(학)이미지 조부모(박스 옮기기용) -->
+        <div class="absolute right-0 flex justify-end items-center h-full">
+          <!-- 퀴즈왕 동물(학)이미지 부모 -->
+          <div
+            class="z-30 min-w-[50%] max-w-[50%] flex justify-center items-center relative"
+          >
+            <!-- 학의 이미지 -->
+            <img
+              class="h-full"
+              src="/public/images/linkcard/quiz-king-img.png"
+              alt="학 두마리 이미지"
+            />
+            <!-- 버튼 -->
+            <button
+              class="rounded-full bg-amber-300 w-14 h-14 absolute top-[50%] z-10"
+            >
+              </audio>
+              <div class="text-white leading-[50%]">
+                <span
+                  class="inline-block border-2 h-[14px] mr-[1px] mb-1 rounded-[10px]"
+                ></span>
+                <span
+                  class="inline-block border-2 h-[20px] mr-[1px] rounded-[10px]"
+                ></span>
+                <span
+                  class="inline-block border-2 h-[24px] mr-[1px] rounded-[10px]"
+                ></span>
+                <span
+                  class="inline-block border-2 h-[18px] mb-1 rounded-[10px]"
+                ></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </a>
+      </div>
+
+      <!-- 퀴즈왕 바로가기 버튼 -->
+      <a
+        class="block bg-(--service-linkcard-sub-color6) rounded-[49px] leading-[37px] text-[15px] text-white font-extrabold absolute top-3 left-3 z-20"
+        href="/"
+        target="_blank"
+        aria-label="퀴즈왕 바로가기 이동"
+        >퀴즈왕&#62;</a
+      >
+    </div>
+
+    <!-- 6-7세 코딩 전체 부모 -->
+    <div class="w-[244px] h-full">
+      <a href="/" aria-label="6-7세 이동" target="_blank">
+        <img
+          target="_blank"
+          class="hidden lg:block rounded-lg"
+          src="/public/images/linkcard/coding-img.png"
+          alt="6-7세 코딩"
+        />
+      </a>
+    </div>
+
+    <!-- 서비스 바로가기 전체 부모 -->
+    <div
+      class="aspect-[3/2] min-h-[220px] w-full ts:w-[357px] lg:w-[244px] rounded-lg bg-(--service-linkcard-main-color) flex justify-center items-center relative z-0"
     >
       <!-- 컨텐츠를 감싸는 조부모 -->
       <div class="flex flex-row-reverse">
@@ -26,7 +106,9 @@
           <!-- 텍스트,버튼영역 부모영역 -->
           <div class="whitespace-nowrap service-text-box font-extrabold z-2">
             <!-- 서비스 바로가기 영역 -->
-            <span class="text-[23px] text-white font-extrabold md:text-[21px]">
+            <span
+              class="text-[23px] text-white hite font-extrabold md:text-[21px]"
+            >
               서비스 바로가기
             </span>
 
@@ -36,14 +118,13 @@
             </p>
 
             <!-- 쥬니버스쿨 버튼영역 -->
-            <div
-              class="inline-block service-linkcard-btn pr-[11px] pb-[13px] lg:w-"
-            >
+            <div class="service-linkcard-btn inline-block pr-[11px] pb-[13px]">
               <a
                 type="juniver-school"
                 class="inline-block service-button bg-white h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px] lg:w-[72px]"
                 href="https://mkt.naver.com/p1/jrschool"
                 target="_blank"
+                aria-label="쥬니버스쿨 버튼 이동"
                 >쥬니버스쿨&#62;</a
               >
             </div>
@@ -55,6 +136,7 @@
                 class="inline-block service-button bg-(--service-linkcard-sub-color2) h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px]"
                 href="https://jr.naver.com/theme"
                 target="_blank"
+                aria-label="테마 버튼 이동"
                 >테마&#62;</a
               >
             </div>
@@ -66,6 +148,7 @@
                 class="inline-block service-button bg-(--service-linkcard-sub-color2) h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px]"
                 href="https://jr.naver.com/nuri/nuri_march_3"
                 target="_blank"
+                aria-label="서비스-누리과정 버튼 이동"
               >
                 누리과정&#62;
               </a>
@@ -73,6 +156,131 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- 우리반 새로운 선생님 전체 부모 -->
+    <div
+      class="relative aspect-[3/2] min-h-[220px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg z-0 bg-(--service-linkcard-sub-color4) overflow-hidden"
+    >
+      <a
+        class="block bg-(--service-linkcard-sub-color5) h-[37px] rounded-[49px] leading-[37px] text-[15px] text-white font-extrabold absolute top-3 left-3"
+        type="new-teacher-nuri-course"
+        target="_blank"
+        href="https://jr.naver.com/s/nuri_march_3/view?contentsNo=169771"
+        aria-label="선생님-누리과정 버튼 이동"
+        >누리과정&#62;</a
+      >
+      <a class="block w-full h-full" href="/ " target="_blank">
+        <!-- 선생님 이미지영역 -->
+        <img
+          class="h-full block object-cover m-auto lg:object-contain z-[-1]"
+          src="/public/images/linkcard/new-teacher.png"
+          alt="쥬니스와 선생님 이미지"
+        />
+      </a>
+    </div>
+
+    <!-- 게임 (도전! 햄버거요리사) 전체부모 -->
+    <div
+      class="relative aspect-[3/2] min-h-[220px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg z-0 bg-(--service-linkcard-sub-color9) overflow-hidden"
+    >
+      <!-- 배경 영역 링크 -->
+      <a
+        href="https://static-jr.pstatic.net/contents/game/burgerMaster/20201112/index.html?web"
+        class="absolute inset-0 z-50"
+        aria-label="도전 햄버거요리사 게임 이동"
+      ></a>
+
+      <div class="absolute bottom-0 w-full h-[50px] z-10 text-white">
+        <!-- 게임 (도전! 햄버거요리사) 타이틀 -->
+        <strong
+          class="bg-(--service-linkcard-sub-color8) block h-auto leading-[50px] pl-4"
+          >도전! 햄버거 요리사</strong
+        >
+      </div>
+      <!-- 게임 (도전! 햄버거요리사) 터치팡팡 바로가기 버튼 -->
+      <a
+        class="block bg-(--service-linkcard-sub-color8) rounded-[49px] leading-[37px] text-[15px] text-white font-extrabold absolute top-3 left-3 z-3"
+        type="new-teacher-nuri-course"
+        target="_blank"
+        href="/"
+        aria-label="게임- 햄버거 요리사 바로가기 이동"
+        >터치팡팡&#62;</a
+      >
+      <a
+        class="block w-full h-full"
+        href="/ "
+        target="_blank"
+        aria-label="게임- 햄버거 요리사 이동"
+      >
+        <!-- 게임 (도전! 햄버거요리사) 이미지영역 -->
+        <img
+          class="h-full block object-cover mt lg:object-contain z-[-1] scale-100"
+          src="/public/images/linkcard/hamburger-game-bg.jpg"
+          alt="햄버거를 들고 있는 쥬니스 이미지"
+        />
+      </a>
+    </div>
+
+    <!-- 테마 (동요: 바른 마음,좋은 습관!) 전체부모 -->
+    <div
+      class="relative aspect-[3/2] min-h-[220px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg z-0 bg-(--service-linkcard-sub-color11) overflow-hidden"
+    >
+      <!-- 배경 영역 링크 -->
+      <a
+        href="https://jr.naver.com/t/living_song/view?contentsNo=106597"
+        class="absolute inset-0 z-50"
+        aria-label="동요 테마 이동"
+      ></a>
+
+      <div
+        class="absolute bottom-0 w-full h-[46%] z-20 text-white bg-(image:--service-linkcard-dongyo-yoso)"
+      >
+        <!-- 아이콘 및 텍스트 영역 -->
+        <div class="absolute bottom-4 left-3">
+          <a
+            href="https://jr.naver.com/t/living_song/view?contentsNo=106597"
+            class="flex items-center rounded-md w-max"
+          >
+            <!-- 플레이 아이콘 -->
+            <img
+              class="w-4 pr-"
+              src="/public/images/linkcard/dongyo-yoso-icon.png"
+              alt="플레이 아이콘"
+            />
+            <p class="pr-2">13</p>
+
+            <!-- 시간 아이콘 -->
+            <img
+              class="w-4"
+              src="/public/images/linkcard/dongyo-yoso-icon2.png"
+              alt="시간 아이콘"
+            />
+            <p>17분</p>
+          </a>
+        </div>
+
+        <strong class="absolute bottom-10 left-3"
+          >바른마음, 좋은 습관! 노래로 배워요</strong
+        >
+      </div>
+
+      <!-- 테마 바로가기 버튼 -->
+      <a
+        class="block bg-(--service-linkcard-sub-color10) rounded-[49px] leading-[37px] text-[15px] text-white font-extrabold absolute top-3 left-3 z-30"
+        target="_blank"
+        href="/"
+        aria-label="테마 바로가기 이동"
+      >
+        테마&#62;
+      </a>
+
+      <!-- 테마 이미지 -->
+      <img
+        class="h-full block object-cover lg:object-contain z-[-1]"
+        src="/public/images/linkcard/dongyo-bg.png"
+        alt="어린이 이미지"
+      />
     </div>
   </body>
 </html>
