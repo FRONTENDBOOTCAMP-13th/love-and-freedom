@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+@layer components {
+  .modal-title {
+    @apply font-sans-eb text-jr-naver-orange-200 text-[18px];
+    @apply md:text-[28px];
+  }
+
+  .modal-content {
+    @apply font-sans-b text-[14px];
+    @apply md:text-[18px];
+  }
+
+  .modal-emphasis {
+    @apply not-italic underline font-sans-eb;
+  }
+
+  .modal-note {
+    @apply text-jr-naver-text-gray text-[12px] font-sans-b leading-[15px];
+    @apply md:text-[16px] md:leading-normal;
+  }
+
+  .modal-link-button {
+    @apply px-4 py-3 w-fit h-fit;
+    @apply rounded-[8px] bg-jr-naver-orange-200;
+    @apply text-white font-sans-eb;
+    @apply cursor-pointer;
+    @apply md:text-[18px] md:font-sans-eb;
+  }
+
+  .modal-dialog {
+    @apply w-[276px] h-[327px] rounded-[12px] shadow-lg bg-white;
+    @apply md:w-[466px] md:h-[491px];
+
+    @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    @apply text-center leading-[18px];
+    @apply md:leading-[25px];
+  }
+
+  .modal-layout {
+    @apply h-full flex flex-col;
+  }
+
+  .contents-layout {
+    @apply pt-8 pb-6 flex flex-col justify-center items-center gap-4;
+    @apply md:py-10 md:gap-8;
+  }
+
+  .buttons-layout {
+    @apply border-t border-t-jr-naver-gray-200 flex divide-x divide-jr-naver-gray-200 h-full;
+  }
+
+  .modal-button {
+    @apply cursor-pointer;
+    @apply w-1/2;
+    @apply text-[13px] md:font-sans-eb;
+    @apply md:text-[20px];
+  }
+}

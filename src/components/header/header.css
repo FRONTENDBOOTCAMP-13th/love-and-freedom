@@ -1,90 +1,12 @@
 @import 'tailwindcss';
 
-@import './components/ttakji/ttakji.css';
-@import './components/ttakji-filter/ttakji-filter.css';
-@import './components/ttakji-category/ttakji-category.css';
-@import './components/category-button/category-button.css';
-@import './components/banner/home/home-banner.css';
-@import './components/banner/character/character-banner.css';
-@import './components/banner/category/category-banner.css';
-@import './components/notice-modal/notice-modal.css';
-@import './components/video-card/video-card.css';
-@import './components/base-layout/base-layout.css';
-@import './components/top-link/top-link.css';
-@import './../public/fonts/nanumsquareround.css';
-@import './components/header/header.css';
-@import './components/footer/footer.css';
-
 @theme {
-  --font-*: initial;
-  --font-sans-b: 'NanumSquareRoundB', 'sans-serif';
-  --font-sans-eb: 'NanumSquareRoundEB', 'sans-serif';
-  --font-sans-l: 'NanumSquareRoundL', 'sans-serif';
-  --font-sans-r: 'NanumSquareRound', 'sans-serif';
-  --color-jr-naver-yellow-100: #ffd037;
-  --color-jr-naver-yellow-200: #ffc82c;
-  --color-jr-naver-orange-100: #efab41;
-  --color-jr-naver-orange-200: #ff7933;
-  --color-jr-naver-green-100: #93c452;
-  --color-jr-naver-green-200: #03c75a;
-  --color-jr-naver-green-300: #00c759;
-  --color-jr-naver-green-400: #00ff67;
-  --color-jr-naver-blue-100: #5fb3e1;
-  --color-jr-naver-blue-200: #7090f3;
-  --color-jr-naver-blue-300: #0087ff;
-  --color-jr-naver-purple-100: #bb9adf;
-  --color-jr-naver-purple-200: #ad74db;
-  --color-jr-naver-pink: #fe88aa;
-  --color-jr-naver-red-100: #ff615f;
-  --color-jr-naver-red-200: #ff5555;
-  --color-jr-naver-red-100: #d95042;
-  --color-jr-naver-gray-100: #f3f4f7;
-  --color-jr-naver-gray-200: #d9d9d9;
-  --color-jr-naver-gray-300: #9caebe;
-  --color-jr-naver-text-gray: #8f8f8f;
-  --color-jr-naver-text-black-200: #333333;
-  --color-jr-naver-text-black-300: #222222;
-  --color-jr-naver-footer-text-gray: #8a909e;
-  --color-jr-naver-footer-bg-gray: #edeff3;
-  --color-jr-naver-footer-darkgray: #504f58;
-
-  --text-jr-naver-link-title: 1.0625rem;
-  --text-jr-naver-clip-title: 1rem;
-  --text-jr-naver-video-card-title: 0.875rem;
-  --text-jr-naver-blind-title: 0.9375rem;
-
-
-    --breakpoint-el: 68.75rem; /* 1100px */
+  --breakpoint-el: 68.75rem; /* 1100px */
   --header-search-bar-font-size: 0.8125rem; /* 13px */
   --header-search-bar-hover-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
   --header-search-icon: url(/images/header/search-icon.png);
   --header-search-icon-pc: url(/images/header/search-icon-pc.png);
   --header-naver-icon: url(/images/header/header-naver-icon.png);
-
-  /* <링크카드영역> */
-  /* 링크카드-서비스 바로가기 색상 */
-  --service-linkcard-main-color: #3d75de;
-  --service-linkcard-sub-color2: #e7faff;
-  --service-linkcard-sub-color3: #4584fc;
-  /* 우리반 새로운 선생님-색상 */
-  --service-linkcard-sub-color4: #60c1f9;
-  --service-linkcard-sub-color5: rgb(41, 158, 225);
-  /* 퀴즈왕 색상 */
-  --service-linkcard-sub-color6: rgb(66, 130, 198);
-  --service-linkcard-sub-color7: #e3f8ff;
-  /*터치팡팡(햄버거게임) 색상 */
-  --service-linkcard-sub-color8: #00c3ff;
-  --service-linkcard-sub-color9: #bdeeeb;
-  /* 테마(동요) 색상 */
-  --service-linkcard-sub-color10: rgb(254, 136, 169);
-  --service-linkcard-sub-color11: #f6dcb3;
-
-  /* 링크카드-커스텀 breakpoint */
-  --breakpoint-ts: 41.6875rem;
-
-  /* 링크카드-이미지 */
-  --service-linkcard-dino-img-big: url(../public/images/linkcard/dino-image-big.png);
-  --service-linkcard-dongyo-yoso: url(../public/images/linkcard/dongyo-yoso.png);
 }
 
 @layer components {
@@ -138,6 +60,10 @@
       @apply before:bg-(image:--header-naver-icon) before:bg-cover before:h-3 before:block;
       @apply hover:w-23 hover:transition-[width] hover:duration-200;
     }
+  }
+
+  .input-x-button {
+    @apply hidden;
   }
 
   .search-box {
