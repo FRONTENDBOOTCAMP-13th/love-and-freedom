@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="icon" href="/vite.svg" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- 전체 부모 -->
+    <div
+      class="aspect-[16/9] min-h-[255px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg bg-(--service-linkcard-main-color) flex justify-center items-center relative z-0"
+    >
+      <!-- 컨텐츠를 감싸는 조부모 -->
+      <div class="flex flex-row-reverse">
+        <!-- 컨텐츠를 감싸는 부모 -->
+        <div
+          class="lg:pl-[25px] w-full flex flex-row-reverse ml-[44px] mr-[44px]"
+        >
+          <!-- 이미지영역 여기에 -->
+          <div
+            class="bg-(image:--service-linkcard-dino-img-big) w-[164px] h-[180px] bg-no-repeat bg-cover relative lg:scale-70 z-1 ml-[-70px]"
+          ></div>
+
+          <!-- 텍스트,버튼영역 부모영역 -->
+          <div class="whitespace-nowrap service-text-box font-extrabold z-2">
+            <!-- 서비스 바로가기 영역 -->
+            <span class="text-[23px] text-white font-extrabold md:text-[21px]">
+              서비스 바로가기
+            </span>
+
+            <!--바로가기 서브텍스트 영역 -->
+            <p class="text-sm text-white font-medium pb-[13px] md:text-[12px]">
+              다양한 콘텐츠를 즐겨보세요!
+            </p>
+
+            <!-- 쥬니버스쿨 버튼영역 -->
+            <div
+              class="inline-block service-linkcard-btn pr-[11px] pb-[13px] lg:w-"
+            >
+              <a
+                type="juniver-school"
+                class="inline-block service-button bg-white h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px] lg:w-[72px]"
+                href="https://mkt.naver.com/p1/jrschool"
+                target="_blank"
+                >쥬니버스쿨&#62;</a
+              >
+            </div>
+
+            <!-- 테마 버튼영역 -->
+            <div class="inline-block ml-[-5px]">
+              <a
+                type="theme"
+                class="inline-block service-button bg-(--service-linkcard-sub-color2) h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px]"
+                href="https://jr.naver.com/theme"
+                target="_blank"
+                >테마&#62;</a
+              >
+            </div>
+
+            <!-- 누리과정 버튼영역 -->
+            <div class="block">
+              <a
+                type="nuri-course"
+                class="inline-block service-button bg-(--service-linkcard-sub-color2) h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px]"
+                href="https://jr.naver.com/nuri/nuri_march_3"
+                target="_blank"
+              >
+                누리과정&#62;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

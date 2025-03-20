@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/icons/jrnaver.webp" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundEB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundR.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundL.woff2"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.js"></script>
+    <title>video-card</title>
+  </head>
+  <body class="m-4">
+    <h1 class="font-bold mb-2">video-card</h1>
+    <!-- w 임시값 -->
+    <div class="w-xl hover:cursor">
+      <a
+        href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+        target="_blank"
+      >
+        <img
+          src="/public/images/video-card/1670390202887.jpg"
+          alt="비디오 카드 썸네일-영상 바로가기 링크"
+          class="video-thumb"
+        />
+      </a>
+      <div class="video-title-wrap">
+        <!-- 동영상 제목 -->
+        <a
+          href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+          target="_blank"
+          class="title"
+          >어린이 트로트 ♬ 하트하트 앙! 어린이 트로트 ♬ 하트하트 앙! 어린이
+          트로트 ♬ 하트하트 앙!</a
+        >
+        <!-- 채널 제목 -->
+        <a
+          href="https://jr.naver.com/song/boingtv_song"
+          target="_blank"
+          class="channel-title"
+          >똘똘이TV 동요
+        </a>
+      </div>
+    </div>
+
+    <!-- 옵션 -->
+    <div class="flex my-4 gap-2">
+      <div class="video-label">
+        <p class="label-text">추천</p>
+      </div>
+      <div class="video-label">
+        <p class="label-text">NEW</p>
+      </div>
+    </div>
+
+    <!-- 러닝 타임 -->
+    <div class="run-time">
+      <p class="run-time-text">11:11</p>
+    </div>
+
+    <!-- 비디오 카드 컴포넌트 -->
+    <h1 class="bg-amber-200 mt-20 mb-5">비디오 카드 컴포넌트</h1>
+    <div class="w-sm hover:cursor">
+      <a
+        href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+        target="_blank"
+        class="relative"
+      >
+        <div class="video-label absolute">
+          <p class="label-text">추천</p>
+        </div>
+        <img
+          src="/public/images/video-card/1670390202887.jpg"
+          alt="비디오 카드 썸네일-영상 바로가기 링크"
+          class="video-thumb"
+        />
+        <div class="run-time absolute right-[2.5%] bottom-[5%]">
+          <p class="run-time-text">11:11</p>
+        </div>
+      </a>
+
+      <div class="video-title-wrap relative">
+        <!-- 동영상 제목 -->
+        <a
+          href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+          target="_blank"
+          class="title"
+          >어린이 트로트 ♬ 하트하트 앙! 어린이 트로트 ♬ 하트하트 앙! 어린이
+          트로트 ♬ 하트하트 앙!</a
+        >
+        <!-- 채널 제목 -->
+        <a
+          href="https://jr.naver.com/song/boingtv_song"
+          target="_blank"
+          class="channel-title"
+          >똘똘이TV 동요
+        </a>
+        <!-- 임시 찜 자리 -->
+        <div
+          class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

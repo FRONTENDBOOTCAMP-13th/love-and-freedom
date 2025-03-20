@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/icons/jrnaver.webp" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundEB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundR.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundL.woff2"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.js"></script>
+    <title>딱지 필터</title>
+  </head>
+  <body class="flex flex-col gap-5 p-5">
+    <h1>딱지 필터</h1>
+    <hr />
+
+    <h2>필터 셀렉트 버튼</h2>
+    <h3 class="filter-select-button"><a href="#">주제별</a>로 찾아요</h3>
+    <hr />
+
+    <h2>필터 드롭다운 메뉴용 버튼</h2>
+    <button class="filter-dropdown-button-item activated">주제별</button>
+    <button class="filter-dropdown-button-item deactivated">주제별</button>
+    <hr />
+
+    <h2>필터 드롭다운 메뉴 wrapper</h2>
+    <div class="filter-dropdown">
+      <ul class="gap-4">
+        <li></li>
+      </ul>
+    </div>
+    <hr />
+
+    <h2>필터 드롭다운 메뉴 - 사용 예</h2>
+    <div class="filter-dropdown">
+      <ul class="gap-0">
+        <li>
+          <button class="filter-dropdown-button-item activated">주제별</button>
+        </li>
+        <li>
+          <button class="filter-dropdown-button-item deactivated">
+            가나다순
+          </button>
+        </li>
+        <li>
+          <button class="filter-dropdown-button-item deactivated">
+            최근본
+          </button>
+        </li>
+      </ul>
+    </div>
+    <hr />
+
+    <h2>필터 버튼 - 소분류(활성화)</h2>
+    <button class="filter-button activated">TV 동영상</button>
+
+    <h2>필터 버튼 - 소분류(비활성화)</h2>
+    <button class="filter-button deactivated">TV 동영상</button>
+    <hr />
+
+    <h2>딱지 필터 완성본</h2>
+    <p>hidden으로 숨겨져있음. 레이아웃과 함께 만져야하므로 추후 수정</p>
+
+    <div hidden class="filter-dropdown-wrapper">
+      <div class="filter-dropdown complete">
+        <ul class="gap-0">
+          <li>
+            <button class="filter-dropdown-button-item activated">
+              주제별
+            </button>
+          </li>
+          <li>
+            <button class="filter-dropdown-button-item deactivated">
+              가나다순
+            </button>
+          </li>
+          <li>
+            <button class="filter-dropdown-button-item deactivated">
+              최근본
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

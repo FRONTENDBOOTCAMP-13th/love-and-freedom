@@ -7,11 +7,20 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: 'index.html', // 기본 index.html
+
         chaBanner: '/src/components/banner/character/character-banner.html',
         homeBanner: '/src/components/banner/home/home-banner.html',
-        header: 'src/components/header/component-header.html',
+        categoryBanner: '/src/components/banner/category/category-banner.html',
+        header: 'src/components/header/header.html',
         categoryButton: 'src/components/category-button/category-button.html',
-        plz: 'src/components/footer/footer.html',
+        ttakji: 'src/components/ttakji/ttakji.html',
+        ttakjiCategory: 'src/components/ttakji-category/ttakji-category.html',
+        ttakjiFilter: 'src/components/ttakji-filter/ttakji-filter.html',
+        home: 'src/pages/home/home.html',
+        footer: 'src/components/footer/footer.html',
+        baseLayout: 'src/components/base-layout/base-layout.html',
+        videoCard: 'src/components/video-card/video-card.html',
+
       },
     },
   },
