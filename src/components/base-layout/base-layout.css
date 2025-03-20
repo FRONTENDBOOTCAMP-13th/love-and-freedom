@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+
+/* grid로 구현해서 부모자식체계를 망가뜨리면 subgrid가 동작하지 않을 수 있습니다. */
+/* 아래 마크업 구조를 설명했습니다. */
+/* .header-wrap > header */
+/* .nav-wrap > nav */
+/* main > .card-component-wrap > ul > li > 카드 */
+/* main > .imsy.banner > 배너 레이아웃 */
+/* main > .imsy.ttakji > 딱지 레이아웃 */
+/* main > .imsy.ttakji-filter > 딱지 필터 레이아웃 */
+/* main > .imsy.many-ttakji > 엄청 많은 딱지 레이아웃 */
+
+.wrap {
+  @apply grid grid-cols-[[full-start]_20px_[content-start]_1fr_[content-end]_20px_[full-end]];
+  @apply ts:grid-cols-[[full-start]_20px_[content-start]_1fr_1fr_[content-end]_20px_[full-end]];
+  @apply md:grid-cols-[[full-start]_1fr_[content-start]_repeat(2,_calc(742px_/_2))_[content-end]_1fr_[full-end]];
+  @apply lg:grid-cols-[[full-start]_1fr_[content-start]_repeat(3,_calc(894px_/_3))_[content-end]_1fr_[full-end]];
+  @apply xl:grid-cols-[[full-start]_1fr_[content-start]_repeat(4,_calc(1200px_/_4))_[content-end]_1fr_[full-end]];
+
+  .header-wrap {
+    @apply col-[full];
+  }
+  .nav-wrap {
+    @apply col-[full];
+  }
+  main {
+    @apply grid grid-cols-subgrid col-[content] gap-y-8 lg:gap-y-[50px];
+  }
+  .footer-wrap {
+    @apply col-[full];
+  }
+}
+main {
+  @apply px-5 box-border pb-10 lg:pb-[296px];
+  .card-component-wrap {
+    @apply grid grid-cols-subgrid col-span-full ts:gap-x-[14px] gap-y-[20px] lg:gap-x-[20px] lg:gap-y-[16px];
+    > ul {
+      @apply contents;
+      > li {
+        @apply col-span-1;
+      }
+      > li:nth-child(7),
+      > li:nth-child(8) {
+        @apply hidden xl:block;
+      }
+    }
+  }
+  .card-component-wrap:last-child {
+    > ul {
+      > li:nth-child(7),
+      > li:nth-child(8) {
+        @apply block;
+      }
+    }
+  }
+
+  /* 핫카드가 들어있는 카드 레이아웃은 핫카드 만들어질때쯤 추가할 예정입니다. */
+  .card-component-wrap.withhotcard {
+  }
+  /* 애니메이션이 들어갈 div입니다. absolute fixed 등을 추가할 예정입니다 */
+  .background-animation-wrap {
+  }
+}
+
+/* 딱지, 배너 들어갈 section입니다. 아직 이름을 안정해줬어요 */
+.imsy {
+  @apply col-span-full;
+}
+
+/* 시각적으로 보기 위한 색/크기 입니다 */
+/* 아래 코드 외에는 크기를 준 코드가 없습니다. */
+.wrap {
+  .header-wrap {
+  }
+  .nav-wrap {
+    @apply bg-yellow-300 h-20;
+  }
+  main {
+    @apply bg-green-300;
+  }
+  .footer-wrap {
+  }
+}
+
+.imsy {
+  @apply h-40 bg-pink-200;
+}
+
+main {
+  .card-component-wrap {
+    > ul {
+      > li {
+        @apply bg-purple-500;
+      }
+    }
+  }
+}
