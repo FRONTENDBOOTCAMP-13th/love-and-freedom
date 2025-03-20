@@ -11,9 +11,9 @@
 @import './components/banner/home/home-banner.css';
 @import './components/banner/character/character-banner.css';
 @import './components/banner/category/category-banner.css';
+@import './components/notice-modal/notice-modal.css';
 @import './components/video-card/video-card.css';
 @import './components/base-layout/base-layout.css';
-
 
 @theme {
   --font-*: initial;
@@ -23,7 +23,8 @@
   --font-sans-r: 'NanumSquareRound', 'sans-serif';
   --color-jr-naver-yellow-100: #ffd037;
   --color-jr-naver-yellow-200: #ffc82c;
-  --color-jr-naver-orange: #efab41;
+  --color-jr-naver-orange-100: #efab41;
+  --color-jr-naver-orange-200: #ff7933;
   --color-jr-naver-green-100: #93c452;
   --color-jr-naver-green-200: #03c75a;
   --color-jr-naver-green-300: #00c759;
