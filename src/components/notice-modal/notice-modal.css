@@ -51,6 +51,7 @@
   }
 
   .modal-button {
+    @apply cursor-pointer;
     @apply w-1/2;
     @apply text-[13px] md:font-sans-eb;
     @apply md:text-[20px];

@@ -32,31 +32,22 @@
     <script type="module" src="/src/main.js"></script>
     <script type="module">
       // DOM 선택 부분
-      const showDialogButton = document.querySelector('.show-dialog');
-      const closeDialogButton = document.querySelector('.close-dialog');
-      const panelDialog = document.querySelector('.panel-dialog');
-
       const modalDialog = document.querySelector('.modal-dialog');
       const showModalButton = document.querySelector('.show-modal-dialog');
       const closeModalButton = document.querySelector('.close-modal-dialog');
 
       // 함수 구현 부분
-      const openDialog = () => panelDialog.showModal();
-      const closeDialog = () => panelDialog.close();
-
       const openModal = () => modalDialog.showModal();
       const closeModal = () => modalDialog.close();
-
-      // 이벤트 바인딩 부분
-      showDialogButton.addEventListener('click', openDialog);
-      closeDialogButton.addEventListener('click', closeDialog);
 
       showModalButton.addEventListener('click', openModal);
       closeModalButton.addEventListener('click', closeModal);
     </script>
   </head>
   <body class="flex flex-col gap-5 p-5 font-sans-b">
-    <h1 class="text-4xl">공지 모달</h1>
+    <h1 class="text-4xl">
+      공지 모달<br />(중첩 구조로 변경하여 완성본에만 css가 적용되었음)
+    </h1>
     <hr />
 
     <h2 class="text-2xl">모달 제목</h2>
@@ -146,22 +137,5 @@
     </dialog>
 
     <hr />
-
-    <div class="notice-modal-area">
-      <button type="button" class="show-dialog">
-        완성품 쥬니버 공지사항 모달 보기
-      </button>
-
-      <dialog class="panel-dialog" aria-labelledby="surprise-benefits">
-        <h2 id="surprise-benefits">깜짝 혜택</h2>
-        <p>
-          쉿! 고객님만을 위한 깜짝 할인 쿠폰 <br />
-          어제 빠뜨린 상품도 할인받고 내일 만나요!
-        </p>
-        <a href="/">쿠폰 확인하기</a>
-        <button type="button" class="dismiss-today">오늘 하루 안보기</button>
-        <button type="button" class="close-dialog">닫기</button>
-      </dialog>
-    </div>
   </body>
 </html>
