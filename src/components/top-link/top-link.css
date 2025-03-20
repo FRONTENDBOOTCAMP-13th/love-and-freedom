@@ -1,0 +1,186 @@
+@import 'tailwindcss';
+
+@theme {
+  @keyframes rocket {
+    50% {
+      translate: 0 60px;
+    }
+    100% {
+      translate: 0 0;
+    }
+  }
+  @keyframes blink {
+    60% {
+      scale: 1 1;
+    }
+    65% {
+      scale: 1 0;
+    }
+    70% {
+      scale: 1 1;
+    }
+    75% {
+      scale: 1 0;
+    }
+    80% {
+      scale: 1 1;
+    }
+    85% {
+      scale: 1 0;
+    }
+    90% {
+      scale: 1 1;
+    }
+  }
+  @keyframes left-position {
+    50% {
+      translate: 188px 363px;
+    }
+    60% {
+      translate: 188px 343px;
+    }
+    90% {
+      translate: 188px 343px;
+    }
+    100% {
+      translate: 188px 363px;
+    }
+  }
+  @keyframes right-position {
+    50% {
+      translate: 278px 363px;
+    }
+    60% {
+      translate: 278px 343px;
+    }
+    90% {
+      translate: 278px 343px;
+    }
+    100% {
+      translate: 278px 363px;
+    }
+  }
+  @keyframes talk {
+    7% {
+      scale: 1 1;
+    }
+    14% {
+      scale: 1 0;
+    }
+    21% {
+      scale: 1 1;
+    }
+    28% {
+      scale: 0.3 1;
+    }
+    35% {
+      scale: 1 1;
+    }
+    42% {
+      scale: 1 0;
+    }
+    49% {
+      scale: 1 1;
+    }
+  }
+  @keyframes mouse-position {
+    50% {
+      translate: 195px 400px;
+    }
+    60% {
+      translate: 195px 380px;
+    }
+    90% {
+      translate: 195px 380px;
+    }
+    100% {
+      translate: 195px 400px;
+    }
+  }
+  @keyframes stomach-position {
+    50% {
+      translate: 212px 483px;
+    }
+    60% {
+      translate: 212px 443px;
+    }
+    90% {
+      translate: 212px 443px;
+    }
+    100% {
+      translate: 212px 483px;
+    }
+  }
+  --animate-rocket: rocket 2s cubic-bezier(0.8, 0.4, 0.2, 0.6) 0s infinite
+    backwards;
+  --animate-blink: blink 1.5s cubic-bezier(0.8, 0.4, 0.2, 0.6) 0s infinite
+    backwards;
+  --animate-left-position: left-position 1.5s cubic-bezier(0, 1, 1, 0) 0s
+    infinite backwards;
+  --animate-right-position: right-position 1.5s cubic-bezier(0, 1, 1, 0) 0s
+    infinite backwards;
+  --animate-talk: talk 1.5s cubic-bezier(0.8, 0.4, 0.2, 0.6) 0s infinite
+    backwards;
+  --animate-mouse-position: mouse-position 1.5s cubic-bezier(0, 1, 1, 0) 0s
+    infinite backwards;
+  --animate-stomach-position: stomach-position 1.5s cubic-bezier(0, 1, 1, 0) 0s
+    infinite backwards;
+}
+@layer components {
+  .top-link {
+    @apply grid fixed bottom-0 right-1/20 scale-25;
+
+    > * {
+      @apply col-span-full row-span-full;
+    }
+    .remote-rocket {
+      @apply z-100;
+    }
+    .pongpong {
+      @apply translate-x-[90px] translate-y-[220px] z-200;
+    }
+    .close-rocket {
+      @apply z-300;
+    }
+    .left-eye {
+      @apply translate-x-[188px] translate-y-[363px] z-250;
+    }
+    .right-eye {
+      @apply translate-x-[278px] translate-y-[363px] z-250;
+    }
+    .mouse {
+      @apply translate-x-[195px] translate-y-[400px] z-250;
+    }
+    .stomach {
+      @apply translate-x-[212px] translate-y-[483px] z-250;
+    }
+  }
+
+  .top-link {
+    @apply animate-rocket;
+  }
+  .left-eye {
+    @apply animate-blink animate-left-position;
+  }
+  .right-eye {
+    @apply animate-blink animate-right-position;
+  }
+  .mouse {
+    @apply animate-talk animate-mouse-position;
+  }
+  .stomach {
+    @apply animate-stomach-position;
+  }
+  .left-eye {
+    @apply animate-[blink_1.5s_cubic-bezier(0.8,_0.4,_0.2,_0.6)_0s_infinite_backwards,_left-position_1.5s_cubic-bezier(0,_1,_1,_0)_0s_infinite_backwards];
+  }
+  .right-eye {
+    @apply animate-[blink_1.5s_cubic-bezier(0.8,_0.4,_0.2,_0.6)_0s_infinite_backwards,_right-position_1.5s_cubic-bezier(0,_1,_1,_0)_0s_infinite_backwards];
+  }
+  .mouse {
+    @apply animate-[talk_1.5s_cubic-bezier(0.8,_0.4,_0.2,_0.6)_0s_infinite_backwards,_mouse-position_1.5s_cubic-bezier(0,_1,_1,_0)_0s_infinite_backwards];
+  }
+  .stomach {
+    @apply animate-[stomach-position_1.5s_cubic-bezier(0,_1,_1,_0)_0s_infinite_backwards];
+  }
+}
