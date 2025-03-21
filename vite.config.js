@@ -20,6 +20,8 @@ export default defineConfig({
         footer: 'src/components/footer/footer.html',
         baseLayout: 'src/components/base-layout/base-layout.html',
         videoCard: 'src/components/video-card/video-card.html',
+        topLink: 'src/components/top-link/toplink-html',
+        animation: 'src/components/animation/animation.html',
         topLink: 'src/components/top-link/top-link.html',
         squareLayout: 'src/components/square-ttakji-layout/square-layout.html',
         hotCard: 'src/components/hot-card/hot-card.html',
