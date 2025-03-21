@@ -1,1 +1,66 @@
 @import 'tailwindcss';
+
+@theme {
+  --mobile-arrow: url(/images/atlas/sp_common.png);
+  --mobile-arrow-pos: -40px -223px;
+
+  --pc-arrow: url(/images/atlas/sp_pc_common.png);
+  --pc-arrow-pos: -538px -138px;
+
+  --color-hover: #ffd037;
+}
+
+@layer components {
+  .category-wrap-title {
+    /* 기본 스타일 */
+    @apply font-sans-r text-[16px] font-semibold block px-[20px] mb-[3px];
+    @apply lg:text-[26px] lg:font-extrabold lg:flex lg:justify-center lg:items-center lg:relative;
+  }
+
+  .title-link {
+    /* 모바일 화살표 */
+    @apply after:content-[''] after:inline-block after:w-[8px] after:h-[12px] after:bg-[length:320px_237px];
+    @apply after:bg-(image:--mobile-arrow) after:bg-(position:--mobile-arrow-pos) after:mt-[-3px] after:ml-[4px];
+
+    /* PC에서는 after, 링크 기능 제거 */
+    @apply lg:after:hidden lg:pointer-events-none;
+  }
+
+  .arrow-link {
+    /* 모바일에서는 안 보이게 */
+    @apply hidden;
+
+    /* PC에서는 보이게 */
+    @apply lg:flex lg:items-center lg:absolute lg:right-[20px] lg:justify-end;
+
+    /* PC 화살표*/
+    @apply lg:after:content-[''] lg:after:block lg:after:w-[49px] lg:after:h-[16px];
+    @apply lg:after:bg-[length:895px_262px] lg:after:bg-(image:--pc-arrow) lg:after:bg-(position:--pc-arrow-pos);
+  }
+
+  .hover-text {
+    @apply lg:text-[18px] lg:text-hover lg:pr-[5px];
+    @apply lg:opacity-0 lg:invisible lg:transition-all lg:duration-300 lg:ease-in-out;
+  }
+
+  .arrow-link:hover .hover-text {
+    @apply lg:opacity-100 lg:visible;
+  }
+
+  .square-ttakji {
+    @apply bg-amber-200 flex-shrink-0 w-[166px] h-[153px];
+    @apply xl:w-[185px] xl:h-[170px];
+  }
+
+  .square-list {
+    @apply px-[20px] flex flex-nowrap overflow-x-auto whitespace-nowrap gap-[10px];
+    @apply lg:gap-[16px] lg:px-0;
+    @apply xl:gap-[18px];
+  }
+
+  .category-section {
+    @apply w-[768px] overflow-hidden;
+    @apply lg:w-[894px];
+    @apply xl:w-[1200px];
+  }
+}
