@@ -21,6 +21,7 @@ export default defineConfig({
         baseLayout: 'src/components/base-layout/base-layout.html',
         videoCard: 'src/components/video-card/video-card.html',
         topLink: 'src/components/top-link/toplink-html',
+        animation: 'src/components/animation/animation.html',
       },
     },
   },
