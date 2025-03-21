@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+@theme {
+  /* 배너레이아웃-커스텀 breakpoint */
+  /* 768px */
+  --breakpoint-aa: 48rem;
+  /* 1280px */
+  --breakpoint-as: 67.5rem;
+}
