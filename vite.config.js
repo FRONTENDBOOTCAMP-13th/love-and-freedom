@@ -22,6 +22,8 @@ export default defineConfig({
         videoCard: 'src/components/video-card/video-card.html',
         topLink: 'src/components/top-link/top-link.html',
         squareLayout: 'src/components/square-ttakji-layout/square-layout.html',
+        hotCard: 'src/components/hot-card/hot-card.html',
+        zzim: 'src/components/zzim/zzim.html',
       },
     },
   },
