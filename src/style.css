@@ -20,6 +20,9 @@
 @import './components/hot-card/hot-card.css';
 @import './components/banner-layout/banner-layout.css';
 @import './pages/home/home.css';
+@import './components/square-ttakji-layout/square-layout.css';
+@import './pages/character/character.css';
+@import './pages/category/category.css';
 
 @theme {
   --font-*: initial;
