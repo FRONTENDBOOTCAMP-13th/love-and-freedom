@@ -1,1 +1,7 @@
 @import 'tailwindcss';
+
+@layer components {
+  .third-banner-layout {
+    @apply lg:hidden;
+  }
+}
