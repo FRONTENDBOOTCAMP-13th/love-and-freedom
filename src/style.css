@@ -15,6 +15,9 @@
 @import './../public/fonts/nanumsquareround.css';
 @import './components/header/header.css';
 @import './components/footer/footer.css';
+@import './pages/home/home.css';
+@import './pages/character/character.css';
+@import './pages/category/category.css';
 
 @theme {
   --font-*: initial;
@@ -54,8 +57,7 @@
   --text-jr-naver-video-card-title: 0.875rem;
   --text-jr-naver-blind-title: 0.9375rem;
 
-
-    --breakpoint-el: 68.75rem; /* 1100px */
+  --breakpoint-el: 68.75rem; /* 1100px */
   --header-search-bar-font-size: 0.8125rem; /* 13px */
   --header-search-bar-hover-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
   --header-search-icon: url(/images/header/search-icon.png);

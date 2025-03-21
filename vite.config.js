@@ -24,6 +24,8 @@ export default defineConfig({
         animation: 'src/components/animation/animation.html',
         topLink: 'src/components/top-link/top-link.html',
         squareLayout: 'src/components/square-ttakji-layout/square-layout.html',
+        character: 'src/pages/character/character.html',
+        category: 'src/pages/category/category.html',
       },
     },
   },
