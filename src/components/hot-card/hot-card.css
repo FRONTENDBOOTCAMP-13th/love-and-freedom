@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+@layer components {
+  @keyframes h-text {
+    0% {
+      translate: 0 0;
+    }
+    30% {
+      translate: 5px 5px;
+    }
+    40% {
+      rotate: 5deg;
+    }
+    60% {
+      translate: -5px 10px;
+    }
+    70% {
+      rotate: -5deg;
+    }
+    100% {
+      translate: 0 0;
+    }
+  }
+  @keyframes o-text {
+    0% {
+      translate: 0 0;
+    }
+    30% {
+      translate: -3px 4px;
+    }
+    40% {
+      rotate: -15deg;
+    }
+    70% {
+      translate: 2px -3px;
+      rotate: 5deg;
+    }
+    100% {
+      translate: 0 0;
+    }
+  }
+  @keyframes t-text {
+    0% {
+      translate: 0 0;
+    }
+    40% {
+      rotate: 15deg;
+    }
+    50% {
+      translate: 3px 7px;
+    }
+    70% {
+      rotate: -5deg;
+    }
+    100% {
+      translate: 0 0;
+    }
+  }
+
+  @keyframes hot-card-character {
+    30% {
+      scale: 1 0.95;
+    }
+    60% {
+      scale: 1 1;
+    }
+  }
+
+  .hot-card-section {
+    @apply bg-[url(/public/images/hot-card/hot-dot-line.png)] bg-cover bg-no-repeat w-[36.625rem] h-[26.875rem] relative pt-[82px] px-[56px];
+  }
+  .h-text-animation {
+    @apply absolute left-[-30px] top-[30px] z-10;
+    animation: h-text 7s ease-in-out infinite;
+  }
+  .o-text-animation {
+    @apply absolute left-[35px] top-[20px];
+    animation: o-text 6s ease-in-out infinite;
+  }
+  .t-text-animation {
+    @apply absolute left-[100px] top-[15px];
+    animation: t-text 8s ease-in-out infinite;
+  }
+  .hot-card-character {
+    animation: hot-card-character 3s ease-in-out infinite;
+    @apply absolute right-[15px] top-[-69px] pointer-events-none origin-bottom;
+  }
+  .hot-card-section .hot-video-label {
+    @apply hidden;
+  }
+  /* w-sm */
+  .video-card-box {
+    @apply relative z-50 w-[474px];
+  }
+}
