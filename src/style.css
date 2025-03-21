@@ -11,10 +11,13 @@
 @import './components/video-card/video-card.css';
 @import './components/base-layout/base-layout.css';
 @import './components/top-link/top-link.css';
+@import './components/animation/animation.css';
 @import './../public/fonts/nanumsquareround.css';
 @import './components/header/header.css';
 @import './components/footer/footer.css';
 @import './components/banner-layout/banner-layout.css';
+@import './pages/home/home.css';
+
 
 @theme {
   --font-*: initial;
