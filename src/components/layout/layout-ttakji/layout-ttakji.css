@@ -1,10 +1,7 @@
 @import 'tailwindcss';
 
 @layer components {
-  .li-item {
-    @apply border-2 hover:bg-amber-500 w-[105px] h-[131px];
-  }
-
+  /* 타이틀 */
   .layout-ttakji-title {
     @apply text-[17px] font-sans-eb mb-3;
     @apply lg:text-[26px] lg:text-center;
@@ -15,17 +12,48 @@
     @apply ts:px-5 ts:max-w-[768px] ts:min-w-[666px];
     @apply lg:max-w-[914px] lg:items-center;
 
+    /* 인기 캐릭터 레이아웃 */
+
     ul {
       @apply flex flex-wrap gap-x-[5px] max-w-[666px];
       @apply ts:max-w-[768px] ts:gap-x-[10px] ts:flex-nowrap;
-      @apply lg:gap-x-0 lg:justify-around lg:max-w-none lg:gap-x-[26px];
+      @apply lg:justify-around lg:max-w-none lg:gap-x-[26px];
+
+      .list-item {
+        @apply min-w-[calc(33.33%-5px)] aspect-[105/131];
+        @apply grow shrink;
+        @apply border-1;
+        @apply ts:min-w-0;
+      }
     }
 
-    .list-item {
-      @apply min-w-[calc(33.33%-5px)] aspect-[105/131];
-      @apply grow shrink;
-      @apply border-1;
-      @apply ts:min-w-0;
+    ul.scrollable {
+      @apply flex-nowrap lg:gap-x-[31px];
+      @apply overflow-x-auto snap-x snap-mandatory;
+
+      .list-item {
+        @apply aspect-[120/147] min-w-[120px];
+        @apply snap-center;
+      }
+
+      .list-item:first-child {
+        @apply lg:snap-start;
+      }
     }
+
+    .layout-filter-buttons {
+      @apply flex flex-nowrap gap-x-1.5 justify-start mb-5;
+      @apply overflow-x-hidden;
+      @apply lg:justify-center;
+    }
+  }
+
+  .layout-ttakji.character-filter {
+    @apply px-0 w-full gap-x-[10px];
+    @apply ts:px-0 ts:max-w-[768px] ts:min-w-0;
+    @apply lg:max-w-[914px] lg:items-center;
+    @apply grid grid-cols-3;
+    @apply ts:grid-cols-6 ts:gap-x-[20px];
+    @apply lg:grid-cols-7;
   }
 }

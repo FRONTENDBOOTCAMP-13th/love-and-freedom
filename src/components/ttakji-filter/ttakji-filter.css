@@ -2,8 +2,8 @@
 
 @layer components {
   .filter-select-button {
-    @apply text-[18px] font-sans-eb;
-    @apply lg:text-[26px];
+    @apply text-[18px] font-sans-eb mb-3;
+    @apply lg:text-[26px] lg:text-center;
 
     a {
       @apply underline decoration-[5px] -underline-offset-1 decoration-jr-naver-yellow-100 font-sans-eb;
@@ -34,7 +34,7 @@
   }
 
   .filter-button {
-    @apply w-fit px-[13px] py-[10px] border-[2px] rounded-[103px] text-center font-sans-r;
+    @apply text-nowrap text-[15px] leading-[38px] w-fit px-[13px] border-[2px] rounded-[103px] text-center font-sans-r bg-white;
   }
 
   .filter-button.activated {
