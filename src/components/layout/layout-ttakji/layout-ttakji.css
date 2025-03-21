@@ -1,59 +1,97 @@
 @import 'tailwindcss';
 
 @layer components {
-  /* 타이틀 */
-  .layout-ttakji-title {
-    @apply text-[17px] font-sans-eb mb-3;
-    @apply lg:text-[26px] lg:text-center;
-  }
-
   .layout-ttakji {
     @apply px-[15px] w-full;
     @apply ts:px-5 ts:max-w-[768px] ts:min-w-[666px];
-    @apply lg:max-w-[914px] lg:items-center;
+    @apply lg:max-w-[914px] lg:px-[10px] lg:items-center;
+    @apply xl:max-w-[1220px];
+
+    .layout-ttakji-title {
+      @apply text-[17px] font-sans-eb mb-3;
+      @apply lg:text-[26px] lg:text-center;
+    }
 
     /* 인기 캐릭터 레이아웃 */
+    ul.popular-character {
+      @apply grid grid-cols-3;
+      @apply ts:grid-flow-col ts:grid-cols-none;
 
-    ul {
-      @apply flex flex-wrap gap-x-[5px] max-w-[666px];
-      @apply ts:max-w-[768px] ts:gap-x-[10px] ts:flex-nowrap;
-      @apply lg:justify-around lg:max-w-none lg:gap-x-[26px];
+      /* 여백 */
+      @apply gap-[10px];
+      @apply ts:gap-[20px];
+      @apply lg:gap-[26px];
+      @apply xl:gap-[32px];
 
-      .list-item {
-        @apply min-w-[calc(33.33%-5px)] aspect-[105/131];
-        @apply grow shrink;
-        @apply border-1;
-        @apply ts:min-w-0;
+      /* 기본 : 6개의 li */
+      li.popular-character {
+        @apply nth-[n+7]:hidden;
+
+        /* 1024px 이후 : 7개의 li */
+        /* @apply lg:mr-[26.5px]; */
+        @apply lg:w-[105px] lg:h-[150px];
+        @apply nth-[7]:lg:list-item;
+        @apply nth-[7]:border-blue-500 nth-[7]:border-2;
+
+        /* 1280px 이후 : 9개의 li */
+        /* @apply xl:mr-[31.8px]; */
+        @apply nth-[n+8]:xl:list-item;
+        @apply nth-[n+8]:border-red-500 nth-[n+8]:border-2;
       }
     }
 
+    /* 스크롤 가능한 딱지 레이아웃 => 추천 캐릭터, 오디오 동요 동화 */
     ul.scrollable {
-      @apply flex-nowrap lg:gap-x-[31px];
+      @apply grid grid-flow-col grid-cols-none;
       @apply overflow-x-auto snap-x snap-mandatory;
+      /* @apply ts:scroll-left-0; */
 
-      .list-item {
-        @apply aspect-[120/147] min-w-[120px];
+      /* 여백 */
+      @apply gap-[10px];
+      @apply ts:gap-[20px];
+
+      &.recommended-character {
+        @apply lg:gap-[26.5px];
+        @apply xl:gap-[32px];
+      }
+
+      &.audio {
+        @apply lg:gap-[34.8px];
+        @apply xl:gap-[34.3px];
+      }
+
+      li {
         @apply snap-center;
       }
 
-      .list-item:first-child {
-        @apply lg:snap-start;
+      li.recommended-character {
+        @apply w-[120px] h-[165px];
+        @apply lg:w-[105px] lg:h-[150px];
+      }
+
+      li.audio {
+        @apply w-[120px] h-[165px];
       }
     }
 
-    .layout-filter-buttons {
+    /* 필터 결과 레이아웃 */
+    ul.layout-filter-buttons {
       @apply flex flex-nowrap gap-x-1.5 justify-start mb-5;
       @apply overflow-x-hidden;
       @apply lg:justify-center;
     }
-  }
 
-  .layout-ttakji.character-filter {
-    @apply px-0 w-full gap-x-[10px];
-    @apply ts:px-0 ts:max-w-[768px] ts:min-w-0;
-    @apply lg:max-w-[914px] lg:items-center;
-    @apply grid grid-cols-3;
-    @apply ts:grid-cols-6 ts:gap-x-[20px];
-    @apply lg:grid-cols-7;
+    ul.layout-filter {
+      @apply grid grid-cols-3;
+      @apply ts:grid-cols-6;
+      @apply lg:grid-cols-7;
+      @apply xl:grid-cols-9;
+
+      /* 여백 */
+      @apply gap-[10px];
+      @apply ts:gap-[20px];
+      @apply lg:gap-[26px];
+      @apply xl:gap-[32px];
+    }
   }
 }
