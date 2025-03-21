@@ -26,6 +26,7 @@ export default defineConfig({
         squareLayout: 'src/components/square-ttakji-layout/square-layout.html',
         hotCard: 'src/components/hot-card/hot-card.html',
         zzim: 'src/components/zzim/zzim.html',
+        nav: 'src/components/nav/nav.html',
       },
     },
   },
