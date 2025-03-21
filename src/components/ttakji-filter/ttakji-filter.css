@@ -13,12 +13,13 @@
   }
 
   .filter-dropdown-button-item {
-    @apply px-[37px] leading-[42px] w-full text-center text-lg;
+    @apply px-[37px] leading-[42px] w-full text-center text-lg rounded-[103px];
+    @apply hover:scale-105 hover:shadow;
     @apply ts:leading-[40px] ts:text-base;
   }
 
   .filter-dropdown-button-item.activated {
-    @apply font-sans-b text-white border-jr-naver-yellow-200 bg-jr-naver-yellow-200 rounded-[103px];
+    @apply font-sans-b text-white border-jr-naver-yellow-200 bg-jr-naver-yellow-200;
     @apply lg:px-[15px] lg:font-sans-eb;
   }
 
