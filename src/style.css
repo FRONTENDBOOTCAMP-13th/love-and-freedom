@@ -23,6 +23,7 @@
 @import './components/square-ttakji-layout/square-layout.css';
 @import './pages/character/character.css';
 @import './pages/category/category.css';
+@import './components/linkcard/linkcard.css';
 
 @theme {
   --font-*: initial;
