@@ -37,12 +37,12 @@
 
     <!-- 퀴즈왕 전체 부모 -->
     <div
-      class="quiz-king-wrap mt-10"
+      class="quiz-king-wrap"
     >
       <!-- 퀴즈왕 링크 -->
       <a
         class="quiz-king-link"
-        href="/"
+        href="https://jr.naver.com/play/quiz/dinosaur?first=248"
         target="_blank"
         aria-label="퀴즈왕 이동"
       >
@@ -95,7 +95,7 @@
        
             <a
             class="quiz-king-baro"
-            href="/"
+            href="https://jr.naver.com/play/quiz/dinosaur?first=248"
             target="_blank"
             aria-label="퀴즈왕 바로가기 이동"
             >퀴즈왕&#62;</a
@@ -113,7 +113,7 @@
 
     <!-- 6-7세 코딩 전체 부모 -->
     <div class="w-[244px] h-full">
-      <a href="/" aria-label="6-7세 이동" target="_blank">
+      <a href="https://mkt.naver.com/p1/jrschool" aria-label="6-7세 이동" target="_blank">
         <img
           target="_blank"
           class="hidden lg:block rounded-lg"
@@ -170,7 +170,7 @@
             <div class="service-jnshool-btn">
               <a
                 type="juniver-school"
-                class="inline-block service-button bg-white h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px] lg:w-[72px]"
+                class="service-jnshool-btn-link"
                 href="https://mkt.naver.com/p1/jrschool"
                 target="_blank"
                 aria-label="쥬니버스쿨 버튼 이동"
@@ -182,7 +182,7 @@
             <div class="service-tema-btn">
               <a
                 type="theme"
-                class="inline-block service-button bg-(--service-linkcard-sub-color2) h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px]"
+                class="service-tema-btn-link"
                 href="https://jr.naver.com/theme"
                 target="_blank"
                 aria-label="테마 버튼 이동"
@@ -194,7 +194,7 @@
             <div class="service-nuri-btn">
               <a
                 type="nuri-course"
-                class="inline-block service-button bg-(--service-linkcard-sub-color2) h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px]"
+                class="service-nuri-btn-link"
                 href="https://jr.naver.com/nuri/nuri_march_3"
                 target="_blank"
                 aria-label="서비스-누리과정 버튼 이동"
@@ -273,7 +273,7 @@
       <div class="game-hamburger-title-container">
         <!-- 게임 (도전! 햄버거요리사) 타이틀 -->
         <strong
-          class="game-hamburger-title-text bg-(--service-linkcard-sub-color8) block h-auto leading-[50px] pl-4"
+          class="game-hamburger-title-text"
           >도전! 햄버거 요리사</strong
         >
       </div>
@@ -306,111 +306,41 @@
 
 
 
-
+<!-- 동요 전체 부모 -->
     <div class="dongyo-container">
       <div class="relative dongyo-wrap">
               <!-- 테마 바로가기 버튼 -->
-      <a
-      class="dongyo-link"
-      target="_blank"
-      href="/"
+      <a class="dongyo-link" target="_blank"
+      href="https://jr.naver.com/t/living_song/view?contentsNo=106597"
       aria-label="테마 바로가기 이동"
+      target="_blank"
     > 
       테마&#62;
     </a>
-        <a href="/"><img src="/public/images/linkcard/dongyo-bg.png" alt="어린아이 이미지"></a>
-        <div class="dongyo-yoso-img absolute bottom-0 h-[36%] ">
-          <img class="w-full h-406px" src="/public/images/linkcard/dongyo-yoso.png" alt="">
-          <div class="dongyo-text-container absolute top-[70%] left-[7px]">
-            <p class="whitespace-normal font-extrabold text-white">바른마음, 좋은 습관! 노래로 배워요</p>
-            <div class="flex">
-              <div class="dongyo-icon1 flex items-center mr-2">
-                <img src="/public/images/linkcard/dongyo-yoso-icon.png" class="scale-64" alt="">
-                <a href="" class="text-white">13</a>
+    <!-- 배경+링크 -->
+        <a href="https://jr.naver.com/t/living_song/view?contentsNo=106597" target="_blank"><img src="/public/images/linkcard/dongyo-bg.png" alt="어린아이 이미지"></a>
+        <!-- 컨텐츠 요소 -->
+        <div class="dongyo-yoso-img-wrap">
+          <!-- 이미지 -->
+          <img class="dongyo-yoso-img" src="/public/images/linkcard/dongyo-yoso.png" alt="분홍색 물결모양">
+          <!-- 텍스트 전체부모 -->
+          <div class="dongyo-text-container">
+            <!-- 타이틀제목 -->
+            <p class="dongyo-main-text">바른마음, 좋은 습관! 노래로 배워요</p>
+            <div class="dongyo-icon-wrap">
+              <div class="dongyo-icon1">
+                <img src="/public/images/linkcard/dongyo-yoso-icon.png" class="scale-64" alt="플레이 아이콘">
+                <a target="_blank" href="https://jr.naver.com/t/living_song/view?contentsNo=106597" class="dongyo-sub-text1">13</a>
               </div>
-              <div class="dongyo-icon2 flex items-center">
-                <img src="/public/images/linkcard/dongyo-yoso-icon2.png" class="scale-64" alt="">
-                <a href="" class="text-white">17분</a>
+              <div class="dongyo-icon2">
+                <img src="/public/images/linkcard/dongyo-yoso-icon2.png" class="scale-64" alt="시간 아이콘">
+                <a target="_blank" href="https://jr.naver.com/t/living_song/view?contentsNo=106597" class="dongyo-sub-text2">17분</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
-        <!-- 테마 (동요: 바른 마음,좋은 습관!) 전체부모 -->
-        <div
-        class="dongyo-container2 relative aspect-[3/2] min-h-[220px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg z-0 bg-(--service-linkcard-sub-color11) overflow-hidden"
-      >
-        <!-- 배경 영역 링크 -->
-        <a
-          href="https://jr.naver.com/t/living_song/view?contentsNo=106597"
-          class="absolute inset-0 z-50"
-          aria-label="동요 테마 이동"
-        ></a>
-  
-        <!-- 이미지영역 -->
-        <div
-          class="absolute bottom-0 w-full h-[46%] z-20 text-white bg-(image:--service-linkcard-dongyo-yoso)"
-        >
-          <!-- 아이콘 및 텍스트 영역 -->
-          <div class="absolute bottom-4 left-3">
-            <a
-              href="https://jr.naver.com/t/living_song/view?contentsNo=106597"
-              class="flex items-center rounded-md w-max"
-            >
-              <!-- 플레이 아이콘 -->
-              <img
-                class="w-4 pr-"
-                src="/public/images/linkcard/dongyo-yoso-icon.png"
-                alt="플레이 아이콘"
-              />
-              <p class="pr-2">13</p>
-  
-              <!-- 시간 아이콘 -->
-              <img
-                class="w-4"
-                src="/public/images/linkcard/dongyo-yoso-icon2.png"
-                alt="시간 아이콘"
-              />
-              <p>17분</p>
-            </a>
-          </div>
-  
-          <strong class="absolute bottom-10 left-3"
-            >바른마음, 좋은 습관! 노래로 배워요</strong
-          >
-        </div>
-  
-        <!-- 테마 바로가기 버튼 -->
-        <a
-          class="block bg-(--service-linkcard-sub-color10) rounded-[49px] leading-[37px] text-[15px] text-white font-extrabold absolute top-3 left-3 z-30"
-          target="_blank"
-          href="/"
-          aria-label="테마 바로가기 이동"
-        > 
-          테마&#62;
-        </a>
-  
-        <!-- 테마 이미지 -->
-        <img
-          class="h-full block object-cover lg:object-contain z-[-1]"
-          src="/public/images/linkcard/dongyo-bg.png"
-          alt="어린이 이미지"
-        />
-      </div>
-
-
-
-
-
-
-
-
-
 
     
   </body>

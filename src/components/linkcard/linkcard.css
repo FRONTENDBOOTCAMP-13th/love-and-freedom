@@ -74,10 +74,10 @@
     @apply flex flex-row-reverse;
   }
   .service-contents-wrap {
-    @apply lg:pl-[25px] w-full flex flex-row-reverse ml-[44px] mr-[44px];
+    @apply ts:pl-[20px] lg:pl-[134px] w-full flex flex-row-reverse ml-[44px] mr-[44px];
   }
   .service-bg-img {
-    @apply w-[164px] h-[180px] bg-no-repeat bg-cover relative lg:scale-70 z-2 left-[-70px];
+    @apply w-[164px] h-[180px] bg-no-repeat bg-cover relative ts:left-[-20px] lg:scale-70 z-2 lg:left-[-110px];
   }
   .service-text-wrap {
     @apply font-extrabold z-2;
@@ -91,11 +91,20 @@
   .service-jnshool-btn {
     @apply inline-block pr-[11px] pb-[13px];
   }
+  .service-jnshool-btn-link {
+    @apply inline-block bg-white h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px] lg:w-[80px];
+  }
   .service-tema-btn {
     @apply inline-block ml-[-5px];
   }
+  .service-tema-btn-link {
+    @apply inline-block bg-(--service-linkcard-sub-color2) h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px];
+  }
   .service-nuri-btn {
     @apply block;
+  }
+  .service-nuri-btn-link {
+    @apply inline-block bg-(--service-linkcard-sub-color2) h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px];
   }
 
   .new-teacher-container {
@@ -120,6 +129,7 @@
   .game-hamburger-title-container {
     @apply absolute bottom-0 w-full h-[50px] z-10 text-white;
   }
+
   .game-hamburger-title-text {
     @apply bg-(--service-linkcard-sub-color8) block h-auto leading-[50px] pl-4;
   }
@@ -134,15 +144,36 @@
   }
 
   .dongyo-container {
-    @apply aspect-[3/2] min-h-[220px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg bg-(--service-linkcard-sub-color11) overflow-hidden;
+    @apply aspect-[3/2] min-h-[220px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg bg-(--service-linkcard-sub-color10) overflow-hidden;
   }
   .dongyo-link {
     @apply block bg-(--service-linkcard-sub-color10) rounded-[49px] leading-[37px] text-[15px] text-white font-extrabold absolute top-3 left-3 z-30;
   }
-  .dongyo-yoso-img {
+  .dongyo-yoso-img-wrap {
+    @apply absolute bottom-0 h-[36%];
   }
-
-  .dongyo-container2 {
-    @apply relative aspect-[3/2] min-h-[220px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg z-0 bg-(--service-linkcard-sub-color11) overflow-hidden;
+  .dongyo-yoso-img {
+    @apply w-full;
+  }
+  .dongyo-text-container {
+    @apply absolute top-[70%] left-[7px];
+  }
+  .dongyo-main-text {
+    @apply font-extrabold text-white;
+  }
+  .dongyo-icon-wrap {
+    @apply flex;
+  }
+  .dongyo-icon1 {
+    @apply flex items-center mr-2;
+  }
+  .dongyo-sub-text1 {
+    @apply text-white;
+  }
+  .dongyo-icon2 {
+    @apply flex items-center;
+  }
+  .dongyo-sub-text2 {
+    @apply text-white;
   }
 }
