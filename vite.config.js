@@ -28,6 +28,7 @@ export default defineConfig({
         category: 'src/pages/category/category.html',
         hotCard: 'src/components/hot-card/hot-card.html',
         zzim: 'src/components/zzim/zzim.html',
+        nav: 'src/components/nav/nav.html',
       },
     },
   },
