@@ -24,6 +24,8 @@
 @import './pages/character/character.css';
 @import './pages/category/category.css';
 @import './components/linkcard/linkcard.css';
+@import './components/layout/layout-ttakji/layout-ttakji.css';
+
 
 @theme {
   --font-*: initial;
@@ -31,6 +33,7 @@
   --font-sans-eb: 'NanumSquareRoundEB', 'sans-serif';
   --font-sans-l: 'NanumSquareRoundL', 'sans-serif';
   --font-sans-r: 'NanumSquareRound', 'sans-serif';
+
   --color-jr-naver-yellow-100: #ffd037;
   --color-jr-naver-yellow-200: #ffc82c;
   --color-jr-naver-orange-100: #efab41;

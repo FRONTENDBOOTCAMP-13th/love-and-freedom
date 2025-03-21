@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+
+@layer components {
+  .layout-ttakji {
+    @apply px-[15px] w-full;
+    @apply ts:px-5 ts:max-w-[768px] ts:min-w-[666px];
+    @apply lg:max-w-[914px] lg:px-[10px] lg:items-center;
+    @apply xl:max-w-[1220px];
+
+    .layout-ttakji-title {
+      @apply text-[17px] font-sans-eb mb-3;
+      @apply lg:text-[26px] lg:text-center;
+    }
+
+    /* 인기 캐릭터 레이아웃 */
+    ul.popular-character {
+      @apply grid grid-cols-3;
+      @apply ts:grid-flow-col ts:grid-cols-none;
+
+      /* 여백 */
+      @apply gap-[10px];
+      @apply ts:gap-[20px];
+      @apply lg:gap-[26px];
+      @apply xl:gap-[32px];
+
+      /* 기본 : 6개의 li */
+      li.popular-character {
+        @apply nth-[n+7]:hidden;
+
+        /* 1024px 이후 : 7개의 li */
+        /* @apply lg:mr-[26.5px]; */
+        @apply lg:w-[105px] lg:h-[150px];
+        @apply nth-[7]:lg:list-item;
+        @apply nth-[7]:border-blue-500 nth-[7]:border-2;
+
+        /* 1280px 이후 : 9개의 li */
+        /* @apply xl:mr-[31.8px]; */
+        @apply nth-[n+8]:xl:list-item;
+        @apply nth-[n+8]:border-red-500 nth-[n+8]:border-2;
+      }
+    }
+
+    /* 스크롤 가능한 딱지 레이아웃 => 추천 캐릭터, 오디오 동요 동화 */
+    ul.scrollable {
+      @apply grid grid-flow-col grid-cols-none;
+      @apply overflow-x-auto snap-x snap-mandatory;
+      /* @apply ts:scroll-left-0; */
+
+      /* 여백 */
+      @apply gap-[10px];
+      @apply ts:gap-[20px];
+
+      &.recommended-character {
+        @apply lg:gap-[26.5px];
+        @apply xl:gap-[32px];
+      }
+
+      &.audio {
+        @apply lg:gap-[34.8px];
+        @apply xl:gap-[34.3px];
+      }
+
+      li {
+        @apply snap-center;
+      }
+
+      li.recommended-character {
+        @apply w-[120px] h-[165px];
+        @apply lg:w-[105px] lg:h-[150px];
+      }
+
+      li.audio {
+        @apply w-[120px] h-[165px];
+      }
+    }
+
+    /* 필터 결과 레이아웃 */
+    ul.layout-filter-buttons {
+      @apply flex flex-nowrap gap-x-1.5 justify-start mb-5;
+      @apply overflow-x-hidden;
+      @apply lg:justify-center;
+    }
+
+    ul.layout-filter {
+      @apply grid grid-cols-3;
+      @apply ts:grid-cols-6;
+      @apply lg:grid-cols-7;
+      @apply xl:grid-cols-9;
+
+      /* 여백 */
+      @apply gap-[10px];
+      @apply ts:gap-[20px];
+      @apply lg:gap-[26px];
+      @apply xl:gap-[32px];
+    }
+  }
+}
