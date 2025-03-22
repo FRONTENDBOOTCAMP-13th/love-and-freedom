@@ -11,6 +11,7 @@
 /* main > .imsy.many-ttakji > 엄청 많은 딱지 레이아웃 */
 
 .wrap {
+  @apply mt-15;
   @apply grid grid-cols-[[full-start]_20px_[content-start]_1fr_[content-end]_20px_[full-end]];
   @apply ts:grid-cols-[[full-start]_20px_[content-start]_1fr_1fr_[content-end]_20px_[full-end]];
   @apply md:grid-cols-[[full-start]_1fr_[content-start]_repeat(2,_calc(742px_/_2))_[content-end]_1fr_[full-end]];
@@ -18,7 +19,7 @@
   @apply xl:grid-cols-[[full-start]_1fr_[content-start]_repeat(4,_calc(1200px_/_4))_[content-end]_1fr_[full-end]];
 
   .header-wrap {
-    @apply col-[full];
+    @apply col-[full] w-screen h-15 fixed top-0;
   }
   .nav-wrap {
     @apply col-[full];
