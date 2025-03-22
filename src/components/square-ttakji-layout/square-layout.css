@@ -13,7 +13,7 @@
 @layer components {
   .category-wrap-title {
     /* 기본 스타일 */
-    @apply font-sans-r text-[16px] font-semibold block px-[20px] mb-[3px];
+    @apply font-sans-r text-[16px] font-semibold block mb-[3px];
     @apply lg:text-[26px] lg:font-extrabold lg:flex lg:justify-center lg:items-center lg:relative;
   }
 
@@ -53,13 +53,13 @@
   }
 
   .square-list {
-    @apply px-[20px] flex flex-nowrap overflow-x-auto whitespace-nowrap gap-[10px];
+    @apply flex flex-nowrap overflow-x-auto whitespace-nowrap gap-[10px];
     @apply lg:gap-[16px] lg:px-0;
     @apply xl:gap-[18px];
   }
 
   .category-section {
-    @apply w-[768px] overflow-hidden;
+    @apply w-[702px] overflow-hidden;
     @apply lg:w-[894px];
     @apply xl:w-[1200px];
   }

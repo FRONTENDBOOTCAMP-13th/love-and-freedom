@@ -4,4 +4,10 @@
   .third-banner-layout {
     @apply lg:hidden;
   }
+  .category-section {
+    @apply col-span-2 xl:col-span-4;
+  }
+  .category-button-wrap {
+    @apply col-span-4;
+  }
 }

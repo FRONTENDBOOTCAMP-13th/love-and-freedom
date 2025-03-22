@@ -32,19 +32,461 @@
     <title>쥬니어 네이버</title>
   </head>
   <body>
+    <div class="header-wrap">
+      <header>
+        <h1 class="p-1">
+          <a href="#void"
+            ><img
+              class="md:hidden"
+              src="/images/header/header-logo.png"
+              alt=""
+            /><img
+              class="hidden md:inline"
+              src="/images/header/header-logo-pc.png"
+              width="120px"
+              alt=""
+            />
+          </a>
+        </h1>
+        <div class="search-bar-wrap">
+          <div class="search-top">
+            <input
+              type="search"
+              id="header-search-bar"
+              placeholder="검색어를 입력하세요."
+              class="header-search-input"
+            />
+            <label for="header-search-bar" class="search-bar-button"></label>
+            <button class="input-x-button">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.74545 0.471045C2.11739 -0.157015 1.0991 -0.157015 0.471045 0.471045C-0.157015 1.0991 -0.157015 2.11739 0.471045 2.74545L5.72559 8L0.471045 13.2546C-0.157015 13.8826 -0.157015 14.9009 0.471045 15.529C1.0991 16.157 2.11739 16.157 2.74545 15.529L8 10.2744L13.2546 15.529C13.8826 16.157 14.9009 16.157 15.529 15.529C16.157 14.9009 16.157 13.8826 15.529 13.2546L10.2744 8L15.529 2.74545C16.157 2.11739 16.157 1.09911 15.529 0.471045C14.9009 -0.157014 13.8826 -0.157014 13.2546 0.471045L8 5.72559L2.74545 0.471045Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="search-box">
+            <ul>
+              <li>십 년을 함께한 친구들처럼</li>
+              <li>삼삼오오 모여서 웃고 떠들며</li>
+              <li>기쁨을 나누는 이 순간이</li>
+              <li>최상의 행복을 선물해주는</li>
+              <li>고마운 시간들로 가득해.</li>
+            </ul>
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-button-wrap">
+          <a href="#void" class="header-login-button">로그인</a>
+          <a href="http://www.naver.com" class="header-naver-button"></a>
+        </div>
+      </header>
+    </div>
     <div class="wrap">
-      <div class="header-wrap">
-        <!-- <header></header> -->
-      </div>
       <div class="nav-wrap">
-        <!-- <nav></nav> -->
+        <ul class="jr-naver-nav">
+          <li class="jr-naver-nav-menu main-menu">
+            <a class="nav-link-block" href="#" target="_blank">
+              <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
+                <img
+                  class="w-full"
+                  src="/public/images/nav/main-icon.svg"
+                  alt=""
+                />
+              </div>
+              <p class="nav-menu-text">추천</p>
+              <div class="nav-hover-line"></div>
+            </a>
+            <div class="nav-hover-small">
+              <img
+                class="small-green"
+                src="/public/images/nav/small-circle-green.svg"
+                alt=""
+              />
+              <img
+                class="small-red"
+                src="/public/images/nav/small-circle-red.svg"
+                alt=""
+              />
+              <img
+                class="small-yellow"
+                src="/public/images/nav/small-star-yellow.svg"
+                alt=""
+              />
+              <img
+                class="small-blue"
+                src="/public/images/nav/small-star-blue.svg"
+                alt=""
+              />
+            </div>
+          </li>
+          <li class="jr-naver-nav-menu character-menu">
+            <a class="nav-link-block" href="#" target="_blank">
+              <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
+                <img
+                  class="w-full"
+                  src="/public/images/nav/character-icon.svg"
+                  alt=""
+                />
+              </div>
+              <p class="nav-menu-text">캐릭터</p>
+              <div class="nav-hover-line"></div>
+            </a>
+            <div class="nav-hover-small">
+              <img
+                class="small-green"
+                src="/public/images/nav/small-circle-green.svg"
+                alt=""
+              />
+              <img
+                class="small-red"
+                src="/public/images/nav/small-circle-red.svg"
+                alt=""
+              />
+              <img
+                class="small-yellow"
+                src="/public/images/nav/small-star-yellow.svg"
+                alt=""
+              />
+              <img
+                class="small-blue"
+                src="/public/images/nav/small-star-blue.svg"
+                alt=""
+              />
+            </div>
+          </li>
+          <li class="jr-naver-nav-menu category-menu">
+            <a class="nav-link-block" href="/src/pages/category/category.html">
+              <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
+                <img
+                  class="w-full"
+                  src="/public/images/nav/category-icon.svg"
+                  alt=""
+                />
+              </div>
+              <p class="nav-menu-text">카테고리</p>
+              <div class="nav-hover-line"></div>
+            </a>
+            <div class="nav-hover-small">
+              <img
+                class="small-green"
+                src="/public/images/nav/small-circle-green.svg"
+                alt=""
+              />
+              <img
+                class="small-red"
+                src="/public/images/nav/small-circle-red.svg"
+                alt=""
+              />
+              <img
+                class="small-yellow"
+                src="/public/images/nav/small-star-yellow.svg"
+                alt=""
+              />
+              <img
+                class="small-blue"
+                src="/public/images/nav/small-star-blue.svg"
+                alt=""
+              />
+            </div>
+          </li>
+          <li class="jr-naver-nav-menu bookmark-menu">
+            <a class="nav-link-block" href="#" target="_blank">
+              <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
+                <img
+                  class="w-full"
+                  src="/public/images/nav/heart-icon.svg"
+                  alt=""
+                />
+              </div>
+              <p class="nav-menu-text">즐겨찾기</p>
+              <div class="nav-hover-line"></div>
+            </a>
+            <div class="nav-hover-small">
+              <img
+                class="small-green"
+                src="/public/images/nav/small-circle-green.svg"
+                alt=""
+              />
+              <img
+                class="small-red"
+                src="/public/images/nav/small-circle-red.svg"
+                alt=""
+              />
+              <img
+                class="small-yellow"
+                src="/public/images/nav/small-star-yellow.svg"
+                alt=""
+              />
+              <img
+                class="small-blue"
+                src="/public/images/nav/small-star-blue.svg"
+                alt=""
+              />
+            </div>
+          </li>
+        </ul>
       </div>
       <main>
-        <section class="imsy nemo-ttakji-layout">
-          <!-- 네모 딱지 레이아웃 -->
+        <!-- 동요 -->
+        <section class="category-section" aria-labelledby="categoryTitle">
+          <h2 id="categoryTitle" class="category-wrap-title bg-green-200">
+            <!-- 카테고리 딱지 반응형 필요; 추후 수정 예정 -->
+            <a
+              href="https://m.jr.naver.com/song/populars_song"
+              target="_blank"
+              class="title-link"
+              aria-label="동요(전체) 페이지로 이동"
+              rel="noopener noreferrer"
+              >동요</a
+            >
+            <a
+              href="https://jr.naver.com/song/populars_song"
+              target="_blank"
+              class="arrow-link"
+              aria-label="동요(전체) 페이지로 이동"
+              rel="noopener noreferrer"
+            >
+              <span class="hover-text">전체</span>
+            </a>
+          </h2>
+          <ul class="square-list bg-blue-100">
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+          </ul>
         </section>
-        <section class="imsy nemo-ttakji-layout">
-          <!-- 네모 딱지 레이아웃 -->
+        <!-- 동화 -->
+        <section class="category-section" aria-labelledby="categoryTitle">
+          <h2 id="categoryTitle" class="category-wrap-title bg-green-200">
+            <!-- 카테고리 딱지 반응형 필요; 추후 수정 예정 -->
+            <a
+              href="https://jr.naver.com/story/popular_story"
+              target="_blank"
+              class="title-link"
+              aria-label="동화(전체) 페이지로 이동"
+              rel="noopener noreferrer"
+              >동화</a
+            >
+            <a
+              href="https://jr.naver.com/story/popular_story"
+              target="_blank"
+              class="arrow-link"
+              aria-label="동요(전체) 페이지로 이동"
+              rel="noopener noreferrer"
+            >
+              <span class="hover-text">전체</span>
+            </a>
+          </h2>
+          <ul class="square-list bg-blue-100">
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+            <div>
+              <a href="#" class="ttakji-category"
+                ><img
+                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
+                  alt=""
+                  class="ttakji-category-image"
+                />
+                <div class="ttakji-category-title">재능TV</div></a
+              >
+            </div>
+          </ul>
         </section>
         <section class="imsy banner-layout">
           <!-- 배너 레이아웃 -->
@@ -69,11 +511,140 @@
           나는야 1023px이하에서만 보이는 세번째 배너!
         </section>
         <section class="imsy category-button-layout">
-          <!-- 카테고리 버튼 레이아웃 -->
+          <div
+            class="category-button-wrap grid grid-cols-[80px_1fr] grid-rows-[repeat(3,_3rem)] gap-y-4 max-w-[728px] mx-auto lg:grid-cols-[160px_1fr] lg:grid-rows-[56px] lg:gap-x-[10px] lg:py-1 lg:max-w-full xl:gap-x-5 xl:grid-cols-[290px_1fr]"
+          >
+            <a
+              class="category-button xl:w-[290px] lg:w-40 lg:leading-12 lg:border-4 category-event-button lg:rounded-full lg:col-span-1 lg:border-[#f3f4f7] lg:bg-transparent lg:text-black lg:text-[22px] lg:before:content-[] lg:before:bg-(image:--category-button-event-icon) lg:before:w-[22px] lg:before:h-[22px] lg:before:inline-block lg:before:bg-no-repeat lg:before:bg-contain"
+              href="https://jr.naver.com/event/list"
+              >이벤트</a
+            >
+            <a
+              class="category-button leading-12 col-span-full bg-[#f1f4f7] text-black lg:hidden"
+              href="https://jr.naver.com/introduce/junis"
+              >쥬니스 소개</a
+            >
+            <div
+              class="lg:leading-12 lg:border-4 empty-background-border lg:rounded-full box-border col-span-full grid grid-cols-subgrid leading-[42px] lg:grid-cols-[176px_1fr] lg:col-span-1"
+            >
+              <a
+                class="font-sans-eb text-center col-span-1 block before:content-[] before:bg-(image:--category-button-notice-icon) before:w-[14px] before:h-[15px] before:inline-block before:bg-no-repeat lg:text-[22px] lg:before:w-[22px] lg:before:h-[22px] lg:before:bg-contain"
+                href="https://m.blog.naver.com/PostView.naver?blogId=jrnaver&logNo=223642992403&navType=bg"
+                >공지<span class="hidden lg:inline-block">사항</span></a
+              >
+              <a
+                class="col-span-1 truncate text-[16px]"
+                href="https://m.blog.naver.com/PostView.naver?blogId=jrnaver&logNo=223642992403&navType=bg"
+                >[쥬니버스쿨] 앱 사용 가이드</a
+              >
+            </div>
+          </div>
         </section>
       </main>
       <div class="footer-wrap">
-        <!-- <footer></footer> -->
+        <!-- 모바일 먼저 -->
+        <footer class="footer">
+          <div class="footer-content-aria">
+            <div class="footer-nav">
+              <a href="#" target="_blank" class="inline-block footer-nav-text"
+                >공지사항</a
+              >
+              <span></span>
+              <a href="#" target="_blank" class="inline-block footer-nav-text"
+                >이용약관</a
+              >
+              <span></span>
+              <a href="#" target="_blank" class="inline-block footer-nav-text"
+                >운영원칙</a
+              >
+              <span></span> <br class="md:hidden" />
+              <a
+                href="#"
+                target="_blank"
+                class="inline-block footer-nav-text font-bold"
+                >개인정보 처리방침</a
+              >
+              <span></span>
+              <a href="#" target="_blank" class="inline-block footer-nav-text"
+                >청소년보호정책</a
+              >
+              <span></span>
+              <a href="#" target="_blank" class="inline-block footer-nav-text"
+                >고객센터</a
+              >
+              <span></span>
+              <a href="#" target="_blank" class="inline-block footer-nav-text"
+                >제휴제안</a
+              >
+            </div>
+            <div class="footer-copy">&copy; NAVER Connect Foundation</div>
+            <div class="footer-copy-sub">
+              <p>
+                본 콘텐츠의 저작권은 저자 또는 제공처에 있으며,
+                <br class="md:hidden" />
+                이를 무단 이용하는 경우 저작권등에 따라 법적 책임을 질 수
+                있습니다.
+              </p>
+            </div>
+            <div class="footer-icon-content desktop:justify-end">
+              <div class="qr-app-icon group">
+                <div class="qr-image">
+                  <p class="mb-3.5 font-bold text-[15px]">앱 설치하기</p>
+                  <div class="w-[110px]">
+                    <img
+                      class=""
+                      src="/public/images/footer/img-qr-app.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="app-icon">
+                  <img
+                    class="md:w-[78px] md:h-[42px]"
+                    src="/public/images/footer/icon-app.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="sns-icon">
+                <div class="ml-[11px] sns-icon-naver-blog">
+                  <a href="/"
+                    ><img
+                      class="w-6 md:w-8"
+                      src="/public/images/footer/icon-blog.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="ml-[11px] sns-icon-youtube">
+                  <a href="/"
+                    ><img
+                      class="w-6 md:w-8"
+                      src="/public/images/footer/icon-youtube.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="ml-[11px] sns-icon-instagram">
+                  <a href="/"
+                    ><img
+                      class="w-6 md:w-8"
+                      src="/public/images/footer/icon-instagram.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-mobile md:hidden">
+            <div class="footer-mobile-content">
+              <a href="/">
+                <img
+                  src="/public/images/footer/footer-dark-design.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </footer>
       </div>
       <div class="background-animation-wrap">
         <!-- 애니메이션 요소들 -->
