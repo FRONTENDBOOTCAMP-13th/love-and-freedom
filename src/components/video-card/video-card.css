@@ -7,6 +7,9 @@
 }
 
 @layer components {
+  .video-card {
+    @apply cursor-pointer;
+  }
   .video-thumb {
     @apply aspect-video rounded-xl;
   }
