@@ -25,6 +25,7 @@
 @import './pages/category/category.css';
 @import './components/linkcard/linkcard.css';
 @import './components/layout/layout-ttakji/layout-ttakji.css';
+@import './pages/ttakji/ttakji.css';
 
 
 @theme {

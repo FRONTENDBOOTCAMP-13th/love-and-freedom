@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+@layer components {
+  .ttakji-info {
+    @apply col-span-full row-span-full font-sans-r mb-[10px] border-b-[12px] border-b-[#f1f4f7];
+    .ttakji-info-image-wrap {
+      @apply lg:h-[160px] lg:overflow-hidden lg:bg-[#2cccf2];
+      > img {
+        @apply w-screen lg:blur-xs lg:relative lg:top-[-200px];
+      }
+    }
+    .ttakji-info-bottom-contents {
+      @apply relative text-[12px] px-5 lg:m-auto lg:w-[1024px] lg:px-[65px] xl:w-[1280px] xl:px-[40px];
+      .ttakji-info-contents-top {
+        @apply text-right py-5;
+        > span {
+          @apply flex justify-end gap-2;
+          > span {
+            @apply flex flex-col;
+            > span {
+              @apply text-base font-sans-b;
+            }
+          }
+        }
+      }
+      .ttakji-info-contents-bottom {
+        @apply text-left flex flex-col ts:text-center pb-9;
+        > h3 {
+          @apply text-2xl font-sans-eb;
+        }
+        > span {
+          @apply text-base;
+        }
+      }
+      .image-jjim-wrapper {
+        @apply absolute border-[8px] border-white rounded-full top-[-120px] left-[-30px] scale-60 ts:left-[50%] ts:translate-x-[-50%];
+        .jjim-button {
+          @apply hidden ts:block ts:scale-225 ts:translate-y-[-20px];
+        }
+      }
+      > .jjim-position-wrap {
+        @apply absolute bottom-[52px] right-[20px] scale-130 ts:hidden;
+      }
+    }
+  }
+  .ttakji-main-top {
+    @apply col-span-full flex justify-between;
+    > div:first-child {
+      @apply flex gap-2 font-sans-r;
+      > span {
+        @apply font-sans-eb;
+      }
+    }
+    > div:last-child {
+      @apply flex items-center;
+      .ttakji-video-sort-filter {
+        @apply appearance-none;
+      }
+    }
+  }
+  /* ts전에 카드썸네일이 180px이어야함 그부분만 수정... */
+  .ttakji-videos-section {
+    @apply col-span-full grid grid-cols-1 gap-5;
+    @apply ts:grid-cols-3;
+    @apply md:grid-cols-[repeat(3,_calc(648px_/_3))] md:m-auto;
+    @apply xl:grid-cols-[repeat(4,_calc(1100px_/_4))];
+  }
+}
