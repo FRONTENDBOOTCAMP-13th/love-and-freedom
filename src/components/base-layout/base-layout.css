@@ -32,7 +32,7 @@
   }
 }
 main {
-  @apply px-5 box-border pb-10 lg:pb-[296px];
+  @apply px-5 lg:px-0 box-border pb-10 lg:pb-[296px];
   .card-component-wrap {
     @apply grid grid-cols-subgrid col-span-full ts:gap-x-[14px] gap-y-[20px] lg:gap-x-[20px] lg:gap-y-[16px];
     > ul {
