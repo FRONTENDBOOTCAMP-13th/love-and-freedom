@@ -24,6 +24,7 @@
 @import './pages/character/character.css';
 @import './pages/category/category.css';
 @import './components/layout/layout-ttakji/layout-ttakji.css';
+@import './pages/ttakji/ttakji.css';
 
 @theme {
   --font-*: initial;

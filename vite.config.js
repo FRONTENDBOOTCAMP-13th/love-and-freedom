@@ -29,6 +29,7 @@ export default defineConfig({
         hotCard: 'src/components/hot-card/hot-card.html',
         zzim: 'src/components/zzim/zzim.html',
         nav: 'src/components/nav/nav.html',
+        ttakjiPage: 'src/pages/ttakji/ttakji.html',
       },
     },
   },
