@@ -21,7 +21,7 @@
 
 @layer components {
   .category-banner {
-    @apply w-full h-auto flex justify-center;
+    @apply w-full h-auto;
   }
   .category-banner-link {
     @apply bg-contain bg-center bg-no-repeat block w-[235px] h-[76px];

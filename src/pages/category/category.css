@@ -4,10 +4,48 @@
   .third-banner-layout {
     @apply lg:hidden;
   }
+
+  /* 열 차지 */
   .category-section {
-    @apply col-span-2 xl:col-span-4;
+    @apply col-span-1 cm:col-span-2 lg:col-span-3 xl:col-span-4;
   }
   .category-button-wrap {
-    @apply col-span-4;
+    @apply col-span-1 cm:col-span-2 lg:col-span-3 xl:col-span-4;
+  }
+  .category-page-banner {
+    @apply col-span-1 cm:col-span-2 lg:col-span-3 xl:col-span-4;
+  }
+
+  /* 하단 쥬니스 이미지 */
+  .bottom-image {
+    @apply hidden lg:flex lg:justify-center lg:items-center lg:col-span-3 xl:col-span-4;
+    img {
+      @apply lg:w-[890px] lg:h-[250px] lg:mb-[-360px] lg:z-[1];
+    }
+  }
+
+  /* 카테고리 타이틀 여백 */
+  .category-wrap-title {
+    @apply lg:mt-[40px] lg:mb-[30px];
+  }
+  /* 카테고리 섹션 여백 */
+  .category-section {
+    @apply pb-[17px];
+  }
+
+  /* 배너 조정 */
+  /* 기본 중앙 정렬 */
+  .category-banner {
+    @apply flex justify-center;
+  }
+  .category-banner-link {
+    @apply w-[234px] cm:w-[317px] lg:w-[281px] xl:w-[380px];
+  }
+  /* 1024px 이상 배너쌍 중앙에 가져오기 */
+  .banner-left {
+    @apply lg:justify-end;
+  }
+  .banner-right {
+    @apply lg:justify-start;
   }
 }
