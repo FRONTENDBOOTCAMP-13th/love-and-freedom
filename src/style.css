@@ -28,6 +28,7 @@
 @import './pages/ttakji/ttakji.css';
 @import './components/like-my/like-my.css';
 @import './pages/like/likepage.css';
+@import './components/like-logout/like-logout.css';
 
 @theme {
   --font-*: initial;

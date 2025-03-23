@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+@theme {
+  --like-page-logout-bg: url(/images/like-logout/logout-mini.png);
+  --login-color: #0087ff;
+}
+@layer {
+  .like-logout-container {
+    @apply text-center lg:hidden;
+  }
+  .like-logout-mini-img {
+    @apply after:bg-(image:--like-page-logout-bg);
+    @apply content-[""] after:inline-block after:w-[64px] after:h-[89px] after:bg-[length:320px_237px];
+  }
+  .like-logout-title {
+    @apply font-bold text-xl pb-1;
+  }
+  .like-logout-sub {
+    @apply text-gray-400 pt-1 pb-4;
+  }
+  .like-logout-container2 {
+    @apply hidden lg:block text-center;
+  }
+  .like-logout-title2 {
+    @apply font-bold text-2xl mb-2;
+  }
+  .like-logout-sub1 {
+    @apply text-gray-500;
+  }
+  .like-logout-sub2 {
+    @apply text-(--login-color) underline;
+  }
+}
