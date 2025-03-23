@@ -71,8 +71,10 @@ main {
   .header-wrap {
   }
   .nav-wrap {
+    @apply bg-yellow-300 h-20;
   }
   main {
+    @apply bg-green-300;
   }
   .footer-wrap {
   }
@@ -80,4 +82,14 @@ main {
 
 .imsy {
   @apply h-40 bg-pink-200;
+}
+
+main {
+  .card-component-wrap {
+    > ul {
+      > li {
+        @apply bg-purple-500;
+      }
+    }
+  }
 }
