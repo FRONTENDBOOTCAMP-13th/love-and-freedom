@@ -32,4 +32,22 @@
   .character-banner-contents3 {
     @apply rounded-[12px] p-8 bg-green-500;
   }
+  .category1-container {
+    @apply grid grid-cols-1 lg:grid-cols-2;
+  }
+  .category1-contents1 {
+    @apply bg-red-500;
+  }
+  .category1-contents2 {
+    @apply hidden lg:block bg-blue-500;
+  }
+  .category2-container {
+    @apply grid grid-cols-1 lg:grid-cols-2;
+  }
+  .category2-contents1 {
+    @apply bg-red-500;
+  }
+  .category2-contents2 {
+    @apply hidden lg:block bg-blue-500;
+  }
 }
