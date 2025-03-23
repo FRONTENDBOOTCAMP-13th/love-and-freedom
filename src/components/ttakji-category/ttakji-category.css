@@ -2,13 +2,12 @@
 
 @layer components {
   .ttakji-category {
-    @apply block;
     @apply flex flex-col;
     @apply bg-jr-naver-yellow-200 rounded-[13.5px];
 
     @apply w-[144px] h-[132px];
-    @apply lg:w-[164px] lg:h-[152px];
-    @apply xl:w-[183px] xl:h-[168px];
+    @apply lg:w-[166px] lg:h-[153px];
+    @apply xl:w-[185px] xl:h-[170px];
 
     .ttakji-category-image {
       @apply rounded-t-[inherit];
