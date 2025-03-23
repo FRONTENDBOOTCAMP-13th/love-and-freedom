@@ -2,15 +2,24 @@
 
 @layer components {
   .ttakji-category {
-    @apply block w-[166px] h-[153px] rounded-[13.5px] bg-green-400;
+    @apply block;
     @apply flex flex-col;
-  }
+    @apply bg-jr-naver-yellow-200 rounded-[13.5px];
 
-  .ttakji-category-image {
-    @apply rounded-t-[inherit] w-[166px] h-[95px];
-  }
+    @apply w-[144px] h-[132px];
+    @apply lg:w-[164px] lg:h-[152px];
+    @apply xl:w-[183px] xl:h-[168px];
 
-  .ttakji-category-title {
-    @apply font-sans-eb h-[58px] flex items-center justify-center text-white;
+    .ttakji-category-image {
+      @apply rounded-t-[inherit];
+    }
+
+    .ttakji-category-title {
+      @apply flex items-center justify-center;
+      @apply font-sans-eb h-[50px] text-white text-[16px];
+      @apply lg:text-[18px];
+      @apply lg:h-[58px];
+      @apply xl:h-[63px];
+    }
   }
 }
