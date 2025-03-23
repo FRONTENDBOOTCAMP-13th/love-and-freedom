@@ -2,7 +2,6 @@
 
 @layer components {
   .ttakji-category {
-    @apply block;
     @apply flex flex-col;
     @apply bg-jr-naver-yellow-200 rounded-[13.5px];
 
