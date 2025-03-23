@@ -26,7 +26,8 @@
 @import './components/linkcard/linkcard.css';
 @import './components/layout/layout-ttakji/layout-ttakji.css';
 @import './pages/ttakji/ttakji.css';
-
+@import './components/like-my/like-my.css';
+@import './pages/like/likepage.css';
 
 @theme {
   --font-*: initial;
