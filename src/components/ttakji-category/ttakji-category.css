@@ -5,7 +5,7 @@
     @apply flex flex-col;
     @apply bg-jr-naver-yellow-200 rounded-[13.5px];
 
-    @apply w-[144px] h-[132px];
+    @apply w-[146px] h-[134px];
     @apply lg:w-[166px] lg:h-[153px];
     @apply xl:w-[185px] xl:h-[170px];
 
