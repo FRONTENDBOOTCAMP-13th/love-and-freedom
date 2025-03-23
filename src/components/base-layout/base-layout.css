@@ -37,9 +37,6 @@ main {
     @apply grid grid-cols-subgrid col-span-full ts:gap-x-[14px] gap-y-[20px] lg:gap-x-[20px] lg:gap-y-[16px];
     > ul {
       @apply contents;
-      /* > li {
-        @apply col-span-1;
-      } */
       > li:nth-child(7),
       > li:nth-child(8) {
         @apply hidden xl:block;
