@@ -12,8 +12,8 @@
 
 .wrap {
   @apply mt-15;
-  @apply grid grid-cols-[[full-start]_20px_[content-start]_1fr_[content-end]_20px_[full-end]];
-  @apply ts:grid-cols-[[full-start]_20px_[content-start]_1fr_1fr_[content-end]_20px_[full-end]];
+  @apply grid grid-cols-[[full-start]_20px_[content-start]_calc(100vw_-_40px)_[content-end]_20px_[full-end]];
+  @apply ts:grid-cols-[[full-start]_20px_[content-start]_repeat(2,_calc((100vw_-_54px)_/_2))_[content-end]_20px_[full-end]];
   @apply md:grid-cols-[[full-start]_1fr_[content-start]_repeat(2,_calc(742px_/_2))_[content-end]_1fr_[full-end]];
   @apply lg:grid-cols-[[full-start]_1fr_[content-start]_repeat(3,_calc(894px_/_3))_[content-end]_1fr_[full-end]];
   @apply xl:grid-cols-[[full-start]_1fr_[content-start]_repeat(4,_calc(1200px_/_4))_[content-end]_1fr_[full-end]];
@@ -37,9 +37,6 @@ main {
     @apply grid grid-cols-subgrid col-span-full ts:gap-x-[14px] gap-y-[20px] lg:gap-x-[20px] lg:gap-y-[16px];
     > ul {
       @apply contents;
-      > li {
-        @apply col-span-1;
-      }
       > li:nth-child(7),
       > li:nth-child(8) {
         @apply hidden xl:block;
