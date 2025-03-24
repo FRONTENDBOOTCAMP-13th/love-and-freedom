@@ -4,6 +4,18 @@
 📅 프로젝트 진행기간 : 2025.03.14.~20205.03.25.(12일)
 <br><br>
 
+## 📋 목차
+1. [팀 구성원](#팀-구성원)
+2. [프로젝트 개요](#프로젝트-개요)
+3. [개발 목표 및 범위](#개발-목표-및-범위)
+4. [관련 링크](#관련-링크)
+5. [프로젝트 구조](#프로젝트-구조)
+6. [기술 스택](#기술-스택)
+7. [실행 방법](#실행-방법)
+8. [배포 링크](#배포-링크)
+
+<br>
+
 ## 🧑‍🤝‍🧑 팀 구성원
 
 | <img src="https://jr.naver.com/assets/img/junis/juni-main.png" width="100" /> | <img src="https://jr.naver.com/assets/img/junis/poki-main.png" width="100" /> | <img src="https://jr.naver.com/assets/img/junis/comie-main.png" width="100" /> | <img src="https://jr.naver.com/assets/img/junis/mini-main.png" width="100" /> | <img src="https://jr.naver.com/assets/img/junis/piyo-main.png" width="100" /> |
@@ -96,7 +108,9 @@
  ┗ 📜vite.config.js           # vite 설정 파일
 ```
 
-<br><br>
+<br>
+
+
 
 ## 🛠 기술 스택
 | **분야**      | **기술 스택**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -105,6 +119,27 @@
 | **DevOps**    | <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white">                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Tools**     | <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"> <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white"> <img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"> |
 
+<br>
+
+## ▶ 실행 방법
+
+1. **환경 설정**: 
+     ```bash
+     git clone http://github.com/FRONTENDBOOTCAMP-13th/love-and-freedom.git 
+     cd love-and-freedom
+     ```
+2. **의존성 설치**:
+   ```bash
+   npm install
+   ```
+3. **프로젝트 실행**: 실행 명령어로 프로젝트를 시작합니다.
+   ```bash
+   npm run dev
+   ```
+
+<br>
+
+## 🌍 배포 링크
 
 
 <br><br>
