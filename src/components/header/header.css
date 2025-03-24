@@ -87,7 +87,7 @@
       }
     }
     ul:last-child {
-      @apply bg-blue-800 h-50 w-50;
+      @apply h-50 w-50;
     }
   }
 
