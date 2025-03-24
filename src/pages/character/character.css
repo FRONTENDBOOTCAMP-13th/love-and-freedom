@@ -7,11 +7,7 @@
 
     @apply lg:after:bg-[url("/images/page-images/character/bg-img-character-page.png")];
     @apply lg:after:w-[890px] lg:after:h-[250px];
-<<<<<<< Updated upstream
     @apply lg:after:absolute lg:after:bottom-[-7px];
-=======
-    @apply lg:after:absolute lg:after:bottom-0;
->>>>>>> Stashed changes
     @apply lg:after:bg-contain lg:after:bg-center lg:after:bg-no-repeat;
     @apply lg:after:left-1/2 lg:after:translate-x-[-50%];
   }
