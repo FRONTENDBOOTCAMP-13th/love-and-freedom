@@ -128,7 +128,7 @@
 }
 @layer components {
   .top-link {
-    @apply grid fixed bottom-0 right-1/20 scale-25;
+    @apply grid fixed bottom-[-320px] right-[-210px] scale-10;
 
     > * {
       @apply col-span-full row-span-full;
