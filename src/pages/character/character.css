@@ -2,7 +2,7 @@
 
 @layer components {
   /* main pb영역에 lg:after 이용해서 배경이미지 삽입 */
-  main {
+  main.character-page {
     @apply relative;
 
     @apply lg:after:bg-[url("/images/page-images/character/bg-img-character-page.png")];
