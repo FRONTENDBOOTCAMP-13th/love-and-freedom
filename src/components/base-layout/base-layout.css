@@ -87,7 +87,7 @@ main {
 
 /* 시각적으로 보기 위한 색/크기 입니다 */
 /* 아래 코드 외에는 크기를 준 코드가 없습니다. */
-.wrap {
+/* .wrap {
   .header-wrap {
   }
   .nav-wrap {
@@ -96,7 +96,7 @@ main {
   }
   .footer-wrap {
   }
-}
+} */
 
 .imsy {
   @apply h-40 bg-pink-200;
