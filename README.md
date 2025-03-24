@@ -142,8 +142,15 @@
 ## 🌍 배포 링크 <a id="배포-링크"></a>
 [![Website](https://img.shields.io/badge/Juniver-Netlify-blue?style=for-the-badge&logo=netlify)](https://juniver.netlify.app/)
 
+<br>
+
+
+
+
 <br><br>
 <br><br>
 <br><br>
+
+📌 컨벤션 및 자세한 문서는 [GitHub Wiki에서 확인하기](https://github.com/FRONTENDBOOTCAMP-13th/love-and-freedom/wiki) 
 
 <img src="https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/242026976_2035735876593042_2641863885636640452_n.png?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=UZ0T182CV5MQ7kNvgGFfamK&_nc_oc=AdlEE3ByLh_FPrywBvXQh6oo-kcn4JwV3tFQZAyWptJM_Y31yJKgqLKIQqk5j7sPvRw&_nc_zt=23&_nc_ht=scontent-ssn1-1.xx&_nc_gid=Mgh4w3Bq3-kepOhT_i9jfA&oh=00_AYGni956XxyrfumdTxHWJoH7XbyIRIXVT3g9POrFJEUU7Q&oe=67E5FFE3" width="1000" />
