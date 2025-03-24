@@ -5,10 +5,20 @@
     @apply text-[18px] font-sans-eb mb-3;
     @apply lg:text-[26px] lg:text-center;
 
-    a {
+    button {
       @apply underline decoration-[5px] -underline-offset-1 decoration-jr-naver-yellow-100 font-sans-eb;
-      @apply after:content-[""] after:inline-block after:bg-[url("/images/atlas/sp_common.png")] after:w-[15px] after:h-[10px] after:bg-[length:320px_237px] after:bg-[-289px_-177px] after:align-middle;
-      @apply lg:after:w-[22px] lg:after:h-[15px] lg:after:bg-[url("/images/atlas/sp_pc_common.png")] lg:after:bg-[length:895px_262px] lg:after:bg-[-684px_-186px];
+      @apply after:content-[""] after:align-middle after:inline-block after:bg-[url("/images/atlas/sp_common.png")] after:bg-[length:320px_237px] after:w-[15px] after:h-[10px];
+      @apply lg:after:w-[22px] lg:after:h-[15px] lg:after:bg-[url("/images/atlas/sp_pc_common.png")] lg:after:bg-[length:895px_262px];
+    }
+
+    button.pressed {
+      @apply after:bg-[-273px_-177px];
+      @apply lg:after:bg-[-661px_-186px];
+    }
+
+    button.unpressed {
+      @apply after:bg-[-289px_-177px];
+      @apply lg:after:bg-[-684px_-186px];
     }
   }
 

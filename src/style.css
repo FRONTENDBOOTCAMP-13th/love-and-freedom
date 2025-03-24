@@ -28,6 +28,7 @@
 @import './pages/ttakji/ttakji.css';
 @import './components/like-my/like-my.css';
 @import './pages/like/likepage.css';
+@import './components/like-logout/like-logout.css';
 
 @theme {
   --font-*: initial;
@@ -74,4 +75,9 @@
   --header-search-icon: url(/images/header/search-icon.png);
   --header-search-icon-pc: url(/images/header/search-icon-pc.png);
   --header-naver-icon: url(/images/header/header-naver-icon.png);
+}
+
+/* index-design css */
+@layer components{
+  
 }

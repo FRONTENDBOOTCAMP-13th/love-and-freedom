@@ -1,6 +1,15 @@
 @import 'tailwindcss';
 
 @layer components {
+  .ttakji-character-wrapper-component-page {
+    @apply w-[120px] h-[165px];
+    @apply lg:w-[105px] lg:h-[150px];
+  }
+
+  .ttakji-audio-wrapper-component-page {
+    @apply w-[120px] h-[165px];
+  }
+
   .ttakji-character {
     /* @apply w-[105px] h-[131px] aspect-[105/131; */
     @apply flex flex-col items-center gap-2 bg-white;

@@ -1,0 +1,339 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-*: initial;
+  --font-sans-b: 'NanumSquareRoundB', 'sans-serif';
+  --font-sans-eb: 'NanumSquareRoundEB', 'sans-serif';
+  --font-sans-l: 'NanumSquareRoundL', 'sans-serif';
+  --font-sans-r: 'NanumSquareRound', 'sans-serif';
+}
+
+@layer components {
+  @keyframes pop-up {
+    0% {
+      opacity: 0;
+      scale: 0.5;
+    }
+    100% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  @keyframes click01 {
+    0% {
+      color: #ff89ad;
+    }
+    100% {
+      color: #d84f7d;
+    }
+  }
+  @keyframes click02 {
+    0% {
+      color: #ffcd00;
+    }
+    100% {
+      color: #c99500 ;
+    }
+  }
+  @keyframes top-home {
+    0% {
+      translate: 0 0;
+      rotate: 0;
+      transform-origin: bottom right;
+    }
+    100% {
+      translate: -3px 0;
+      rotate: 15deg;
+      transform-origin: bottom right;
+    }
+  }
+  @keyframes inhwan {
+    0% {
+      scale: 1 1;
+      transform-origin: bottom;
+    }
+    35% {
+      scale: 0.97 1;
+    }
+    50% {
+      scale: 1 0.96;
+      transform-origin: bottom;
+    }
+    75% {
+      scale: 0.97 1;
+    }
+    100% {
+      scale: 1 1;
+      transform-origin: bottom;
+    }
+  }
+  @keyframes junsung {
+    0% {
+      rotate: 0;
+      transform-origin: bottom;
+    }
+    35% {
+      rotate: -1.5deg;
+      transform-origin: bottom;
+    }
+    70% {
+      rotate: 1.5deg;
+      transform-origin: bottom;
+    }
+    100% {
+      rotate: 0;
+      transform-origin: bottom;
+    }
+  }
+  @keyframes seungkyun {
+    0% {
+      rotate: 0;
+      scale: 1;
+      transform-origin: bottom;
+    }
+    35% {
+      rotate: -1deg;
+      scale: 0.98;
+      transform-origin: bottom;
+    }
+    70% {
+      rotate: 1deg;
+      scale: 0.98;
+      transform-origin: bottom;
+    }
+    100% {
+      rotate: 0;
+      scale: 1;
+      transform-origin: bottom;
+    }
+  }
+  @keyframes seyoung {
+    0% {
+      scale: 1 1;
+      translate: 0 0;
+      transform-origin: bottom;
+    }
+    50% {
+      scale: 0.95 1;
+      translate: 0 -5px;
+      transform-origin: bottom;
+    }
+    100% {
+      scale: 1 1;
+      translate: 0 0;
+      transform-origin: bottom;
+    }
+  }
+  @keyframes yebin {
+    0% {
+      rotate: 0;
+      scale: 1 1;
+      transform-origin: bottom;
+    }
+    35% {
+      rotate: -1deg;
+      scale: 1 0.99;
+      transform-origin: bottom;
+    }
+    70% {
+      rotate: 1deg;
+      scale: 1.01 1;
+      transform-origin: bottom;
+    }
+    100% {
+      rotate: 0;
+      scale: 1 1;
+      transform-origin: bottom;
+    }
+  }
+  @keyframes home-link-image {
+    0% {
+      translate: 0 0;
+    }
+    50% {
+      translate: -3px 0;
+    }
+    100% {
+      translate: 0 0;
+    }
+  }
+
+  .main-container {
+    /* 클릭 유도 애니메이션(캐릭터) */
+    .click-text01 {
+      animation: click01 1s ease-in-out alternate infinite;
+    }
+    /* 클릭 유도 애니메이션(슬라이드) */
+    .click-text02 {
+      animation: click02 1s ease-in-out alternate infinite;
+    }
+
+    /* 캐릭터 개별 애니메이션 */
+    .inhwan {
+      animation: inhwan 2s cubic-bezier(0.13, 0.75, 0.81, 0.29) infinite;
+    }
+    .junsung {
+      animation: junsung 2s cubic-bezier(0.29, 0.65, 0.71, 0.36) infinite;
+    }
+    .seungkyun {
+      animation: seungkyun 2s cubic-bezier(0.17, 0.45, 0.94, 0.12) infinite;
+    }
+    .seyoung {
+      animation: seyoung 2s cubic-bezier(0.23, 0.19, 0.48, 1) infinite;
+    }
+    .yebin {
+      animation: yebin 2s cubic-bezier(0.29, 0.13, 0.48, 1) infinite;
+    }
+
+    /* 마지막 홈 버튼 이미지 애니메이션 */
+    .home-link-image {
+      animation: home-link-image 2s cubic-bezier(0.4, -0.28, 0.25, 1.21)
+        alternate infinite;
+    }
+
+    .jr-naver-logo {
+      @apply pt-[3.125rem];
+    }
+
+    .main-title {
+      @apply mb-[104px] mx-auto max-w-[741px];
+      img {
+        @apply w-full;
+      }
+    }
+
+    /* top home 애니메이션 */
+    .home-fix-btn {
+      animation: top-home 2s ease-in-out alternate infinite;
+      @apply fixed right-[-3%] sm:right-[-2.5%] xl:right-[-1.5%] top-[10vw] z-50 xl:w-[15vw] sm:w-[20vw] w-[25vw] rotate-[10deg];
+      a,
+      img {
+        @apply w-full;
+      }
+      img {
+        @apply rotate-[-15deg];
+      }
+    }
+
+    .base-sub-content {
+      @apply mb-[16px] sm:mb-[20px] mx-auto w-3/5 sm:max-w-[302px];
+      img {
+        @apply w-full;
+      }
+    }
+
+    .base-title-text {
+      @apply mb-[40px] mx-auto w-5/6 sm:max-w-[446px];
+      img {
+        @apply w-full;
+      }
+    }
+
+    .content-box {
+      @apply mb-[120px] text-center;
+    }
+    .base-title-text {
+      @apply text-[3.625rem] font-sans-eb;
+    }
+    .base-sub-text {
+      text-shadow: 2px 1px 2px #fff6e5;
+      @apply text-[18px] sm:text-[22px] font-sans-b text-[#715b2c] mb-[18px] break-keep sm:break-normal;
+    }
+
+    .content-box .base-sub-text {
+      @media (max-width: 640px) {
+        text-shadow: none;
+      }
+    }
+
+    .team-character-content {
+      @apply grid md:grid-cols-2;
+      .team-character {
+        @apply mb-[68px] relative;
+        .team-character-name {
+          @apply text-[32px] font-sans-eb text-[#202020];
+        }
+        .team-character-sub-text {
+          @apply text-base font-sans-eb;
+        }
+        .popup-box {
+          opacity: 0;
+          scale: 0.5;
+          transition: all 0.6s ease-in-out;
+          height: 0;
+          overflow: hidden;
+        }
+        .popup-box.active {
+          height: 208px;
+          opacity: 1;
+          scale: 1;
+          overflow: visible;
+          margin-bottom: -30px;
+          transition: all 0.9s ease-in-out;
+        }
+      }
+    }
+
+    .component-slide-box {
+      @apply font-sans-eb grid md:grid-cols-2 md:grid-rows-2 gap-x-[40px];
+    }
+
+    .component-text-box .component-title-sub-text {
+      @media (min-width: 640px) {
+        text-shadow: 1px 1px 2px #715b2c;
+        @apply text-[#fff6e5];
+      }
+    }
+
+    .component-slider {
+      @apply w-full h-[395px] overflow-hidden rounded-[28px] min-w-[280px];
+
+      .component-title {
+        @apply w-full h-[395px] bg-[#333] flex justify-between rounded-[28px];
+        p {
+          @apply px-[24px] pt-4 font-sans-eb text-[14px] text-[#fff];
+        }
+      }
+      .component-content {
+        @apply w-full h-[347px] absolute bottom-0 left-0 rounded-[28px] overflow-hidden;
+        .componnet-text {
+          @apply text-left absolute left-[20px] top-[26px] z-10 text-base;
+        }
+        .en-text {
+          @apply opacity-50 text-[20px] sm:text-[22px];
+        }
+        .ko-text {
+          @apply text-[36px] sm:text-[44px];
+        }
+        .slide-character {
+          @apply w-[344px] absolute right-0 bottom-0;
+        }
+        .slide-link {
+          @apply block w-[64px] h-[64px] absolute right-[20px] top-[30px] z-10;
+        }
+      }
+    }
+    .slide01 .component-content {
+      @apply bg-[#ffcd00];
+    }
+    .slide02 .component-content {
+      @apply bg-[#00ca50];
+    }
+    .slide03 .component-content {
+      @apply bg-[#07bcf0];
+    }
+    .slide04 .component-content {
+      @apply bg-[#8371ff];
+    }
+
+    .home-link-button {
+      @apply rounded-[24px] bg-[#222] max-w-[360px] min-w-[240px] mx-auto;
+      a {
+        @apply flex justify-center items-center;
+      }
+      .home-link-text {
+        @apply text-white h-full font-sans-eb text-[20px] sm:text-[24px] ml-4;
+      }
+    }
+  }
+}

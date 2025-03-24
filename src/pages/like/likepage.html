@@ -28,7 +28,6 @@
       href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/pages/like/likepage.css" />
     <script type="module" src="/src/main.js"></script>
     <title>쥬니어 네이버</title>
   </head>
@@ -242,47 +241,97 @@
       </div>
 
       <main>
-        <section class="imsy banner">
-          <div class="flex justify-center">
-            <div class="like-my-container w-[1200px] h-[180px] bg-amber-200">
-              <div
-                class="like-my-wrap w-[220px] h-[180px] bg-red-200 flex flex-col justify-center items-center relative"
+        <section class="imsy ttakji-filter mt-36">
+          <div class="w-full">
+            <div class="like-logout-container">
+              <div class="like-logout-mini-img"></div>
+              <h2 class="like-logout-title">즐겨찾기한 목록을 볼래요</h2>
+              <p class="like-logout-sub">로그인 후 이용해주세요</p>
+              <button
+                class="filter-button activated w-[134px] h-[42px]"
+                aria-label="로그인 이동"
               >
-                <div
-                  class="juni-wrap rounded-[50%] w-[106px] h-[106px] flex justify-center items-center z-30 overflow-hidden"
-                >
-                  <img
-                    src="/public/images/like-mypage/like-mypage-juni.png"
-                    alt="쥬니이미지"
-                  />
-                </div>
-                <img
-                  class="absolute z-10"
-                  src="/public/images/like-mypage/like-maypage-yoso2.png"
-                  alt="붓과 네모"
-                />
-                <img
-                  class="absolute bottom-0 right-[-1000px]"
-                  src="/public/images/like-mypage/like-maypage-yoso.png"
-                  alt="크레파스와 자"
-                />
-              </div>
-              <div
-                class="border-b-6 rounded-[30%] border-dashed border-gray-100 w-full"
-                style="border-radius: 30px"
-              ></div>
+                로그인
+              </button>
+            </div>
+
+            <div class="like-logout-container2">
+              <h1 class="like-logout-title2">즐겨찾기한 목록을 볼래요</h1>
+              <p class="like-logout-sub1">
+                <a
+                  href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"
+                  class="like-logout-sub2"
+                  aria-label="로그인 이동"
+                  >로그인</a
+                >후 이용해주세요
+              </p>
             </div>
           </div>
         </section>
-        <section class="imsy ttakji-filter">
-          <!-- 딱지 필터 레이아웃 -->
-        </section>
-        <section class="imsy many-ttakji">
-          <!-- 엄청 많은 딱지 레이아웃 -->
-        </section>
+        <div
+          class="background-animation-wrap-container fixed left-0 top-80 transform"
+        >
+          <div class="background-animation-wrap hidden lg:block">
+            <div
+              class="stem-leaf yellow-stem-leaf one-leaf fixed animate-anticlockwise scale-70"
+            >
+              <div class="innerstem-leaf">
+                <div class="leaf"></div>
+                <div class="stem-shape stem"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-0">
+          <div
+            class="flower fixed top-80 right-0 animate-anticlockwise scale-40"
+          >
+            <div class="innerflower">
+              <div class="tlcircle"></div>
+              <div class="trcircle"></div>
+              <div class="blcircle"></div>
+              <div class="brcircle"></div>
+              <div class="centercircle"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="left-0">
+          <div
+            class="flower fixed bottom-90 left-0 animate-anticlockwise scale-40"
+          >
+            <div class="innerflower">
+              <div class="tlcircle"></div>
+              <div class="trcircle"></div>
+              <div class="blcircle"></div>
+              <div class="brcircle"></div>
+              <div class="centercircle"></div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="stem-leaf green-stem-leaf two-leaf fixed bottom-80 right-0 animate-anticlockwise scale-60"
+        >
+          <div class="innerstem-leaf">
+            <div class="leaf"></div>
+            <div class="otherleaf"></div>
+            <div class="stem-shape stem"></div>
+          </div>
+        </div>
+
+        <!-- <section class="imsy banner lg:hidden"></section> -->
       </main>
 
-      <div class="footer-wrap">
+      <div class="footer-wrap fixed bottom-0 left-0 w-full">
+        <div class="max-w-[1024px] m-auto relative">
+          <img
+            src="/public/images/like-logout/logout-bg.png"
+            alt="주니스 친구들"
+            class="hidden lg:block"
+          />
+        </div>
         <footer class="footer">
           <div class="footer-content-aria">
             <div class="footer-nav">
@@ -386,9 +435,16 @@
           </div>
         </footer>
       </div>
-      <div class="background-animation-wrap">
-        <!-- 애니메이션 요소들 -->
-      </div>
+      <!-- <div class="background-animation-wrap">
+        <div
+          class="stem-leaf yellow-stem-leaf one-leaf fixed top-100 left-250 animate-anticlockwise"
+        >
+          <div class="innerstem-leaf">
+            <div class="leaf"></div>
+            <div class="stem-shape stem"></div>
+          </div>
+        </div>
+      </div> -->
     </div>
   </body>
 </html>

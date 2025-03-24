@@ -17,7 +17,7 @@
     @apply rounded-[50%] max-w-[50px] max-h-[50px] lg:max-w-[106px] lg:max-h-[106px] flex justify-center items-center z-30 overflow-hidden;
   }
   .like-my-text {
-    @apply ml-4 font-bold whitespace-nowrap overflow-hidden text-ellipsis max-w-[300px] md:whitespace-normal md:overflow-visible md:max-w-full lg:whitespace-nowrap;
+    @apply lg:text-2xl ml-4 font-bold whitespace-nowrap overflow-hidden text-ellipsis max-w-[300px] md:whitespace-normal md:overflow-visible md:max-w-full lg:whitespace-nowrap;
   }
   .like-my-yoso2 {
     @apply hidden lg:block absolute z-10;
@@ -26,6 +26,6 @@
     @apply absolute bottom-0 right-[-1000px];
   }
   .like-my-line {
-    @apply border-b-4 lg:border-b-6 rounded-[30%] lg:border-dashed border-gray-100 w-full;
+    @apply border-b-4 lg:border-b-6  lg:border-dashed border-gray-100 w-full;
   }
 }
