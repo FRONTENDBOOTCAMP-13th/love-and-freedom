@@ -140,7 +140,7 @@
 <br>
 
 ## 🌍 배포 링크 <a id="배포-링크"></a>
-
+[![Website](https://img.shields.io/badge/Juniver-Netlify-blue?style=for-the-badge&logo=netlify)](https://juniver.netlify.app/)
 
 <br><br>
 <br><br>
