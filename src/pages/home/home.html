@@ -28,6 +28,7 @@
       href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/src/components/test-index/test-index.css" />
     <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/zzim.js"></script>
     <title>쥬니어 네이버</title>
@@ -20340,6 +20341,79 @@
 
         <section class="bottom-image">
           <img src="/public/images/page-images/home/bottom-junis.png" alt="" />
+        </section>
+
+        <!-- 공지사항 보기 버튼 -->
+        <section
+          class="section-modal main-container max-w-7xl mx-auto px-10 m:px-0"
+        >
+          <div class="home-fix-btn top-[20vh]">
+            <a href="#" aria-label="공지사항 보기" class="show-modal-dialog">
+              <img
+                src="/public/images/modal/top-modal.png"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+
+          <dialog class="modal-dialog" aria-labelledby="">
+            <div class="modal-layout">
+              <div class="contents-layout px-2">
+                <h3 class="modal-title">쥬니버 UI 프로젝트 소개</h3>
+
+                <p class="modal-content">
+                  안녕하세요, 쥬니버에 오신것을 환영합니다.
+                </p>
+
+                <p class="modal-content">
+                  본 웹사이트는
+                  <time datetime="2025-05-27"
+                    ><em class="modal-emphasis">25년 5월 27일</em></time
+                  >부로 종료되는 <br />
+                  쥬니어 네이버를 재구현한 웹사이트입니다.
+                </p>
+
+                <p class="modal-note">
+                  * 본 웹사이트는 가시안이며<br />상업용이 아님을 밝힙니다.
+                </p>
+
+                <div class="modal-link-button">
+                  <a
+                    href="https://help.naver.com/service/5636/contents/24061?lang=ko"
+                    target="_blank"
+                    >공지사항 바로가기</a
+                  >
+                </div>
+              </div>
+              <div class="buttons-layout">
+                <button type="button" class="modal-button dismiss-14-days">
+                  14일간 보지 않기
+                </button>
+                <button type="button" class="modal-button close-modal-dialog">
+                  닫기
+                </button>
+              </div>
+            </div>
+          </dialog>
+
+          <script type="module">
+            const modalDialog = document.querySelector('.modal-dialog');
+            const showModalLink = document.querySelector('.show-modal-dialog');
+            const closeModalButton = document.querySelector(
+              '.close-modal-dialog'
+            );
+
+            const openModal = (event) => {
+              event.preventDefault(); // 기본 링크 이동 방지
+              modalDialog.showModal();
+            };
+
+            const closeModal = () => modalDialog.close();
+
+            showModalLink.addEventListener('click', openModal);
+            closeModalButton.addEventListener('click', closeModal);
+          </script>
         </section>
       </main>
       <div class="footer-wrap">
