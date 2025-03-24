@@ -48,4 +48,18 @@
   .banner-right {
     @apply lg:justify-start;
   }
+
+  /* 배너 배경 */
+  .category1-contents1 {
+    @apply bg-transparent;
+  }
+  .category1-contents2 {
+    @apply bg-transparent;
+  }
+  .category2-contents1 {
+    @apply bg-transparent;
+  }
+  .category2-contents2 {
+    @apply bg-transparent;
+  }
 }
