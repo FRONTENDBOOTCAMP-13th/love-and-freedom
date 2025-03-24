@@ -135,6 +135,17 @@
   }
   @keyframes anticlockwise {
     0% {
+      rotate: -70deg;
+    }
+    50% {
+      rotate: -40deg;
+    }
+    100% {
+      rotate: -10deg;
+    }
+  }
+  @keyframes anticlockwise2 {
+    0% {
       rotate: -30deg;
     }
     50% {
@@ -142,6 +153,17 @@
     }
     100% {
       rotate: 30deg;
+    }
+  }
+  @keyframes anticlockwise3 {
+    0% {
+      rotate: -18deg;
+    }
+    50% {
+      rotate: 12deg;
+    }
+    100% {
+      rotate: 42deg;
     }
   }
   @keyframes clockwise {
@@ -210,6 +232,10 @@
   --animate-l-move: l-move 10s linear 0s infinite alternate backwards;
   --animate-r-move: r-move 10s linear 0s infinite alternate backwards;
   --animate-anticlockwise: anticlockwise 10s linear 0s infinite alternate
+    backwards;
+  --animate-anticlockwise2: anticlockwise2 10s linear 0s infinite alternate
+    backwards;
+  --animate-anticlockwise3: anticlockwise3 10s linear 0s infinite alternate
     backwards;
   --animate-clockwise: clockwise 10s linear 0s infinite alternate backwards;
   --animate-anticlockwise-delay: anticlockwise 10s linear 2s infinite alternate
@@ -367,7 +393,7 @@
       @apply col-span-full row-span-full;
     }
     .book-bar {
-      @apply w-[37px] h-[112px] rounded-[10px];
+      @apply w-[37px] h-[112px] rounded-[5px];
     }
     .book-label {
       @apply h-[20px];
@@ -376,20 +402,20 @@
   }
   .book.small-book {
     .book-bar {
-      @apply w-[37px] h-[112px];
+      @apply w-[20px] h-[62px];
     }
     .book-label {
-      @apply h-[20px];
-      @apply translate-y-[23px];
+      @apply w-[20px] h-[9px];
+      @apply translate-y-[10px];
     }
   }
   .book.middle-book {
     .book-bar {
-      @apply w-[37px] h-[130px];
+      @apply w-[20px] h-[72px];
     }
     .book-label {
-      @apply h-[20px];
-      @apply translate-y-[23px];
+      @apply w-[20px] h-[9px];
+      @apply translate-y-[12px];
     }
   }
   .book.large-book {

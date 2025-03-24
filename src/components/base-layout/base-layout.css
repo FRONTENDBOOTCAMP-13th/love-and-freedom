@@ -66,9 +66,17 @@ main {
 .background-animation-wrap {
   .background-animation-left,
   .background-animation-right {
-    @apply hidden lg:block fixed;
+    @apply hidden lg:block fixed bottom-20;
     @apply lg:w-[calc((100vw_-_894px)_/_2)];
     @apply xl:w-[calc((100vw_-_1200px)_/_2)];
+    > .circle {
+      @apply absolute;
+    }
+    > .scale {
+      > * {
+        @apply absolute;
+      }
+    }
   }
 
   .background-animation-left {
