@@ -3,9 +3,12 @@
 @layer components {
   .layout-ttakji {
     @apply px-[15px] w-full;
-    @apply ts:px-5 ts:max-w-[768px] ts:min-w-[666px];
-    @apply lg:max-w-[914px] lg:px-[10px] lg:items-center;
-    @apply xl:max-w-[1220px];
+
+    /* character-page의 layout-ttakji 부모가 자동으로 조절하게끔 */
+    /* @apply ts:px-5 ts:max-w-[768px] ts:min-w-[666px]; */
+    /* @apply ts:px-5 ts:max-w-[768px]; */
+    /* @apply lg:max-w-[914px] lg:px-[10px] lg:items-center; */
+    /* @apply xl:max-w-[1220px]; */
 
     .layout-ttakji-title {
       @apply text-[17px] font-sans-eb mb-3;
@@ -77,7 +80,7 @@
     /* 필터 결과 레이아웃 */
     ul.layout-filter-buttons {
       @apply flex flex-nowrap gap-x-1.5 justify-start mb-5;
-      @apply overflow-x-hidden;
+      @apply overflow-x-auto;
       @apply lg:justify-center;
     }
 

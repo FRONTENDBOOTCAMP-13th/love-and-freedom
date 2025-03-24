@@ -74,10 +74,10 @@
     @apply flex flex-row-reverse;
   }
   .service-contents-wrap {
-    @apply ts:pl-[20px] lg:pl-[134px] w-full flex flex-row-reverse ml-[44px] mr-[44px];
+    @apply ts:pl-[40px] lg:pl-[134px] w-full flex flex-row-reverse ml-[44px] mr-[44px];
   }
   .service-bg-img {
-    @apply w-[164px] h-[180px] bg-no-repeat bg-cover relative ts:left-[-20px] lg:scale-70 z-2 lg:left-[-110px];
+    @apply w-[164px] h-[180px] bg-no-repeat bg-cover relative ts:left-[-40px] lg:scale-70 z-2 lg:left-[-110px];
   }
   .service-text-wrap {
     @apply font-extrabold z-2;

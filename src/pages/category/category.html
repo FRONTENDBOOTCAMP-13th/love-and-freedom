@@ -29,23 +29,26 @@
       rel="stylesheet"
     />
     <script type="module" src="/src/main.js"></script>
-    <title>쥬니어 네이버</title>
+    <title>카테고리 페이지</title>
   </head>
   <body>
     <!-- 헤더 -->
     <div class="header-wrap">
       <header>
         <h1 class="p-1">
-          <a href="#void"
+          <span class="sr-only" id="logo" aria-label="로고">주니어 네이버</span>
+          <a href="/src/pages/home/home.html"
             ><img
               class="md:hidden"
               src="/images/header/header-logo.png"
               alt=""
+              aria-labelledby="logo"
             /><img
               class="hidden md:inline"
               src="/images/header/header-logo-pc.png"
               width="120px"
               alt=""
+              aria-labelledby="logo"
             />
           </a>
         </h1>
@@ -56,15 +59,17 @@
               id="header-search-bar"
               placeholder="검색어를 입력하세요."
               class="header-search-input"
+              aria-label="검색"
             />
             <label for="header-search-bar" class="search-bar-button"></label>
-            <button class="input-x-button">
+            <button class="input-x-button" aria-label="close searchbox button">
               <svg
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path
                   d="M2.74545 0.471045C2.11739 -0.157015 1.0991 -0.157015 0.471045 0.471045C-0.157015 1.0991 -0.157015 2.11739 0.471045 2.74545L5.72559 8L0.471045 13.2546C-0.157015 13.8826 -0.157015 14.9009 0.471045 15.529C1.0991 16.157 2.11739 16.157 2.74545 15.529L8 10.2744L13.2546 15.529C13.8826 16.157 14.9009 16.157 15.529 15.529C16.157 14.9009 16.157 13.8826 15.529 13.2546L10.2744 8L15.529 2.74545C16.157 2.11739 16.157 1.09911 15.529 0.471045C14.9009 -0.157014 13.8826 -0.157014 13.2546 0.471045L8 5.72559L2.74545 0.471045Z"
@@ -73,7 +78,7 @@
               </svg>
             </button>
           </div>
-          <div class="search-box">
+          <div class="search-box" aria-live="polite">
             <ul>
               <li>십 년을 함께한 친구들처럼</li>
               <li>삼삼오오 모여서 웃고 떠들며</li>
@@ -88,8 +93,17 @@
           </div>
         </div>
         <div class="header-button-wrap">
-          <a href="#void" class="header-login-button">로그인</a>
-          <a href="http://www.naver.com" class="header-naver-button"></a>
+          <a
+            href="#void"
+            class="header-login-button"
+            aria-label="로그인 창으로 이동"
+            >로그인</a
+          >
+          <a
+            href="http://www.naver.com"
+            class="header-naver-button"
+            aria-label="네이버 사이트로 이동"
+          ></a>
         </div>
       </header>
     </div>
@@ -98,12 +112,17 @@
       <div class="nav-wrap font-sans-r">
         <ul class="jr-naver-nav">
           <li class="jr-naver-nav-menu main-menu">
-            <a class="nav-link-block" href="/src/pages/home/home.html">
+            <a
+              class="nav-link-block"
+              href="/src/pages/home/home.html"
+              aria-label="홈(추천) 페이지로 이동"
+            >
               <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
                 <img
                   class="w-full"
                   src="/public/images/nav/main-icon.svg"
                   alt=""
+                  aria-hidden="true"
                 />
               </div>
               <p class="nav-menu-text">추천</p>
@@ -114,21 +133,25 @@
                 class="small-green"
                 src="/public/images/nav/small-circle-green.svg"
                 alt=""
+                aria-hidden="true"
               />
               <img
                 class="small-red"
                 src="/public/images/nav/small-circle-red.svg"
                 alt=""
+                aria-hidden="true"
               />
               <img
                 class="small-yellow"
                 src="/public/images/nav/small-star-yellow.svg"
                 alt=""
+                aria-hidden="true"
               />
               <img
                 class="small-blue"
                 src="/public/images/nav/small-star-blue.svg"
                 alt=""
+                aria-hidden="true"
               />
             </div>
           </li>
@@ -136,12 +159,14 @@
             <a
               class="nav-link-block"
               href="/src/pages/character/character.html"
+              aria-label="캐릭터 페이지로 이동"
             >
               <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
                 <img
                   class="w-full"
                   src="/public/images/nav/character-icon.svg"
                   alt=""
+                  aria-hidden="true"
                 />
               </div>
               <p class="nav-menu-text">캐릭터</p>
@@ -152,31 +177,40 @@
                 class="small-green"
                 src="/public/images/nav/small-circle-green.svg"
                 alt=""
+                aria-hidden="true"
               />
               <img
                 class="small-red"
                 src="/public/images/nav/small-circle-red.svg"
                 alt=""
+                aria-hidden="true"
               />
               <img
                 class="small-yellow"
                 src="/public/images/nav/small-star-yellow.svg"
                 alt=""
+                aria-hidden="true"
               />
               <img
                 class="small-blue"
                 src="/public/images/nav/small-star-blue.svg"
                 alt=""
+                aria-hidden="true"
               />
             </div>
           </li>
           <li class="jr-naver-nav-menu category-menu">
-            <a class="nav-link-block" href="/src/pages/category/category.html">
+            <a
+              class="nav-link-block"
+              href="/src/pages/category/category.html"
+              aria-label="카테고리 페이지로 이동"
+            >
               <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
                 <img
                   class="w-full"
                   src="/public/images/nav/category-icon.svg"
                   alt=""
+                  aria-hidden="true"
                 />
               </div>
               <p class="nav-menu-text">카테고리</p>
@@ -187,31 +221,40 @@
                 class="small-green"
                 src="/public/images/nav/small-circle-green.svg"
                 alt=""
+                aria-hidden="true"
               />
               <img
                 class="small-red"
                 src="/public/images/nav/small-circle-red.svg"
                 alt=""
+                aria-hidden="true"
               />
               <img
                 class="small-yellow"
                 src="/public/images/nav/small-star-yellow.svg"
                 alt=""
+                aria-hidden="true"
               />
               <img
                 class="small-blue"
                 src="/public/images/nav/small-star-blue.svg"
                 alt=""
+                aria-hidden="true"
               />
             </div>
           </li>
           <li class="jr-naver-nav-menu bookmark-menu">
-            <a class="nav-link-block" href="#" target="_blank">
+            <a
+              class="nav-link-block"
+              href="/src/pages/like/likepage.html"
+              aria-label="즐겨찾기 페이지로 이동"
+            >
               <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
                 <img
                   class="w-full"
                   src="/public/images/nav/heart-icon.svg"
                   alt=""
+                  aria-hidden="true"
                 />
               </div>
               <p class="nav-menu-text">즐겨찾기</p>
@@ -222,21 +265,25 @@
                 class="small-green"
                 src="/public/images/nav/small-circle-green.svg"
                 alt=""
+                aria-hidden="true"
               />
               <img
                 class="small-red"
                 src="/public/images/nav/small-circle-red.svg"
                 alt=""
+                aria-hidden="true"
               />
               <img
                 class="small-yellow"
                 src="/public/images/nav/small-star-yellow.svg"
                 alt=""
+                aria-hidden="true"
               />
               <img
                 class="small-blue"
                 src="/public/images/nav/small-star-blue.svg"
                 alt=""
+                aria-hidden="true"
               />
             </div>
           </li>
@@ -266,103 +313,111 @@
           </h2>
           <ul class="square-list">
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/song/populars_song"
+                class="ttakji-category bg-[#F2AA3E]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/cinderella.png"
+                  alt="인기동요 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">인기동요</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/song/love_song"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/juny-tony.jpg"
+                  alt="애창동요 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">애창동요</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/song/play_song"
+                class="ttakji-category bg-[#92C452]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/snow-raccoon.png"
+                  alt="놀이동요 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">놀이동요</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/song/populars_song"
+                class="ttakji-category bg-[#F2AA3E]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/cinderella.png"
+                  alt="인기동요 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">인기동요</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/song/love_song"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/juny-tony.jpg"
+                  alt="애창동요 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">애창동요</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/song/play_song"
+                class="ttakji-category bg-[#92C452]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/snow-raccoon.png"
+                  alt="놀이동요 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">놀이동요</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/song/populars_song"
+                class="ttakji-category bg-[#F2AA3E]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/cinderella.png"
+                  alt="인기동요 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">인기동요</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/song/love_song"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/juny-tony.jpg"
+                  alt="애창동요 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">애창동요</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/song/play_song"
+                class="ttakji-category bg-[#92C452]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/snow-raccoon.png"
+                  alt="놀이동요 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
-              >
-            </div>
-            <div>
-              <a href="#" class="ttakji-category"
-                ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
-                  class="ttakji-category-image"
-                />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">놀이동요</div></a
               >
             </div>
           </ul>
@@ -390,103 +445,111 @@
           </h2>
           <ul class="square-list">
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/story/popular_story"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/white-cat.png"
+                  alt="인기동화 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">인기동화</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/story/life_story"
+                class="ttakji-category bg-[#FE88A9]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/gil-dong.png"
+                  alt="생활동화 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">생활동화</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/story/classic_story"
+                class="ttakji-category bg-[#BC9AE1]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/boo-boo.png"
+                  alt="명작동화 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">명작동화</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/story/popular_story"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/white-cat.png"
+                  alt="인기동화 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">인기동화</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/story/life_story"
+                class="ttakji-category bg-[#FE88A9]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/gil-dong.png"
+                  alt="생활동화 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">생활동화</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/story/classic_story"
+                class="ttakji-category bg-[#BC9AE1]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/boo-boo.png"
+                  alt="명작동화 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">명작동화</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/story/popular_story"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/white-cat.png"
+                  alt="인기동화 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">인기동화</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/story/life_story"
+                class="ttakji-category bg-[#FE88A9]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/gil-dong.png"
+                  alt="생활동화 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">생활동화</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/story/classic_story"
+                class="ttakji-category bg-[#BC9AE1]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/boo-boo.png"
+                  alt="명작동화 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
-              >
-            </div>
-            <div>
-              <a href="#" class="ttakji-category"
-                ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
-                  class="ttakji-category-image"
-                />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">명작동화</div></a
               >
             </div>
           </ul>
@@ -542,100 +605,34 @@
           </h2>
           <ul class="square-list">
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/tv/character"
+                class="ttakji-category bg-[#7091F2]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/banzi-ep43.png"
+                  alt="만화동영상 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">만화동영상</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a href="https://jr.naver.com/tv/animax" class="ttakji-category"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/happy-kong.jpg"
+                  alt="애니맥스 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">애니맥스</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/tv/jeitv"
+                class="ttakji-category bg-[#5FB3E1]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
-                  class="ttakji-category-image"
-                />
-                <div class="ttakji-category-title">재능TV</div></a
-              >
-            </div>
-            <div>
-              <a href="#" class="ttakji-category"
-                ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
-                  class="ttakji-category-image"
-                />
-                <div class="ttakji-category-title">재능TV</div></a
-              >
-            </div>
-            <div>
-              <a href="#" class="ttakji-category"
-                ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
-                  class="ttakji-category-image"
-                />
-                <div class="ttakji-category-title">재능TV</div></a
-              >
-            </div>
-            <div>
-              <a href="#" class="ttakji-category"
-                ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
-                  class="ttakji-category-image"
-                />
-                <div class="ttakji-category-title">재능TV</div></a
-              >
-            </div>
-            <div>
-              <a href="#" class="ttakji-category"
-                ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
-                  class="ttakji-category-image"
-                />
-                <div class="ttakji-category-title">재능TV</div></a
-              >
-            </div>
-            <div>
-              <a href="#" class="ttakji-category"
-                ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
-                  class="ttakji-category-image"
-                />
-                <div class="ttakji-category-title">재능TV</div></a
-              >
-            </div>
-            <div>
-              <a href="#" class="ttakji-category"
-                ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
-                  class="ttakji-category-image"
-                />
-                <div class="ttakji-category-title">재능TV</div></a
-              >
-            </div>
-            <div>
-              <a href="#" class="ttakji-category"
-                ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/nugu.jpg"
+                  alt="재능TV 페이지 바로가기"
                   class="ttakji-category-image"
                 />
                 <div class="ttakji-category-title">재능TV</div></a
@@ -666,103 +663,111 @@
           </h2>
           <ul class="square-list">
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/creative/toy"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/cookie-house.jpg"
+                  alt="장난감놀이 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">장난감놀이</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/creative/make"
+                class="ttakji-category bg-[#5FB3E1]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/DIY-restaurant.jpg"
+                  alt="만들기놀이 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">만들기놀이</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/creative/storytelling"
+                class="ttakji-category bg-[#92C452]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/chameleon.png"
+                  alt="이야기놀이 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">이야기놀이</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/creative/toy"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/cookie-house.jpg"
+                  alt="장난감놀이 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">장난감놀이</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/creative/make"
+                class="ttakji-category bg-[#5FB3E1]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/DIY-restaurant.jpg"
+                  alt="만들기놀이 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">만들기놀이</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/creative/storytelling"
+                class="ttakji-category bg-[#92C452]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/chameleon.png"
+                  alt="이야기놀이 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">이야기놀이</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/creative/toy"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/cookie-house.jpg"
+                  alt="장난감놀이 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">장난감놀이</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/creative/make"
+                class="ttakji-category bg-[#5FB3E1]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/DIY-restaurant.jpg"
+                  alt="만들기놀이 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">만들기놀이</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/creative/storytelling"
+                class="ttakji-category bg-[#92C452]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/chameleon.png"
+                  alt="이야기놀이 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
-              >
-            </div>
-            <div>
-              <a href="#" class="ttakji-category"
-                ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
-                  class="ttakji-category-image"
-                />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">이야기놀이</div></a
               >
             </div>
           </ul>
@@ -819,103 +824,111 @@
           </h2>
           <ul class="square-list">
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/playedu/hangeul"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/cute-ghost.jpg"
+                  alt="한글 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">한글</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/playedu/eng"
+                class="ttakji-category bg-[#F2AA3E]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/whale.jpg"
+                  alt="영어 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">영어</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/playedu/chinese"
+                class="ttakji-category bg-[#FE88A9]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/hyosim.jpg"
+                  alt="중국어 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">중국어</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/playedu/hangeul"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/cute-ghost.jpg"
+                  alt="한글 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">한글</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/playedu/eng"
+                class="ttakji-category bg-[#F2AA3E]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/whale.jpg"
+                  alt="영어 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">영어</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/playedu/chinese"
+                class="ttakji-category bg-[#FE88A9]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/hyosim.jpg"
+                  alt="중국어 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">중국어</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/playedu/hangeul"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/cute-ghost.jpg"
+                  alt="한글 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">한글</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/playedu/eng"
+                class="ttakji-category bg-[#F2AA3E]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/whale.jpg"
+                  alt="영어 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">영어</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/playedu/chinese"
+                class="ttakji-category bg-[#FE88A9]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/hyosim.jpg"
+                  alt="중국어 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
-              >
-            </div>
-            <div>
-              <a href="#" class="ttakji-category"
-                ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
-                  class="ttakji-category-image"
-                />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">중국어</div></a
               >
             </div>
           </ul>
@@ -925,33 +938,39 @@
           <h2 id="categoryTitle" class="category-wrap-title">플레이존</h2>
           <ul class="square-list">
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/play/touchgame"
+                class="ttakji-category bg-[#BC9AE1]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/sheep-juni.jpg"
+                  alt="플레이존 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">터치팡팡</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/play/writing"
+                class="ttakji-category bg-[#9AAEBF]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/la.jpg"
+                  alt="플레이존 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">언어놀이</div></a
               >
             </div>
             <div>
-              <a href="#" class="ttakji-category"
+              <a
+                href="https://jr.naver.com/play/quiz"
+                class="ttakji-category bg-[#7091F2]"
                 ><img
-                  src="/public/images/ttakji/ttakji-category/category-jaeneungtv.jpg"
-                  alt=""
+                  src="/public/images/page-images/category/piyo-cart.jpg"
+                  alt="플레이존 페이지 바로가기"
                   class="ttakji-category-image"
                 />
-                <div class="ttakji-category-title">재능TV</div></a
+                <div class="ttakji-category-title">퀴즈왕</div></a
               >
             </div>
           </ul>
@@ -1012,44 +1031,88 @@
       <div class="footer-wrap">
         <!-- 모바일 먼저 -->
         <footer class="footer">
-          <div class="footer-content-aria">
+          <section class="footer-content-aria">
             <div class="footer-nav">
-              <a href="#" target="_blank" class="inline-block footer-nav-text"
-                >공지사항</a
-              >
-              <span></span>
-              <a href="#" target="_blank" class="inline-block footer-nav-text"
-                >이용약관</a
-              >
-              <span></span>
-              <a href="#" target="_blank" class="inline-block footer-nav-text"
-                >운영원칙</a
-              >
-              <span></span> <br class="md:hidden" />
               <a
-                href="#"
+                href="https://blog.naver.com/PostList.nhn?blogId=jrnaver&from=postList&categoryNo=29"
+                aria-label="공지사항으로 이동(새 창)"
                 target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block footer-nav-text"
+                >공지사항
+              </a>
+
+              <span aria-hidden="true"></span>
+
+              <a
+                href="https://jr.naver.com/jrservice"
+                aria-label="이용약관으로 이동(새 창)"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block footer-nav-text"
+                >이용약관
+              </a>
+
+              <span aria-hidden="true"></span>
+              <a
+                href="https://jr.naver.com/jrservice#OPERATION_POLICY"
+                aria-label="운영원칙으로 이동(새 창)"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block footer-nav-text"
+                >운영원칙
+              </a>
+
+              <span aria-hidden="true"></span> <br class="md:hidden" />
+
+              <a
+                href="https://jr.naver.com/jrservice"
+                aria-label="개인정보 처리방침으로 이동(새 창)"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="inline-block footer-nav-text font-bold"
-                >개인정보 처리방침</a
-              >
-              <span></span>
-              <a href="#" target="_blank" class="inline-block footer-nav-text"
-                >청소년보호정책</a
-              >
-              <span></span>
-              <a href="#" target="_blank" class="inline-block footer-nav-text"
-                >고객센터</a
-              >
-              <span></span>
-              <a href="#" target="_blank" class="inline-block footer-nav-text"
-                >제휴제안</a
-              >
+                >개인정보 처리방침
+              </a>
+
+              <span aria-hidden="true"></span>
+
+              <a
+                href="https://jr.naver.com/jrservice"
+                aria-label="청소년보호정책으로 이동(새 창)"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block footer-nav-text"
+                >청소년보호정책
+              </a>
+
+              <span aria-hidden="true"></span>
+
+              <a
+                href="https://help.naver.com/service/5636/category/bookmark?lang=ko"
+                aria-label="고객센터로 이동(새 창)"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block footer-nav-text"
+                >고객센터
+              </a>
+
+              <span aria-hidden="true"></span>
+
+              <a
+                href="https://www.navercorp.com/naver/proposalGuide"
+                aria-label="제휴제안으로 이동(새 창)"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block footer-nav-text"
+                >제휴제안
+              </a>
             </div>
             <div class="footer-copy">&copy; NAVER Connect Foundation</div>
             <div class="footer-copy-sub">
-              <p>
+              <p class="footer-text block md:inline">
                 본 콘텐츠의 저작권은 저자 또는 제공처에 있으며,
-                <br class="md:hidden" />
+              </p>
+              <p class="footer-text block md:inline">
                 이를 무단 이용하는 경우 저작권등에 따라 법적 책임을 질 수
                 있습니다.
               </p>
@@ -1062,7 +1125,7 @@
                     <img
                       class=""
                       src="/public/images/footer/img-qr-app.png"
-                      alt=""
+                      alt="앱 설치 QR 코드"
                     />
                   </div>
                 </div>
@@ -1070,44 +1133,62 @@
                   <img
                     class="md:w-[78px] md:h-[42px]"
                     src="/public/images/footer/icon-app.png"
-                    alt=""
+                    alt="앱 다운로드 아이콘"
                   />
                 </div>
               </div>
-              <div class="sns-icon">
-                <div class="ml-[11px] sns-icon-naver-blog">
-                  <a href="/"
+              <ul class="sns-icon">
+                <li class="ml-[11px] sns-icon-naver-blog">
+                  <a
+                    href="https://blog.naver.com/PostList.nhn?blogId=jrnaver"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="쥬니버 네이버 블로그로 이동(새 창)"
                     ><img
                       class="w-6 md:w-8"
                       src="/public/images/footer/icon-blog.png"
-                      alt=""
+                      alt="네이버 블로그 아이콘"
                   /></a>
-                </div>
-                <div class="ml-[11px] sns-icon-youtube">
-                  <a href="/"
+                </li>
+                <li class="ml-[11px] sns-icon-youtube">
+                  <a
+                    href="https://www.youtube.com/channel/UCAqJaUnVgAAeW0RDblGeY3w"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="쥬니버 유튜브 이동(새 창)"
                     ><img
                       class="w-6 md:w-8"
                       src="/public/images/footer/icon-youtube.png"
-                      alt=""
+                      alt="유튜브 아이콘"
                   /></a>
-                </div>
-                <div class="ml-[11px] sns-icon-instagram">
-                  <a href="/"
+                </li>
+                <li class="ml-[11px] sns-icon-instagram">
+                  <a
+                    href="https://www.instagram.com/juniver_official/#"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="쥬니버 유튜브 이동(새 창)"
                     ><img
                       class="w-6 md:w-8"
                       src="/public/images/footer/icon-instagram.png"
-                      alt=""
+                      alt="인스타그램 아이콘"
                   /></a>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
-          </div>
+          </section>
           <div class="footer-mobile md:hidden">
             <div class="footer-mobile-content">
-              <a href="/">
+              <a
+                href="https://jr.naver.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="쥬니버 홈페이지 이동(새 창)"
+              >
                 <img
                   src="/public/images/footer/footer-dark-design.png"
                   alt=""
+                  aria-hidden="true"
                 />
               </a>
             </div>
@@ -1116,7 +1197,154 @@
       </div>
       <div class="background-animation-wrap">
         <!-- 애니메이션 요소들 -->
+        <div class="background-animation-left">
+          <div
+            class="book label-book red-book absolute bottom-110 right-20 animate-anticlockwise"
+          >
+            <div class="innerbook">
+              <div class="book-bar"></div>
+              <div class="book-label"></div>
+            </div>
+          </div>
+          <div
+            class="book none-label-book small-book gray-book absolute bottom-32 right-22 animate-clockwise"
+          >
+            <div class="book-bar"></div>
+          </div>
+          <div
+            class="book label-book green-book small-book absolute bottom-75 right-35 animate-anticlockwise2"
+          >
+            <div class="innerbook">
+              <div class="book-bar"></div>
+              <div class="book-label"></div>
+            </div>
+          </div>
+          <div
+            class="book springb absolute bottom-21 right-17 animate-anticlockwise hover:animate-[anticlockwise_0s_linear_0s_infinite_alternate_backwards,_zoomin-kkaddak-1_0.2s_linear_0.4s_2_normal_backwards]"
+          >
+            <div class="springbook"></div>
+            <div class="book-spring"></div>
+            <div class="book-spring"></div>
+            <div class="book-spring"></div>
+          </div>
+        </div>
+        <div class="background-animation-right">
+          <div
+            class="book noteb absolute bottom-15 left-22 animate-anticlockwise hover:animate-[anticlockwise_0s_linear_0s_infinite_alternate_backwards,_zoomin-kkaddak-2_0.2s_linear_0.4s_2_normal_backwards]"
+          >
+            <div class="notebook"></div>
+            <div class="book-title"></div>
+            <div class="book-side"></div>
+          </div>
+          <div
+            class="book none-label-book gray-book small-book absolute bottom-145 left-15 animate-anticlockwise2"
+          >
+            <div class="book-bar"></div>
+          </div>
+          <div
+            class="book none-label-book blue-book middle-book absolute bottom-85 left-25 animate-anticlockwise3"
+          >
+            <div class="innerbook"><div class="book-bar"></div></div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- top button -->
+    <a href="#" class="top-link" aria-label="페이지 최상단으로 이동">
+      <img
+        class="remote-rocket"
+        src="/public/images/top-link/final-rocket.png"
+        alt=""
+        aria-hidden="true"
+      />
+      <img
+        class="pongpong"
+        src="/public/images/top-link/egggaji.png"
+        alt=""
+        aria-hidden="true"
+      />
+      <svg
+        class="left-eye"
+        width="29"
+        height="29"
+        viewBox="0 0 29 29"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          d="M28.9494 14.4276C28.9494 22.3976 22.4884 28.8586 14.5184 28.8586C6.5484 28.8586 0.0874023 22.3976 0.0874023 14.4276C0.0874023 6.45758 6.5484 -0.00341797 14.5184 -0.00341797C22.4884 -0.00341797 28.9494 6.45758 28.9494 14.4276Z"
+          fill="#2C2C37"
+        />
+      </svg>
+      <svg
+        class="right-eye"
+        width="30"
+        height="29"
+        viewBox="0 0 30 29"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          d="M29.7436 14.4276C29.7436 22.3976 23.2826 28.8586 15.3126 28.8586C7.34259 28.8586 0.881592 22.3976 0.881592 14.4276C0.881592 6.45758 7.34259 -0.00341797 15.3126 -0.00341797C23.2826 -0.00341797 29.7436 6.45758 29.7436 14.4276Z"
+          fill="#2C2C37"
+        />
+      </svg>
+      <svg
+        class="mouse"
+        width="108"
+        height="52"
+        viewBox="0 0 108 52"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          d="M53.9655 2.57093C38.9685 2.57093 24.5045 1.69764 10.8925 0.0772167C3.97448 -0.746199 -1.67952 5.10282 0.458478 13.4661C5.86948 34.6305 31.1385 51.9838 53.9655 51.9838C76.7945 51.9838 99.3375 36.1433 106.643 13.8142C109.494 5.10282 103.958 -0.746199 97.0405 0.0772167C83.4275 1.69764 68.9635 2.57093 53.9655 2.57093Z"
+          fill="#AA4682"
+        />
+        <mask
+          id="mask0_2493_1506"
+          style="mask-type: alpha"
+          maskUnits="userSpaceOnUse"
+          x="0"
+          y="0"
+          width="108"
+          height="52"
+        >
+          <path
+            d="M53.9655 2.57093C38.9685 2.57093 24.5045 1.69764 10.8925 0.0772167C3.97448 -0.746199 -1.67952 5.10282 0.458478 13.4661C5.86948 34.6305 31.1385 51.9838 53.9655 51.9838C76.7945 51.9838 99.3375 36.1433 106.643 13.8142C109.494 5.10282 103.958 -0.746199 97.0405 0.0772167C83.4275 1.69764 68.9635 2.57093 53.9655 2.57093Z"
+            fill="#AA4682"
+          />
+        </mask>
+        <g mask="url(#mask0_2493_1506)">
+          <path
+            d="M94.3426 47.4553C88.9046 40.2293 71.5096 27.6333 54.4826 27.6333C37.5156 27.6333 20.3136 41.0173 14.8296 48.2033C16.3016 62.2333 30.3726 78.3213 54.4806 77.1993C71.9526 76.3863 94.8336 63.1693 94.3426 47.4553Z"
+            fill="#FFABB7"
+          />
+        </g>
+      </svg>
+      <svg
+        class="stomach"
+        width="81"
+        height="114"
+        viewBox="0 0 81 114"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          d="M80.1724 56.6696C77.1514 90.4396 65.4514 113.637 43.7884 113.771C22.1264 113.905 5.68541 91.9646 1.56441 59.7876C-2.43059 28.5976 12.7744 0.49157 40.5964 0.0275695C68.2114 -0.433429 82.9744 25.3596 80.1724 56.6696Z"
+          fill="#EBCEF4"
+        />
+      </svg>
+      <img
+        class="close-rocket"
+        src="/public/images/top-link/final-rocket-nobul.png"
+        alt=""
+        aria-hidden="true"
+      />
+    </a>
   </body>
 </html>
