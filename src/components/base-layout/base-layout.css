@@ -74,7 +74,7 @@ main {
     @apply bg-yellow-300 h-20;
   }
   main {
-    /* @apply bg-green-300; */
+    @apply bg-green-300;
   }
   .footer-wrap {
   }
