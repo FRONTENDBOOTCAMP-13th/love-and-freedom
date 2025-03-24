@@ -1,0 +1,179 @@
+@import 'tailwindcss';
+
+@layer components {
+  @keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.1, 0.95, 1);
+    }
+    40% {
+      transform: scale3d(0.85, 1.1, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @keyframes hover-line {
+    100% {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  @keyframes small-green {
+    86% {
+      scale: 1;
+    }
+    100% {
+      scale: 0;
+      translate: 18px -20px;
+    }
+  }
+  @keyframes small-red {
+    78% {
+      scale: 1;
+    }
+    100% {
+      scale: 0;
+      translate: -15px -27px;
+    }
+  }
+  @keyframes small-yellow {
+    82% {
+      scale: 1;
+    }
+    100% {
+      scale: 0;
+      translate: 7px -25px;
+    }
+  }
+  @keyframes small-blue {
+    88% {
+      scale: 1;
+    }
+    100% {
+      scale: 0;
+      translate: -23px -18px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .jr-naver-nav {
+      @apply w-[440px];
+    }
+    .jr-naver-nav .main-menu .nav-hover-line {
+      @apply w-[35%];
+    }
+    .jr-naver-nav .character-menu .nav-hover-line {
+      @apply w-[55%];
+    }
+    .jr-naver-nav .category-menu .nav-hover-line {
+      @apply w-[75%];
+    }
+    .jr-naver-nav .bookmark-menu .nav-hover-line {
+      @apply w-[75%];
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .jr-naver-nav .jr-naver-nav-menu:hover .nav-menu-text {
+      @apply text-base;
+    }
+    .jr-naver-nav .main-menu .nav-hover-line {
+      @apply w-[35%];
+    }
+    .jr-naver-nav .character-menu .nav-hover-line {
+      @apply w-[55%];
+    }
+    .jr-naver-nav .category-menu .nav-hover-line {
+      @apply w-[75%];
+    }
+    .jr-naver-nav .bookmark-menu .nav-hover-line {
+      @apply w-[75%];
+    }
+  }
+
+  .jr-naver-nav {
+    @apply flex gap-10 max-w-2xl justify-between mx-auto;
+  }
+
+  .jr-naver-nav-menu {
+    @apply grow relative;
+    animation-play-state: paused;
+  }
+
+  .jr-naver-nav-menu:hover {
+    animation: jello-horizontal 0.9s ease-in-out 1 forwards;
+  }
+
+  .nav-link-block {
+    @apply block relative z-10;
+  }
+
+  .nav-svg-box {
+    @apply w-11 mx-auto;
+  }
+
+  .nav-menu-text {
+    @apply text-center text-[#a2a1a0] text-xs lg:text-sm xl:text-[15px] mb-1.5;
+  }
+
+  .jr-naver-nav-menu:hover .nav-menu-text {
+    @apply text-[#222] font-extrabold text-sm;
+  }
+
+  .nav-hover-line {
+    @apply h-1 bg-[#ff4747] rounded-sm mx-auto;
+    clip-path: inset(0 51% 0 51%);
+    animation-play-state: paused;
+  }
+
+  .jr-naver-nav .main-menu .nav-hover-line {
+    @apply w-[30%];
+  }
+  .jr-naver-nav .character-menu .nav-hover-line {
+    @apply w-[35%];
+  }
+  .jr-naver-nav .category-menu .nav-hover-line,
+  .jr-naver-nav .bookmark-menu .nav-hover-line {
+    @apply w-[42%];
+  }
+
+  .jr-naver-nav-menu:hover .nav-hover-line {
+    animation: hover-line 0.3s cubic-bezier(0.59, 0.05, 0.18, 0.89) 1 forwards;
+  }
+
+  .small-green,
+  .small-red,
+  .small-yellow,
+  .small-blue {
+    @apply absolute left-[48%] top-[30%];
+  }
+
+  .jr-naver-nav-menu:hover .small-green {
+    animation: small-green 0.6s ease-in 1 forwards;
+  }
+
+  .jr-naver-nav-menu:hover .small-red {
+    animation: small-red 0.6s ease-in 0.07s 1 forwards;
+  }
+
+  .jr-naver-nav-menu:hover .small-yellow {
+    animation: small-yellow 0.6s ease-in 0.09s 1 forwards;
+  }
+
+  .jr-naver-nav-menu:hover .small-blue {
+    animation: small-blue 0.6s ease-in 0.05s 1 forwards;
+  }
+}

@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+  --breakpoint-cm: 41.6875rem; /* 667px */
+
+  --theme-blue-1: url(/images/banner/category/theme-blue-1.png);
+  --theme-blue-2: url(/images/banner/category/theme-blue-2.png);
+  --theme-blue-3: url(/images/banner/category/theme-blue-3.png);
+  --theme-blue-4: url(/images/banner/category/theme-blue-4.png);
+  --sketch-pink-1: url(/images/banner/category/sketch-pink-1.png);
+  --sketch-pink-2: url(/images/banner/category/sketch-pink-2.png);
+  --sketch-pink-3: url(/images/banner/category/sketch-pink-3.png);
+  --sketch-pink-4: url(/images/banner/category/sketch-pink-4.png);
+  --nuri-yellow-1: url(/images/banner/category/nuri-yellow-1.png);
+  --nuri-yellow-2: url(/images/banner/category/nuri-yellow-2.png);
+  --nuri-yellow-3: url(/images/banner/category/nuri-yellow-3.png);
+  --nuri-yellow-4: url(/images/banner/category/nuri-yellow-4.png);
+  --junis-3: url(/images/banner/category/junis-3.png);
+  --junis-4: url(/images/banner/category/junis-4.png);
+}
+
+@layer components {
+  .category-banner {
+    @apply w-full h-auto;
+  }
+  .category-banner-link {
+    @apply bg-contain bg-center bg-no-repeat block w-[235px] h-[76px];
+  }
+}

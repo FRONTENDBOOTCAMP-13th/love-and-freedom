@@ -1,96 +1,83 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import 'tailwindcss';
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@import './components/ttakji/ttakji.css';
+@import './components/ttakji-filter/ttakji-filter.css';
+@import './components/ttakji-category/ttakji-category.css';
+@import './components/category-button/category-button.css';
+@import './components/banner/home/home-banner.css';
+@import './components/banner/character/character-banner.css';
+@import './components/banner/category/category-banner.css';
+@import './components/notice-modal/notice-modal.css';
+@import './components/video-card/video-card.css';
+@import './components/base-layout/base-layout.css';
+@import './components/top-link/top-link.css';
+@import './components/animation/animation.css';
+@import './../public/fonts/nanumsquareround.css';
+@import './components/header/header.css';
+@import './components/footer/footer.css';
+@import './components/zzim/zzim.css';
+@import './components/nav/nav.css';
+@import './components/hot-card/hot-card.css';
+@import './components/banner-layout/banner-layout.css';
+@import './pages/home/home.css';
+@import './components/square-ttakji-layout/square-layout.css';
+@import './pages/character/character.css';
+@import './pages/category/category.css';
+@import './components/linkcard/linkcard.css';
+@import './components/layout/layout-ttakji/layout-ttakji.css';
+@import './pages/ttakji/ttakji.css';
+@import './components/like-my/like-my.css';
+@import './pages/like/likepage.css';
+@import './components/like-logout/like-logout.css';
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@theme {
+  --font-*: initial;
+  --font-sans-b: 'NanumSquareRoundB', 'sans-serif';
+  --font-sans-eb: 'NanumSquareRoundEB', 'sans-serif';
+  --font-sans-l: 'NanumSquareRoundL', 'sans-serif';
+  --font-sans-r: 'NanumSquareRound', 'sans-serif';
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  --color-jr-naver-yellow-100: #ffd037;
+  --color-jr-naver-yellow-200: #ffc82c;
+  --color-jr-naver-orange-100: #efab41;
+  --color-jr-naver-orange-200: #ff7933;
+  --color-jr-naver-green-100: #93c452;
+  --color-jr-naver-green-200: #03c75a;
+  --color-jr-naver-green-300: #00c759;
+  --color-jr-naver-green-400: #00ff67;
+  --color-jr-naver-blue-100: #5fb3e1;
+  --color-jr-naver-blue-200: #7090f3;
+  --color-jr-naver-blue-300: #0087ff;
+  --color-jr-naver-purple-100: #bb9adf;
+  --color-jr-naver-purple-200: #ad74db;
+  --color-jr-naver-pink: #fe88aa;
+  --color-jr-naver-red-100: #ff615f;
+  --color-jr-naver-red-200: #ff5555;
+  --color-jr-naver-red-100: #d95042;
+  --color-jr-naver-gray-100: #f3f4f7;
+  --color-jr-naver-gray-200: #d9d9d9;
+  --color-jr-naver-gray-300: #9caebe;
+  --color-jr-naver-text-gray: #8f8f8f;
+  --color-jr-naver-text-black-200: #333333;
+  --color-jr-naver-text-black-300: #222222;
+  --color-jr-naver-footer-text-gray: #8a909e;
+  --color-jr-naver-footer-bg-gray: #edeff3;
+  --color-jr-naver-footer-darkgray: #504f58;
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  --text-jr-naver-link-title: 1.0625rem;
+  --text-jr-naver-clip-title: 1rem;
+  --text-jr-naver-video-card-title: 0.875rem;
+  --text-jr-naver-blind-title: 0.9375rem;
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  --breakpoint-el: 68.75rem; /* 1100px */
+  --header-search-bar-font-size: 0.8125rem; /* 13px */
+  --header-search-bar-hover-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  --header-search-icon: url(/images/header/search-icon.png);
+  --header-search-icon-pc: url(/images/header/search-icon-pc.png);
+  --header-naver-icon: url(/images/header/header-naver-icon.png);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* index-design css */
+@layer components{
+  
 }

@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@layer components {
+  /* main pb영역에 lg:after 이용해서 배경이미지 삽입 */
+  main.character-page {
+    @apply relative;
+
+    @apply lg:after:bg-[url("/images/page-images/character/bg-img-character-page.png")];
+    @apply lg:after:w-[890px] lg:after:h-[250px];
+    @apply lg:after:absolute lg:after:bottom-0;
+    @apply lg:after:bg-contain lg:after:bg-center lg:after:bg-no-repeat;
+    @apply lg:after:left-1/2 lg:after:translate-x-[-50%];
+  }
+}

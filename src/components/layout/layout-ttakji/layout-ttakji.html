@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/icons/jrnaver.webp" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundEB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundR.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundL.woff2"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.js"></script>
+    <title>쥬니어 네이버 - 딱지 레이아웃</title>
+  </head>
+  <body class="flex flex-col gap-5">
+    <h1 class="font-sans-eb text-4xl">딱지 레이아웃</h1>
+
+    <hr />
+
+    <h2 class="font-sans-b text-2xl">인기 캐릭터 레이아웃</h2>
+
+    <div class="flex flex-col items-center bg-gray-500">
+      <div class="layout-ttakji bg-pink-300">
+        <h3 class="layout-ttakji-title">인기 캐릭터</h3>
+
+        <ul class="bg-green-400 popular-character">
+          <li class="popular-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="https://jr.naver.com/" target="_blank">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <div class="zzim-button-wrapper absolute bottom-0 right-0">
+                  <div class="zzim-icon-box relative w-[34px] h-[34px]">
+                    <div class="zzim-icon z-50">
+                      <input
+                        class="zzim-check-icon"
+                        type="checkbox"
+                        name="zzim-check-icon"
+                        id="zzim-check-icon"
+                        required
+                      />
+                      <label
+                        class="zzim-check-icon-label"
+                        for="zzim-check-icon"
+                      >
+                        <svg
+                          width="34"
+                          height="34"
+                          viewBox="0 0 35 34"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="zzim-svg"
+                        >
+                          <circle
+                            class="zzim-heart"
+                            cx="17.7"
+                            cy="17"
+                            r="17"
+                            fill="#DCDCDC"
+                          />
+                          <path
+                            d="M12.2248 10.0412C15.5305 9.68346 17.4208 11.7515 17.9404 12.6067L17.9414 28C17.9414 28 7.99323 23.3939 7.02885 17.2247C6.62779 14.6591 7.4813 10.5544 12.2248 10.0412Z"
+                            fill="#F4F4F4"
+                            class="left-heart"
+                          />
+                          <path
+                            d="M23.6775 10.0412C20.3719 9.68346 18.4815 11.7515 17.9619 12.6067L17.9609 28C17.9609 28 27.9091 23.3939 28.8735 17.2247C29.2746 14.6591 28.421 10.5544 23.6775 10.0412Z"
+                            fill="#fff"
+                          />
+                        </svg>
+                      </label>
+                    </div>
+                    <div class="zzim-icon-circle-list relative">
+                      <div class="icon-circle icon-circle-yellow"></div>
+                      <div class="icon-circle icon-circle-green"></div>
+                      <div class="icon-circle icon-circle-red"></div>
+                    </div>
+                    <div class="zzim-effect w-[500px] h-[500px] absolute">
+                      <img
+                        data-animation="green-candy"
+                        class="zzim-effect-svg-list01 zzim-effect-svg absolute right-[40px] bottom-[6px] w-[67px]"
+                        src="/public/images/zzim/green-candy.svg"
+                        alt=""
+                      />
+
+                      <img
+                        data-animation="blue-ball"
+                        class="zzim-effect-svg-list02 zzim-effect-svg absolute left-[96px] bottom-[18px] w-[46px]"
+                        src="/public/images/zzim/blue-ball.svg"
+                        alt=""
+                      />
+
+                      <img
+                        data-animation="orange-circle"
+                        class="zzim-effect-svg-list03 zzim-effect-svg absolute right-[168px] bottom-[60px] w-[20px]"
+                        src="/public/images/zzim/orange-circle.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="purple-circle"
+                        class="zzim-effect-svg-list04 zzim-effect-svg absolute right-[36px] bottom-[148px] w-[32px]"
+                        src="/public/images/zzim/purple-circle.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="red-circle"
+                        class="zzim-effect-svg-list05 zzim-effect-svg absolute right-[126px] bottom-[280px] w-[24px]"
+                        src="/public/images/zzim/red-circle.svg"
+                        alt=""
+                      />
+
+                      <img
+                        data-animation="yellow-circle"
+                        class="zzim-effect-svg-list06 zzim-effect-svg absolute left-[111px] bottom-[272px] w-[36px]"
+                        src="/public/images/zzim/yellow-circle.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="blue-circle"
+                        class="zzim-effect-svg-list07 zzim-effect-svg absolute left-[236px] bottom-[455px] w-[38px]"
+                        src="/public/images/zzim/blue-circle.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="car"
+                        class="zzim-effect-svg-list08 zzim-effect-svg absolute left-[146px] bottom-[57px] w-[107px]"
+                        src="/public/images/zzim/car.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="red-ball"
+                        class="zzim-effect-svg-list09 zzim-effect-svg absolute left-[318px] bottom-[98px] w-[62px]"
+                        src="/public/images/zzim/red-ball.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="blue-heart"
+                        class="zzim-effect-svg-list10 zzim-effect-svg absolute left-[258px] bottom-[160px] w-[105px]"
+                        src="/public/images/zzim/blue-heart.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="planet"
+                        class="zzim-effect-svg-list11 zzim-effect-svg absolute left-[120px] bottom-[180px] w-[79px]"
+                        src="/public/images/zzim/planet.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="red-heart"
+                        class="zzim-effect-svg-list12 zzim-effect-svg absolute left-[30px] bottom-[290px] w-[78px]"
+                        src="/public/images/zzim/red-heart.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="purple-candy"
+                        class="zzim-effect-svg-list13 zzim-effect-svg absolute left-[159px] bottom-[294px] w-[135px]"
+                        src="/public/images/zzim/purple-candy.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="flower"
+                        class="zzim-effect-svg-list14 zzim-effect-svg absolute right-[30px] bottom-[285px] w-[67px]"
+                        src="/public/images/zzim/flower.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="three-color-ball"
+                        class="zzim-effect-svg-list15 zzim-effect-svg absolute right-[121px] bottom-[408px] w-[65px]"
+                        src="/public/images/zzim/three-color-ball.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="popular-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="popular-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="popular-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="popular-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="popular-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="popular-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="popular-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="popular-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2 class="font-sans-b text-2xl">
+      오디오 동요 동화 & 추천 캐릭터 레이아웃
+    </h2>
+
+    <div class="flex flex-col items-center bg-gray-500">
+      <div class="layout-ttakji bg-pink-300">
+        <h3 class="layout-ttakji-title">추천 캐릭터</h3>
+        <ul class="bg-green-400 scrollable recommended-character">
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="recommended-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center bg-gray-500">
+      <div class="layout-ttakji bg-pink-300">
+        <h3 class="layout-ttakji-title">오디오 동요 동화</h3>
+        <ul class="bg-green-400 scrollable audio">
+          <li class="audio">
+            <div class="ttakji-audio">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-audio/ttakji-audio.jpg"
+                    alt="오디오 동요 동화 커버 이미지"
+                    class="audio-image"
+                  />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    class="cd-hole-svg"
+                    aria-hidden="true"
+                    role="img"
+                  >
+                    <circle
+                      cx="17"
+                      cy="17"
+                      r="13.5"
+                      fill="white"
+                      stroke="#D7D7D7"
+                      stroke-width="7"
+                    />
+                  </svg>
+                </a>
+                <!-- 찜하기 버튼 -->
+                <div class="zzim-button-wrapper absolute bottom-0 right-0">
+                  <div class="zzim-icon-box relative w-[34px] h-[34px]">
+                    <div class="zzim-icon z-50">
+                      <input
+                        class="zzim-check-icon"
+                        type="checkbox"
+                        name="zzim-check-icon"
+                        id="zzim-check-icon"
+                        required
+                      />
+                      <label
+                        class="zzim-check-icon-label"
+                        for="zzim-check-icon"
+                      >
+                        <svg
+                          width="34"
+                          height="34"
+                          viewBox="0 0 35 34"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="zzim-svg"
+                        >
+                          <circle
+                            class="zzim-heart"
+                            cx="17.7"
+                            cy="17"
+                            r="17"
+                            fill="#DCDCDC"
+                          />
+                          <path
+                            d="M12.2248 10.0412C15.5305 9.68346 17.4208 11.7515 17.9404 12.6067L17.9414 28C17.9414 28 7.99323 23.3939 7.02885 17.2247C6.62779 14.6591 7.4813 10.5544 12.2248 10.0412Z"
+                            fill="#F4F4F4"
+                            class="left-heart"
+                          />
+                          <path
+                            d="M23.6775 10.0412C20.3719 9.68346 18.4815 11.7515 17.9619 12.6067L17.9609 28C17.9609 28 27.9091 23.3939 28.8735 17.2247C29.2746 14.6591 28.421 10.5544 23.6775 10.0412Z"
+                            fill="#fff"
+                          />
+                        </svg>
+                      </label>
+                    </div>
+                    <div class="zzim-icon-circle-list relative">
+                      <div class="icon-circle icon-circle-yellow"></div>
+                      <div class="icon-circle icon-circle-green"></div>
+                      <div class="icon-circle icon-circle-red"></div>
+                    </div>
+                    <div class="zzim-effect w-[500px] h-[500px] absolute">
+                      <img
+                        data-animation="green-candy"
+                        class="zzim-effect-svg-list01 zzim-effect-svg absolute right-[40px] bottom-[6px] w-[67px]"
+                        src="/public/images/zzim/green-candy.svg"
+                        alt=""
+                      />
+
+                      <img
+                        data-animation="blue-ball"
+                        class="zzim-effect-svg-list02 zzim-effect-svg absolute left-[96px] bottom-[18px] w-[46px]"
+                        src="/public/images/zzim/blue-ball.svg"
+                        alt=""
+                      />
+
+                      <img
+                        data-animation="orange-circle"
+                        class="zzim-effect-svg-list03 zzim-effect-svg absolute right-[168px] bottom-[60px] w-[20px]"
+                        src="/public/images/zzim/orange-circle.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="purple-circle"
+                        class="zzim-effect-svg-list04 zzim-effect-svg absolute right-[36px] bottom-[148px] w-[32px]"
+                        src="/public/images/zzim/purple-circle.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="red-circle"
+                        class="zzim-effect-svg-list05 zzim-effect-svg absolute right-[126px] bottom-[280px] w-[24px]"
+                        src="/public/images/zzim/red-circle.svg"
+                        alt=""
+                      />
+
+                      <img
+                        data-animation="yellow-circle"
+                        class="zzim-effect-svg-list06 zzim-effect-svg absolute left-[111px] bottom-[272px] w-[36px]"
+                        src="/public/images/zzim/yellow-circle.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="blue-circle"
+                        class="zzim-effect-svg-list07 zzim-effect-svg absolute left-[236px] bottom-[455px] w-[38px]"
+                        src="/public/images/zzim/blue-circle.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="car"
+                        class="zzim-effect-svg-list08 zzim-effect-svg absolute left-[146px] bottom-[57px] w-[107px]"
+                        src="/public/images/zzim/car.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="red-ball"
+                        class="zzim-effect-svg-list09 zzim-effect-svg absolute left-[318px] bottom-[98px] w-[62px]"
+                        src="/public/images/zzim/red-ball.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="blue-heart"
+                        class="zzim-effect-svg-list10 zzim-effect-svg absolute left-[258px] bottom-[160px] w-[105px]"
+                        src="/public/images/zzim/blue-heart.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="planet"
+                        class="zzim-effect-svg-list11 zzim-effect-svg absolute left-[120px] bottom-[180px] w-[79px]"
+                        src="/public/images/zzim/planet.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="red-heart"
+                        class="zzim-effect-svg-list12 zzim-effect-svg absolute left-[30px] bottom-[290px] w-[78px]"
+                        src="/public/images/zzim/red-heart.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="purple-candy"
+                        class="zzim-effect-svg-list13 zzim-effect-svg absolute left-[159px] bottom-[294px] w-[135px]"
+                        src="/public/images/zzim/purple-candy.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="flower"
+                        class="zzim-effect-svg-list14 zzim-effect-svg absolute right-[30px] bottom-[285px] w-[67px]"
+                        src="/public/images/zzim/flower.svg"
+                        alt=""
+                      />
+                      <img
+                        data-animation="three-color-ball"
+                        class="zzim-effect-svg-list15 zzim-effect-svg absolute right-[121px] bottom-[408px] w-[65px]"
+                        src="/public/images/zzim/three-color-ball.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="/index.html">
+                <p class="audio-title">
+                  오디오 딱지 이름 [창의력 말놀이 리듬 동요] 노래로 배우는
+                  가나다 가을엔 '가'
+                </p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2 class="font-sans-b text-2xl">캐릭터 필터 레이아웃</h2>
+
+    <div class="flex flex-col items-center bg-gray-500">
+      <div class="layout-ttakji bg-pink-300" aria-label="캐릭터 검색 필터">
+        <h3 class="filter-select-button">
+          <button
+            type="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="filter-dropdown"
+            class="unpressed"
+          >
+            주제별</button
+          >로 찾아요
+        </h3>
+
+        <ul
+          class="layout-filter-buttons"
+          role="radiogroup"
+          aria-label="필터 소분류"
+        >
+          <li>
+            <button
+              class="filter-button activated"
+              role="radio"
+              aria-checked="true"
+            >
+              동요
+            </button>
+          </li>
+          <li>
+            <button
+              class="filter-button deactivated"
+              role="radio"
+              aria-checked="flase"
+            >
+              동화
+            </button>
+          </li>
+          <li>
+            <button
+              class="filter-button deactivated"
+              role="radio"
+              aria-checked="flase"
+            >
+              TV 동영상
+            </button>
+          </li>
+          <li>
+            <button
+              class="filter-button deactivated"
+              role="radio"
+              aria-checked="flase"
+            >
+              키즈엔터
+            </button>
+          </li>
+          <li>
+            <button
+              class="filter-button deactivated"
+              role="radio"
+              aria-checked="flase"
+            >
+              놀이학습
+            </button>
+          </li>
+          <li>
+            <button
+              class="filter-button deactivated"
+              role="radio"
+              aria-checked="flase"
+            >
+              플레이존
+            </button>
+          </li>
+        </ul>
+
+        <ul class="layout-filter">
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+
+          <li class="filter-character">
+            <div class="ttakji-character">
+              <div class="image-jjim-wrapper">
+                <!-- 딱지 이미지 -->
+                <a href="#">
+                  <img
+                    src="/public/images/ttakji/ttakji-character/ttakji-character.png"
+                    alt="캐릭터 커버 이미지"
+                    class="character-image"
+                  />
+                </a>
+                <!-- 찜하기 버튼 -->
+                <button
+                  type="button"
+                  class="jjim-button"
+                  aria-label="찜하기"
+                ></button>
+              </div>
+              <!-- 딱지 이름 -->
+              <a href="#">
+                <p class="ttakji-title">꼬꼬스토이 공룡 장난감 싸움</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div hidden class="filter-dropdown-wrapper">
+      <div
+        class="filter-dropdown complete"
+        id="filter-dropdown"
+        role="menu"
+        aria-label="정렬 대분류 기준 선택"
+      >
+        <ul class="gap-0" role="radiogroup" aria-label="필터 대분류">
+          <li>
+            <button
+              class="filter-dropdown-button-item activated"
+              role="radio"
+              aria-checked="true"
+            >
+              주제별
+            </button>
+          </li>
+          <li>
+            <button
+              class="filter-dropdown-button-item deactivated"
+              role="radio"
+              aria-checked="false"
+            >
+              가나다순
+            </button>
+          </li>
+          <li>
+            <button
+              class="filter-dropdown-button-item deactivated"
+              role="radio"
+              aria-checked="false"
+            >
+              최근본
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- (버튼 부분) -->
+    <button
+      type="button"
+      aria-haspopup="true"
+      aria-expanded="false"
+      aria-controls="filter-dropdown"
+      class="unpressed"
+    >
+      주제별
+    </button>
+
+    <!-- (스크립트) -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        /* ─────────────────────────────────────────
+       1. 공통 요소 가져오기
+    ───────────────────────────────────────── */
+        const filterButtonContainer = document.querySelector(
+          '.filter-select-button'
+        );
+        const topLevelToggleButton =
+          filterButtonContainer.querySelector('button'); // "주제별" 등 드롭다운 여닫는 버튼
+
+        const dropdownWrapper = document.querySelector(
+          '.filter-dropdown-wrapper'
+        );
+        const dropdown = document.getElementById('filter-dropdown');
+        const dropdownRadioButtons =
+          dropdown.querySelectorAll('[role="radio"]');
+
+        const layoutFilterButtons = document.querySelector(
+          '.layout-filter-buttons'
+        ); // 하위 필터 버튼 영역(ul)
+        const filterItems = document.querySelectorAll(
+          '.layout-filter .filter-character'
+        );
+
+        /* ─────────────────────────────────────────
+       2. "주제별/가나다순/최근본"에 따른 텍스트/필터 목록 정의
+    ───────────────────────────────────────── */
+        const topLevelData = {
+          주제별: {
+            headingHTML: `
+          <button
+            type="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="filter-dropdown"
+            class="unpressed"
+          >
+            주제별
+          </button>로 찾아요
+        `,
+            filters: [
+              '동요',
+              '동화',
+              'TV 동영상',
+              '키즈엔터',
+              '놀이학습',
+              '플레이존',
+            ],
+          },
+          가나다순: {
+            headingHTML: `
+          <button
+            type="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="filter-dropdown"
+            class="unpressed"
+          >
+            가나다
+          </button>로 찾아요
+        `,
+            filters: [
+              '가',
+              '나',
+              '다',
+              '라',
+              '마',
+              '바',
+              '사',
+              '아',
+              '자',
+              '차',
+              '카',
+              '타',
+              '파',
+              '하',
+            ],
+          },
+          최근본: {
+            headingHTML: `
+          <button
+            type="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="filter-dropdown"
+            class="unpressed"
+          >
+            최근본
+          </button> 캐릭터예요
+        `,
+            filters: ['로그인 필요'],
+          },
+        };
+
+        /* ─────────────────────────────────────────
+       3. 랜덤 숨기기 함수 (그대로 유지)
+    ───────────────────────────────────────── */
+        function shuffleAndHideItems() {
+          const total = filterItems.length;
+          // 모두 보이기
+          filterItems.forEach((item) => (item.hidden = false));
+
+          // 무작위로 숨길 개수 (예: 5~10개)
+          const hideCount = Math.floor(Math.random() * (total / 2)) + 3;
+          // Fisher–Yates
+          const shuffled = [...filterItems].sort(() => 0.5 - Math.random());
+          // 숨기기
+          shuffled.slice(0, hideCount).forEach((item) => (item.hidden = true));
+        }
+
+        /* ─────────────────────────────────────────
+       4. 드롭다운: 열고 닫기, 바깥 클릭, ESC
+         -> 열릴 때 pressed, 닫힐 때 unpressed
+    ───────────────────────────────────────── */
+        // (a) 버튼 클릭 시 열고/닫기
+        topLevelToggleButton.addEventListener('click', function (event) {
+          event.stopPropagation();
+          const isHidden = dropdownWrapper.hidden;
+          dropdownWrapper.hidden = !isHidden;
+          this.setAttribute('aria-expanded', String(!isHidden));
+
+          // 열리고/닫힐 때 클래스 토글
+          if (isHidden) {
+            // 닫혀있다가 열림 -> pressed
+            this.classList.remove('unpressed');
+            this.classList.add('pressed');
+          } else {
+            // 열려있다가 닫힘 -> unpressed
+            this.classList.remove('pressed');
+            this.classList.add('unpressed');
+          }
+        });
+
+        // (b) 바깥 클릭 -> 닫기 (버튼도 unpressed)
+        document.addEventListener('click', function (event) {
+          if (
+            !dropdownWrapper.hidden &&
+            !dropdown.contains(event.target) &&
+            !filterButtonContainer.contains(event.target)
+          ) {
+            dropdownWrapper.hidden = true;
+            topLevelToggleButton.setAttribute('aria-expanded', 'false');
+
+            topLevelToggleButton.classList.remove('pressed');
+            topLevelToggleButton.classList.add('unpressed');
+          }
+        });
+
+        // (c) ESC -> 닫기 (버튼도 unpressed)
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape' && !dropdownWrapper.hidden) {
+            dropdownWrapper.hidden = true;
+            topLevelToggleButton.setAttribute('aria-expanded', 'false');
+
+            topLevelToggleButton.classList.remove('pressed');
+            topLevelToggleButton.classList.add('unpressed');
+          }
+        });
+
+        /* ─────────────────────────────────────────
+       5. 드롭다운 내부: 주제별/가나다순/최근본 클릭 시
+          -> 제목(h3) 변경, 하위 필터 버튼 재생성,
+             첫 번째 필터 자동 활성화
+    ───────────────────────────────────────── */
+        dropdownRadioButtons.forEach((btn) => {
+          btn.addEventListener('click', function () {
+            // (a) 드롭다운 메뉴 자체 radio 활성화 표시
+            dropdownRadioButtons.forEach((x) => {
+              x.classList.remove('activated');
+              x.classList.add('deactivated');
+              x.setAttribute('aria-checked', 'false');
+            });
+            this.classList.add('activated');
+            this.classList.remove('deactivated');
+            this.setAttribute('aria-checked', 'true');
+
+            // (b) 주제별/가나다순/최근본에 따른 데이터 적용
+            const selectedText = this.textContent.trim();
+            const data = topLevelData[selectedText];
+            if (data) {
+              // 1) h3 영역(필터 타이틀) 교체
+              filterButtonContainer.innerHTML = data.headingHTML;
+              const newTopButton =
+                filterButtonContainer.querySelector('button');
+
+              // 새로 생성된 버튼 클릭 이벤트(드롭다운 열고 닫기)
+              newTopButton.addEventListener('click', function (ev) {
+                ev.stopPropagation();
+                const isHidden = dropdownWrapper.hidden;
+                dropdownWrapper.hidden = !isHidden;
+                newTopButton.setAttribute('aria-expanded', String(!isHidden));
+
+                if (isHidden) {
+                  this.classList.remove('unpressed');
+                  this.classList.add('pressed');
+                } else {
+                  this.classList.remove('pressed');
+                  this.classList.add('unpressed');
+                }
+              });
+
+              // 2) 하위 필터 목록 재구성
+              layoutFilterButtons.innerHTML = ''; // 기존 지우기
+              data.filters.forEach((txt, i) => {
+                // 첫 번째 필터만 자동 활성화
+                const isActive = i === 0;
+                const activeClass = isActive ? 'activated' : 'deactivated';
+                const ariaCheckVal = isActive ? 'true' : 'false';
+
+                const li = document.createElement('li');
+                li.innerHTML = `
+              <button
+                class="filter-button ${activeClass}"
+                role="radio"
+                aria-checked="${ariaCheckVal}"
+              >
+                ${txt}
+              </button>
+            `;
+                layoutFilterButtons.appendChild(li);
+              });
+
+              // 3) 새 필터 버튼들 이벤트 등록
+              const newFilterButtons =
+                layoutFilterButtons.querySelectorAll('.filter-button');
+              newFilterButtons.forEach((buttonEl) => {
+                buttonEl.addEventListener('click', function () {
+                  // 모든 버튼 비활성화
+                  newFilterButtons.forEach((b) => {
+                    b.classList.remove('activated');
+                    b.classList.add('deactivated');
+                    b.setAttribute('aria-checked', 'false');
+                  });
+                  // 현재 버튼만 활성화
+                  this.classList.remove('deactivated');
+                  this.classList.add('activated');
+                  this.setAttribute('aria-checked', 'true');
+
+                  // 랜덤 숨기기 실행
+                  shuffleAndHideItems();
+                  console.log('선택된 카테고리:', this.textContent.trim());
+                });
+              });
+
+              // 첫 번째 필터 자동 적용(클릭 효과)
+              if (newFilterButtons.length > 0) {
+                newFilterButtons[0].click();
+              }
+            }
+
+            // (c) 드롭다운 닫기 & 최상위 버튼 unpressed
+            dropdownWrapper.hidden = true;
+            topLevelToggleButton.setAttribute('aria-expanded', 'false');
+            topLevelToggleButton.classList.remove('pressed');
+            topLevelToggleButton.classList.add('unpressed');
+          });
+        });
+
+        /* ─────────────────────────────────────────
+       6. 초기 상태: 기존 “주제별” 필터 버튼(동요/동화/...)
+          -> 클릭 이벤트(랜덤 숨기기) 등록
+    ───────────────────────────────────────── */
+        const initialFilterButtons =
+          layoutFilterButtons.querySelectorAll('.filter-button');
+        initialFilterButtons.forEach((button) => {
+          button.addEventListener('click', function () {
+            // 버튼 활성화 토글
+            initialFilterButtons.forEach((btn) => {
+              btn.classList.remove('activated');
+              btn.classList.add('deactivated');
+              btn.setAttribute('aria-checked', 'false');
+            });
+            this.classList.remove('deactivated');
+            this.classList.add('activated');
+            this.setAttribute('aria-checked', 'true');
+
+            shuffleAndHideItems();
+            console.log('선택된 카테고리:', this.textContent.trim());
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

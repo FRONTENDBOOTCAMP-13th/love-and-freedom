@@ -1,0 +1,179 @@
+@import 'tailwindcss';
+
+@theme {
+  --service-linkcard-main-color: #3d75de;
+  --service-linkcard-sub-color2: #e7faff;
+  --service-linkcard-sub-color3: #4584fc;
+  --service-linkcard-sub-color4: #60c1f9;
+  --service-linkcard-sub-color5: rgb(41, 158, 225);
+  --service-linkcard-sub-color6: rgb(66, 130, 198);
+  --service-linkcard-sub-color7: #e3f8ff;
+  --service-linkcard-sub-color8: #00c3ff;
+  --service-linkcard-sub-color9: #bdeeeb;
+  --service-linkcard-sub-color10: rgb(254, 136, 169);
+  --service-linkcard-sub-color11: #f6dcb3;
+
+  --breakpoint-ts: 41.6875rem;
+
+  --service-linkcard-dino-img-big: url(/images/linkcard/dino-image-big.png);
+  --service-linkcard-dongyo-yoso: url(/images/linkcard/dongyo-yoso.png);
+}
+@layer components {
+  .quiz-king-wrap {
+    @apply relative aspect-[3/2] min-h-[220px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg z-0 bg-(--service-linkcard-sub-color7) overflow-hidden;
+  }
+  .quiz-king-link {
+    @apply absolute inset-0 z-10;
+  }
+  .quiz-king-contents {
+    @apply relative w-full h-full;
+  }
+  .quiz-king-bg {
+    @apply w-full right-0 bottom-0 block object-contain ts:object-cover m-auto absolute z-0;
+  }
+  .animal-img-container {
+    @apply absolute right-0 flex justify-end items-center h-full;
+  }
+  .animal-img-container .animal-img-wrap {
+    @apply z-30 min-w-[50%] max-w-[50%] flex justify-center items-center relative;
+    .aninmal-bird {
+      @apply h-full;
+    }
+  }
+  .animal-sound-button {
+    @apply rounded-full bg-amber-300 w-14 h-14 absolute top-[50%] z-10;
+  }
+  .animal-sound-button-text {
+    @apply text-white leading-[50%];
+  }
+  .animal-sound-button-text > span {
+    @apply rounded-[10px] inline-block border-2;
+  }
+  .sound-line1 {
+    @apply h-[14px] mr-[1px] mb-1;
+  }
+  .sound-line2 {
+    @apply h-[20px] mr-[1px];
+  }
+  .sound-line3 {
+    @apply h-[24px] mr-[1px];
+  }
+  .sound-line4 {
+    @apply h-[18px] mb-1;
+  }
+  .quiz-king-baro {
+    @apply block bg-(--service-linkcard-sub-color6) rounded-[49px] leading-[37px] text-[15px] text-white font-extrabold absolute top-3 left-3 z-20;
+  }
+
+  /* 서비스 바로가기 */
+
+  .service-container {
+    @apply aspect-[3/2] min-h-[220px] w-full ts:w-[357px] lg:w-[244px] rounded-lg bg-(--service-linkcard-main-color) flex justify-center items-center relative z-0;
+  }
+  .service-contents-container {
+    @apply flex flex-row-reverse;
+  }
+  .service-contents-wrap {
+    @apply ts:pl-[20px] lg:pl-[134px] w-full flex flex-row-reverse ml-[44px] mr-[44px];
+  }
+  .service-bg-img {
+    @apply w-[164px] h-[180px] bg-no-repeat bg-cover relative ts:left-[-20px] lg:scale-70 z-2 lg:left-[-110px];
+  }
+  .service-text-wrap {
+    @apply font-extrabold z-2;
+  }
+  .service-text-main {
+    @apply text-[23px] text-white font-extrabold md:text-[21px];
+  }
+  .service-text-sub {
+    @apply text-white font-medium pb-[13px] md:text-[12px];
+  }
+  .service-jnshool-btn {
+    @apply inline-block pr-[11px] pb-[13px];
+  }
+  .service-jnshool-btn-link {
+    @apply inline-block bg-white h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px] lg:w-[80px];
+  }
+  .service-tema-btn {
+    @apply inline-block ml-[-5px];
+  }
+  .service-tema-btn-link {
+    @apply inline-block bg-(--service-linkcard-sub-color2) h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px];
+  }
+  .service-nuri-btn {
+    @apply block;
+  }
+  .service-nuri-btn-link {
+    @apply inline-block bg-(--service-linkcard-sub-color2) h-[37px] rounded-[49px] text-[15px] text-(--service-linkcard-main-color) leading-[37px] md:text-[14px];
+  }
+
+  .new-teacher-container {
+    @apply relative aspect-[3/2] min-h-[220px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg z-0 bg-(--service-linkcard-sub-color4) overflow-hidden;
+  }
+  .new-teacher-nuri-btn {
+    @apply block bg-(--service-linkcard-sub-color5) h-[37px] rounded-[49px] leading-[37px] text-[15px] text-white font-extrabold absolute top-3 left-3;
+  }
+  .new-teacher-link {
+    @apply block w-full h-full;
+  }
+  .new-teacher-img {
+    @apply h-full block object-cover m-auto lg:object-contain z-[-1];
+  }
+
+  .game-hamburger-container {
+    @apply relative aspect-[3/2] min-h-[220px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg z-0 bg-(--service-linkcard-sub-color9) overflow-hidden;
+  }
+  .game-hamburger-link {
+    @apply absolute inset-0 z-50;
+  }
+  .game-hamburger-title-container {
+    @apply absolute bottom-0 w-full h-[50px] z-10 text-white;
+  }
+
+  .game-hamburger-title-text {
+    @apply bg-(--service-linkcard-sub-color8) block h-auto leading-[50px] pl-4;
+  }
+  .game-hamburger-btn {
+    @apply block bg-(--service-linkcard-sub-color8) rounded-[49px] leading-[37px] text-[15px] text-white font-extrabold absolute top-3 left-3 z-3;
+  }
+  .game-hamburger-img-link {
+    @apply block w-full h-full;
+  }
+  .game-hamburger-img {
+    @apply h-full block object-cover lg:object-contain z-[-1] scale-100;
+  }
+
+  .dongyo-container {
+    @apply aspect-[3/2] min-h-[220px] max-h-[406px] w-full ts:w-[357px] lg:w-[244px] rounded-lg bg-(--service-linkcard-sub-color10) overflow-hidden;
+  }
+  .dongyo-link {
+    @apply block bg-(--service-linkcard-sub-color10) rounded-[49px] leading-[37px] text-[15px] text-white font-extrabold absolute top-3 left-3 z-30;
+  }
+  .dongyo-yoso-img-wrap {
+    @apply absolute bottom-0 h-[36%];
+  }
+  .dongyo-yoso-img {
+    @apply w-full;
+  }
+  .dongyo-text-container {
+    @apply absolute top-[70%] left-[7px];
+  }
+  .dongyo-main-text {
+    @apply font-extrabold text-white;
+  }
+  .dongyo-icon-wrap {
+    @apply flex;
+  }
+  .dongyo-icon1 {
+    @apply flex items-center mr-2;
+  }
+  .dongyo-sub-text1 {
+    @apply text-white;
+  }
+  .dongyo-icon2 {
+    @apply flex items-center;
+  }
+  .dongyo-sub-text2 {
+    @apply text-white;
+  }
+}

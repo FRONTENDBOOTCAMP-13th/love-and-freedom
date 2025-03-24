@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/icons/jrnaver.webp" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundEB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundR.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundL.woff2"
+    />
+    <script type="module" src="/src/main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="category-button-wrap grid grid-cols-[80px_1fr] grid-rows-[repeat(3,_3rem)] gap-y-4 max-w-[728px] mx-auto lg:grid-cols-[160px_1fr] lg:grid-rows-[56px] lg:gap-x-[10px] lg:py-1 lg:max-w-full xl:gap-x-5 xl:grid-cols-[290px_1fr]"
+    >
+      <a
+        class="category-button xl:w-[290px] lg:w-40 lg:leading-12 lg:border-4 category-event-button lg:rounded-full lg:col-span-1 lg:border-[#f3f4f7] lg:bg-transparent lg:text-black lg:text-[22px] lg:before:content-[] lg:before:bg-(image:--category-button-event-icon) lg:before:w-[22px] lg:before:h-[22px] lg:before:inline-block lg:before:bg-no-repeat lg:before:bg-contain"
+        href="https://jr.naver.com/event/list"
+        aria-label="이벤트 페이지로 이동"
+        >이벤트</a
+      >
+      <a
+        class="category-button leading-12 col-span-full bg-[#f1f4f7] text-black lg:hidden"
+        href="https://jr.naver.com/introduce/junis"
+        aria-label="쥬니스 소개 페이지로 이동"
+        >쥬니스 소개</a
+      >
+      <div
+        class="lg:leading-12 lg:border-4 empty-background-border lg:rounded-full box-border col-span-full grid grid-cols-subgrid leading-[42px] lg:grid-cols-[176px_1fr] lg:col-span-1"
+      >
+        <a
+          class="font-sans-eb text-center col-span-1 block before:content-[] before:bg-(image:--category-button-notice-icon) before:w-[14px] before:h-[15px] before:inline-block before:bg-no-repeat lg:text-[22px] lg:before:w-[22px] lg:before:h-[22px] lg:before:bg-contain"
+          href="https://m.blog.naver.com/PostView.naver?blogId=jrnaver&logNo=223642992403&navType=bg"
+          aria-label="공지사항 페이지로 이동"
+          >공지<span class="sr-only lg:not-sr-only lg:inline-block"
+            >사항</span
+          ></a
+        >
+        <a
+          class="col-span-1 truncate text-[16px]"
+          href="https://m.blog.naver.com/PostView.naver?blogId=jrnaver&logNo=223642992403&navType=bg"
+          ><span aria-hidden="true">[</span>쥬니버스쿨<span aria-hidden="true"
+            >]</span
+          >
+          앱 사용 가이드</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

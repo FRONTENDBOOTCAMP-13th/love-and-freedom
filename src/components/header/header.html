@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.js"></script>
+    <title>header</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="p-1">
+        <span class="sr-only" id="logo" aria-label="로고">주니어 네이버</span>
+        <a href="/src/pages/home/home.html"
+          ><img
+            class="md:hidden"
+            src="/images/header/header-logo.png"
+            alt=""
+            aria-labelledby="logo"
+          /><img
+            class="hidden md:inline"
+            src="/images/header/header-logo-pc.png"
+            width="120px"
+            alt=""
+            aria-labelledby="logo"
+          />
+        </a>
+      </h1>
+      <div class="search-bar-wrap">
+        <div class="search-top">
+          <input
+            type="search"
+            id="header-search-bar"
+            placeholder="검색어를 입력하세요."
+            class="header-search-input"
+            aria-label="검색"
+          />
+          <label for="header-search-bar" class="search-bar-button"></label>
+          <button class="input-x-button" aria-label="close searchbox button">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M2.74545 0.471045C2.11739 -0.157015 1.0991 -0.157015 0.471045 0.471045C-0.157015 1.0991 -0.157015 2.11739 0.471045 2.74545L5.72559 8L0.471045 13.2546C-0.157015 13.8826 -0.157015 14.9009 0.471045 15.529C1.0991 16.157 2.11739 16.157 2.74545 15.529L8 10.2744L13.2546 15.529C13.8826 16.157 14.9009 16.157 15.529 15.529C16.157 14.9009 16.157 13.8826 15.529 13.2546L10.2744 8L15.529 2.74545C16.157 2.11739 16.157 1.09911 15.529 0.471045C14.9009 -0.157014 13.8826 -0.157014 13.2546 0.471045L8 5.72559L2.74545 0.471045Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="search-box" aria-live="polite">
+          <ul>
+            <li>십 년을 함께한 친구들처럼</li>
+            <li>삼삼오오 모여서 웃고 떠들며</li>
+            <li>기쁨을 나누는 이 순간이</li>
+            <li>최상의 행복을 선물해주는</li>
+            <li>고마운 시간들로 가득해.</li>
+          </ul>
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-button-wrap">
+        <a
+          href="#void"
+          class="header-login-button"
+          aria-label="로그인 창으로 이동"
+          >로그인</a
+        >
+        <a
+          href="http://www.naver.com"
+          class="header-naver-button"
+          aria-label="네이버 사이트로 이동"
+        ></a>
+      </div>
+    </header>
+  </body>
+</html>

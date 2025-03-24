@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@layer components {
+  .ttakji-character-wrapper-component-page {
+    @apply w-[120px] h-[165px];
+    @apply lg:w-[105px] lg:h-[150px];
+  }
+
+  .ttakji-audio-wrapper-component-page {
+    @apply w-[120px] h-[165px];
+  }
+
+  .ttakji-character {
+    /* @apply w-[105px] h-[131px] aspect-[105/131; */
+    @apply flex flex-col items-center gap-2 bg-white;
+  }
+
+  .image-jjim-wrapper {
+    @apply relative;
+
+    .character-image {
+      @apply bg-yellow-400 rounded-full w-full;
+    }
+
+    .audio-image {
+      @apply rounded-full;
+    }
+
+    .jjim-button {
+      @apply absolute bottom-0 right-0 cursor-pointer;
+    }
+  }
+
+  .ttakji-title {
+    @apply text-sm text-center line-clamp-2 leading-[18px];
+  }
+
+  .ttakji-audio {
+    @apply flex flex-col align-middle gap-[8px] bg-white;
+  }
+
+  .cd-hole-svg {
+    @apply absolute top-1/2 left-1/2;
+    @apply -translate-x-1/2 -translate-y-1/2;
+  }
+
+  .audio-title {
+    @apply text-sm text-center line-clamp-2 leading-[18px];
+  }
+}

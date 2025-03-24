@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/icons/jrnaver.webp" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundEB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundR.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundL.woff2"
+    />
+    <link rel="stylesheet" href="/src/components/linkcard/linkcard.css" />
+    <script type="module" src="/src/main.js"></script>
+    <title>링크카드</title>
+
+
+    
+    <body class="flex flex-col items-center">
+
+    <!-- 퀴즈왕 영역 -->
+    <div class="quiz-king-wrap">
+      <a class="quiz-king-link" href="https://jr.naver.com/play/quiz/dinosaur?first=248" target="_blank" aria-label="퀴즈왕 이동">
+      <div class="quiz-king-contents">
+        <img
+          class="quiz-king-bg"
+          src="/public/images/linkcard/quiz-king-bg.png"
+          alt="풀잎 배경"/>
+
+        <div class="animal-img-container">
+          <div class="animal-img-wrap">
+            <img
+              class="animal-bird"
+              src="/public/images/linkcard/quiz-king-img.png"
+              alt="학 두마리 이미지"/>
+            <button
+              class="animal-sound-button">
+              <div class="animal-sound-button-text">
+                <span class="sound-line1"></span>
+                <span class="sound-line2"></span>
+                <span class="sound-line3"></span>
+                <span class="sound-line4"></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+            <a
+            class="quiz-king-baro"
+            href="https://jr.naver.com/play/quiz/dinosaur?first=248"
+            target="_blank"
+            aria-label="퀴즈왕 바로가기 이동"
+            >퀴즈왕&#62;</a
+          >
+  </div>
+
+
+    <!-- 6-7세 코딩 전체 부모 영역 -->
+    <!-- lg가 되면 나타나는 영역입니다 -->
+    <div class="w-[244px] h-full">
+      <a href="https://mkt.naver.com/p1/jrschool" aria-label="6-7세 이동" target="_blank">
+        <img
+          target="_blank"
+          class="hidden lg:block rounded-lg"
+          src="/public/images/linkcard/coding-img.png"
+          alt="6-7세 코딩"
+        />
+      </a>
+    </div>
+
+
+
+<!-- 서비스 바로가기 영역-->
+    <div class="service-container">
+      <div class="service-contents-container">
+        <div class="service-contents-wrap">
+          <div class="service-bg-img bg-(image:--service-linkcard-dino-img-big)" aria-hidden="true"></div>
+          <div class="service-text-wrap whitespace-nowrap">
+            <h2 class="service-text-main">서비스 바로가기</h2>
+            <p class="service-text-sub text-sm">다양한 콘텐츠를 즐겨보세요!</p>
+    
+            <div class="service-jnshool-btn">
+              <a
+                type="juniver-school"
+                class="service-jnshool-btn-link"
+                href="https://mkt.naver.com/p1/jrschool"
+                target="_blank"
+                aria-label="쥬니버스쿨로 이동"
+                role="button"
+                >쥬니버스쿨&#62;</a
+              >
+            </div>
+    
+            <div class="service-tema-btn">
+              <a
+                type="theme"
+                class="service-tema-btn-link"
+                href="https://jr.naver.com/theme"
+                target="_blank"
+                aria-label="테마로 이동"
+                role="button"
+                >테마&#62;</a
+              >
+            </div>
+    
+            <div class="service-nuri-btn">
+              <a
+                type="nuri-course"
+                class="service-nuri-btn-link"
+                href="https://jr.naver.com/nuri/nuri_march_3"
+                target="_blank"
+                aria-label="누리과정으로 이동"
+                role="button"
+                >누리과정&#62;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+<!-- 우리반 새로운 선생님 영역 -->
+    <div class="new-teacher-container">
+      <a
+        class="new-teacher-link"
+        href="https://jr.naver.com/s/nuri_march_3/view?contentsNo=169771"
+        target="_blank"
+        aria-label="선생님-누리과정 이동"
+      >
+        <img
+          class="new-teacher-img"
+          src="/public/images/linkcard/new-teacher.png"
+          alt="쥬니스와 선생님 이미지"
+        />
+        누리과정&#62;
+      </a>
+    </div>
+    
+    
+
+<!-- 터치팡팡 게임영역 -->
+    <div class="game-hamburger-container">
+      <a
+        href="https://static-jr.pstatic.net/contents/game/burgerMaster/20201112/index.html?web"
+        class="game-hamburger-link"
+        aria-label="도전 햄버거 요리사 게임 이동"
+        target="_blank"
+      >
+        <div class="game-hamburger-title-container">
+          <strong class="game-hamburger-title-text">도전! 햄버거 요리사</strong>
+        </div>
+        <img
+          class="game-hamburger-img"
+          src="/public/images/linkcard/hamburger-game-bg.jpg"
+          alt="햄버거를 들고 있는 쥬니스 이미지"
+        />
+        <span class="game-hamburger-btn">터치팡팡&#62;</span>
+      </a>
+    </div>
+    
+
+
+
+<!-- 동요영역 -->
+    <div class="dongyo-container">
+      <div class="relative dongyo-wrap">
+        <a
+          class="dongyo-link"
+          href="https://jr.naver.com/t/living_song/view?contentsNo=106597"
+          target="_blank"
+          aria-label="바른마음, 좋은 습관! 노래로 배워요 테마 바로가기"
+        >
+          테마&#62;
+        </a>
+    
+        <a
+          href="https://jr.naver.com/t/living_song/view?contentsNo=106597"
+          target="_blank"
+          aria-label="어린아이 이미지 링크"
+        >
+          <img
+            src="/public/images/linkcard/dongyo-bg.png"
+            alt="어린아이 이미지"
+            class="dongyo-img-link"
+          />
+        </a>
+    
+        <div class="dongyo-yoso-img-wrap">
+          <img
+            class="dongyo-yoso-img"
+            src="/public/images/linkcard/dongyo-yoso.png"
+            alt="분홍색 물결모양"
+            aria-hidden="true"
+          />
+    
+          <div class="dongyo-text-container">
+            <p class="dongyo-main-text">바른마음, 좋은 습관! 노래로 배워요</p>
+    
+            <div class="dongyo-icon-wrap">
+              <div class="dongyo-icon1">
+                <img
+                  src="/public/images/linkcard/dongyo-yoso-icon.png"
+                  class="scale-64"
+                  alt="플레이 아이콘"
+                  aria-hidden="true"
+                />
+                <a
+                  target="_blank"
+                  href="https://jr.naver.com/t/living_song/view?contentsNo=106597"
+                  class="dongyo-sub-text1"
+                  aria-label="노래 수치 13 바로가기"
+                >
+                  13
+                </a>
+              </div>
+    
+              <div class="dongyo-icon2">
+                <img
+                  src="/public/images/linkcard/dongyo-yoso-icon2.png"
+                  class="scale-64"
+                  alt="시간 아이콘"
+                  aria-hidden="true"
+                />
+                <a
+                  target="_blank"
+                  href="https://jr.naver.com/t/living_song/view?contentsNo=106597"
+                  class="dongyo-sub-text2"
+                  aria-label="노래 소요 시간 17분 바로가기"
+                >
+                  17분
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </body>
+</html>

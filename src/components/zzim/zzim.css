@@ -1,0 +1,507 @@
+@import 'tailwindcss';
+
+@layer components {
+  @keyframes green-candy {
+    0% {
+      translate: 0 0;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+    }
+    50% {
+      scale: 0.5;
+    }
+    80% {
+      scale: 1;
+      rotate: -20deg;
+    }
+    100% {
+      translate: 60px -100px;
+      scale: 0;
+    }
+  }
+
+  @keyframes blue-ball {
+    0% {
+      translate: 0 0;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+    }
+    50% {
+      scale: 0.7;
+    }
+    80% {
+      scale: 1 1.1;
+    }
+    100% {
+      translate: -100px -40px;
+      scale: 0;
+    }
+  }
+
+  @keyframes orange-circle {
+    0% {
+      translate: 0 50px;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+    }
+    50% {
+      scale: 1.4;
+    }
+    80% {
+      scale: 0.75;
+    }
+    100% {
+      translate: 100px -20px;
+      scale: 0;
+    }
+  }
+
+  @keyframes purple-circle {
+    0% {
+      translate: -50px 50px;
+      scale: 0;
+    }
+    20% {
+      scale: 1 0.4;
+    }
+    50% {
+      scale: 0.7;
+    }
+    80% {
+      scale: 1;
+    }
+    100% {
+      translate: 40px -80px;
+      scale: 0;
+    }
+  }
+
+  @keyframes red-circle {
+    0% {
+      translate: -50px 50px;
+      scale: 0;
+    }
+    20% {
+      scale: 1 0.6;
+    }
+    50% {
+      scale: 1.2;
+    }
+    80% {
+      scale: 1;
+    }
+    100% {
+      translate: 10px -100px;
+      scale: 0;
+    }
+  }
+
+  @keyframes yellow-circle {
+    0% {
+      translate: 50px 50px;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+    }
+    50% {
+      scale: 0.7;
+    }
+    80% {
+      scale: 1;
+    }
+    100% {
+      translate: -110px -15px;
+      scale: 0;
+    }
+  }
+
+  @keyframes blue-circle {
+    0% {
+      translate: -20px 100px;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+    }
+    50% {
+      scale: 0.7;
+    }
+    80% {
+      scale: 1.2;
+    }
+    100% {
+      translate: -70px 0px;
+      scale: 0;
+    }
+  }
+
+  @keyframes car {
+    0% {
+      translate: 30px 50px;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+      rotate: 10deg;
+    }
+    50% {
+      scale: 0.7;
+    }
+    80% {
+      scale: 1;
+      rotate: -10deg;
+    }
+    100% {
+      translate: -80px -10px;
+      scale: 0;
+    }
+  }
+
+  @keyframes red-ball {
+    0% {
+      translate: -30px 50px;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+    }
+    50% {
+      scale: 0.45 0.7;
+    }
+    80% {
+      scale: 1;
+    }
+    100% {
+      translate: 10px -50px;
+      scale: 0;
+    }
+  }
+
+  @keyframes blue-heart {
+    0% {
+      translate: -30px 50px;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+    }
+    50% {
+      scale: 0.7;
+      rotate: -20deg;
+    }
+    80% {
+      scale: 1;
+    }
+    100% {
+      translate: 0px -70px;
+      scale: 0;
+    }
+  }
+
+  @keyframes planet {
+    0% {
+      translate: 30px 50px;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+    }
+    50% {
+      scale: 0.9 0.6;
+    }
+    80% {
+      scale: 1;
+      rotate: -30deg;
+    }
+    100% {
+      translate: -60px -20px;
+      scale: 0;
+    }
+  }
+
+  @keyframes red-heart {
+    0% {
+      translate: 80px 60px;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+    }
+    50% {
+      scale: 0.7;
+      rotate: 20deg;
+    }
+    80% {
+      scale: 1;
+    }
+    100% {
+      translate: -20px -70px;
+      scale: 0;
+    }
+  }
+
+  @keyframes purple-candy {
+    0% {
+      translate: 20px 100px;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+    }
+    50% {
+      scale: 0.7;
+    }
+    80% {
+      scale: 1;
+      rotate: 60deg;
+    }
+    100% {
+      translate: -70px -20px;
+      scale: 0;
+    }
+  }
+
+  @keyframes flower {
+    0% {
+      translate: -50px 70px;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+    }
+    50% {
+      scale: 0.7;
+    }
+    80% {
+      scale: 1;
+    }
+    100% {
+      translate: 30px -100px;
+      scale: 0;
+      rotate: 180deg;
+    }
+  }
+
+  @keyframes three-color-ball {
+    0% {
+      translate: -30px 40px;
+      scale: 0;
+    }
+    20% {
+      scale: 1;
+    }
+    50% {
+      scale: 0.7;
+    }
+    80% {
+      scale: 1;
+    }
+    100% {
+      translate: 80px -40px;
+      scale: 0;
+      rotate: -270deg;
+    }
+  }
+
+  /* 부모가 통으로 올라오게 하자 */
+  .zzim-effect {
+    left: 50%;
+    top: 0;
+    translate: -50% -67%;
+    scale: 0.3;
+    pointer-events: none;
+
+    img.zzim-effect-svg {
+      animation-play-state: paused;
+      scale: 0;
+    }
+    /* 자식들을 각자 하나씩 따로 움직이게 하자 */
+    .zzim-effect-svg-list01 {
+      animation: green-candy 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 1 forwards;
+    }
+
+    .zzim-effect-svg-list02 {
+      animation: blue-ball 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.02s 1
+        forwards;
+    }
+
+    .zzim-effect-svg-list03 {
+      animation: orange-circle 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.04s 1
+        forwards;
+    }
+
+    .zzim-effect-svg-list04 {
+      animation: purple-circle 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.06s 1
+        forwards;
+    }
+
+    .zzim-effect-svg-list05 {
+      animation: red-circle 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.08s 1
+        forwards;
+    }
+
+    .zzim-effect-svg-list06 {
+      animation: yellow-circle 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.1s 1
+        forwards;
+    }
+
+    .zzim-effect-svg-list07 {
+      animation: blue-circle 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.12s 1
+        forwards;
+    }
+
+    .zzim-effect-svg-list08 {
+      animation: car 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.14s 1 forwards;
+    }
+
+    .zzim-effect-svg-list09 {
+      animation: red-ball 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.16s 1 forwards;
+    }
+
+    .zzim-effect-svg-list10 {
+      animation: blue-heart 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.18s 1
+        forwards;
+    }
+
+    .zzim-effect-svg-list11 {
+      animation: planet 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.2s 1 forwards;
+    }
+
+    .zzim-effect-svg-list12 {
+      animation: red-heart 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.22s 1
+        forwards;
+    }
+
+    .zzim-effect-svg-list13 {
+      animation: purple-candy 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.24s 1
+        forwards;
+    }
+
+    .zzim-effect-svg-list14 {
+      animation: flower 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.26s 1 forwards;
+    }
+
+    .zzim-effect-svg-list15 {
+      animation: three-color-ball 1s cubic-bezier(0.7, 0.12, 0.4, 0.95) 0.28s 1
+        forwards;
+    }
+  }
+
+  @keyframes zzim-icon-circle {
+    0% {
+      scale: 0;
+    }
+    50% {
+      scale: 1.4;
+    }
+    100% {
+      scale: 0;
+    }
+  }
+
+  @keyframes zzim-heart {
+    100% {
+      fill: #fb605e;
+    }
+  }
+
+  @keyframes left-heart {
+    100% {
+      fill: #fecfcf;
+    }
+  }
+
+  @keyframes zzim-heart-scale {
+    0% {
+      scale: 1;
+    }
+    50% {
+      scale: 1.4;
+    }
+    100% {
+      scale: 1;
+    }
+  }
+
+  .zzim-icon-box {
+    .zzim-icon {
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      .zzim-check-icon {
+        position: absolute;
+        top: 0;
+        inset-block-start: 0;
+        left: 0;
+        inset-inline-start: 0;
+        margin: 0;
+        width: 34px;
+        inline-size: 34px;
+        height: 34px;
+        block-size: 34px;
+        appearance: none;
+      }
+
+      .zzim-check-icon-label {
+        display: contents;
+      }
+
+      .zzim-check-icon:checked + label svg {
+        animation: zzim-heart-scale 0.7s ease-in-out 1 forwards;
+      }
+
+      .zzim-check-icon:checked + label .zzim-heart {
+        animation: zzim-heart 0.5s ease-in-out 1 forwards;
+      }
+      .zzim-check-icon:checked + label .left-heart {
+        animation: left-heart 0.5s ease-in-out 1 forwards;
+      }
+    }
+
+    .zzim-icon-circle-list {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #dcdcdc;
+
+      .icon-circle {
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .icon-circle-yellow {
+        background: #03c3ff;
+        animation: zzim-icon-circle 0.7s cubic-bezier(0.87, 0.04, 0.22, 0.74) 1
+          forwards;
+        animation-play-state: paused;
+      }
+      .icon-circle-green {
+        background: #1dcc55;
+        animation: zzim-icon-circle 0.7s cubic-bezier(0.87, 0.04, 0.22, 0.74)
+          0.1s 1 forwards;
+        animation-play-state: paused;
+      }
+      .icon-circle-red {
+        background: #ffd037;
+        animation: zzim-icon-circle 0.7s cubic-bezier(0.87, 0.04, 0.22, 0.74)
+          0.2s 1 forwards;
+        animation-play-state: paused;
+      }
+    }
+  }
+}
