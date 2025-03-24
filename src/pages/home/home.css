@@ -4,7 +4,7 @@
   .withhotcard {
     ul {
       li:nth-child(1) {
-        @apply xl:col-start-1 xl:col-end-3 xl:row-start-2 xl:row-end-4;
+        @apply lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-4;
       }
       li:nth-child(2) {
         @apply xl:col-start-1 xl:col-end-2 xl:row-start-1 xl:row-end-2;
@@ -19,7 +19,7 @@
         @apply xl:col-start-4 xl:col-end-5 xl:row-start-1 xl:row-end-2;
       }
       li:nth-child(6) {
-        @apply xl:col-start-3 xl:col-end-4 xl:row-start-2 xl:row-end-3;
+        @apply xl:col-start-4 xl:col-end-5 xl:row-start-3 xl:row-end-4;
       }
       li:nth-child(7) {
         @apply xl:col-start-4 xl:col-end-5 xl:row-start-2 xl:row-end-3;
@@ -29,7 +29,7 @@
       }
       li:nth-child(9) {
         @apply hidden xl:block;
-        @apply xl:col-start-4 xl:col-end-5 xl:row-start-3 xl:row-end-4;
+        @apply xl:col-start-3 xl:col-end-4 xl:row-start-2 xl:row-end-3;
       }
     }
   }
