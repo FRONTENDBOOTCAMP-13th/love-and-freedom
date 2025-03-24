@@ -311,7 +311,7 @@
           </div>
         </section>
 
-        <section class="col-span-full flex flex-col items-center">
+        <section class="col-span-full flex flex-col items-center relative">
           <!-- 딱지 필터 레이아웃 -->
           <div class="layout-ttakji bg-pink-300" aria-label="캐릭터 검색 필터">
             <h3 class="filter-select-button">
@@ -1164,73 +1164,76 @@
             </ul>
           </div>
 
-          <div hidden class="filter-dropdown-wrapper">
-            <div
-              class="filter-dropdown complete"
-              id="filter-dropdown"
-              role="menu"
-              aria-label="정렬 대분류 기준 선택"
-            >
-              <ul class="gap-0" role="radiogroup" aria-label="필터 대분류">
-                <li>
-                  <button
-                    class="filter-dropdown-button-item activated"
-                    role="radio"
-                    aria-checked="true"
-                  >
-                    주제별
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="filter-dropdown-button-item deactivated"
-                    role="radio"
-                    aria-checked="false"
-                  >
-                    가나다순
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="filter-dropdown-button-item deactivated"
-                    role="radio"
-                    aria-checked="false"
-                  >
-                    최근본
-                  </button>
-                </li>
-              </ul>
-            </div>
+          <div hidden class="filter-dropdown-close-area"></div>
+
+          <div
+            class="filter-dropdown complete"
+            id="filter-dropdown"
+            role="menu"
+            aria-label="정렬 대분류 기준 선택"
+            hidden
+          >
+            <ul class="gap-0" role="radiogroup" aria-label="필터 대분류">
+              <li>
+                <button
+                  class="filter-dropdown-button-item activated"
+                  role="radio"
+                  aria-checked="true"
+                >
+                  주제별
+                </button>
+              </li>
+              <li>
+                <button
+                  class="filter-dropdown-button-item deactivated"
+                  role="radio"
+                  aria-checked="false"
+                >
+                  가나다순
+                </button>
+              </li>
+              <li>
+                <button
+                  class="filter-dropdown-button-item deactivated"
+                  role="radio"
+                  aria-checked="false"
+                >
+                  최근본
+                </button>
+              </li>
+            </ul>
           </div>
 
           <!-- (스크립트) -->
           <script>
             document.addEventListener('DOMContentLoaded', function () {
               /* ─────────────────────────────────────────
-       1. 공통 요소 가져오기
+    1. 공통 요소 가져오기
     ───────────────────────────────────────── */
               const filterButtonContainer = document.querySelector(
                 '.filter-select-button'
               );
               const topLevelToggleButton =
-                filterButtonContainer.querySelector('button'); // "주제별" 등 드롭다운 여닫는 버튼
+                filterButtonContainer.querySelector('button');
+              // "주제별" 등 드롭다운 여닫는 버튼
 
-              const dropdownWrapper = document.querySelector(
-                '.filter-dropdown-wrapper'
+              // (구조 변경) filter-dropdown-close-area(오버레이) + filter-dropdown(실제 패널)
+              const dropdownOverlay = document.querySelector(
+                '.filter-dropdown-close-area'
               );
-              const dropdown = document.getElementById('filter-dropdown');
+              const dropdownEl = document.getElementById('filter-dropdown');
               const dropdownRadioButtons =
-                dropdown.querySelectorAll('[role="radio"]');
+                dropdownEl.querySelectorAll('[role="radio"]');
 
               const layoutFilterButtons = document.querySelector(
                 '.layout-filter-buttons'
-              ); // 하위 필터 버튼 영역(ul)
+              );
               const filterItems = document.querySelectorAll(
                 '.layout-filter .filter-character'
               );
 
               /* ─────────────────────────────────────────
-       2. "주제별/가나다순/최근본"에 따른 텍스트/필터 목록 정의
+    2. "주제별/가나다순/최근본"에 따른 텍스트/필터 목록 정의
     ───────────────────────────────────────── */
               const topLevelData = {
                 주제별: {
@@ -1300,7 +1303,7 @@
               };
 
               /* ─────────────────────────────────────────
-       3. 랜덤 숨기기 함수 (그대로 유지)
+    3. 랜덤 숨기기 함수 (그대로 유지)
     ───────────────────────────────────────── */
               function shuffleAndHideItems() {
                 const total = filterItems.length;
@@ -1309,7 +1312,7 @@
 
                 // 무작위로 숨길 개수 (예: 5~10개)
                 const hideCount = Math.floor(Math.random() * (total / 2)) + 3;
-                // Fisher–Yates
+                // Fisher–Yates Shuffle
                 const shuffled = [...filterItems].sort(
                   () => 0.5 - Math.random()
                 );
@@ -1320,17 +1323,23 @@
               }
 
               /* ─────────────────────────────────────────
-       4. 드롭다운: 열고 닫기, 바깥 클릭, ESC
-         -> 열릴 때 pressed, 닫힐 때 unpressed
+    4. 드롭다운 열고 닫기, 바깥 클릭, ESC
+       -> 열릴 때 pressed, 닫힐 때 unpressed
     ───────────────────────────────────────── */
               // (a) 버튼 클릭 시 열고/닫기
               topLevelToggleButton.addEventListener('click', function (event) {
                 event.stopPropagation();
-                const isHidden = dropdownWrapper.hidden;
-                dropdownWrapper.hidden = !isHidden;
+                // overlay 기준으로 현재 열림 여부 판단
+                const isHidden = dropdownOverlay.hidden;
+
+                // 둘 다 동시에 열기/닫기
+                dropdownOverlay.hidden = !isHidden;
+                dropdownEl.hidden = !isHidden;
+
+                // aria-expanded 갱신
                 this.setAttribute('aria-expanded', String(!isHidden));
 
-                // 열리고/닫힐 때 클래스 토글
+                // pressed / unpressed 클래스 토글
                 if (isHidden) {
                   // 닫혀있다가 열림 -> pressed
                   this.classList.remove('unpressed');
@@ -1344,12 +1353,15 @@
 
               // (b) 바깥 클릭 -> 닫기 (버튼도 unpressed)
               document.addEventListener('click', function (event) {
+                // 드롭다운이 열려 있고,
+                // 클릭 대상이 dropdownEl 내부도 아니고, 필터 버튼도 아니면 -> 닫기
                 if (
-                  !dropdownWrapper.hidden &&
-                  !dropdown.contains(event.target) &&
+                  !dropdownOverlay.hidden &&
+                  !dropdownEl.contains(event.target) &&
                   !filterButtonContainer.contains(event.target)
                 ) {
-                  dropdownWrapper.hidden = true;
+                  dropdownOverlay.hidden = true;
+                  dropdownEl.hidden = true;
                   topLevelToggleButton.setAttribute('aria-expanded', 'false');
 
                   topLevelToggleButton.classList.remove('pressed');
@@ -1359,8 +1371,9 @@
 
               // (c) ESC -> 닫기 (버튼도 unpressed)
               document.addEventListener('keydown', function (event) {
-                if (event.key === 'Escape' && !dropdownWrapper.hidden) {
-                  dropdownWrapper.hidden = true;
+                if (event.key === 'Escape' && !dropdownOverlay.hidden) {
+                  dropdownOverlay.hidden = true;
+                  dropdownEl.hidden = true;
                   topLevelToggleButton.setAttribute('aria-expanded', 'false');
 
                   topLevelToggleButton.classList.remove('pressed');
@@ -1369,9 +1382,9 @@
               });
 
               /* ─────────────────────────────────────────
-       5. 드롭다운 내부: 주제별/가나다순/최근본 클릭 시
-          -> 제목(h3) 변경, 하위 필터 버튼 재생성,
-             첫 번째 필터 자동 활성화
+    5. 드롭다운 내부: 주제별/가나다순/최근본 클릭 시
+       -> 제목(h3) 변경, 하위 필터 버튼 재생성,
+          첫 번째 필터 자동 활성화
     ───────────────────────────────────────── */
               dropdownRadioButtons.forEach((btn) => {
                 btn.addEventListener('click', function () {
@@ -1397,8 +1410,9 @@
                     // 새로 생성된 버튼 클릭 이벤트(드롭다운 열고 닫기)
                     newTopButton.addEventListener('click', function (ev) {
                       ev.stopPropagation();
-                      const isHidden = dropdownWrapper.hidden;
-                      dropdownWrapper.hidden = !isHidden;
+                      const isHidden = dropdownOverlay.hidden;
+                      dropdownOverlay.hidden = !isHidden;
+                      dropdownEl.hidden = !isHidden;
                       newTopButton.setAttribute(
                         'aria-expanded',
                         String(!isHidden)
@@ -1468,7 +1482,8 @@
                   }
 
                   // (c) 드롭다운 닫기 & 최상위 버튼 unpressed
-                  dropdownWrapper.hidden = true;
+                  dropdownOverlay.hidden = true;
+                  dropdownEl.hidden = true;
                   topLevelToggleButton.setAttribute('aria-expanded', 'false');
                   topLevelToggleButton.classList.remove('pressed');
                   topLevelToggleButton.classList.add('unpressed');
@@ -1476,8 +1491,8 @@
               });
 
               /* ─────────────────────────────────────────
-       6. 초기 상태: 기존 “주제별” 필터 버튼(동요/동화/...)
-          -> 클릭 이벤트(랜덤 숨기기) 등록
+    6. 초기 상태: 기존 “주제별” 필터 버튼(동요/동화/...)
+       -> 클릭 이벤트(랜덤 숨기기) 등록
     ───────────────────────────────────────── */
               const initialFilterButtons =
                 layoutFilterButtons.querySelectorAll('.filter-button');

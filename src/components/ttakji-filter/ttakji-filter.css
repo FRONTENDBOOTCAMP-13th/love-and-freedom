@@ -57,15 +57,17 @@
   }
 
   /* 실제 사용시 필터의 동작 (추후 수정) ========================================================================================= */
-  .filter-dropdown-wrapper {
-    @apply fixed inset-0 bg-[rgba(255,255,0,0.5)];
+  .filter-dropdown-close-area {
+    @apply fixed inset-0;
     /* @apply relative; */
   }
 
   .filter-dropdown.complete {
-    @apply absolute bottom-0;
-    @apply ts:top-[409px] ts:left-0 ts:h-fit;
-    @apply lg:top-[0rem] lg:left-[447px] lg:h-fit;
+    @apply fixed bottom-0;
+    @apply ts:absolute ts:bottom-0;
+    @apply ts:top-[30px] ts:left-[15px] ts:h-fit;
+    @apply lg:top-[40px] lg:left-[345px] lg:h-fit;
+    @apply xl:left-[500px] lg:h-fit;
   }
   /* ===================================================================================================================== */
 }
