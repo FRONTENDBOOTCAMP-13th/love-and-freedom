@@ -244,10 +244,10 @@
     }
   }
   .circle.scale {
-    @apply transition-all duration-2000;
+    @apply transition-all duration-1000;
     &:hover {
       @apply scale-200;
-      @apply transition-all duration-2000;
+      @apply transition-all duration-1000;
     }
   }
 
@@ -275,31 +275,31 @@
     }
   }
   .cloud.skyblue {
-    @apply transition-all duration-2000;
+    @apply transition-all duration-1500;
     > [class$='-of-cloud'] {
       @apply bg-[#c2e8ff];
     }
     &:hover {
-      @apply scale-200;
-      @apply transition-all duration-2000;
+      @apply scale-150;
+      @apply transition-all duration-1500;
       > .sun-behind-cloud {
-        @apply scale-200 translate-x-[110px] translate-y-[-18px];
-        @apply transition-all duration-2000;
+        @apply scale-150 translate-x-[110px] translate-y-[-18px];
+        @apply transition-all duration-1500;
       }
     }
   }
   .cloud.blue {
     @apply rotate-y-180;
-    @apply transition-[scale] duration-2000;
+    @apply transition-[scale] duration-1500;
     > [class$='-of-cloud'] {
       @apply bg-[#38b4ff];
     }
     &:hover {
-      @apply scale-200;
-      @apply transition-[scale] duration-2000;
+      @apply scale-150;
+      @apply transition-[scale] duration-1500;
       > .sun-behind-cloud {
-        @apply scale-200 translate-x-[110px] translate-y-[-18px];
-        @apply transition-all duration-2000;
+        @apply scale-150 translate-x-[110px] translate-y-[-18px];
+        @apply transition-all duration-1500;
       }
     }
   }
@@ -311,10 +311,10 @@
 
   .note {
     @apply grid;
-    @apply transition-all duration-2000;
+    @apply transition-all duration-1500;
     &:hover {
-      @apply scale-200;
-      @apply transition-all duration-2000;
+      @apply scale-150;
+      @apply transition-all duration-1500;
     }
     > * {
       @apply col-span-full row-span-full;
@@ -432,17 +432,17 @@
   }
   .book {
     .innerbook {
-      @apply transition-all duration-2000;
+      @apply transition-all duration-1500;
       &:hover {
-        @apply scale-200 rotate-720;
-        @apply transition-all duration-2000 delay-75;
+        @apply scale-150 rotate-360;
+        @apply transition-all duration-1500 delay-75;
       }
     }
   }
   .book.springb {
     @apply transition-all duration-500;
     &:hover {
-      @apply scale-200 rotate-30;
+      @apply scale-150 rotate-30;
       @apply transition-all duration-300;
     }
     .springbook {
@@ -456,7 +456,7 @@
   .book.noteb {
     @apply transition-all duration-500;
     &:hover {
-      @apply scale-200 -rotate-30;
+      @apply scale-150 -rotate-30;
       @apply transition-all duration-300;
     }
     .notebook {
