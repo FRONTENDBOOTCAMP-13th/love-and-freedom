@@ -95,3 +95,8 @@
   --service-linkcard-dino-img-big: url(../public/images/linkcard/dino-image-big.png);
   --service-linkcard-dongyo-yoso: url(../public/images/linkcard/dongyo-yoso.png);
 }
+
+/* index-design css */
+@layer components{
+  
+}
