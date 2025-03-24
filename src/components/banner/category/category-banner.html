@@ -7,35 +7,59 @@
     <title>category-banner</title>
   </head>
   <body>
-    <h1 class="font-bold m-4">category-banner</h1>
-    <div class="category-list p-4 grid gap-4">
-      <div class="category-banner">
+    <!-- 여기는 그냥 배치를 위한.. -->
+    <section
+      class="category-list p-4 grid gap-4"
+      aria-labelledby="category-title"
+    >
+      <h1 id="category-title" class="font-bold m-4">category-banner</h1>
+
+      <!-- 여기부터 컴포넌트 1 -->
+      <article class="category-banner">
         <a
           href="https://jr.naver.com/theme"
           class="category-banner-link bg-(image:--theme-blue-1) cm:bg-(image:--theme-blue-2) lg:bg-(image:--theme-blue-3) xl:bg-(image:--theme-blue-4)"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="테마 페이지로 이동"
         ></a>
-      </div>
+      </article>
 
-      <div class="category-banner">
+      <!-- 컴포넌트 2 -->
+      <article class="category-banner">
         <a
           href="https://jr.naver.com/nuri/nuri_march_3"
           class="category-banner-link bg-(image:--nuri-yellow-1) cm:bg-(image:--nuri-yellow-2) lg:bg-(image:--nuri-yellow-3) xl:bg-(image:--nuri-yellow-4)"
-        ></a>
-      </div>
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="누리 과정 페이지로 이동"
+        >
+        </a>
+      </article>
 
-      <div class="category-banner">
+      <!-- 컴포넌트 3 -->
+      <article class="category-banner">
         <a
           href="https://jr.naver.com/sketchbook/"
           class="category-banner-link bg-(image:--sketch-pink-1) cm:bg-(image:--sketch-pink-2) lg:bg-(image:--sketch-pink-3) xl:bg-(image:--sketch-pink-4)"
-        ></a>
-      </div>
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="스케치북 페이지로 이동"
+        >
+        </a>
+      </article>
 
-      <div class="category-banner">
+      <!-- 컴포넌트 4 -->
+      <article class="category-banner">
         <a
           href="https://jr.naver.com/introduce/junis"
           class="category-banner-link lg:bg-(image:--junis-3) xl:bg-(image:--junis-4)"
-        ></a>
-      </div>
-    </div>
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="주니스 소개 페이지로 이동"
+        >
+        </a>
+      </article>
+    </section>
   </body>
 </html>

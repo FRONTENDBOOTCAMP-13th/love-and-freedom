@@ -34,11 +34,13 @@
       <a
         class="category-button xl:w-[290px] lg:w-40 lg:leading-12 lg:border-4 category-event-button lg:rounded-full lg:col-span-1 lg:border-[#f3f4f7] lg:bg-transparent lg:text-black lg:text-[22px] lg:before:content-[] lg:before:bg-(image:--category-button-event-icon) lg:before:w-[22px] lg:before:h-[22px] lg:before:inline-block lg:before:bg-no-repeat lg:before:bg-contain"
         href="https://jr.naver.com/event/list"
+        aria-label="이벤트 페이지로 이동"
         >이벤트</a
       >
       <a
         class="category-button leading-12 col-span-full bg-[#f1f4f7] text-black lg:hidden"
         href="https://jr.naver.com/introduce/junis"
+        aria-label="쥬니스 소개 페이지로 이동"
         >쥬니스 소개</a
       >
       <div
@@ -47,12 +49,18 @@
         <a
           class="font-sans-eb text-center col-span-1 block before:content-[] before:bg-(image:--category-button-notice-icon) before:w-[14px] before:h-[15px] before:inline-block before:bg-no-repeat lg:text-[22px] lg:before:w-[22px] lg:before:h-[22px] lg:before:bg-contain"
           href="https://m.blog.naver.com/PostView.naver?blogId=jrnaver&logNo=223642992403&navType=bg"
-          >공지<span class="hidden lg:inline-block">사항</span></a
+          aria-label="공지사항 페이지로 이동"
+          >공지<span class="sr-only lg:not-sr-only lg:inline-block"
+            >사항</span
+          ></a
         >
         <a
           class="col-span-1 truncate text-[16px]"
           href="https://m.blog.naver.com/PostView.naver?blogId=jrnaver&logNo=223642992403&navType=bg"
-          >[쥬니버스쿨] 앱 사용 가이드</a
+          ><span aria-hidden="true">[</span>쥬니버스쿨<span aria-hidden="true"
+            >]</span
+          >
+          앱 사용 가이드</a
         >
       </div>
     </div>

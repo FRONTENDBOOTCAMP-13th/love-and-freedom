@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/icons/jrnaver.webp" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundEB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundR.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundL.woff2"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.js"></script>
+    <title>쥬니어 네이버</title>
+  </head>
+  <body>
+    <div class="header-wrap"></div>
+    <div class="wrap">
+      <div class="ttakji-info">
+        <div class="ttakji-info-image-wrap">
+          <img
+            src="/public/images/ttakji-page/geni-kids-background.jpg"
+            alt=""
+          />
+        </div>
+        <div class="ttakji-info-bottom-contents">
+          <div class="ttakji-info-contents-top">
+            <span
+              ><span>콘텐츠<span>159</span></span
+              ><span>좋아요<span>4,993</span></span></span
+            >
+          </div>
+          <div class="ttakji-info-contents-bottom">
+            <h3>지니키즈</h3>
+            <span>동요</span>
+          </div>
+          <div class="image-jjim-wrapper">
+            <!-- 딱지 이미지 -->
+            <a href="#">
+              <img
+                src="/public/images/ttakji-page/geni-kids.png"
+                alt=""
+                width="105px"
+                height="105px"
+                class="character-image"
+              />
+            </a>
+            <!-- 찜하기 버튼 -->
+            <div class="jjim-button">
+              <div class="zzim-icon-box relative w-[34px] h-[34px]">
+                <div class="zzim-icon z-50">
+                  <input
+                    class="zzim-check-icon"
+                    type="checkbox"
+                    name="zzim-check-icon"
+                    id="zzim-check-icon"
+                    required
+                  />
+                  <label class="zzim-check-icon-label" for="zzim-check-icon">
+                    <svg
+                      width="34"
+                      height="34"
+                      viewBox="0 0 35 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="zzim-svg"
+                    >
+                      <circle
+                        class="zzim-heart"
+                        cx="17.7"
+                        cy="17"
+                        r="17"
+                        fill="#DCDCDC"
+                      />
+                      <path
+                        d="M12.2248 10.0412C15.5305 9.68346 17.4208 11.7515 17.9404 12.6067L17.9414 28C17.9414 28 7.99323 23.3939 7.02885 17.2247C6.62779 14.6591 7.4813 10.5544 12.2248 10.0412Z"
+                        fill="#F4F4F4"
+                        class="left-heart"
+                      />
+                      <path
+                        d="M23.6775 10.0412C20.3719 9.68346 18.4815 11.7515 17.9619 12.6067L17.9609 28C17.9609 28 27.9091 23.3939 28.8735 17.2247C29.2746 14.6591 28.421 10.5544 23.6775 10.0412Z"
+                        fill="#fff"
+                      />
+                    </svg>
+                  </label>
+                </div>
+                <div class="zzim-icon-circle-list relative">
+                  <div class="icon-circle icon-circle-yellow"></div>
+                  <div class="icon-circle icon-circle-green"></div>
+                  <div class="icon-circle icon-circle-red"></div>
+                </div>
+                <div class="zzim-effect w-[500px] h-[500px] absolute">
+                  <img
+                    data-animation="green-candy"
+                    class="zzim-effect-svg-list01 zzim-effect-svg absolute right-[40px] bottom-[6px] w-[67px]"
+                    src="/public/images/zzim/green-candy.svg"
+                    alt=""
+                  />
+
+                  <img
+                    data-animation="blue-ball"
+                    class="zzim-effect-svg-list02 zzim-effect-svg absolute left-[96px] bottom-[18px] w-[46px]"
+                    src="/public/images/zzim/blue-ball.svg"
+                    alt=""
+                  />
+
+                  <img
+                    data-animation="orange-circle"
+                    class="zzim-effect-svg-list03 zzim-effect-svg absolute right-[168px] bottom-[60px] w-[20px]"
+                    src="/public/images/zzim/orange-circle.svg"
+                    alt=""
+                  />
+                  <img
+                    data-animation="purple-circle"
+                    class="zzim-effect-svg-list04 zzim-effect-svg absolute right-[36px] bottom-[148px] w-[32px]"
+                    src="/public/images/zzim/purple-circle.svg"
+                    alt=""
+                  />
+                  <img
+                    data-animation="red-circle"
+                    class="zzim-effect-svg-list05 zzim-effect-svg absolute right-[126px] bottom-[280px] w-[24px]"
+                    src="/public/images/zzim/red-circle.svg"
+                    alt=""
+                  />
+
+                  <img
+                    data-animation="yellow-circle"
+                    class="zzim-effect-svg-list06 zzim-effect-svg absolute left-[111px] bottom-[272px] w-[36px]"
+                    src="/public/images/zzim/yellow-circle.svg"
+                    alt=""
+                  />
+                  <img
+                    data-animation="blue-circle"
+                    class="zzim-effect-svg-list07 zzim-effect-svg absolute left-[236px] bottom-[455px] w-[38px]"
+                    src="/public/images/zzim/blue-circle.svg"
+                    alt=""
+                  />
+                  <img
+                    data-animation="car"
+                    class="zzim-effect-svg-list08 zzim-effect-svg absolute left-[146px] bottom-[57px] w-[107px]"
+                    src="/public/images/zzim/car.svg"
+                    alt=""
+                  />
+                  <img
+                    data-animation="red-ball"
+                    class="zzim-effect-svg-list09 zzim-effect-svg absolute left-[318px] bottom-[98px] w-[62px]"
+                    src="/public/images/zzim/red-ball.svg"
+                    alt=""
+                  />
+                  <img
+                    data-animation="blue-heart"
+                    class="zzim-effect-svg-list10 zzim-effect-svg absolute left-[258px] bottom-[160px] w-[105px]"
+                    src="/public/images/zzim/blue-heart.svg"
+                    alt=""
+                  />
+                  <img
+                    data-animation="planet"
+                    class="zzim-effect-svg-list11 zzim-effect-svg absolute left-[120px] bottom-[180px] w-[79px]"
+                    src="/public/images/zzim/planet.svg"
+                    alt=""
+                  />
+                  <img
+                    data-animation="red-heart"
+                    class="zzim-effect-svg-list12 zzim-effect-svg absolute left-[30px] bottom-[290px] w-[78px]"
+                    src="/public/images/zzim/red-heart.svg"
+                    alt=""
+                  />
+                  <img
+                    data-animation="purple-candy"
+                    class="zzim-effect-svg-list13 zzim-effect-svg absolute left-[159px] bottom-[294px] w-[135px]"
+                    src="/public/images/zzim/purple-candy.svg"
+                    alt=""
+                  />
+                  <img
+                    data-animation="flower"
+                    class="zzim-effect-svg-list14 zzim-effect-svg absolute right-[30px] bottom-[285px] w-[67px]"
+                    src="/public/images/zzim/flower.svg"
+                    alt=""
+                  />
+                  <img
+                    data-animation="three-color-ball"
+                    class="zzim-effect-svg-list15 zzim-effect-svg absolute right-[121px] bottom-[408px] w-[65px]"
+                    src="/public/images/zzim/three-color-ball.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="jjim-position-wrap">
+            <div class="zzim-icon-box relative w-[34px] h-[34px]">
+              <div class="zzim-icon z-50">
+                <input
+                  class="zzim-check-icon"
+                  type="checkbox"
+                  name="zzim-check-icon"
+                  id="zzim-check-icon"
+                  required
+                />
+                <label class="zzim-check-icon-label" for="zzim-check-icon">
+                  <svg
+                    width="34"
+                    height="34"
+                    viewBox="0 0 35 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="zzim-svg"
+                  >
+                    <circle
+                      class="zzim-heart"
+                      cx="17.7"
+                      cy="17"
+                      r="17"
+                      fill="#DCDCDC"
+                    />
+                    <path
+                      d="M12.2248 10.0412C15.5305 9.68346 17.4208 11.7515 17.9404 12.6067L17.9414 28C17.9414 28 7.99323 23.3939 7.02885 17.2247C6.62779 14.6591 7.4813 10.5544 12.2248 10.0412Z"
+                      fill="#F4F4F4"
+                      class="left-heart"
+                    />
+                    <path
+                      d="M23.6775 10.0412C20.3719 9.68346 18.4815 11.7515 17.9619 12.6067L17.9609 28C17.9609 28 27.9091 23.3939 28.8735 17.2247C29.2746 14.6591 28.421 10.5544 23.6775 10.0412Z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </label>
+              </div>
+              <div class="zzim-icon-circle-list relative">
+                <div class="icon-circle icon-circle-yellow"></div>
+                <div class="icon-circle icon-circle-green"></div>
+                <div class="icon-circle icon-circle-red"></div>
+              </div>
+              <div class="zzim-effect w-[500px] h-[500px] absolute">
+                <img
+                  data-animation="green-candy"
+                  class="zzim-effect-svg-list01 zzim-effect-svg absolute right-[40px] bottom-[6px] w-[67px]"
+                  src="/public/images/zzim/green-candy.svg"
+                  alt=""
+                />
+
+                <img
+                  data-animation="blue-ball"
+                  class="zzim-effect-svg-list02 zzim-effect-svg absolute left-[96px] bottom-[18px] w-[46px]"
+                  src="/public/images/zzim/blue-ball.svg"
+                  alt=""
+                />
+
+                <img
+                  data-animation="orange-circle"
+                  class="zzim-effect-svg-list03 zzim-effect-svg absolute right-[168px] bottom-[60px] w-[20px]"
+                  src="/public/images/zzim/orange-circle.svg"
+                  alt=""
+                />
+                <img
+                  data-animation="purple-circle"
+                  class="zzim-effect-svg-list04 zzim-effect-svg absolute right-[36px] bottom-[148px] w-[32px]"
+                  src="/public/images/zzim/purple-circle.svg"
+                  alt=""
+                />
+                <img
+                  data-animation="red-circle"
+                  class="zzim-effect-svg-list05 zzim-effect-svg absolute right-[126px] bottom-[280px] w-[24px]"
+                  src="/public/images/zzim/red-circle.svg"
+                  alt=""
+                />
+
+                <img
+                  data-animation="yellow-circle"
+                  class="zzim-effect-svg-list06 zzim-effect-svg absolute left-[111px] bottom-[272px] w-[36px]"
+                  src="/public/images/zzim/yellow-circle.svg"
+                  alt=""
+                />
+                <img
+                  data-animation="blue-circle"
+                  class="zzim-effect-svg-list07 zzim-effect-svg absolute left-[236px] bottom-[455px] w-[38px]"
+                  src="/public/images/zzim/blue-circle.svg"
+                  alt=""
+                />
+                <img
+                  data-animation="car"
+                  class="zzim-effect-svg-list08 zzim-effect-svg absolute left-[146px] bottom-[57px] w-[107px]"
+                  src="/public/images/zzim/car.svg"
+                  alt=""
+                />
+                <img
+                  data-animation="red-ball"
+                  class="zzim-effect-svg-list09 zzim-effect-svg absolute left-[318px] bottom-[98px] w-[62px]"
+                  src="/public/images/zzim/red-ball.svg"
+                  alt=""
+                />
+                <img
+                  data-animation="blue-heart"
+                  class="zzim-effect-svg-list10 zzim-effect-svg absolute left-[258px] bottom-[160px] w-[105px]"
+                  src="/public/images/zzim/blue-heart.svg"
+                  alt=""
+                />
+                <img
+                  data-animation="planet"
+                  class="zzim-effect-svg-list11 zzim-effect-svg absolute left-[120px] bottom-[180px] w-[79px]"
+                  src="/public/images/zzim/planet.svg"
+                  alt=""
+                />
+                <img
+                  data-animation="red-heart"
+                  class="zzim-effect-svg-list12 zzim-effect-svg absolute left-[30px] bottom-[290px] w-[78px]"
+                  src="/public/images/zzim/red-heart.svg"
+                  alt=""
+                />
+                <img
+                  data-animation="purple-candy"
+                  class="zzim-effect-svg-list13 zzim-effect-svg absolute left-[159px] bottom-[294px] w-[135px]"
+                  src="/public/images/zzim/purple-candy.svg"
+                  alt=""
+                />
+                <img
+                  data-animation="flower"
+                  class="zzim-effect-svg-list14 zzim-effect-svg absolute right-[30px] bottom-[285px] w-[67px]"
+                  src="/public/images/zzim/flower.svg"
+                  alt=""
+                />
+                <img
+                  data-animation="three-color-ball"
+                  class="zzim-effect-svg-list15 zzim-effect-svg absolute right-[121px] bottom-[408px] w-[65px]"
+                  src="/public/images/zzim/three-color-ball.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main>
+        <section class="ttakji-main-top">
+          <div><span>동영상</span>159</div>
+          <div>
+            <select
+              name="ttakji-video-sort"
+              id="ttakji-video-sort-filter"
+              class="ttakji-video-sort-filter"
+            >
+              <option value="newest">최신순</option>
+              <option value="topview">인기순</option>
+              <option value="dict">순서대로</option>
+            </select>
+            <label for="ttakji-video-sort-filter"></label>
+          </div>
+        </section>
+        <section class="ttakji-videos-section">
+          <div class="h-20 bg-amber-600"></div>
+          <div class="h-20 bg-amber-600"></div>
+          <div class="h-20 bg-amber-600"></div>
+          <div class="h-20 bg-amber-600"></div>
+          <div class="h-20 bg-amber-600"></div>
+          <div class="h-20 bg-amber-600"></div>
+          <div class="h-20 bg-amber-600"></div>
+          <div class="h-20 bg-amber-600"></div>
+          <div class="h-20 bg-amber-600"></div>
+          <div class="h-20 bg-amber-600"></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

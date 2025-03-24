@@ -1,34 +1,40 @@
 import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
+import path from 'path';
+import fs from 'fs';
+
+// findAllHtmlFiles 함수 정의 추가
+function findAllHtmlFiles(directory) {
+  const htmlFiles = {};
+
+  function scanDirectory(dir) {
+    const files = fs.readdirSync(dir);
+
+    for (const file of files) {
+      const filePath = path.join(dir, file);
+      const stat = fs.statSync(filePath);
+
+      if (stat.isDirectory()) {
+        scanDirectory(filePath);
+      } else if (file.endsWith('.html')) {
+        // 키 이름을 경로에서 추출 (확장자 제외)
+        const key = path.relative(__dirname, filePath).replace('.html', '');
+        htmlFiles[key] = filePath;
+      }
+    }
+  }
+
+  scanDirectory(directory);
+  return htmlFiles;
+}
 
 export default defineConfig({
   plugins: [tailwindcss()],
   build: {
     rollupOptions: {
       input: {
-        index: 'index.html', // 기본 index.html
-
-        chaBanner: '/src/components/banner/character/character-banner.html',
-        homeBanner: '/src/components/banner/home/home-banner.html',
-        categoryBanner: '/src/components/banner/category/category-banner.html',
-        header: 'src/components/header/header.html',
-        categoryButton: 'src/components/category-button/category-button.html',
-        ttakji: 'src/components/ttakji/ttakji.html',
-        ttakjiCategory: 'src/components/ttakji-category/ttakji-category.html',
-        ttakjiFilter: 'src/components/ttakji-filter/ttakji-filter.html',
-        home: 'src/pages/home/home.html',
-        footer: 'src/components/footer/footer.html',
-        baseLayout: 'src/components/base-layout/base-layout.html',
-        videoCard: 'src/components/video-card/video-card.html',
-        topLink: 'src/components/top-link/toplink-html',
-        animation: 'src/components/animation/animation.html',
-        topLink: 'src/components/top-link/top-link.html',
-        squareLayout: 'src/components/square-ttakji-layout/square-layout.html',
-        character: 'src/pages/character/character.html',
-        category: 'src/pages/category/category.html',
-        hotCard: 'src/components/hot-card/hot-card.html',
-        zzim: 'src/components/zzim/zzim.html',
-        nav: 'src/components/nav/nav.html',
+        index: path.resolve(__dirname, 'index.html'),
+        ...findAllHtmlFiles(path.resolve(__dirname, 'src')),
       },
     },
   },

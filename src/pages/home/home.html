@@ -29,77 +29,885 @@
       rel="stylesheet"
     />
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/zzim.js"></script>
     <title>쥬니어 네이버</title>
   </head>
   <body>
+    <div class="header-wrap">
+      <header>
+        <h1 class="p-1">
+          <span class="sr-only" id="logo" aria-label="로고">주니어 네이버</span>
+          <a href="/src/pages/home/home.html"
+            ><img
+              class="md:hidden"
+              src="/images/header/header-logo.png"
+              alt=""
+              aria-labelledby="logo"
+            /><img
+              class="hidden md:inline"
+              src="/images/header/header-logo-pc.png"
+              width="120px"
+              alt=""
+              aria-labelledby="logo"
+            />
+          </a>
+        </h1>
+        <div class="search-bar-wrap">
+          <div class="search-top">
+            <input
+              type="search"
+              id="header-search-bar"
+              placeholder="검색어를 입력하세요."
+              class="header-search-input"
+              aria-label="검색"
+            />
+            <label for="header-search-bar" class="search-bar-button"></label>
+            <button class="input-x-button" aria-label="close searchbox button">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2.74545 0.471045C2.11739 -0.157015 1.0991 -0.157015 0.471045 0.471045C-0.157015 1.0991 -0.157015 2.11739 0.471045 2.74545L5.72559 8L0.471045 13.2546C-0.157015 13.8826 -0.157015 14.9009 0.471045 15.529C1.0991 16.157 2.11739 16.157 2.74545 15.529L8 10.2744L13.2546 15.529C13.8826 16.157 14.9009 16.157 15.529 15.529C16.157 14.9009 16.157 13.8826 15.529 13.2546L10.2744 8L15.529 2.74545C16.157 2.11739 16.157 1.09911 15.529 0.471045C14.9009 -0.157014 13.8826 -0.157014 13.2546 0.471045L8 5.72559L2.74545 0.471045Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="search-box" aria-live="polite">
+            <ul>
+              <li>십 년을 함께한 친구들처럼</li>
+              <li>삼삼오오 모여서 웃고 떠들며</li>
+              <li>기쁨을 나누는 이 순간이</li>
+              <li>최상의 행복을 선물해주는</li>
+              <li>고마운 시간들로 가득해.</li>
+            </ul>
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-button-wrap">
+          <a
+            href="#void"
+            class="header-login-button"
+            aria-label="로그인 창으로 이동"
+            >로그인</a
+          >
+          <a
+            href="http://www.naver.com"
+            class="header-naver-button"
+            aria-label="네이버 사이트로 이동"
+          ></a>
+        </div>
+      </header>
+    </div>
     <div class="wrap">
       <!-- 홈 기준으로 만들어서 캐릭터, 카테고리, 즐겨찾기에선 빼야 할 마크업이 있습니다. -->
-      <div class="header-wrap">
-        <header>
-          <h1 class="p-1">
-            <a href="#void"
-              ><img
-                class="md:hidden"
-                src="/images/header/header-logo.png"
-                alt=""
-              /><img
-                class="hidden md:inline"
-                src="/images/header/header-logo-pc.png"
-                width="120px"
-                alt=""
-              />
-            </a>
-          </h1>
-          <div class="search-bar-wrap">
-            <div class="search-top">
-              <input
-                type="search"
-                id="header-search-bar"
-                placeholder="검색어를 입력하세요."
-                class="header-search-input"
-              />
-              <label for="header-search-bar" class="search-bar-button"></label>
-              <button class="input-x-button">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.74545 0.471045C2.11739 -0.157015 1.0991 -0.157015 0.471045 0.471045C-0.157015 1.0991 -0.157015 2.11739 0.471045 2.74545L5.72559 8L0.471045 13.2546C-0.157015 13.8826 -0.157015 14.9009 0.471045 15.529C1.0991 16.157 2.11739 16.157 2.74545 15.529L8 10.2744L13.2546 15.529C13.8826 16.157 14.9009 16.157 15.529 15.529C16.157 14.9009 16.157 13.8826 15.529 13.2546L10.2744 8L15.529 2.74545C16.157 2.11739 16.157 1.09911 15.529 0.471045C14.9009 -0.157014 13.8826 -0.157014 13.2546 0.471045L8 5.72559L2.74545 0.471045Z"
-                    fill="black"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="search-box">하하 내가 검색창 누르면 나오는 놈이다</div>
-          </div>
-          <div class="header-button-wrap">
-            <a href="#void" class="header-login-button">로그인</a>
-            <a href="http://www.naver.com" class="header-naver-button"></a>
-          </div>
-        </header>
-      </div>
+
       <div class="nav-wrap">
-        <!-- <nav></nav> -->
+        <ul class="jr-naver-nav">
+          <li class="jr-naver-nav-menu main-menu">
+            <a
+              class="nav-link-block"
+              href="/src/pages/home/home.html"
+              target="_blank"
+            >
+              <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
+                <img
+                  class="w-full"
+                  src="/public/images/nav/main-icon.svg"
+                  alt=""
+                />
+              </div>
+              <p class="nav-menu-text">추천</p>
+              <div class="nav-hover-line"></div>
+            </a>
+            <div class="nav-hover-small">
+              <img
+                class="small-green"
+                src="/public/images/nav/small-circle-green.svg"
+                alt=""
+              />
+              <img
+                class="small-red"
+                src="/public/images/nav/small-circle-red.svg"
+                alt=""
+              />
+              <img
+                class="small-yellow"
+                src="/public/images/nav/small-star-yellow.svg"
+                alt=""
+              />
+              <img
+                class="small-blue"
+                src="/public/images/nav/small-star-blue.svg"
+                alt=""
+              />
+            </div>
+          </li>
+          <li class="jr-naver-nav-menu character-menu">
+            <a
+              class="nav-link-block"
+              href="/src/pages/character/character.html"
+              target="_blank"
+            >
+              <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
+                <img
+                  class="w-full"
+                  src="/public/images/nav/character-icon.svg"
+                  alt=""
+                />
+              </div>
+              <p class="nav-menu-text">캐릭터</p>
+              <div class="nav-hover-line"></div>
+            </a>
+            <div class="nav-hover-small">
+              <img
+                class="small-green"
+                src="/public/images/nav/small-circle-green.svg"
+                alt=""
+              />
+              <img
+                class="small-red"
+                src="/public/images/nav/small-circle-red.svg"
+                alt=""
+              />
+              <img
+                class="small-yellow"
+                src="/public/images/nav/small-star-yellow.svg"
+                alt=""
+              />
+              <img
+                class="small-blue"
+                src="/public/images/nav/small-star-blue.svg"
+                alt=""
+              />
+            </div>
+          </li>
+          <li class="jr-naver-nav-menu category-menu">
+            <a
+              class="nav-link-block"
+              href="/src/pages/category/category.html"
+              target="_blank"
+            >
+              <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
+                <img
+                  class="w-full"
+                  src="/public/images/nav/category-icon.svg"
+                  alt=""
+                />
+              </div>
+              <p class="nav-menu-text">카테고리</p>
+              <div class="nav-hover-line"></div>
+            </a>
+            <div class="nav-hover-small">
+              <img
+                class="small-green"
+                src="/public/images/nav/small-circle-green.svg"
+                alt=""
+              />
+              <img
+                class="small-red"
+                src="/public/images/nav/small-circle-red.svg"
+                alt=""
+              />
+              <img
+                class="small-yellow"
+                src="/public/images/nav/small-star-yellow.svg"
+                alt=""
+              />
+              <img
+                class="small-blue"
+                src="/public/images/nav/small-star-blue.svg"
+                alt=""
+              />
+            </div>
+          </li>
+          <li class="jr-naver-nav-menu bookmark-menu">
+            <a class="nav-link-block" href="#" target="_blank">
+              <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
+                <img
+                  class="w-full"
+                  src="/public/images/nav/heart-icon.svg"
+                  alt=""
+                />
+              </div>
+              <p class="nav-menu-text">즐겨찾기</p>
+              <div class="nav-hover-line"></div>
+            </a>
+            <div class="nav-hover-small">
+              <img
+                class="small-green"
+                src="/public/images/nav/small-circle-green.svg"
+                alt=""
+              />
+              <img
+                class="small-red"
+                src="/public/images/nav/small-circle-red.svg"
+                alt=""
+              />
+              <img
+                class="small-yellow"
+                src="/public/images/nav/small-star-yellow.svg"
+                alt=""
+              />
+              <img
+                class="small-blue"
+                src="/public/images/nav/small-star-blue.svg"
+                alt=""
+              />
+            </div>
+          </li>
+        </ul>
       </div>
       <main>
         <section class="card-component-wrap withhotcard">
           <ul>
             <li>
-              1
-              <!-- 카드 컴포넌트 -->
+              <section class="hot-card-section hidden xl:block">
+                <div class="h-text-animation">
+                  <img src="/public/images/hot-card/H-text.png" alt="" />
+                </div>
+                <div class="o-text-animation">
+                  <img src="/public/images/hot-card/O-text.png" alt="" />
+                </div>
+                <div class="t-text-animation">
+                  <img src="/public/images/hot-card/T-text.png" alt="" />
+                </div>
+                <div class="video-card-box hover:cursor">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                  >
+                    <!-- hot card character -->
+                    <div class="hot-card-character">
+                      <img
+                        src="/public/images/hot-card/hot-card-cha.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="hot-video-label video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text">02:43</p>
+                    </div>
+                  </a>
+                  <div class="video-title-wrap relative">
+                    <!-- 동영상 제목 -->
+                    <a
+                      href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                      target="_blank"
+                      class="title"
+                      >어린이 트로트 ♬ 하트하트 앙!</a
+                    >
+                    <!-- 채널 제목 -->
+                    <a
+                      href="https://jr.naver.com/song/boingtv_song"
+                      target="_blank"
+                      class="channel-title"
+                      >똘똘이TV 동요
+                    </a>
+                    <!-- 찜 아이콘 -->
+                    <div
+                      class="zzim-icon-box absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px]"
+                    >
+                      <div class="zzim-icon z-50">
+                        <input
+                          class="zzim-check-icon"
+                          type="checkbox"
+                          name="zzim-check-icon"
+                          id="zzim-check-icon"
+                          required
+                        />
+                        <label
+                          class="zzim-check-icon-label"
+                          for="zzim-check-icon"
+                        >
+                          <svg
+                            width="34"
+                            height="34"
+                            viewBox="0 0 35 34"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="zzim-svg"
+                          >
+                            <circle
+                              class="zzim-heart"
+                              cx="17.7"
+                              cy="17"
+                              r="17"
+                              fill="#DCDCDC"
+                            />
+                            <path
+                              d="M12.2248 10.0412C15.5305 9.68346 17.4208 11.7515 17.9404 12.6067L17.9414 28C17.9414 28 7.99323 23.3939 7.02885 17.2247C6.62779 14.6591 7.4813 10.5544 12.2248 10.0412Z"
+                              fill="#F4F4F4"
+                              class="left-heart"
+                            />
+                            <path
+                              d="M23.6775 10.0412C20.3719 9.68346 18.4815 11.7515 17.9619 12.6067L17.9609 28C17.9609 28 27.9091 23.3939 28.8735 17.2247C29.2746 14.6591 28.421 10.5544 23.6775 10.0412Z"
+                              fill="#fff"
+                            />
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="zzim-icon-circle-list relative">
+                        <div class="icon-circle icon-circle-yellow"></div>
+                        <div class="icon-circle icon-circle-green"></div>
+                        <div class="icon-circle icon-circle-red"></div>
+                      </div>
+                      <div class="zzim-effect w-[500px] h-[500px] absolute">
+                        <img
+                          data-animation="green-candy"
+                          class="zzim-effect-svg-list01 zzim-effect-svg absolute right-[40px] bottom-[6px] w-[67px]"
+                          src="/public/images/zzim/green-candy.svg"
+                          alt=""
+                        />
+
+                        <img
+                          data-animation="blue-ball"
+                          class="zzim-effect-svg-list02 zzim-effect-svg absolute left-[96px] bottom-[18px] w-[46px]"
+                          src="/public/images/zzim/blue-ball.svg"
+                          alt=""
+                        />
+
+                        <img
+                          data-animation="orange-circle"
+                          class="zzim-effect-svg-list03 zzim-effect-svg absolute right-[168px] bottom-[60px] w-[20px]"
+                          src="/public/images/zzim/orange-circle.svg"
+                          alt=""
+                        />
+                        <img
+                          data-animation="purple-circle"
+                          class="zzim-effect-svg-list04 zzim-effect-svg absolute right-[36px] bottom-[148px] w-[32px]"
+                          src="/public/images/zzim/purple-circle.svg"
+                          alt=""
+                        />
+                        <img
+                          data-animation="red-circle"
+                          class="zzim-effect-svg-list05 zzim-effect-svg absolute right-[126px] bottom-[280px] w-[24px]"
+                          src="/public/images/zzim/red-circle.svg"
+                          alt=""
+                        />
+
+                        <img
+                          data-animation="yellow-circle"
+                          class="zzim-effect-svg-list06 zzim-effect-svg absolute left-[111px] bottom-[272px] w-[36px]"
+                          src="/public/images/zzim/yellow-circle.svg"
+                          alt=""
+                        />
+                        <img
+                          data-animation="blue-circle"
+                          class="zzim-effect-svg-list07 zzim-effect-svg absolute left-[236px] bottom-[455px] w-[38px]"
+                          src="/public/images/zzim/blue-circle.svg"
+                          alt=""
+                        />
+                        <img
+                          data-animation="car"
+                          class="zzim-effect-svg-list08 zzim-effect-svg absolute left-[146px] bottom-[57px] w-[107px]"
+                          src="/public/images/zzim/car.svg"
+                          alt=""
+                        />
+                        <img
+                          data-animation="red-ball"
+                          class="zzim-effect-svg-list09 zzim-effect-svg absolute left-[318px] bottom-[98px] w-[62px]"
+                          src="/public/images/zzim/red-ball.svg"
+                          alt=""
+                        />
+                        <img
+                          data-animation="blue-heart"
+                          class="zzim-effect-svg-list10 zzim-effect-svg absolute left-[258px] bottom-[160px] w-[105px]"
+                          src="/public/images/zzim/blue-heart.svg"
+                          alt=""
+                        />
+                        <img
+                          data-animation="planet"
+                          class="zzim-effect-svg-list11 zzim-effect-svg absolute left-[120px] bottom-[180px] w-[79px]"
+                          src="/public/images/zzim/planet.svg"
+                          alt=""
+                        />
+                        <img
+                          data-animation="red-heart"
+                          class="zzim-effect-svg-list12 zzim-effect-svg absolute left-[30px] bottom-[290px] w-[78px]"
+                          src="/public/images/zzim/red-heart.svg"
+                          alt=""
+                        />
+                        <img
+                          data-animation="purple-candy"
+                          class="zzim-effect-svg-list13 zzim-effect-svg absolute left-[159px] bottom-[294px] w-[135px]"
+                          src="/public/images/zzim/purple-candy.svg"
+                          alt=""
+                        />
+                        <img
+                          data-animation="flower"
+                          class="zzim-effect-svg-list14 zzim-effect-svg absolute right-[30px] bottom-[285px] w-[67px]"
+                          src="/public/images/zzim/flower.svg"
+                          alt=""
+                        />
+                        <img
+                          data-animation="three-color-ball"
+                          class="zzim-effect-svg-list15 zzim-effect-svg absolute right-[121px] bottom-[408px] w-[65px]"
+                          src="/public/images/zzim/three-color-ball.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <article class="video-card xl:hidden">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
             </li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/good-watch.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >올바른 시청습관송 | 창작동요 | 쥬니버 동요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/juniversong"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/jaemi-hangeul.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:31</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >쥬니버 한글나라 _한글 좋아</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/jr_hangul"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버 한글나라
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/ouch-turtle.png"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:27</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >환경송 - 아야, 바다｜미스터부우｜환경특파원｜환경보호
+                    애니메이션</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/mrbooo_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >미스터부우 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/panda-noodle.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >키키묘묘 국수와 만두를 만들어요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/babybus_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >베이비버스
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/jaemi-hangeul.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:31</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >쥬니버 한글나라 _한글 좋아</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/jr_hangul"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버 한글나라
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
           </ul>
         </section>
         <section class="imsy ttakji">
@@ -107,14 +915,399 @@
         </section>
         <section class="card-component-wrap">
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/good-watch.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >올바른 시청습관송 | 창작동요 | 쥬니버 동요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/juniversong"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/jaemi-hangeul.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:31</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >쥬니버 한글나라 _한글 좋아</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/jr_hangul"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버 한글나라
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/ouch-turtle.png"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:27</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >환경송 - 아야, 바다｜미스터부우｜환경특파원｜환경보호
+                    애니메이션</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/mrbooo_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >미스터부우 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/panda-noodle.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >키키묘묘 국수와 만두를 만들어요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/babybus_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >베이비버스
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
           </ul>
         </section>
         <section class="imsy banner">
@@ -122,14 +1315,399 @@
         </section>
         <section class="card-component-wrap">
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/good-watch.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >올바른 시청습관송 | 창작동요 | 쥬니버 동요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/juniversong"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/jaemi-hangeul.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:31</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >쥬니버 한글나라 _한글 좋아</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/jr_hangul"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버 한글나라
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/ouch-turtle.png"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:27</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >환경송 - 아야, 바다｜미스터부우｜환경특파원｜환경보호
+                    애니메이션</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/mrbooo_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >미스터부우 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/panda-noodle.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >키키묘묘 국수와 만두를 만들어요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/babybus_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >베이비버스
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
           </ul>
         </section>
         <section class="imsy ttakji">
@@ -137,14 +1715,399 @@
         </section>
         <section class="card-component-wrap">
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/good-watch.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >올바른 시청습관송 | 창작동요 | 쥬니버 동요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/juniversong"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/jaemi-hangeul.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:31</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >쥬니버 한글나라 _한글 좋아</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/jr_hangul"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버 한글나라
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/ouch-turtle.png"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:27</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >환경송 - 아야, 바다｜미스터부우｜환경특파원｜환경보호
+                    애니메이션</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/mrbooo_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >미스터부우 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/panda-noodle.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >키키묘묘 국수와 만두를 만들어요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/babybus_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >베이비버스
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
           </ul>
         </section>
         <section class="imsy ttakji">
@@ -152,30 +2115,1185 @@
         </section>
         <section class="card-component-wrap">
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-            <li>16</li>
-            <li>17</li>
-            <li>18</li>
-            <li>19</li>
-            <li>20</li>
-            <li>21</li>
-            <li>22</li>
-            <li>23</li>
-            <li>24</li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/good-watch.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >올바른 시청습관송 | 창작동요 | 쥬니버 동요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/juniversong"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/jaemi-hangeul.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:31</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >쥬니버 한글나라 _한글 좋아</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/jr_hangul"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버 한글나라
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/ouch-turtle.png"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:27</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >환경송 - 아야, 바다｜미스터부우｜환경특파원｜환경보호
+                    애니메이션</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/mrbooo_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >미스터부우 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/panda-noodle.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >키키묘묘 국수와 만두를 만들어요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/babybus_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >베이비버스
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/good-watch.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >올바른 시청습관송 | 창작동요 | 쥬니버 동요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/juniversong"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/jaemi-hangeul.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:31</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >쥬니버 한글나라 _한글 좋아</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/jr_hangul"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버 한글나라
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/ouch-turtle.png"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:27</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >환경송 - 아야, 바다｜미스터부우｜환경특파원｜환경보호
+                    애니메이션</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/mrbooo_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >미스터부우 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/panda-noodle.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >키키묘묘 국수와 만두를 만들어요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/babybus_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >베이비버스
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/good-watch.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/juniversong/view?contentsNo=169826"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >올바른 시청습관송 | 창작동요 | 쥬니버 동요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/juniversong"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/jaemi-hangeul.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:31</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/jr_hangul/view?contentsNo=25884"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >쥬니버 한글나라 _한글 좋아</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/jr_hangul"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >쥬니버 한글나라
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/ouch-turtle.png"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:27</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/mrbooo_song/view?contentsNo=183937"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >환경송 - 아야, 바다｜미스터부우｜환경특파원｜환경보호
+                    애니메이션</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/mrbooo_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >미스터부우 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/panda-noodle.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:37</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/babybus_song/view?contentsNo=109981"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >키키묘묘 국수와 만두를 만들어요</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/babybus_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >베이비버스
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/heart-ang.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">02:43</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/boingtv_song/view?contentsNo=193179"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >어린이 트로트 ♬ 하트하트 앙!</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/boingtv_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >똘똘이TV 동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="video-card">
+                <div class="thumbnail-container">
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="relative"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="video-label absolute">
+                      <p class="label-text">추천</p>
+                    </div>
+                    <img
+                      src="/public/images/page-images/home/video-thumbnail/stylish-tomato.jpg"
+                      alt="비디오 카드 썸네일-영상 바로가기 링크"
+                      class="video-thumb"
+                    />
+                    <div class="run-time absolute right-[2.5%] bottom-[5%]">
+                      <p class="run-time-text" aria-label="영상 길이">01:04</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="video-title-wrap relative">
+                  <!-- 동영상 제목 -->
+                  <a
+                    href="https://jr.naver.com/s/love_song/view?contentsNo=99925"
+                    target="_blank"
+                    class="title"
+                    rel="noopener noreferrer"
+                    aria-label="동영상 제목"
+                    >멋쟁이 토마토</a
+                  >
+                  <!-- 채널 제목 -->
+                  <a
+                    href="https://jr.naver.com/song/love_song"
+                    target="_blank"
+                    class="channel-title"
+                    rel="noopener noreferrer"
+                    aria-label="채널 제목"
+                    >애창동요
+                  </a>
+                  <!-- 임시 찜 자리 -->
+                  <div
+                    class="absolute top-[10px] bottom-0 right-0 w-[34px] h-[34px] bg-red-400"
+                  ></div>
+                </div>
+              </article>
+            </li>
           </ul>
         </section>
       </main>

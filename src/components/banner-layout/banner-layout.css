@@ -1,9 +1,53 @@
 @import 'tailwindcss';
 
 @theme {
-  /* 배너레이아웃-커스텀 breakpoint */
-  /* 768px */
-  --breakpoint-aa: 48rem;
-  /* 1280px */
-  --breakpoint-as: 67.5rem;
+  --breakpoint-ts: 666px;
+}
+
+@layer {
+  .main-banner-container {
+    @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 md:pl-[7px] md:pr-[7px];
+  }
+  .main-banner-contents1 {
+    @apply md:rounded-[12px] col-span-1 row-span-1 bg-blue-500;
+  }
+  .main-banner-contents2 {
+    @apply hidden lg:block rounded-[12px] bg-green-500;
+  }
+  .main-banner-contents3 {
+    @apply hidden xl:block rounded-[12px] col-span-1 row-span-1 bg-red-500;
+  }
+  .character-banner-container {
+    @apply md:justify-center;
+  }
+  .character-banner-wrap {
+    @apply grid grid-flow-col gap-2 min-w-[1000px] pl-[7px] pr-[7px] ts:mt-3;
+  }
+  .character-banner-contents1 {
+    @apply rounded-[12px] p-8 bg-red-500;
+  }
+  .character-banner-contents2 {
+    @apply rounded-[12px] p-8 bg-blue-500;
+  }
+  .character-banner-contents3 {
+    @apply rounded-[12px] p-8 bg-green-500;
+  }
+  .category1-container {
+    @apply grid grid-cols-1 lg:grid-cols-2;
+  }
+  .category1-contents1 {
+    @apply bg-red-500;
+  }
+  .category1-contents2 {
+    @apply hidden lg:block bg-blue-500;
+  }
+  .category2-container {
+    @apply grid grid-cols-1 lg:grid-cols-2;
+  }
+  .category2-contents1 {
+    @apply bg-red-500;
+  }
+  .category2-contents2 {
+    @apply hidden lg:block bg-blue-500;
+  }
 }

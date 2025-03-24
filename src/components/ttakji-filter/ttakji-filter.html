@@ -36,23 +36,38 @@
     <hr />
 
     <h2>필터 셀렉트 버튼</h2>
-    <h3 class="filter-select-button"><a href="#">주제별</a>로 찾아요</h3>
+    <h3 class="filter-select-button">
+      <button
+        type="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-controls="filter-dropdown"
+        class="unpressed"
+      >
+        주제별</button
+      >로 찾아요
+    </h3>
     <hr />
 
     <h2>필터 드롭다운 메뉴용 버튼</h2>
-    <button class="filter-dropdown-button-item activated">주제별</button>
-    <button class="filter-dropdown-button-item deactivated">주제별</button>
+    <button
+      class="filter-dropdown-button-item activated"
+      role="radio"
+      aria-checked="true"
+    >
+      주제별
+    </button>
+    <button
+      class="filter-dropdown-button-item deactivated"
+      role="radio"
+      aria-checked="false"
+    >
+      주제별
+    </button>
     <hr />
 
-    <h2>필터 드롭다운 메뉴 wrapper</h2>
-    <div class="filter-dropdown">
-      <ul class="gap-4">
-        <li></li>
-      </ul>
-    </div>
-    <hr />
+    <h2>필터 드롭다운 메뉴</h2>
 
-    <h2>필터 드롭다운 메뉴 - 사용 예</h2>
     <div class="filter-dropdown">
       <ul class="gap-0">
         <li>
@@ -70,6 +85,7 @@
         </li>
       </ul>
     </div>
+
     <hr />
 
     <h2>필터 버튼 - 소분류(활성화)</h2>
@@ -83,20 +99,37 @@
     <p>hidden으로 숨겨져있음. 레이아웃과 함께 만져야하므로 추후 수정</p>
 
     <div hidden class="filter-dropdown-wrapper">
-      <div class="filter-dropdown complete">
-        <ul class="gap-0">
+      <div
+        class="filter-dropdown complete"
+        id="filter-dropdown"
+        role="menu"
+        aria-label="정렬 대분류 기준 선택"
+      >
+        <ul class="gap-0" role="radiogroup" aria-label="필터 대분류">
           <li>
-            <button class="filter-dropdown-button-item activated">
+            <button
+              class="filter-dropdown-button-item activated"
+              role="radio"
+              aria-checked="true"
+            >
               주제별
             </button>
           </li>
           <li>
-            <button class="filter-dropdown-button-item deactivated">
+            <button
+              class="filter-dropdown-button-item deactivated"
+              role="radio"
+              aria-checked="false"
+            >
               가나다순
             </button>
           </li>
           <li>
-            <button class="filter-dropdown-button-item deactivated">
+            <button
+              class="filter-dropdown-button-item deactivated"
+              role="radio"
+              aria-checked="false"
+            >
               최근본
             </button>
           </li>

@@ -31,94 +31,124 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body
-    class="flex items-center justify-center w-full h-screen bg-red-200 font-sans-b"
+    class="grid grid-cols-2 gap-10 w-full h-screen p-10 bg-red-200 font-sans-b"
   >
-    <div class="bg-white rounded-2xl">
-      <p>아래에 작성해주세요~</p>
-      <hr />
-      <ul>
-        <li>
-          <a href="/src/components/banner/home/home-banner.html">home-banner</a>
-        </li>
-        <li>
-          <a href="/src/components/banner/character/character-banner.html"
-            >character-banner</a
-          >
-        </li>
-        <li>
-          <a href="/src/components/banner/category/category-banner.html"
-            >category-banner</a
-          >
-        </li>
-        <li>
-          <a href="/src/components/header/header.html">header</a>
-        </li>
-        <li>
-          <a href="/src/components/category-button/category-button.html"
-            >category-button</a
-          >
-        </li>
-        <li><a href="/src/components/footer/footer.html">footer</a></li>
-        <li><a href="/src/components/zzim/zzim.html">zzim-ani</a></li>
-        <li>
-          <a href="/src/components/ttakji/ttakji.html"
-            >딱지(캐릭터, 오디오 동요 동화)</a
-          >
-        </li>
-        <li>
-          <a href="/src/components/ttakji-filter/ttakji-filter.html"
-            >딱지 필터</a
-          >
-        </li>
-        <li>
-          <a href="/src/components/ttakji-category/ttakji-category.html"
-            >카테고리 딱지</a
-          >
-        </li>
-        <li>
-          <a href="./src/components/linkcard/linkcard.html">link-card</a>
-        </li>
-        <li>
-          <a href="./src/components/notice-modal/notice-modal.html"
-            >notice-modal</a
-          >
-        </li>
-        <li>
-          <a href="./src/components/video-card/video-card.html">video-card</a>
-        </li>
-        <li>
-          <a href="/src/pages/home/home.html">home</a>
-        </li>
-        <li>
-          <a href="/src/pages/character/character.html">character</a>
-        </li>
-        <li>
-          <a href="/src/components/base-layout/base-layout.html"
-            >기본 레이아웃</a
-          >
-        </li>
-        <li><a href="/src/components/top-link/top-link.html">탑 버튼</a></li>
-        <li>
-          <a href="/src/components/animation/animation.html">애니메이션</a>
-        </li>
-        <li><a href="/src/components/nav/nav.html">네비게이션 메뉴</a></li>
+    <ul
+      class="bg-white rounded-2xl flex flex-col items-center pt-20 gap-2 text-2xl"
+    >
+      <li class="text-3xl text-purple-400 font-sans-eb relative top-[-40px]">
+        공통 컴포넌트
+      </li>
+      <li>
+        <a href="/src/components/header/header.html">header</a>
+      </li>
+      <li><a href="/src/components/nav/nav.html">네비게이션 메뉴</a></li>
+      <li><a href="/src/components/footer/footer.html">footer</a></li>
+      <li><a href="/src/components/top-link/top-link.html">탑 버튼</a></li>
+      <li>
+        <a href="/src/components/animation/animation.html">애니메이션</a>
+      </li>
+      <li>
+        <a href="./src/components/notice-modal/notice-modal.html"
+          >notice-modal</a
+        >
+      </li>
+    </ul>
+    <ul
+      class="bg-white rounded-2xl flex flex-col items-center pt-20 gap-2 text-2xl"
+    >
+      <li class="text-3xl text-purple-400 font-sans-eb relative top-[-40px]">
+        페이지별 컴포넌트
+      </li>
+      <li>
+        <a href="./src/components/video-card/video-card.html">video-card</a>
+      </li>
+      <li>
+        <a href="./src/components/linkcard/linkcard.html">link-card</a>
+      </li>
+      <li>
+        <a href="/src/components/ttakji/ttakji.html"
+          >딱지(캐릭터, 오디오 동요 동화)</a
+        >
+      </li>
+      <li>
+        <a href="/src/components/ttakji-category/ttakji-category.html"
+          >카테고리 딱지</a
+        >
+      </li>
+      <li><a href="/src/components/zzim/zzim.html">zzim-ani</a></li>
+      <li><a href="/src/components/hot-card/hot-card.html">Hot Card</a></li>
+      <li>
+        <a href="/src/components/banner/home/home-banner.html">home-banner</a>
+      </li>
+      <li>
+        <a href="/src/components/banner/character/character-banner.html"
+          >character-banner</a
+        >
+      </li>
+      <li>
+        <a href="/src/components/banner/category/category-banner.html"
+          >category-banner</a
+        >
+      </li>
+      <li>
+        <a href="/src/components/category-button/category-button.html"
+          >category-button</a
+        >
+      </li>
+      <li>
+        <a href="/src/components/ttakji-filter/ttakji-filter.html">딱지 필터</a>
+      </li>
+      <li>
+        <a href="/src/components/like-my/like-my.html">즐겨찾기 프로필</a>
+      </li>
+    </ul>
 
-        <li><a href="/src/components/hot-card/hot-card.html">Hot Card</a></li>
-        <li>
-          <a href="/src/pages/category/category.html">category</a>
-        </li>
-        <li>
-          <a href="/src/components/banner-layout/banner-layout.html"
-            >배너 레이아웃</a
-          >
-        </li>
-        <li>
-          <a href="/src/components/square-ttakji-layout/square-layout.html"
-            >네모딱지 레이아웃</a
-          >
-        </li>
-        <li><a href="/src/components/test-index/test-index.html">TEST INDEX!!!</a></li>
-      </ul>
-    </div>
+    <ul
+      class="bg-white rounded-2xl flex flex-col items-center pt-20 gap-2 text-2xl"
+    >
+      <li class="text-3xl text-purple-400 font-sans-eb relative top-[-40px]">
+        레이아웃
+      </li>
+      <li>
+        <a href="/src/components/base-layout/base-layout.html">기본 레이아웃</a>
+      </li>
+      <li>
+        <a href="/src/components/layout/layout-ttakji/layout-ttakji.html"
+          >딱지 레이아웃</a
+        >
+      </li>
+      <li>
+        <a href="/src/components/square-ttakji-layout/square-layout.html"
+          >네모딱지 레이아웃</a
+        >
+      </li>
+      <li>
+        <a href="/src/components/banner-layout/banner-layout.html"
+          >배너 레이아웃</a
+        >
+      </li>
+    </ul>
+
+    <ul
+      class="bg-white rounded-2xl flex flex-col items-center pt-20 gap-2 text-2xl"
+    >
+      <li class="text-3xl text-purple-400 font-sans-eb relative top-[-40px]">
+        페이지
+      </li>
+      <li>
+        <a href="/src/pages/home/home.html">home</a>
+      </li>
+      <li>
+        <a href="/src/pages/character/character.html">character</a>
+      </li>
+      <li>
+        <a href="/src/pages/category/category.html">category</a>
+      </li>
+      <li>
+        <a href="/src/pages/like/likepage.html">like</a>
+      </li>
+      <li><a href="/src/components/test-index/test-index.html">TEST INDEX!!!</a></li>
+    </ul>
   </body>
 </html>

@@ -11,14 +11,15 @@
 /* main > .imsy.many-ttakji > 엄청 많은 딱지 레이아웃 */
 
 .wrap {
-  @apply grid grid-cols-[[full-start]_20px_[content-start]_1fr_[content-end]_20px_[full-end]];
-  @apply ts:grid-cols-[[full-start]_20px_[content-start]_1fr_1fr_[content-end]_20px_[full-end]];
+  @apply mt-15;
+  @apply grid grid-cols-[[full-start]_20px_[content-start]_calc(100vw_-_40px)_[content-end]_20px_[full-end]];
+  @apply ts:grid-cols-[[full-start]_20px_[content-start]_repeat(2,_calc((100vw_-_54px)_/_2))_[content-end]_20px_[full-end]];
   @apply md:grid-cols-[[full-start]_1fr_[content-start]_repeat(2,_calc(742px_/_2))_[content-end]_1fr_[full-end]];
   @apply lg:grid-cols-[[full-start]_1fr_[content-start]_repeat(3,_calc(894px_/_3))_[content-end]_1fr_[full-end]];
   @apply xl:grid-cols-[[full-start]_1fr_[content-start]_repeat(4,_calc(1200px_/_4))_[content-end]_1fr_[full-end]];
 
   .header-wrap {
-    @apply col-[full];
+    @apply col-[full] w-screen h-15 fixed top-0;
   }
   .nav-wrap {
     @apply col-[full];
@@ -31,14 +32,11 @@
   }
 }
 main {
-  @apply px-5 box-border pb-10 lg:pb-[296px];
+  @apply px-5 lg:px-0 box-border pb-10 lg:pb-[296px];
   .card-component-wrap {
     @apply grid grid-cols-subgrid col-span-full ts:gap-x-[14px] gap-y-[20px] lg:gap-x-[20px] lg:gap-y-[16px];
     > ul {
       @apply contents;
-      > li {
-        @apply col-span-1;
-      }
       > li:nth-child(7),
       > li:nth-child(8) {
         @apply hidden xl:block;

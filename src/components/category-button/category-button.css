@@ -9,6 +9,7 @@
 
 @layer components {
   .category-button-wrap {
+    @apply grid grid-cols-[80px_1fr] grid-rows-[repeat(3,_3rem)] gap-y-4 max-w-[728px] mx-auto lg:grid-cols-[160px_1fr] lg:grid-rows-[56px] lg:gap-x-[10px] lg:py-1 lg:max-w-full xl:gap-x-5 xl:grid-cols-[290px_1fr];
     .category-event-button {
       @apply leading-12 col-span-full bg-jr-naver-yellow-200 text-white text-button-title-size;
     }

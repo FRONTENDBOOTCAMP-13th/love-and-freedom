@@ -23,7 +23,11 @@
 @import './components/square-ttakji-layout/square-layout.css';
 @import './pages/character/character.css';
 @import './pages/category/category.css';
-
+@import './components/linkcard/linkcard.css';
+@import './components/layout/layout-ttakji/layout-ttakji.css';
+@import './pages/ttakji/ttakji.css';
+@import './components/like-my/like-my.css';
+@import './pages/like/likepage.css';
 
 @theme {
   --font-*: initial;
@@ -31,6 +35,7 @@
   --font-sans-eb: 'NanumSquareRoundEB', 'sans-serif';
   --font-sans-l: 'NanumSquareRoundL', 'sans-serif';
   --font-sans-r: 'NanumSquareRound', 'sans-serif';
+
   --color-jr-naver-yellow-100: #ffd037;
   --color-jr-naver-yellow-200: #ffc82c;
   --color-jr-naver-orange-100: #efab41;
@@ -69,31 +74,6 @@
   --header-search-icon: url(/images/header/search-icon.png);
   --header-search-icon-pc: url(/images/header/search-icon-pc.png);
   --header-naver-icon: url(/images/header/header-naver-icon.png);
-
-  /* <링크카드영역> */
-  /* 링크카드-서비스 바로가기 색상 */
-  --service-linkcard-main-color: #3d75de;
-  --service-linkcard-sub-color2: #e7faff;
-  --service-linkcard-sub-color3: #4584fc;
-  /* 우리반 새로운 선생님-색상 */
-  --service-linkcard-sub-color4: #60c1f9;
-  --service-linkcard-sub-color5: rgb(41, 158, 225);
-  /* 퀴즈왕 색상 */
-  --service-linkcard-sub-color6: rgb(66, 130, 198);
-  --service-linkcard-sub-color7: #e3f8ff;
-  /*터치팡팡(햄버거게임) 색상 */
-  --service-linkcard-sub-color8: #00c3ff;
-  --service-linkcard-sub-color9: #bdeeeb;
-  /* 테마(동요) 색상 */
-  --service-linkcard-sub-color10: rgb(254, 136, 169);
-  --service-linkcard-sub-color11: #f6dcb3;
-
-  /* 링크카드-커스텀 breakpoint */
-  --breakpoint-ts: 41.6875rem;
-
-  /* 링크카드-이미지 */
-  --service-linkcard-dino-img-big: url(../public/images/linkcard/dino-image-big.png);
-  --service-linkcard-dongyo-yoso: url(../public/images/linkcard/dongyo-yoso.png);
 }
 
 /* index-design css */
