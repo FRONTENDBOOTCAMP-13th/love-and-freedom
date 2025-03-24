@@ -91,10 +91,8 @@ main {
   .header-wrap {
   }
   .nav-wrap {
-    @apply bg-yellow-300 h-20;
   }
-  main {
-    @apply bg-green-300;
+  main.base-layout-main {
   }
   .footer-wrap {
   }
@@ -104,7 +102,7 @@ main {
   @apply h-40 bg-pink-200;
 }
 
-main {
+.base-layout-main {
   .card-component-wrap {
     > ul {
       > li {
