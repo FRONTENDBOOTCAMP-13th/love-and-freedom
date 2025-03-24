@@ -11,15 +11,15 @@
 
   /* 자간 */
   --basics-letter-spacing: -0.1875rem;
-  /* 행간(아 이건 전부 달라서 잘 모르겠음..) */
+  /* 행간 */
   --basics-line-height: 1.5;
-  /* footer 텍스트으으 */
+
 
   /* footer 최소 width */
   --footer-width: 17.5rem;
 
   /* footer-padding */
-  /* 15px 였지만 16으로 간다 */
+  /* 16px으로 간다 */
   --footer-padding-top: 1rem;
   --footer-padding-x: 1.875rem;
   --footer-padding-bottom: 4.125rem;
