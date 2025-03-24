@@ -5,7 +5,7 @@
 }
 @layer {
   .like-logout-container {
-    @apply text-center lg:hidden;
+    @apply text-center lg:hidden flex flex-col justify-center items-center;
   }
   .like-logout-mini-img {
     @apply after:bg-(image:--like-page-logout-bg);
