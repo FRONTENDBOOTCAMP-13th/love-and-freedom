@@ -76,3 +76,8 @@
   --header-search-icon-pc: url(/images/header/search-icon-pc.png);
   --header-naver-icon: url(/images/header/header-naver-icon.png);
 }
+
+/* index-design css */
+@layer components{
+  
+}

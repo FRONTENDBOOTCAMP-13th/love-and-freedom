@@ -316,6 +316,7 @@
     top: 0;
     translate: -50% -67%;
     scale: 0.3;
+    pointer-events: none;
 
     img.zzim-effect-svg {
       animation-play-state: paused;
