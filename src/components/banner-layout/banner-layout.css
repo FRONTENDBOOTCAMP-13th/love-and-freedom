@@ -19,18 +19,24 @@
   }
   .character-banner-container {
     @apply md:justify-center;
+    @apply h-fit;
   }
   .character-banner-wrap {
-    @apply grid grid-flow-col gap-2 min-w-[1000px] pl-[7px] pr-[7px] ts:mt-3;
+    @apply grid grid-flow-col gap-[18px] py-4;
+    @apply overflow-x-auto snap-x snap-mandatory;
+
+    li {
+      @apply snap-center;
+    }
   }
   .character-banner-contents1 {
-    @apply rounded-[12px] p-8 bg-red-500;
+    @apply rounded-[12px] bg-red-500;
   }
   .character-banner-contents2 {
-    @apply rounded-[12px] p-8 bg-blue-500;
+    @apply rounded-[12px] bg-blue-500;
   }
   .character-banner-contents3 {
-    @apply rounded-[12px] p-8 bg-green-500;
+    @apply rounded-[12px] bg-green-500;
   }
   .category1-container {
     @apply grid grid-cols-1 lg:grid-cols-2;
