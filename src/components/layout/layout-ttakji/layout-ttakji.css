@@ -4,12 +4,6 @@
   .layout-ttakji {
     @apply px-[15px] w-full;
 
-    /* character-page의 layout-ttakji 부모가 자동으로 조절하게끔 */
-    /* @apply ts:px-5 ts:max-w-[768px] ts:min-w-[666px]; */
-    /* @apply ts:px-5 ts:max-w-[768px]; */
-    /* @apply lg:max-w-[914px] lg:px-[10px] lg:items-center; */
-    /* @apply xl:max-w-[1220px]; */
-
     .layout-ttakji-title {
       @apply text-[17px] font-sans-eb mb-3;
       @apply lg:text-[26px] lg:text-center;
@@ -54,13 +48,13 @@
       @apply ts:gap-[20px];
 
       &.recommended-character {
-        @apply lg:gap-[26.5px];
-        @apply xl:gap-[32px];
+        @apply lg:gap-[21px];
+        @apply xl:gap-[28px];
       }
 
       &.audio {
-        @apply lg:gap-[34.8px];
-        @apply xl:gap-[34.3px];
+        @apply lg:gap-[28.5px];
+        @apply xl:gap-[30px];
       }
 
       li {
