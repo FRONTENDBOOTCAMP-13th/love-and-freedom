@@ -275,11 +275,31 @@
           </div>
         </section>
         <div
-          class="background-animation-wrap-container fixed left-0 top-80 transform"
+          class="background-animation-wrap-container fixed left-20 top-80 transform"
         >
-          <div class="background-animation-wrap hidden lg:block">
+          <div class="background-animation-wrap hidden lg:block scale-80">
             <div
-              class="stem-leaf yellow-stem-leaf one-leaf fixed animate-anticlockwise scale-70"
+              class="z-50 stem-leaf yellow-stem-leaf one-leaf fixed animate-anticlockwise"
+            >
+              <div class="innerstem-leaf">
+                <div class="leaf"></div>
+                <div class="stem-shape stem"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="z-50 circle red scale fixed top-150 left-0 animate-tr-br-move hidden lg:block"
+        ></div>
+
+        <!-- 기준 -->
+        <div
+          class="background-animation-wrap-container fixed right-20 top-160 transform"
+        >
+          <div class="background-animation-wrap hidden lg:block scale-80">
+            <div
+              class="stem-leaf yellow-stem-leaf one-leaf fixed animate-anticlockwise"
             >
               <div class="innerstem-leaf">
                 <div class="leaf"></div>
@@ -291,7 +311,7 @@
 
         <div class="right-0">
           <div
-            class="flower fixed top-80 right-0 animate-anticlockwise scale-40"
+            class="flower fixed top-80 right-0 animate-anticlockwise scale-60 hidden lg:block"
           >
             <div class="innerflower">
               <div class="tlcircle"></div>
@@ -303,9 +323,33 @@
           </div>
         </div>
 
-        <div class="left-0">
+        <div class="right-0 z-100">
           <div
-            class="flower fixed bottom-90 left-0 animate-anticlockwise scale-40"
+            class="stem-leaf green-stem-leaf two-leaf fixed bottom-120 right-0 animate-anticlockwise hidden lg:block"
+          >
+            <div class="innerstem-leaf">
+              <div class="leaf"></div>
+              <div class="otherleaf"></div>
+              <div class="stem-shape stem"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-0 z-100">
+          <div
+            class="stem-leaf green-stem-leaf two-leaf fixed top-180 left-30 animate-anticlockwise hidden lg:block"
+          >
+            <div class="innerstem-leaf">
+              <div class="leaf"></div>
+              <div class="otherleaf"></div>
+              <div class="stem-shape stem"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="left-0 z-100">
+          <div
+            class="flower fixed bottom-90 left-0 animate-anticlockwise scale-60 hidden lg:block"
           >
             <div class="innerflower">
               <div class="tlcircle"></div>
@@ -317,13 +361,17 @@
           </div>
         </div>
 
-        <div
-          class="stem-leaf green-stem-leaf two-leaf fixed bottom-80 right-0 animate-anticlockwise scale-60"
-        >
-          <div class="innerstem-leaf">
-            <div class="leaf"></div>
-            <div class="otherleaf"></div>
-            <div class="stem-shape stem"></div>
+        <div class="right-0 z-100">
+          <div
+            class="flower fixed bottom-80 right-0 animate-anticlockwise scale-60 hidden lg:block"
+          >
+            <div class="innerflower">
+              <div class="tlcircle"></div>
+              <div class="trcircle"></div>
+              <div class="blcircle"></div>
+              <div class="brcircle"></div>
+              <div class="centercircle"></div>
+            </div>
           </div>
         </div>
 
@@ -466,7 +514,6 @@
           </div>
         </footer>
       </div>
-      <!-- 애니메이션 -->
     </div>
   </body>
 </html>
