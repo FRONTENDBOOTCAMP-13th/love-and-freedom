@@ -42,18 +42,22 @@
     @apply grid grid-cols-1 lg:grid-cols-2;
   }
   .category1-contents1 {
-    @apply bg-red-500;
+    @apply bg-red-500; /* 기본적으로 red 색상 적용 */
   }
+
   .category1-contents2 {
-    @apply hidden lg:block bg-blue-500;
+    @apply hidden lg:block bg-blue-500; /* lg 이상에서만 보이도록 설정 */
   }
+
   .category2-container {
-    @apply grid grid-cols-1 lg:grid-cols-2;
+    @apply grid grid-cols-1 lg:grid-cols-2; /* lg 이상에서 2열로 설정 */
   }
+
   .category2-contents1 {
-    @apply bg-red-500;
+    @apply bg-red-500; /* 기본적으로 red 색상 적용 */
   }
+
   .category2-contents2 {
-    @apply hidden lg:block bg-blue-500;
+    @apply hidden lg:block bg-blue-500; /* lg 이상에서만 보이도록 설정 */
   }
 }

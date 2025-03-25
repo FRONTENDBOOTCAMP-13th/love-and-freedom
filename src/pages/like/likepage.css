@@ -1,12 +1,1 @@
 @import 'tailwindcss';
-
-.withhotcard {
-  ul {
-    li:first-child {
-      @apply xl:col-span-2 xl:row-start-2 xl:row-end-4;
-    }
-    li:nth-child(9) {
-      @apply hidden xl:block;
-    }
-  }
-}

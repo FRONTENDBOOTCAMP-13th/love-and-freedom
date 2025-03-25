@@ -35,7 +35,7 @@
     <div class="header-wrap">
       <header>
         <h1 class="p-1">
-          <a href="#void"
+          <a href="/src/pages/home/home.html"
             ><img
               class="md:hidden"
               src="/images/header/header-logo.png"
@@ -43,7 +43,7 @@
             /><img
               class="hidden md:inline"
               src="/images/header/header-logo-pc.png"
-              width="120px"
+              width="120"
               alt=""
             />
           </a>
@@ -87,7 +87,11 @@
           </div>
         </div>
         <div class="header-button-wrap">
-          <a href="#void" class="header-login-button">로그인</a>
+          <a
+            href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"
+            class="header-login-button"
+            >로그인</a
+          >
           <a href="http://www.naver.com" class="header-naver-button"></a>
         </div>
       </header>
@@ -171,10 +175,7 @@
             </div>
           </li>
           <li class="jr-naver-nav-menu category-menu">
-            <a
-              class="nav-link-block"
-              href="/src/pages/character/character.html"
-            >
+            <a class="nav-link-block" href="/src/pages/category/category.html">
               <div class="nav-svg-box lg:w-[50px] xl:w-[56px]">
                 <img
                   class="w-full"
@@ -247,7 +248,7 @@
       </div>
 
       <main>
-        <section class="imsy ttakji-filter mt-36">
+        <section class="main-full-section ttakji-filter mt-36">
           <div class="w-full">
             <div class="like-logout-container">
               <div class="like-logout-mini-img"></div>
@@ -275,11 +276,31 @@
           </div>
         </section>
         <div
-          class="background-animation-wrap-container fixed left-0 top-80 transform"
+          class="background-animation-wrap-container fixed left-20 top-80 transform"
         >
-          <div class="background-animation-wrap hidden lg:block">
+          <div class="background-animation-wrap hidden lg:block scale-80">
             <div
-              class="stem-leaf yellow-stem-leaf one-leaf fixed animate-anticlockwise scale-70"
+              class="z-50 stem-leaf yellow-stem-leaf one-leaf fixed animate-anticlockwise"
+            >
+              <div class="innerstem-leaf">
+                <div class="leaf"></div>
+                <div class="stem-shape stem"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="z-50 circle red scale fixed top-150 left-0 animate-tr-br-move hidden lg:block"
+        ></div>
+
+        <!-- 기준 -->
+        <div
+          class="background-animation-wrap-container fixed right-20 top-160 transform"
+        >
+          <div class="background-animation-wrap hidden lg:block scale-80">
+            <div
+              class="stem-leaf yellow-stem-leaf one-leaf fixed animate-anticlockwise"
             >
               <div class="innerstem-leaf">
                 <div class="leaf"></div>
@@ -291,7 +312,7 @@
 
         <div class="right-0">
           <div
-            class="flower fixed top-80 right-0 animate-anticlockwise scale-40"
+            class="flower fixed top-80 right-0 animate-anticlockwise scale-60 hidden lg:block"
           >
             <div class="innerflower">
               <div class="tlcircle"></div>
@@ -303,9 +324,33 @@
           </div>
         </div>
 
-        <div class="left-0">
+        <div class="right-0 z-100">
           <div
-            class="flower fixed bottom-90 left-0 animate-anticlockwise scale-40"
+            class="stem-leaf green-stem-leaf two-leaf fixed bottom-120 right-0 animate-anticlockwise hidden lg:block"
+          >
+            <div class="innerstem-leaf">
+              <div class="leaf"></div>
+              <div class="otherleaf"></div>
+              <div class="stem-shape stem"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-0 z-100">
+          <div
+            class="stem-leaf green-stem-leaf two-leaf fixed top-180 left-30 animate-anticlockwise hidden lg:block"
+          >
+            <div class="innerstem-leaf">
+              <div class="leaf"></div>
+              <div class="otherleaf"></div>
+              <div class="stem-shape stem"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="left-0 z-100">
+          <div
+            class="flower fixed bottom-90 left-0 animate-anticlockwise scale-60 hidden lg:block"
           >
             <div class="innerflower">
               <div class="tlcircle"></div>
@@ -317,17 +362,19 @@
           </div>
         </div>
 
-        <div
-          class="stem-leaf green-stem-leaf two-leaf fixed bottom-80 right-0 animate-anticlockwise scale-60"
-        >
-          <div class="innerstem-leaf">
-            <div class="leaf"></div>
-            <div class="otherleaf"></div>
-            <div class="stem-shape stem"></div>
+        <div class="right-0 z-100">
+          <div
+            class="flower fixed bottom-80 right-0 animate-anticlockwise scale-60 hidden lg:block"
+          >
+            <div class="innerflower">
+              <div class="tlcircle"></div>
+              <div class="trcircle"></div>
+              <div class="blcircle"></div>
+              <div class="brcircle"></div>
+              <div class="centercircle"></div>
+            </div>
           </div>
         </div>
-
-        <!-- <section class="imsy banner lg:hidden"></section> -->
       </main>
 
       <div class="footer-wrap fixed bottom-0 left-0 w-full">
@@ -466,7 +513,6 @@
           </div>
         </footer>
       </div>
-      <!-- 애니메이션 -->
     </div>
   </body>
 </html>
