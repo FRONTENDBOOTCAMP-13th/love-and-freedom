@@ -5,6 +5,12 @@
 📅 프로젝트 진행기간 : 2025.03.14.~20205.03.25.
 <br><br>
 
+## 🌍 배포 링크 
+
+[![Website](https://img.shields.io/badge/Juniver-Netlify-blue?style=for-the-badge&logo=netlify)](https://juniver.netlify.app/)
+
+<br>
+
 ## 📋 목차
 
 1. [팀 구성원](#팀-구성원)
@@ -14,7 +20,6 @@
 5. [프로젝트 구조](#프로젝트-구조)
 6. [기술 스택](#기술-스택)
 7. [실행 방법](#실행-방법)
-8. [배포 링크](#배포-링크)
 
 <br>
 
@@ -139,13 +144,6 @@
    npm run dev
    ```
 
-<br>
-
-## 🌍 배포 링크 <a id="배포-링크"></a>
-
-[![Website](https://img.shields.io/badge/Juniver-Netlify-blue?style=for-the-badge&logo=netlify)](https://juniver.netlify.app/)
-
-<br>
 
 <br><br>
 <br><br>
