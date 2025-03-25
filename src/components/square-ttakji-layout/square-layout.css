@@ -57,9 +57,8 @@
     @apply lg:gap-[16px] lg:px-0;
     @apply xl:gap-[18px];
   }
-
   .category-section {
-    @apply w-[702px] overflow-hidden;
+    @apply w-[100%] overflow-hidden;
     @apply lg:w-[894px];
     @apply xl:w-[1200px];
   }
