@@ -1,656 +1,1236 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/public/icons/jrnaver.webp" />
-  <link rel="preload" as="font" href="/public/fonts/woff2/NanumSquareRoundB.woff2" />
-  <link rel="preload" as="font" href="/public/fonts/woff2/NanumSquareRoundEB.woff2" />
-  <link rel="preload" as="font" href="/public/fonts/woff2/NanumSquareRoundR.woff2" />
-  <link rel="preload" as="font" href="/public/fonts/woff2/NanumSquareRoundL.woff2" />
-  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/src/components/test-index/test-index.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="/src/main.js"></script>
-  <title>쥬니버와 코딩의 섬</title>
-</head>
-<body class="font-sans-r bg-[url(/public/images/index/test001.png)]
-sm:bg-[url(/public/images/index/bg-test01.png)] bg-cover">
-  <!-- bg-[url(/public/images/index/bg-test.jpg)] bg-cover -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/icons/jrnaver.webp" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundEB.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundR.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/fonts/woff2/NanumSquareRoundL.woff2"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/src/components/test-index/test-index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+    <title>쥬니버와 코딩의 섬</title>
+  </head>
+  <body
+    class="bg-[url(/public/images/index/bg-mobile.jpg)] sm:bg-[url(/public/images/index/bg-desktop.jpg)] bg-cover"
+  >
+    <!-- bg-[url(/public/images/index/bg-test.jpg)] bg-cover -->
 
-  <section class="main-container max-w-7xl mx-auto px-10 m:px-0">
-    <!-- 쥬니버 로고 -->
-    <h1 class="jr-naver-logo">
-      <a href="https://jr.naver.com/" rel="noopener noreferrer" target="_blank"
-        aria-label="주니어 네이버 홈으로 이동(새 창으로 열립니다.)">
-        <img class="md:hidden" src="/public/images/header/header-logo.png" alt="" aria-hidden="true" />
-        <img class="hidden md:block" src="/public/images/header/header-logo-pc.png" alt="" aria-hidden="true" />
-      </a>
-    </h1>
+    <section class="font-sans-r main-container max-w-7xl mx-auto px-10 m:px-0">
+      <!-- 쥬니버 로고 -->
+      <h1 class="jr-naver-logo">
+        <a
+          href="https://jr.naver.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+          aria-label="주니어 네이버 홈으로 이동(새 창으로 열립니다.)"
+        >
+          <img
+            class="md:hidden"
+            src="/public/images/header/header-logo.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            class="hidden md:block"
+            src="/public/images/header/header-logo-pc.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </a>
+      </h1>
 
-    <!-- 메인 로고 -->
-    <h2 class="main-title">
-      <span class="sr-only">쥬니버와 코딩의 섬</span>
-      <img src="/public/images/index/index-title.png" alt="" aria-hidden="true" />
-    </h2>
+      <!-- 메인 로고 -->
+      <h2 class="main-title">
+        <span class="sr-only">쥬니버와 코딩의 섬</span>
+        <img
+          src="/public/images/index/index-title.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </h2>
 
-    <!-- 홈 바로가기 버튼 -->
-    <div class="home-fix-btn">
-      <a href="/src/pages/home/home.html" aria-label="홈으로 이동">
-        <img src="/public/images/index/top-home.png" alt="" aria-hidden="true" />
-      </a>
-    </div>
-
-    <!-- 프로젝트 소개 -->
-    <article class="introduction-text-box content-box">
-      <div class="intro-sub-content base-sub-content">
-        <img src="/public/images/index/intro-sub-title.png" alt="프로젝트 소개" />
+      <!-- 홈 바로가기 버튼 -->
+      <div class="home-fix-btn">
+        <a href="/src/pages/home/home.html" aria-label="홈으로 이동">
+          <img
+            src="/public/images/index/top-home.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </a>
       </div>
-      <h3 class="intro-title-text base-title-text">
-        <span class="sr-only">프로젝트 소개</span>
-        <img src="/public/images/index/intro-title.png" alt="" aria-hidden="true" />
-      </h3>
-      <p class="intro-title-sub-text base-sub-text">
-        우리의 소중한 추억을 함께해온 주니어 네이버가 <br class="hidden sm:inline" />
-        올해 5월, 역사 속으로 사라집니다.
-      </p>
-      <p class="intro-title-sub-text base-sub-text">
-        하지만 그냥 보낼 순 없겠죠. <br class="hidden sm:inline" />
-        그래서 사랑과 자유의 사자팀 5명이 모여 <br class="hidden sm:inline" />
-        쥬니버의 추억을 기억하기로 했어요.
-      </p>
-      <p class="intro-title-sub-text base-sub-text">
-        이제 쥬니버는 사자팀의 "코딩의 섬"에서 새롭게 숨 쉬게 됩니다. <br class="hidden sm:inline" />
-        우리의 코딩 이야기, 함께 들어보실래요?
-      </p>
-    </article>
 
-    <!-- 팀, 팀원 소개 -->
-    <article class="team-text-box content-box">
-      <div class="team-sub-content base-sub-content">
-        <img src="/public/images/index/team-sub-title.png" alt="팀, 팀원 소개" />
-      </div>
-      <h3 class="team-title-text base-title-text">
-        <span class="sr-only">팀, 팀원 소개</span>
-        <img src="/public/images/index/team-title.png" alt="" aria-hidden="true" />
-      </h3>
-      <p class="team-title-sub-text base-sub-text mb-[30px] md:mb-[70px]">
-        우리는 함께 배우고 성장하며, 소중한 추억을 쌓아가고 있어요. <br class="hidden sm:inline" />
-        아래<span class="click-text01 text-[22px] text-[#00712d]"> 캐릭터를 클릭</span>하면 우리 팀원들 이야기를 들을 수 있어요!
-      </p>
+      <!-- 프로젝트 소개 -->
+      <article class="introduction-text-box content-box">
+        <div class="intro-sub-content base-sub-content">
+          <img
+            src="/public/images/index/intro-sub-title.png"
+            alt="프로젝트 소개"
+          />
+        </div>
+        <h3 class="intro-title-text base-title-text">
+          <span class="sr-only">프로젝트 소개</span>
+          <img
+            src="/public/images/index/intro-title.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </h3>
+        <p class="intro-title-sub-text base-sub-text">
+          우리의 소중한 추억을 함께해온 주니어 네이버가
+          <br class="hidden sm:inline" />
+          올해 5월, 역사 속으로 사라집니다.
+        </p>
+        <p class="intro-title-sub-text base-sub-text">
+          하지만 그냥 보낼 순 없겠죠. <br class="hidden sm:inline" />
+          그래서 사랑과 자유의 사자팀 5명이 모여 <br class="hidden sm:inline" />
+          쥬니버의 추억을 기억하기로 했어요.
+        </p>
+        <p class="intro-title-sub-text base-sub-text">
+          이제 쥬니버는 사자팀의 "코딩의 섬"에서 새롭게 숨 쉬게 됩니다.
+          <br class="hidden sm:inline" />
+          우리의 코딩 이야기, 함께 들어보실래요?
+        </p>
+      </article>
 
-      <section class="team-character-content">
-        <div class="inhwan team-character md:m-0">
-          <div class="popup-box">
-            <button type="button" aria-label="인환 캐릭터 설명 팝업">
-              <img src="/public/images/index/pop-up01.png" alt="" aria-hidden="true" />
+      <!-- 팀, 팀원 소개 -->
+      <article class="team-text-box content-box">
+        <div class="team-sub-content base-sub-content">
+          <img
+            src="/public/images/index/team-sub-title.png"
+            alt="팀, 팀원 소개"
+          />
+        </div>
+        <h3 class="team-title-text base-title-text">
+          <span class="sr-only">팀, 팀원 소개</span>
+          <img
+            src="/public/images/index/team-title.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </h3>
+        <p class="team-title-sub-text base-sub-text mb-[30px] md:mb-[70px]">
+          우리는 함께 배우고 성장하며, 소중한 추억을 쌓아가고 있어요.
+          <br class="hidden sm:inline" />
+          아래<span class="click-text01 text-[22px] text-[#00712d]">
+            캐릭터를 클릭</span
+          >하면 우리 팀원들 이야기를 들을 수 있어요!
+        </p>
+
+        <section class="team-character-content">
+          <div class="inhwan team-character md:m-0">
+            <div class="popup-box">
+              <button type="button" aria-label="인환 캐릭터 설명 팝업">
+                <img
+                  src="/public/images/index/pop-up01.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+            </div>
+            <button
+              class="character-box"
+              aria-label="길인환 캐릭터 상세 정보 보기"
+            >
+              <img
+                src="/public/images/index/team-cha-in.png"
+                alt="팀원 길인환 캐릭터 이미지입니다."
+              />
+              <p class="team-character-name">인환</p>
+              <p class="team-character-sub-text text-[#BE6445]">인덱스 담당</p>
             </button>
           </div>
-          <button class="character-box" aria-label="길인환 캐릭터 상세 정보 보기">
-            <img src="/public/images/index/team-cha-in.png" alt="팀원 길인환 캐릭터 이미지입니다." />
-            <p class="team-character-name">인환</p>
-            <p class="team-character-sub-text text-[#BE6445]">인덱스 담당</p>
-          </button>
-        </div>
-        <div class="junsung team-character md:m-0">
-          <div class="popup-box">
-            <button type="button" aria-label="준성 캐릭터 설명 팝업">
-              <img src="/public/images/index/pop-up02.png" alt="" aria-hidden="true" />
+          <div class="junsung team-character md:m-0">
+            <div class="popup-box">
+              <button type="button" aria-label="준성 캐릭터 설명 팝업">
+                <img
+                  src="/public/images/index/pop-up02.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+            </div>
+            <button
+              class="character-box"
+              aria-label="김준성 캐릭터 상세 정보 보기"
+            >
+              <img
+                src="/public/images/index/team-cha-jun.png"
+                alt="팀원 김준성 캐릭터 이미지입니다."
+              />
+              <p class="team-character-name">준성</p>
+              <p class="team-character-sub-text text-[#ef6e95]">캐릭터 담당</p>
             </button>
           </div>
-          <button class="character-box" aria-label="김준성 캐릭터 상세 정보 보기">
-            <img src="/public/images/index/team-cha-jun.png" alt="팀원 김준성 캐릭터 이미지입니다." />
-            <p class="team-character-name">준성</p>
-            <p class="team-character-sub-text text-[#ef6e95]">캐릭터 담당</p>
-          </button>
-        </div>
-        <div class="seungkyun team-character md:m-0 md:col-span-2">
-          <div class="popup-box">
-            <button type="button" aria-label="승균 캐릭터 설명 팝업">
-              <img src="/public/images/index/pop-up03.png" alt="승균 캐릭터 설명 팝업입니다." />
+          <div class="seungkyun team-character md:m-0 md:col-span-2">
+            <div class="popup-box">
+              <button type="button" aria-label="승균 캐릭터 설명 팝업">
+                <img
+                  src="/public/images/index/pop-up03.png"
+                  alt="승균 캐릭터 설명 팝업입니다."
+                />
+              </button>
+            </div>
+            <button
+              class="character-box"
+              aria-label="최승균 캐릭터 상세 정보 보기"
+            >
+              <img
+                src="/public/images/index/team-cha-seung.png"
+                alt="팀원 최승균 캐릭터 이미지입니다."
+              />
+              <p class="team-character-name">승균</p>
+              <p
+                class="team-character-sub-text text-[#c99500] md:text-[#ffcd00]"
+              >
+                스크럼 마스터
+              </p>
             </button>
           </div>
-          <button class="character-box" aria-label="최승균 캐릭터 상세 정보 보기">
-            <img src="/public/images/index/team-cha-seung.png" alt="팀원 최승균 캐릭터 이미지입니다." />
-            <p class="team-character-name">승균</p>
-            <p class="team-character-sub-text text-[#c99500] md:text-[#ffcd00]">스크럼 마스터</p>
-          </button>
-        </div>
-        <div class="seyoung team-character md:m-0">
-          <div class="popup-box">
-            <button type="button" aria-label="세영 캐릭터 설명 팝업">
-              <img src="/public/images/index/pop-up04.png" alt="세영 캐릭터 설명 팝업입니다." />
+          <div class="seyoung team-character md:m-0">
+            <div class="popup-box">
+              <button type="button" aria-label="세영 캐릭터 설명 팝업">
+                <img
+                  src="/public/images/index/pop-up04.png"
+                  alt="세영 캐릭터 설명 팝업입니다."
+                />
+              </button>
+            </div>
+            <button
+              class="character-box"
+              aria-label="김세영 캐릭터 상세 정보 보기"
+            >
+              <img
+                src="/public/images/index/team-cha-seyoung.png"
+                alt="팀원 김세영 캐릭터 이미지입니다."
+              />
+              <p class="team-character-name">세영</p>
+              <p
+                class="team-character-sub-text text-[#4faa4f] md:text-[#17423a]"
+              >
+                즐겨찾기 담당
+              </p>
             </button>
           </div>
-          <button class="character-box" aria-label="김세영 캐릭터 상세 정보 보기">
-            <img src="/public/images/index/team-cha-seyoung.png" alt="팀원 김세영 캐릭터 이미지입니다." />
-            <p class="team-character-name">세영</p>
-            <p class="team-character-sub-text text-[#4faa4f] md:text-[#17423a]">즐겨찾기 담당</p>
-          </button>
-        </div>
-        <div class="yebin team-character md:m-0">
-          <div class="popup-box">
-            <button type="button" aria-label="예빈 캐릭터 설명 팝업">
-              <img src="/public/images/index/pop-up05.png" alt="예빈 캐릭터 설명 팝업입니다." />
+          <div class="yebin team-character md:m-0">
+            <div class="popup-box">
+              <button type="button" aria-label="예빈 캐릭터 설명 팝업">
+                <img
+                  src="/public/images/index/pop-up05.png"
+                  alt="예빈 캐릭터 설명 팝업입니다."
+                />
+              </button>
+            </div>
+            <button
+              class="character-box"
+              aria-label="정예빈 캐릭터 상세 정보 보기"
+            >
+              <img
+                src="/public/images/index/team-cha-yes.png"
+                alt="팀원 정예빈 캐릭터 이미지입니다."
+              />
+              <p class="team-character-name">예빈</p>
+              <p class="team-character-sub-text text-[#f18a04]">
+                카테고리 담당
+              </p>
             </button>
           </div>
-          <button class="character-box" aria-label="정예빈 캐릭터 상세 정보 보기">
-            <img src="/public/images/index/team-cha-yes.png" alt="팀원 정예빈 캐릭터 이미지입니다." />
-            <p class="team-character-name">예빈</p>
-            <p class="team-character-sub-text text-[#f18a04]">카테고리 담당</p>
-          </button>
+        </section>
+      </article>
+
+      <!-- 컴포넌트 소개 -->
+      <article class="component-text-box content-box mb-[40px]">
+        <div class="component-sub-content base-sub-content">
+          <img
+            src="/public/images/index/component-sub-title.png"
+            alt="컴포넌트 소개"
+          />
         </div>
-      </section>
+        <h3 class="component-title-text base-title-text">
+          <span class="sr-only">컴포넌트 소개</span>
+          <img
+            src="/public/images/index/component-title.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </h3>
+        <p class="component-title-sub-text base-sub-text">
+          우리는 쥬니버의 컴포넌트를 직접 구현하며 사이트를 세밀하게 재현해
+          보았어요. <br class="hidden sm:inline" />
+          여백과 구조를 조정하고, 시멘틱한 태그를 적용해 더 나은 형태로
+          구성했어요.
+        </p>
+        <p class="component-title-sub-text base-sub-text mb-[72px]">
+          단순한 복제가 아니라, 협력하며 쌓아가는 과정에서 많은 것을 배울 수
+          있었어요. <br class="hidden sm:inline" />
+          아직 부족한 점이 있지만, 성장하는 과정이 더 소중하니까요!
+          <br class="hidden sm:inline" />
+          그럼, 우리가 만든 컴포넌트들
+          <span class="click-text02 text-[22px] text-[#ffcd00]"
+            >직접 슬라이드해서 확인해 보세요!</span
+          >
+        </p>
 
-    </article>
-
-    <!-- 컴포넌트 소개 -->
-    <article class="component-text-box content-box mb-[40px]">
-      <div class="component-sub-content base-sub-content">
-        <img src="/public/images/index/component-sub-title.png" alt="컴포넌트 소개" />
-      </div>
-      <h3 class="component-title-text base-title-text">
-        <span class="sr-only">컴포넌트 소개</span>
-        <img src="/public/images/index/component-title.png" alt="" aria-hidden="true" />
-      </h3>
-      <p class="component-title-sub-text base-sub-text">
-        우리는 쥬니버의 컴포넌트를 직접 구현하며 사이트를 세밀하게 재현해 보았어요. <br class="hidden sm:inline" />
-        여백과 구조를 조정하고, 시멘틱한 태그를 적용해 더 나은 형태로 구성했어요.
-      </p>
-      <p class="component-title-sub-text base-sub-text mb-[72px]">
-        단순한 복제가 아니라, 협력하며 쌓아가는 과정에서 많은 것을 배울 수 있었어요. <br class="hidden sm:inline" />
-        아직 부족한 점이 있지만, 성장하는 과정이 더 소중하니까요! <br class="hidden sm:inline" />
-        그럼, 우리가 만든 컴포넌트들 <span class="click-text02 text-[22px] text-[#ffcd00]">직접 슬라이드해서 확인해 보세요!</span>
-      </p>
-
-      <section class="component-slide-box">
-        <div class="swiper component-slider slide01 mb-[30px]" role="region" aria-label="공통 컴포넌트 슬라이드"
-          aria-live="polite">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="1 / 6">
-              <div class="component-title">
-                <p>공통 컴포넌트</p>
-                <p class="opacity-50">01</p>
+        <section class="component-slide-box">
+          <div
+            class="swiper component-slider slide01 mb-[30px]"
+            role="region"
+            aria-label="공통 컴포넌트 슬라이드"
+            aria-live="polite"
+          >
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="1 / 6"
+              >
+                <div class="component-title">
+                  <p>공통 컴포넌트</p>
+                  <p class="opacity-50">01</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Header</span> <br />
+                    <span class="ko-text">헤더</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/header/header.html"
+                    aria-label="헤더 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide01.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Header</span> <br />
-                  <span class="ko-text">헤더</span>
-                </p>
-                <a class="slide-link" href="/src/components/header/header.html" aria-label="헤더 페이지로 이동"><img
-                    src="/public/images/index/slide-link.png" alt="" aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide01.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="2 / 6"
+              >
+                <div class="component-title">
+                  <p>공통 컴포넌트</p>
+                  <p class="opacity-50">01</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Navigation menu</span> <br />
+                    <span class="ko-text">네비게이션</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/nav/nav.html"
+                    aria-label="네비게이션 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide01.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="2 / 6">
-              <div class="component-title">
-                <p>공통 컴포넌트</p>
-                <p class="opacity-50">01</p>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="3 / 6"
+              >
+                <div class="component-title">
+                  <p>공통 컴포넌트</p>
+                  <p class="opacity-50">01</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Footer</span> <br />
+                    <span class="ko-text">푸터</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/footer/footer.html"
+                    aria-label="푸터 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide01.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Navigation menu</span> <br />
-                  <span class="ko-text">네비게이션</span>
-                </p>
-                <a class="slide-link" href="/src/components/nav/nav.html" aria-label="네비게이션 페이지로 이동"><img
-                    src="/public/images/index/slide-link.png" alt="" aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide01.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="4 / 6"
+              >
+                <div class="component-title">
+                  <p>공통 컴포넌트</p>
+                  <p class="opacity-50">01</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Top button</span> <br />
+                    <span class="ko-text">탑버튼</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/top-link/top-link.html"
+                    aria-label="탑버튼 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide01.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="3 / 6">
-              <div class="component-title">
-                <p>공통 컴포넌트</p>
-                <p class="opacity-50">01</p>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="5 / 6"
+              >
+                <div class="component-title">
+                  <p>공통 컴포넌트</p>
+                  <p class="opacity-50">01</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Animation menu</span> <br />
+                    <span class="ko-text">애니메이션</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/animation/animation.html"
+                    aria-label="애니메이션 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide01.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Footer</span> <br />
-                  <span class="ko-text">푸터</span>
-                </p>
-                <a class="slide-link" href="/src/components/footer/footer.html" aria-label="푸터 페이지로 이동"><img
-                    src="/public/images/index/slide-link.png" alt="" aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide01.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="4 / 6">
-              <div class="component-title">
-                <p>공통 컴포넌트</p>
-                <p class="opacity-50">01</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Top button</span> <br />
-                  <span class="ko-text">탑버튼</span>
-                </p>
-                <a class="slide-link" href="/src/components/top-link/top-link.html" aria-label="탑버튼 페이지로 이동"><img
-                    src="/public/images/index/slide-link.png" alt="" aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide01.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="5 / 6">
-              <div class="component-title">
-                <p>공통 컴포넌트</p>
-                <p class="opacity-50">01</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Animation menu</span> <br />
-                  <span class="ko-text">애니메이션</span>
-                </p>
-                <a class="slide-link" href="/src/components/animation/animation.html" aria-label="애니메이션 페이지로 이동"><img
-                    src="/public/images/index/slide-link.png" alt="" aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide01.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="6 / 6">
-              <div class="component-title">
-                <p>공통 컴포넌트</p>
-                <p class="opacity-50">01</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Notice modal</span> <br />
-                  <span class="ko-text">모달</span>
-                </p>
-                <a class="slide-link" href="/src/components/notice-modal/notice-modal.html" aria-label="모달 페이지로 이동"><img
-                    src="/public/images/index/slide-link.png" alt="" aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide01.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="6 / 6"
+              >
+                <div class="component-title">
+                  <p>공통 컴포넌트</p>
+                  <p class="opacity-50">01</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Notice modal</span> <br />
+                    <span class="ko-text">모달</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/notice-modal/notice-modal.html"
+                    aria-label="모달 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide01.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="swiper component-slider slide02 mb-[30px]" role="region" aria-label="컴포넌트 슬라이드" aria-live="polite">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="1 / 11">
-              <div class="component-title">
-                <p>페이지별 컴포넌트</p>
-                <p class="opacity-50">02</p>
+          <div
+            class="swiper component-slider slide02 mb-[30px]"
+            role="region"
+            aria-label="컴포넌트 슬라이드"
+            aria-live="polite"
+          >
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="1 / 11"
+              >
+                <div class="component-title">
+                  <p>페이지별 컴포넌트</p>
+                  <p class="opacity-50">02</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Video card</span> <br />
+                    <span class="ko-text">비디오 카드</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/video-card/video-card.html"
+                    aria-label="비디오 카드 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide02.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Video card</span> <br />
-                  <span class="ko-text">비디오 카드</span>
-                </p>
-                <a class="slide-link" href="/src/components/video-card/video-card.html" aria-label="비디오 카드 페이지로 이동"><img
-                    src="/public/images/index/slide-link.png" alt="" aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide02.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="2 / 11"
+              >
+                <div class="component-title">
+                  <p>페이지별 컴포넌트</p>
+                  <p class="opacity-50">02</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Iink card</span> <br />
+                    <span class="ko-text">링크 카드</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/linkcard/linkcard.html"
+                    aria-label="링크 카드 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide02.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="2 / 11">
-              <div class="component-title">
-                <p>페이지별 컴포넌트</p>
-                <p class="opacity-50">02</p>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="3 / 11"
+              >
+                <div class="component-title">
+                  <p>페이지별 컴포넌트</p>
+                  <p class="opacity-50">02</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Ttakji</span> <br />
+                    <span class="ko-text">딱지</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/ttakji/ttakji.html"
+                    aria-label="딱지 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide02.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Iink card</span> <br />
-                  <span class="ko-text">링크 카드</span>
-                </p>
-                <a class="slide-link" href="/src/components/linkcard/linkcard.html" aria-label="링크 카드 페이지로 이동"><img
-                    src="/public/images/index/slide-link.png" alt="" aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide02.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="4 / 11"
+              >
+                <div class="component-title">
+                  <p>페이지별 컴포넌트</p>
+                  <p class="opacity-50">02</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Category ttakji</span> <br />
+                    <span class="ko-text">카테고리 딱지</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/ttakji-category/ttakji-category.html"
+                    aria-label="카테고리 딱지 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide02.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="3 / 11">
-              <div class="component-title">
-                <p>페이지별 컴포넌트</p>
-                <p class="opacity-50">02</p>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="5 / 11"
+              >
+                <div class="component-title">
+                  <p>페이지별 컴포넌트</p>
+                  <p class="opacity-50">02</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Zzim animation</span> <br />
+                    <span class="ko-text">찜 버튼</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/zzim/zzim.html"
+                    aria-label="찜 버튼 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide02.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Ttakji</span> <br />
-                  <span class="ko-text">딱지</span>
-                </p>
-                <a class="slide-link" href="/src/components/ttakji/ttakji.html" aria-label="딱지 페이지로 이동"><img
-                    src="/public/images/index/slide-link.png" alt="" aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide02.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="6 / 11"
+              >
+                <div class="component-title">
+                  <p>페이지별 컴포넌트</p>
+                  <p class="opacity-50">02</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Hot card</span> <br />
+                    <span class="ko-text">핫 카드</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/hot-card/hot-card.html"
+                    aria-label="핫 카드 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide02.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="4 / 11">
-              <div class="component-title">
-                <p>페이지별 컴포넌트</p>
-                <p class="opacity-50">02</p>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="7 / 11"
+              >
+                <div class="component-title">
+                  <p>페이지별 컴포넌트</p>
+                  <p class="opacity-50">02</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Home banner</span> <br />
+                    <span class="ko-text">홈 배너</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/banner/home/home-banner.html"
+                    aria-label="홈 배너 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide02.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Category ttakji</span> <br />
-                  <span class="ko-text">카테고리 딱지</span>
-                </p>
-                <a class="slide-link" href="/src/components/ttakji-category/ttakji-category.html"
-                  aria-label="카테고리 딱지 페이지로 이동"><img src="/public/images/index/slide-link.png" alt=""
-                    aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide02.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="8 / 11"
+              >
+                <div class="component-title">
+                  <p>페이지별 컴포넌트</p>
+                  <p class="opacity-50">02</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Character banner</span> <br />
+                    <span class="ko-text">캐릭터 배너</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/banner/character/character-banner.html"
+                    aria-label="캐릭터 배너 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide02.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="5 / 11">
-              <div class="component-title">
-                <p>페이지별 컴포넌트</p>
-                <p class="opacity-50">02</p>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="9 / 11"
+              >
+                <div class="component-title">
+                  <p>페이지별 컴포넌트</p>
+                  <p class="opacity-50">02</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Category banner</span> <br />
+                    <span class="ko-text">카테고리 배너</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/banner/category/category-banner.html"
+                    aria-label="카테고리 배너 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide02.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Zzim animation</span> <br />
-                  <span class="ko-text">찜 버튼</span>
-                </p>
-                <a class="slide-link" href="/src/components/zzim/zzim.html" aria-label="찜 버튼 페이지로 이동"><img
-                    src="/public/images/index/slide-link.png" alt="" aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide02.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="10 / 11"
+              >
+                <div class="component-title">
+                  <p>페이지별 컴포넌트</p>
+                  <p class="opacity-50">02</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Category button</span> <br />
+                    <span class="ko-text">카테고리 버튼</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/category-button/category-button.html"
+                    aria-label="카테고리 버튼 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide02.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="6 / 11">
-              <div class="component-title">
-                <p>페이지별 컴포넌트</p>
-                <p class="opacity-50">02</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Hot card</span> <br />
-                  <span class="ko-text">핫 카드</span>
-                </p>
-                <a class="slide-link" href="/src/components/hot-card/hot-card.html" aria-label="핫 카드 페이지로 이동"><img
-                    src="/public/images/index/slide-link.png" alt="" aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide02.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="7 / 11">
-              <div class="component-title">
-                <p>페이지별 컴포넌트</p>
-                <p class="opacity-50">02</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Home banner</span> <br />
-                  <span class="ko-text">홈 배너</span>
-                </p>
-                <a class="slide-link" href="/src/components/banner/home/home-banner.html" aria-label="홈 배너 페이지로 이동"><img
-                    src="/public/images/index/slide-link.png" alt="" aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide02.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="8 / 11">
-              <div class="component-title">
-                <p>페이지별 컴포넌트</p>
-                <p class="opacity-50">02</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Character banner</span> <br />
-                  <span class="ko-text">캐릭터 배너</span>
-                </p>
-                <a class="slide-link" href="/src/components/banner/character/character-banner.html"
-                  aria-label="캐릭터 배너 페이지로 이동"><img src="/public/images/index/slide-link.png" alt=""
-                    aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide02.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="9 / 11">
-              <div class="component-title">
-                <p>페이지별 컴포넌트</p>
-                <p class="opacity-50">02</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Category banner</span> <br />
-                  <span class="ko-text">카테고리 배너</span>
-                </p>
-                <a class="slide-link" href="/src/components/banner/category/category-banner.html"
-                  aria-label="카테고리 배너 페이지로 이동"><img src="/public/images/index/slide-link.png" alt=""
-                    aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide02.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="10 / 11">
-              <div class="component-title">
-                <p>페이지별 컴포넌트</p>
-                <p class="opacity-50">02</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Category button</span> <br />
-                  <span class="ko-text">카테고리 버튼</span>
-                </p>
-                <a class="slide-link" href="/src/components/category-button/category-button.html"
-                  aria-label="카테고리 버튼 페이지로 이동"><img src="/public/images/index/slide-link.png" alt=""
-                    aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide02.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="11 / 11">
-              <div class="component-title">
-                <p>페이지별 컴포넌트</p>
-                <p class="opacity-50">02</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Ttakji filter</span> <br />
-                  <span class="ko-text">딱지 필터</span>
-                </p>
-                <a class="slide-link" href="/src/components/ttakji-filter/ttakji-filter.html"
-                  aria-label="딱지 필터 페이지로 이동"><img src="/public/images/index/slide-link.png" alt=""
-                    aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide02.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="11 / 11"
+              >
+                <div class="component-title">
+                  <p>페이지별 컴포넌트</p>
+                  <p class="opacity-50">02</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Ttakji filter</span> <br />
+                    <span class="ko-text">딱지 필터</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/ttakji-filter/ttakji-filter.html"
+                    aria-label="딱지 필터 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide02.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="swiper component-slider slide03 mb-[30px]" role="region" aria-label="레이아웃 슬라이드" aria-live="polite">
-          <div class="swiper-wrapper" role="group" aria-roledescription="슬라이드" aria-label="1 / 4">
-            <div class="swiper-slide">
-              <div class="component-title">
-                <p>레이아웃</p>
-                <p class="opacity-50">03</p>
+          <div
+            class="swiper component-slider slide03 mb-[30px]"
+            role="region"
+            aria-label="레이아웃 슬라이드"
+            aria-live="polite"
+          >
+            <div
+              class="swiper-wrapper"
+              role="group"
+              aria-roledescription="슬라이드"
+              aria-label="1 / 4"
+            >
+              <div class="swiper-slide">
+                <div class="component-title">
+                  <p>레이아웃</p>
+                  <p class="opacity-50">03</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Default layout</span> <br />
+                    <span class="ko-text">기본 레이아웃</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/base-layout/base-layout.html"
+                    aria-label="기본 레이아웃 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide03.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Default layout</span> <br />
-                  <span class="ko-text">기본 레이아웃</span>
-                </p>
-                <a class="slide-link" href="/src/components/base-layout/base-layout.html"
-                  aria-label="기본 레이아웃 페이지로 이동"><img src="/public/images/index/slide-link.png" alt=""
-                    aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide03.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="2 / 4"
+              >
+                <div class="component-title">
+                  <p>레이아웃</p>
+                  <p class="opacity-50">03</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Ttakji layout</span> <br />
+                    <span class="ko-text">딱지 레이아웃</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/layout-ttakji/layout-ttakji.html"
+                    aria-label="딱지 레이아웃 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide03.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="2 / 4">
-              <div class="component-title">
-                <p>레이아웃</p>
-                <p class="opacity-50">03</p>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="3 / 4"
+              >
+                <div class="component-title">
+                  <p>레이아웃</p>
+                  <p class="opacity-50">03</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Square ttakji layout</span> <br />
+                    <span class="ko-text text-[30px] lg:text-[44px]">
+                      네모딱지 레이아웃
+                    </span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/square-ttakji-layout/square-layout.html"
+                    aria-label="네모딱지 레이아웃 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide03.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Ttakji layout</span> <br />
-                  <span class="ko-text">딱지 레이아웃</span>
-                </p>
-                <a class="slide-link" href="/src/components/layout-ttakji/layout-ttakji.html"
-                  aria-label="딱지 레이아웃 페이지로 이동"><img src="/public/images/index/slide-link.png" alt=""
-                    aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide03.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="3 / 4">
-              <div class="component-title">
-                <p>레이아웃</p>
-                <p class="opacity-50">03</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Square ttakji layout</span> <br />
-                  <span class="ko-text text-[30px] lg:text-[44px]">
-                    네모딱지 레이아웃
-                  </span>
-                </p>
-                <a class="slide-link" href="/src/components/square-ttakji-layout/square-layout.html"
-                  aria-label="네모딱지 레이아웃 페이지로 이동"><img src="/public/images/index/slide-link.png" alt=""
-                    aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide03.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="슬라이드" aria-label="4 / 4">
-              <div class="component-title">
-                <p>레이아웃</p>
-                <p class="opacity-50">03</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Banner layout</span> <br />
-                  <span class="ko-text">배너 레이아웃</span>
-                </p>
-                <a class="slide-link" href="/src/components/banner-layout/banner-layout.html"
-                  aria-label="배너 레이아웃 페이지로 이동"><img src="/public/images/index/slide-link.png" alt=""
-                    aria-hidden="true" /></a>
-                <img class="slide-character" src="/public/images/index/slide03.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="슬라이드"
+                aria-label="4 / 4"
+              >
+                <div class="component-title">
+                  <p>레이아웃</p>
+                  <p class="opacity-50">03</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Banner layout</span> <br />
+                    <span class="ko-text">배너 레이아웃</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/components/banner-layout/banner-layout.html"
+                    aria-label="배너 레이아웃 페이지로 이동"
+                    ><img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                  /></a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide03.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="swiper component-slider slide04" role="region" aria-label="페이지 슬라이드" aria-live="polite">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 / 4">
-              <div class="component-title">
-                <p>페이지</p>
-                <p class="opacity-50">04</p>
+          <div
+            class="swiper component-slider slide04"
+            role="region"
+            aria-label="페이지 슬라이드"
+            aria-live="polite"
+          >
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="1 / 4"
+              >
+                <div class="component-title">
+                  <p>페이지</p>
+                  <p class="opacity-50">04</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Home</span> <br />
+                    <span class="ko-text">홈</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/pages/home/home.html"
+                    aria-label="홈 페이지로 이동"
+                  >
+                    <img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide04.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Home</span> <br />
-                  <span class="ko-text">홈</span>
-                </p>
-                <a class="slide-link" href="/src/pages/home/home.html" aria-label="홈 페이지로 이동">
-                  <img src="/public/images/index/slide-link.png" alt="" aria-hidden="true" />
-                </a>
-                <img class="slide-character" src="/public/images/index/slide04.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="2 / 4"
+              >
+                <div class="component-title">
+                  <p>페이지</p>
+                  <p class="opacity-50">04</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Character</span> <br />
+                    <span class="ko-text">캐릭터</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/pages/character/character.html"
+                    aria-label="캐릭터 페이지로 이동"
+                  >
+                    <img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide04.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 / 4">
-              <div class="component-title">
-                <p>페이지</p>
-                <p class="opacity-50">04</p>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="3 / 4"
+              >
+                <div class="component-title">
+                  <p>페이지</p>
+                  <p class="opacity-50">04</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Category</span> <br />
+                    <span class="ko-text">카테고리</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/pages/category/category.html"
+                    aria-label="카테고리 페이지로 이동"
+                  >
+                    <img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide04.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Character</span> <br />
-                  <span class="ko-text">캐릭터</span>
-                </p>
-                <a class="slide-link" href="/src/pages/character/character.html" aria-label="캐릭터 페이지로 이동">
-                  <img src="/public/images/index/slide-link.png" alt="" aria-hidden="true" />
-                </a>
-                <img class="slide-character" src="/public/images/index/slide04.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 / 4">
-              <div class="component-title">
-                <p>페이지</p>
-                <p class="opacity-50">04</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Category</span> <br />
-                  <span class="ko-text">카테고리</span>
-                </p>
-                <a class="slide-link" href="/src/pages/category/category.html" aria-label="카테고리 페이지로 이동">
-                  <img src="/public/images/index/slide-link.png" alt="" aria-hidden="true" />
-                </a>
-                <img class="slide-character" src="/public/images/index/slide04.png" alt="" aria-hidden="true" />
-              </div>
-            </div>
-            <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 / 4">
-              <div class="component-title">
-                <p>페이지</p>
-                <p class="opacity-50">04</p>
-              </div>
-              <div class="component-content">
-                <p class="componnet-text">
-                  <span class="en-text">Favorites</span> <br />
-                  <span class="ko-text">즐겨찾기</span>
-                </p>
-                <a class="slide-link" href="/src/pages/category/category.html" aria-label="즐겨찾기 페이지로 이동">
-                  <img src="/public/images/index/slide-link.png" alt="" aria-hidden="true" />
-                </a>
-                <img class="slide-character" src="/public/images/index/slide04.png" alt="" aria-hidden="true" />
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="4 / 4"
+              >
+                <div class="component-title">
+                  <p>페이지</p>
+                  <p class="opacity-50">04</p>
+                </div>
+                <div class="component-content">
+                  <p class="componnet-text">
+                    <span class="en-text">Favorites</span> <br />
+                    <span class="ko-text">즐겨찾기</span>
+                  </p>
+                  <a
+                    class="slide-link"
+                    href="/src/pages/category/category.html"
+                    aria-label="즐겨찾기 페이지로 이동"
+                  >
+                    <img
+                      src="/public/images/index/slide-link.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </a>
+                  <img
+                    class="slide-character"
+                    src="/public/images/index/slide04.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
             </div>
           </div>
+        </section>
+      </article>
+
+      <!-- 홈 버튼 -->
+      <article class="home-link-button mb-[30px]">
+        <a href="/src/pages/home/home.html">
+          <img
+            class="home-link-image pt-2"
+            src="/public/images/index/last-home-image.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <span class="home-link-text">
+            <span class="text-[#009bff]">쥬</span>
+            <span class="text-[#ff5c5c]">니</span>
+            <span class="text-[#00cb50]">버</span>
+            로 이동할게요
+          </span>
+        </a>
+      </article>
+
+      <!-- 푸터 -->
+      <footer class="sm:flex justify-center items-center py-8 align-bottom">
+        <div
+          class="footer-copy-sub font-sans-b text-[14px] text-[#eaeaea] sm:text-base m-0 break-keep"
+        >
+          <span class="mr-1">
+            <a
+              href="https://github.com/FRONTENDBOOTCAMP-13th/love-and-freedom"
+              aria-label="Love-and-Freedom 프로젝트의 GitHub 페이지로 이동(새 창으로 열립니다)"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+          </span>
+          <span class="block sm:inline mr-1">
+            본 웹사이트는 가시안이며 상업용이 아님을 밝힙니다.
+          </span>
+          <span class="block sm:inline"> Love-and-Freedom </span>
         </div>
-      </section>
-    </article>
+      </footer>
+    </section>
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.character-box').forEach((button) => {
+          button.addEventListener('click', function () {
+            const popup = this.previousElementSibling; // 현재 버튼의 이전 형제 요소 (popup-box)
 
-    <!-- 홈 버튼 -->
-    <article class="home-link-button mb-[30px]">
-      <a href="/src/pages/home/home.html">
-        <img class="home-link-image pt-2" src="/public/images/index/last-home-image.png" alt="" aria-hidden="true" />
-        <span class="home-link-text">
-          <span class="text-[#009bff]">쥬</span>
-          <span class="text-[#ff5c5c]">니</span>
-          <span class="text-[#00cb50]">버</span>
-          로 이동할게요
-        </span>
-      </a>
-    </article>
+            // 모든 팝업 닫기 (현재 클릭한 것 제외)
+            document.querySelectorAll('.popup-box').forEach((box) => {
+              if (box !== popup) {
+                box.classList.remove('active');
+              }
+            });
 
-    <!-- 푸터 -->
-    <footer class="sm:flex justify-center items-center py-8 align-bottom">
-      <div class="footer-copy-sub font-sans-b text-[14px] text-[#eaeaea] sm:text-base m-0 break-keep">
-        <span class="mr-1">
-          <a href="https://github.com/FRONTENDBOOTCAMP-13th/love-and-freedom"
-            aria-label="Love-and-Freedom 프로젝트의 GitHub 페이지로 이동(새 창으로 열립니다)" target="_blank" rel="noopener noreferrer">
-            Github
-          </a>
-        </span>
-        <span class="block sm:inline mr-1">
-          본 웹사이트는 가시안이며 상업용이 아님을 밝힙니다.
-        </span>
-        <span class="block sm:inline">
-          Love-and-Freedom
-        </span>
-      </div>
-    </footer>
-
-  </section>
-  <script>
-    window.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll(".character-box").forEach((button) => {
-        button.addEventListener("click", function () {
-          const popup = this.previousElementSibling; // 현재 버튼의 이전 형제 요소 (popup-box)
-
-          // 모든 팝업 닫기 (현재 클릭한 것 제외)
-          document.querySelectorAll(".popup-box").forEach((box) => {
-            if (box !== popup) {
-              box.classList.remove("active");
-            }
+            // 현재 팝업 열려있으면 닫기, 닫혀있으면 열기
+            popup.classList.toggle('active');
           });
-
-          // 현재 팝업 열려있으면 닫기, 닫혀있으면 열기
-          popup.classList.toggle("active");
         });
-      });
 
-      // 팝업 클릭하면 닫히도록 설정
-      document.querySelectorAll(".popup-box").forEach((popup) => {
-        popup.addEventListener("click", function () {
-          this.classList.remove("active");
+        // 팝업 클릭하면 닫히도록 설정
+        document.querySelectorAll('.popup-box').forEach((popup) => {
+          popup.addEventListener('click', function () {
+            this.classList.remove('active');
+          });
         });
-      });
 
-      //스와이퍼 슬라이드 js
-      document.querySelectorAll(".component-slider").forEach((slider) => {
-        new Swiper(slider, {
-          speed: 500,
-          grabCursor: true,
-          effect: "creative",
-          creativeEffect: {
-            prev: {
-              shadow: true,
-              translate: [0, 0, -400],
+        //스와이퍼 슬라이드 js
+        document.querySelectorAll('.component-slider').forEach((slider) => {
+          new Swiper(slider, {
+            speed: 500,
+            grabCursor: true,
+            effect: 'creative',
+            creativeEffect: {
+              prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+              },
+              next: {
+                translate: ['100%', 0, 0],
+              },
             },
-            next: {
-              translate: ["100%", 0, 0],
-            },
-          },
+          });
         });
       });
-
-    })
-  </script>
-</body>
+    </script>
+  </body>
 </html>

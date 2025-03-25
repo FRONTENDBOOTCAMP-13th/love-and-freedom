@@ -11,7 +11,7 @@
 /* main > .imsy.many-ttakji > 엄청 많은 딱지 레이아웃 */
 
 .wrap {
-  @apply mt-15;
+  @apply mt-15 relative;
   @apply grid grid-cols-[[full-start]_20px_[content-start]_calc(100vw_-_40px)_[content-end]_20px_[full-end]];
   @apply ts:grid-cols-[[full-start]_20px_[content-start]_repeat(2,_calc((100vw_-_54px)_/_2))_[content-end]_20px_[full-end]];
   @apply md:grid-cols-[[full-start]_1fr_[content-start]_repeat(2,_calc(742px_/_2))_[content-end]_1fr_[full-end]];
@@ -29,6 +29,15 @@
   }
   .footer-wrap {
     @apply col-[full];
+  }
+  .background-animation-wrap {
+    @apply contents;
+    .background-animation-left {
+      @apply col-start-1 row-start-2;
+    }
+    .background-animation-right {
+      @apply -col-end-1 row-start-2;
+    }
   }
 }
 main {
@@ -51,15 +60,34 @@ main {
       }
     }
   }
-
-  /* 핫카드가 들어있는 카드 레이아웃은 핫카드 만들어질때쯤 추가할 예정입니다. */
-  .card-component-wrap.withhotcard {
-  }
-  /* 애니메이션이 들어갈 div입니다. absolute fixed 등을 추가할 예정입니다 */
-  .background-animation-wrap {
-  }
 }
 
+/* 애니메이션이 들어갈 div입니다. absolute fixed 등을 추가할 예정입니다 */
+.background-animation-wrap {
+  .background-animation-left,
+  .background-animation-right {
+    @apply hidden lg:block fixed bottom-20;
+    @apply lg:w-[calc((100vw_-_894px)_/_2)];
+    @apply xl:w-[calc((100vw_-_1200px)_/_2)];
+    > .circle {
+      @apply absolute;
+    }
+    > .scale {
+      > * {
+        @apply absolute;
+      }
+    }
+  }
+
+  .background-animation-left {
+    @apply left-0;
+  }
+  .background-animation-right {
+    @apply right-0;
+  }
+
+  /* @apply fixed w-screen h-screen top-0 left-0; */
+}
 /* 딱지, 배너 들어갈 section입니다. 아직 이름을 안정해줬어요 */
 .imsy {
   @apply col-span-full;
@@ -67,24 +95,22 @@ main {
 
 /* 시각적으로 보기 위한 색/크기 입니다 */
 /* 아래 코드 외에는 크기를 준 코드가 없습니다. */
-.wrap {
+/* .wrap {
   .header-wrap {
   }
   .nav-wrap {
-    @apply bg-yellow-300 h-20;
   }
-  main {
-    @apply bg-green-300;
+  main.base-layout-main {
   }
   .footer-wrap {
   }
-}
+} */
 
 .imsy {
   @apply h-40 bg-pink-200;
 }
 
-main {
+.base-layout-main {
   .card-component-wrap {
     > ul {
       > li {
