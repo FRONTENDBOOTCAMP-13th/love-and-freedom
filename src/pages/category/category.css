@@ -20,7 +20,7 @@
   .bottom-image {
     @apply hidden lg:flex lg:justify-center lg:items-center lg:col-span-3 xl:col-span-4;
     img {
-      @apply lg:w-[890px] lg:h-[250px] lg:mb-[-360px] lg:z-[1];
+      @apply lg:w-[890px] lg:h-[250px] lg:mb-[-415px] lg:z-[1];
     }
   }
 
